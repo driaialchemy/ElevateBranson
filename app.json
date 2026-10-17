@@ -1,0 +1,39 @@
+{
+  "expo": {
+    "name": "Elevate Branson",
+    "slug": "elevate-branson",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/brand/mark.png",
+    "scheme": "elevatebranson",
+    "userInterfaceStyle": "light",
+    "ios": {
+      "supportsTablet": true
+    },
+    "android": {
+      "adaptiveIcon": {
+        "backgroundColor": "#174A5B",
+        "foregroundImage": "./assets/brand/mark.png"
+      },
+      "predictiveBackGestureEnabled": false
+    },
+    "web": {
+      "output": "static",
+      "favicon": "./assets/brand/mark.png"
+    },
+    "plugins": [
+      "expo-router",
+      [
+        "expo-splash-screen",
+        {
+          "backgroundColor": "#174A5B",
+          "image": "./assets/brand/logo.png",
+          "imageWidth": 200
+        }
+      ]
+    ],
+    "experiments": {
+      "reactCompiler": true
+    }
+  }
+}

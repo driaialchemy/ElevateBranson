@@ -18,3 +18,8 @@ Thumbs.db
 *.p12
 *.key
 *.mobileprovision
+*.pem
+.kotlin/
+.metro-health-check*
+/ios
+/android

@@ -9,13 +9,17 @@ Mobile app for [Elevate Branson](https://elevatebranson.org/). Followers use it 
 - [docs/DECISIONS.md](docs/DECISIONS.md) — stack choices
 - [docs/BLOCKERS.md](docs/BLOCKERS.md) — failures that still need a fix
 - [docs/HUMAN_TASKS.md](docs/HUMAN_TASKS.md) — accounts and content that need a person
+- [docs/NAVIGATION.md](docs/NAVIGATION.md) — where each feature lives
+- [docs/BRAND.md](docs/BRAND.md) — colors and type taken from the website
 
 ## Setup
 
 ```bash
 cp .env.example .env
+npm install
+npm start
 ```
 
 Fill `.env` locally. Do not commit it.
 
-There is no app code yet. Later phases add the Expo app, content, screens, forms, and notifications.
+`npm run web` opens the shell in a browser. `npm test`, `npm run lint`, and `npm run typecheck` check the project.
