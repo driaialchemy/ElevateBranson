@@ -75,3 +75,5 @@ Sources: [account quotas](https://www.resend.com/docs/knowledge-base/account-quo
 - The `onboarding@resend.dev` sender can mail only the Resend account’s own address. Other recipients need a verified domain ([403 error](https://resend.com/docs/knowledge-base/403-error-resend-dev-domain)).
 
 Volunteer, tour, and prayer volume for this org fits the free quota. Domain verification is a human task before real staff delivery.
+
+Branding: mirror the website. Assumed until the CEO supplies official brand files.

@@ -20,3 +20,5 @@ Persistent context for every later phase. Read this file before changing the app
 Nonprofit: Elevate Branson. Core followers install the app to stay informed about ~10 programs, communicate with staff, give, schedule tours, and volunteer. Push notifications mirror the content of their email newsletter. Website: https://elevatebranson.org/
 
 Feature list: docs/FEATURES.md. Stack: docs/DECISIONS.md. Open failures: docs/BLOCKERS.md. Human follow-ups: docs/HUMAN_TASKS.md.
+
+Brand: the app must reflect the Elevate Branson branding from https://elevatebranson.org/ (logo, colors, fonts, imagery, tone). Extracted in Prompt 2 into docs/BRAND.md and src/theme/tokens.ts; all UI uses those tokens only. No hardcoded colors or fonts elsewhere.

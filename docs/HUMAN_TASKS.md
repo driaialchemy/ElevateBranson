@@ -17,3 +17,4 @@ Do not block the build on these. Use the placeholders in [DECISIONS.md](DECISION
 13. Confirm or correct the working program list in [OPEN_QUESTIONS.md](OPEN_QUESTIONS.md).
 14. Provide the logo, brand colors, and fonts.
 15. Update the privacy policy so it covers the mobile app, including prayer requests and volunteer forms. The current page covers the website and social channels.
+16. Request official brand files (logo SVG/PNG, brand guide) from the CEO; swap in when received.
