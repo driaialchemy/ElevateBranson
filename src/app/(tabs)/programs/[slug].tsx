@@ -1,13 +1,16 @@
 import { Stack, useLocalSearchParams } from 'expo-router';
 
 import { Card } from '@/components/Card';
+import { ContentNotice } from '@/components/ContentNotice';
 import { EmptyState } from '@/components/EmptyState';
 import { Screen } from '@/components/Screen';
-import { programBySlug } from '@/content/cache';
+import { useContent } from '@/content/client';
+import { programBySlug } from '@/content/query';
 
 export default function ProgramDetailScreen() {
   const { slug } = useLocalSearchParams<{ slug: string }>();
-  const program = typeof slug === 'string' ? programBySlug(slug) : undefined;
+  const { data } = useContent();
+  const program = typeof slug === 'string' ? programBySlug(data.programs, slug) : undefined;
 
   if (!program) {
     return (
@@ -20,6 +23,7 @@ export default function ProgramDetailScreen() {
   return (
     <Screen>
       <Stack.Screen options={{ title: program.name }} />
+      <ContentNotice />
       <Card body={program.summary} title={program.name} />
     </Screen>
   );

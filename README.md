@@ -11,6 +11,7 @@ Mobile app for [Elevate Branson](https://elevatebranson.org/). Followers use it 
 - [docs/HUMAN_TASKS.md](docs/HUMAN_TASKS.md) — accounts and content that need a person
 - [docs/NAVIGATION.md](docs/NAVIGATION.md) — where each feature lives
 - [docs/BRAND.md](docs/BRAND.md) — colors and type taken from the website
+- [docs/STAFF_GUIDE.md](docs/STAFF_GUIDE.md) — how staff update programs, hours, and lists
 
 ## Setup
 

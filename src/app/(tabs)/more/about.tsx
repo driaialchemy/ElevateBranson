@@ -1,16 +1,16 @@
 import { Card } from '@/components/Card';
-import { ListItem } from '@/components/ListItem';
+import { ContentNotice } from '@/components/ContentNotice';
 import { Screen } from '@/components/Screen';
-import { pageCopy } from '@/content/cache';
+import { useContent } from '@/content/client';
 
 export default function AboutScreen() {
-  const page = pageCopy('about');
+  const { data } = useContent();
 
   return (
     <Screen>
-      <Card body={page.body} />
-      <ListItem detail="Address, map, and phone." href="/more/find-us" label="Find Us" />
-      <ListItem detail="The newest update." href="/more/newsletter" label="Newsletter" />
+      <ContentNotice />
+      <Card body={data.siteSettings.mission} title="Mission" />
+      <Card body={data.siteSettings.vision} title="Vision" />
     </Screen>
   );
 }

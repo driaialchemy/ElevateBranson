@@ -18,3 +18,11 @@ Do not block the build on these. Use the placeholders in [DECISIONS.md](DECISION
 14. Provide the logo, brand colors, and fonts.
 15. Update the privacy policy so it covers the mobile app, including prayer requests and volunteer forms. The current page covers the website and social channels.
 16. Request official brand files (logo SVG/PNG, brand guide) from the CEO; swap in when received.
+17. Check each starter program summary against its page on elevatebranson.org. Copied 17 October 2026: Elevate Kids, Elevate Work, Elevate Entrepreneurs, Elevate Connections, Elevate Outreach, Elevate Rides, Elevate Health, Elevate Life, Elevate Community, Computer Classes, Elevate Coffee, Thrift Store, Playground.
+18. Check the campus address 310 Gretna Road, Branson, MO 65616, main phone 417.335.9915, and thrift phone 417.986.1188.
+19. Check campus hours, coffee hours (Monday–Friday 8:00 A.M.–3:00 P.M.), thrift hours, and the three playground seasons (school year, June and July, August).
+20. Check the April through September 2026 newsletter titles and their public links.
+21. Check the Facebook, Instagram, X, and LinkedIn links in the starter copy.
+22. Add real events in the editing site. The public calendar page did not list event names, so the app ships with none.
+23. Add the partner organization directory. The website says there are more than 150 groups and does not name them, so the app ships with none.
+24. Add dated tiny-house progress notes when you have them. The welcome page describes the neighborhood and does not give a dated update, so the app ships with none.

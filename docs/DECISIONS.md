@@ -77,3 +77,5 @@ Sources: [account quotas](https://www.resend.com/docs/knowledge-base/account-quo
 Volunteer, tour, and prayer volume for this org fits the free quota. Domain verification is a human task before real staff delivery.
 
 Branding: mirror the website. Assumed until the CEO supplies official brand files.
+
+Content: starter copy from the public website ships in the app until EXPO_PUBLIC_SANITY_PROJECT_ID is a real project. The app accepts a public read token only. Housing, events, and the partner directory stay empty until staff publish them.
