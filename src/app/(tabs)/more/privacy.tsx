@@ -9,7 +9,7 @@ export default function PrivacyScreen() {
   return (
     <Screen>
       <Card
-        body="Volunteer forms, tour requests, and prayer requests collect only what staff need to reply. The app does not put what you type into its logs. A prayer request stays private unless you turn on sharing. If you are offline, the request stays on this phone until it can be sent, then it is removed from the phone."
+        body="Volunteer forms, tour requests, and prayer requests collect only what staff need to reply. The app does not put what you type into its logs. A prayer request stays private unless you turn on sharing. If you are offline, the request stays on this phone until it can be sent, then it is removed from the phone. If you turn on notifications, the phone token is saved with your topic choices and not with your name."
         title="Privacy"
       />
       <Card

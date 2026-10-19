@@ -3,6 +3,7 @@ import { ScrollView, View } from 'react-native';
 import { ErrorState } from '@/components/ErrorState';
 import { OfflineBanner } from '@/components/OfflineBanner';
 import { offlineMessage } from '@/content/cache';
+import { PushOffer } from '@/notifications/PushOffer';
 import { useNetwork } from '@/network/NetworkProvider';
 import { tokens } from '@/theme/tokens';
 
@@ -14,6 +15,7 @@ export function Screen({ children }: { children: React.ReactNode }) {
       <OfflineBanner />
       <ScrollView contentContainerStyle={{ gap: tokens.space.md, padding: tokens.space.md }}>
         {online ? null : <ErrorState message={offlineMessage} onRetry={() => void refresh()} />}
+        <PushOffer />
         {children}
       </ScrollView>
     </View>

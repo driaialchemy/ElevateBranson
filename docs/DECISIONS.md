@@ -86,4 +86,6 @@ Links: website, newsletter, social, and donate pages open in the in-app browser.
 
 Forms: volunteer, tour, and prayer post to `/api/submit`. Staff addresses and the Resend key stay in server environment variables. The tour website stays the primary scheduler. The in-app tour form is the fallback. Offline submissions wait on the phone and send when the connection returns.
 
+Push: Expo Push Service. The phone asks only after a person opens a page, then only if they agree. Tokens are stored with topic choices and no name or contact. Staff send from `/staff/notify` with one shared secret, a preview, a test send, a confirm step, and a 15-minute cooldown.
+
 Hours: each season stores a repeating MM-DD start and end, weekly open and close times, and optional holiday closures. Open or closed is decided in America/Chicago by getOpenStatus. Date ranges the website did not publish stay TODO.

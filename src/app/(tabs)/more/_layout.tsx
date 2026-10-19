@@ -12,6 +12,7 @@ export default function MoreLayout() {
       <Stack.Screen name="social" options={{ title: 'Social links' }} />
       <Stack.Screen name="website" options={{ title: 'Website' }} />
       <Stack.Screen name="newsletter" options={{ title: 'Newsletter' }} />
+      <Stack.Screen name="notifications" options={{ title: 'Notifications' }} />
       <Stack.Screen name="privacy" options={{ title: 'Privacy' }} />
     </Stack>
   );

@@ -58,5 +58,6 @@ export const moreLinks = [
   { label: 'Social links', href: '/more/social', detail: 'Find Elevate Branson on social media.' },
   { label: 'Website', href: '/more/website', detail: 'Open elevatebranson.org.' },
   { label: 'Newsletter', href: '/more/newsletter', detail: 'The newest update.' },
+  { label: 'Notifications', href: '/more/notifications', detail: 'Choose which notes this phone receives.' },
   { label: 'Privacy', href: '/more/privacy', detail: 'How this app handles personal notes.' },
 ] as const;

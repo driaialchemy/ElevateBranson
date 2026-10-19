@@ -29,3 +29,6 @@ Do not block the build on these. Use the placeholders in [DECISIONS.md](DECISION
 25. Confirm the playground school-year start and end dates, and any holiday closures. The website names the school year and does not give those dates, so the app uses TODO and will not call the playground open or closed outside June, July, and August. Also confirm that "June and July" means June 1 through July 31 and "August" means August 1 through August 31.
 26. Confirm whether coffee, thrift, and campus hours change by season. The website gives one weekly schedule for each and no start or end date, so those date fields are TODO until you confirm them.
 27. Deploy `/api/submit` (the worker in `worker/` or the Expo server route) and set `EXPO_PUBLIC_SUBMIT_URL` to that public address. Put the Resend key and staff inboxes in the server environment only.
+28. Replace the shared staff-page password with individual staff logins. Until then the send page uses one secret in `STAFF_PUSH_SECRET`.
+29. Forward the latest newsletter so the sample note in `docs/NOTIFICATION_EXAMPLES.md` can be replaced. Do not send personal stories in a push.
+30. Add Apple push (APNs) and Android (FCM) credentials to the Expo project before testing notes on a phone.
