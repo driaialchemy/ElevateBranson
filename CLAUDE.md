@@ -30,3 +30,5 @@ Content: src/content. Starter copy until a real Sanity project id is set. Public
 No static map. Find Us uses an address card: address, main phone, hours, Open in Maps (iOS and Android deep links), and Call. No map API, no map key, no paid service.
 
 Prompt 4 must call getOpenStatus and must not reimplement hours logic.
+
+Prompt 4 must use Header, Hero, SectionHeader, Button, Card, StatTile, ActionTile, ListRow, and SeasonalBanner from src/components.

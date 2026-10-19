@@ -2,7 +2,18 @@ import { Pressable, Text } from 'react-native';
 
 import { tokens } from '@/theme/tokens';
 
-export function Button({ label, onPress }: { label: string; onPress: () => void }) {
+type Variant = 'primary' | 'secondary' | 'donate';
+
+export function Button({
+  label,
+  onPress,
+  variant = 'primary',
+}: {
+  label: string;
+  onPress: () => void;
+  variant?: Variant;
+}) {
+  const secondary = variant === 'secondary';
   return (
     <Pressable
       accessibilityLabel={label}
@@ -10,19 +21,24 @@ export function Button({ label, onPress }: { label: string; onPress: () => void 
       onPress={onPress}
       style={({ pressed }) => ({
         alignItems: 'center',
-        backgroundColor: pressed ? tokens.color.text : tokens.color.primary,
-        maxWidth: '100%',
-        minWidth: 0,
-        borderRadius: tokens.radius,
+        backgroundColor: secondary ? tokens.color.surface : pressed ? tokens.color.text : tokens.color.primary,
+        borderColor: tokens.color.primary,
+        borderRadius: tokens.buttonRadius,
+        borderWidth: 2,
+        elevation: 2,
         justifyContent: 'center',
         minHeight: tokens.tapTarget,
-        paddingHorizontal: tokens.space.md,
+        paddingHorizontal: tokens.space.lg,
         paddingVertical: tokens.space.sm,
+        shadowColor: tokens.shadow.color,
+        shadowOffset: { height: tokens.shadow.offsetY, width: 0 },
+        shadowOpacity: tokens.shadow.opacity,
+        shadowRadius: tokens.shadow.radius,
       })}>
       <Text
         style={{
-          color: tokens.color.onPrimary,
-          fontFamily: tokens.font.family.body,
+          color: secondary ? tokens.color.primary : tokens.color.onPrimary,
+          fontFamily: tokens.font.family.heading,
           fontSize: tokens.font.size.body,
           lineHeight: tokens.font.lineHeight.body,
           maxWidth: '100%',

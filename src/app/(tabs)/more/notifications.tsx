@@ -87,7 +87,9 @@ export default function NotificationsScreen() {
       {notes.length === 0 ? (
         <EmptyState body="Notes you receive will be listed here." title="Inbox" />
       ) : (
-        notes.map((note) => <ListItem detail={note.body} href={note.href} key={note.id} label={note.title} />)
+        notes.map((note) => (
+          <ListItem detail={note.body} href={note.href} icon="notifications-outline" key={note.id} label={note.title} />
+        ))
       )}
     </Screen>
   );

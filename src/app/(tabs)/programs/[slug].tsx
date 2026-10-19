@@ -1,5 +1,6 @@
 import { Stack, useLocalSearchParams } from 'expo-router';
 
+import { BrandImage } from '@/components/BrandImage';
 import { Button } from '@/components/Button';
 import { Card } from '@/components/Card';
 import { ContentNotice } from '@/components/ContentNotice';
@@ -26,6 +27,7 @@ export default function ProgramDetailScreen() {
     <Screen>
       <Stack.Screen options={{ title: program.name }} />
       <ContentNotice />
+      {program.imageKey ? <BrandImage alt={program.imageAlt || program.name} imageKey={program.imageKey} /> : null}
       <Card body={program.summary} title={program.name} />
       <Button label="Read this on the website" onPress={() => openExternal(program.sourceUrl)} />
     </Screen>

@@ -7,7 +7,7 @@
 export const cmsSchema = {
   program: {
     name: 'program',
-    fields: ['name', 'slug', 'summary', 'sourceUrl', 'verify'],
+    fields: ['name', 'slug', 'summary', 'sourceUrl', 'imageKey', 'imageAlt', 'verify'],
   },
   event: {
     name: 'event',
@@ -36,6 +36,18 @@ export const cmsSchema = {
     name: 'newsletterIssue',
     fields: ['title', 'publishedOn', 'url', 'sourceUrl', 'verify'],
   },
+  homeSection: {
+    name: 'homeSection',
+    fields: ['eyebrow', 'title', 'body', 'imageKey', 'imageAlt', 'actions', 'sourceUrl', 'verify'],
+  },
+  homeStat: {
+    name: 'homeStat',
+    fields: ['value', 'label', 'sourceUrl', 'verify'],
+  },
+  seasonalNotice: {
+    name: 'seasonalNotice',
+    fields: ['imageKey', 'alt', 'href', 'sourceUrl', 'verify'],
+  },
   siteSettings: {
     name: 'siteSettings',
     fields: [
@@ -48,7 +60,10 @@ export const cmsSchema = {
       'volunteerEmail',
       'socialLinks',
       'donateUrl',
+      'donateLabel',
       'giveBlurb',
+      'mailingListUrl',
+      'mailingListLabel',
       'merchUrl',
       'websiteUrl',
       'tourUrl',
@@ -59,12 +74,15 @@ export const cmsSchema = {
 } as const;
 
 export const contentQuery = `{
-  "programs": *[_type == "program"]{ "id": _id, name, "slug": slug.current, summary, sourceUrl, verify },
+  "programs": *[_type == "program"]{ "id": _id, name, "slug": slug.current, summary, sourceUrl, imageKey, imageAlt, verify },
+  "homeSections": *[_type == "homeSection"]{ "id": _id, eyebrow, title, body, imageKey, imageAlt, actions, sourceUrl, verify },
+  "homeStats": *[_type == "homeStat"]{ "id": _id, value, label, sourceUrl, verify },
+  "seasonalNotice": *[_type == "seasonalNotice"][0]{ "id": _id, imageKey, alt, href, sourceUrl, verify },
   "events": *[_type == "event"]{ "id": _id, title, summary, startsOn, location, sourceUrl, verify },
   "resources": *[_type == "resource"]{ "id": _id, name, category, summary, phone, address, sourceUrl, verify, lastVerified, verifiedBy },
   "housingListings": *[_type == "housingListing"]{ "id": _id, name, phone, address, summary, sourceUrl, verify, lastVerified, verifiedBy },
   "tinyHouseUpdates": *[_type == "tinyHouseUpdate"]{ "id": _id, title, body, publishedOn, sourceUrl, verify },
   "hours": *[_type == "hours"]{ "id": _id, place, seasons, closures, sourceUrl, verify, lastVerified, verifiedBy },
   "newsletters": *[_type == "newsletterIssue"]{ "id": _id, title, publishedOn, url, sourceUrl, verify },
-  "siteSettings": *[_type == "siteSettings"][0]{ mission, vision, address, phone, thriftPhone, infoEmail, volunteerEmail, socialLinks, donateUrl, giveBlurb, merchUrl, websiteUrl, tourUrl, sourceUrl, verify }
+  "siteSettings": *[_type == "siteSettings"][0]{ mission, vision, address, phone, thriftPhone, infoEmail, volunteerEmail, socialLinks, donateUrl, donateLabel, giveBlurb, mailingListUrl, mailingListLabel, merchUrl, websiteUrl, tourUrl, sourceUrl, verify }
 }`;

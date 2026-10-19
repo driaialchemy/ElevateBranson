@@ -1,7 +1,7 @@
 import { Card } from '@/components/Card';
 import { ContentNotice } from '@/components/ContentNotice';
-import { ListItem } from '@/components/ListItem';
 import { Screen } from '@/components/Screen';
+import { SectionHeader } from '@/components/SectionHeader';
 import { useContent } from '@/content/client';
 
 export default function ProgramsScreen() {
@@ -10,13 +10,16 @@ export default function ProgramsScreen() {
   return (
     <Screen>
       <ContentNotice />
+      <SectionHeader label="Programs" />
       <Card body="These programs are published on the Elevate Branson website." />
       {data.programs.map((program) => (
-        <ListItem
-          detail={program.summary}
+        <Card
+          alt={program.imageAlt}
+          body={program.summary}
           href={`/programs/${program.slug}`}
+          imageKey={program.imageKey}
           key={program.slug}
-          label={program.name}
+          title={program.name}
         />
       ))}
     </Screen>

@@ -51,6 +51,13 @@ test('newsletters are the public issues', () => {
   assert.equal(fixtures.siteSettings.address, '310 Gretna Road, Branson, MO 65616');
 });
 
+test('homepage figures are the ones published on the website', () => {
+  const values = (fixtures.homeStats ?? []).map((stat) => stat.value);
+  assert.deepEqual(values, ['22.4%', '1,500+', '-2,200']);
+  assert.equal(values.includes('9.3%'), false);
+  assert.ok(fixtures.homeSections?.some((section) => section.title === 'Helping Families Break the Cycle of Poverty'));
+});
+
 test('giving opens the public donate page and does not store a card', () => {
   assert.equal(fixtures.siteSettings.donateUrl, 'https://elevatebranson.org/donate/');
   assert.match(fixtures.siteSettings.giveBlurb ?? '', /one-time or recurring gift/);

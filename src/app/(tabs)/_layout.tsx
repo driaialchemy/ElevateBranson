@@ -1,8 +1,21 @@
+import Ionicons from '@expo/vector-icons/Ionicons';
 import { Tabs } from 'expo-router';
 import { Text, type ColorValue } from 'react-native';
 
 import { stackScreenOptions } from '@/theme/navigation';
 import { tokens } from '@/theme/tokens';
+
+const tabIcons = {
+  Home: 'home-outline',
+  Programs: 'grid-outline',
+  Events: 'calendar-outline',
+  'Get Involved': 'people-outline',
+  More: 'menu-outline',
+} as const;
+
+function TabIcon({ color, label }: { color: ColorValue; label: keyof typeof tabIcons }) {
+  return <Ionicons color={typeof color === 'string' ? color : tokens.color.primary} name={tabIcons[label]} size={24} />;
+}
 
 function TabLabel({ color, label }: { color: ColorValue; label: string }) {
   return (
@@ -16,7 +29,8 @@ function TabLabel({ color, label }: { color: ColorValue; label: string }) {
         maxWidth: '100%',
         textAlign: 'center',
         width: '100%',
-      }}>
+      }}
+      numberOfLines={2}>
       {label}
     </Text>
   );
@@ -33,10 +47,12 @@ export default function TabLayout() {
         tabBarItemStyle: {
           flex: 1,
           minWidth: 0,
-          paddingHorizontal: 2,
+          paddingHorizontal: 0,
         },
         tabBarStyle: {
+          alignSelf: 'center',
           backgroundColor: tokens.color.surface,
+          maxWidth: tokens.layout.maxWidth,
           minHeight: tokens.tapTarget + tokens.font.lineHeight.body * 2,
           width: '100%',
         },
@@ -44,7 +60,10 @@ export default function TabLayout() {
       <Tabs.Screen
         name="index"
         options={{
+          headerShown: false,
           title: 'Home',
+          tabBarIcon: ({ color }) => <TabIcon color={color} label="Home" />,
+          tabBarItemStyle: { flex: 0.8, minWidth: 0, paddingHorizontal: 0 },
           tabBarLabel: ({ color }) => <TabLabel color={color} label="Home" />,
           tabBarAccessibilityLabel: 'Home',
         }}
@@ -54,6 +73,8 @@ export default function TabLayout() {
         options={{
           headerShown: false,
           title: 'Programs',
+          tabBarIcon: ({ color }) => <TabIcon color={color} label="Programs" />,
+          tabBarItemStyle: { flex: 1.25, minWidth: 0, paddingHorizontal: 0 },
           tabBarLabel: ({ color }) => <TabLabel color={color} label="Programs" />,
           tabBarAccessibilityLabel: 'Programs',
         }}
@@ -63,6 +84,8 @@ export default function TabLayout() {
         options={{
           headerShown: false,
           title: 'Events',
+          tabBarIcon: ({ color }) => <TabIcon color={color} label="Events" />,
+          tabBarItemStyle: { flex: 0.9, minWidth: 0, paddingHorizontal: 0 },
           tabBarLabel: ({ color }) => <TabLabel color={color} label="Events" />,
           tabBarAccessibilityLabel: 'Events',
         }}
@@ -72,6 +95,8 @@ export default function TabLayout() {
         options={{
           headerShown: false,
           title: 'Get Involved',
+          tabBarIcon: ({ color }) => <TabIcon color={color} label="Get Involved" />,
+          tabBarItemStyle: { flex: 1.35, minWidth: 0, paddingHorizontal: 0 },
           tabBarLabel: ({ color }) => <TabLabel color={color} label="Get Involved" />,
           tabBarAccessibilityLabel: 'Get Involved',
         }}
@@ -81,6 +106,8 @@ export default function TabLayout() {
         options={{
           headerShown: false,
           title: 'More',
+          tabBarIcon: ({ color }) => <TabIcon color={color} label="More" />,
+          tabBarItemStyle: { flex: 0.75, minWidth: 0, paddingHorizontal: 0 },
           tabBarLabel: ({ color }) => <TabLabel color={color} label="More" />,
           tabBarAccessibilityLabel: 'More',
         }}

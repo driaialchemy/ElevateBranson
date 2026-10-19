@@ -41,6 +41,8 @@ export const homeQuickActions = [
   { label: 'Prayer', href: '/get-involved/prayer' },
   { label: 'Find Us', href: '/more/find-us' },
   { label: 'Newsletter', href: '/more/newsletter' },
+  { label: 'Events', href: '/events' },
+  { label: 'Resources', href: '/more/resources' },
 ] as const;
 
 export const getInvolvedLinks = [

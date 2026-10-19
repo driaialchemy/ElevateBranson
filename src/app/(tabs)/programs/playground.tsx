@@ -1,3 +1,4 @@
+import { BrandImage } from '@/components/BrandImage';
 import { Button } from '@/components/Button';
 import { Card } from '@/components/Card';
 import { ContentNotice } from '@/components/ContentNotice';
@@ -15,6 +16,7 @@ export default function PlaygroundScreen() {
   return (
     <Screen>
       <ContentNotice />
+      {program?.imageKey ? <BrandImage alt={program.imageAlt || program.name} imageKey={program.imageKey} /> : null}
       {program ? <Card body={program.summary} title={program.name} /> : null}
       {program ? (
         <Button label="Read this on the website" onPress={() => openExternal(program.sourceUrl)} />

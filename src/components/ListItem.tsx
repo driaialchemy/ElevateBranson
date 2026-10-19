@@ -1,57 +1,17 @@
-import { Link, type Href } from 'expo-router';
-import { Pressable, Text, View } from 'react-native';
+import Ionicons from '@expo/vector-icons/Ionicons';
 
-import { tokens } from '@/theme/tokens';
+import { ListRow } from '@/components/ListRow';
 
 export function ListItem({
   label,
   detail,
   href,
+  icon,
 }: {
   label: string;
   detail?: string;
   href: string;
+  icon?: keyof typeof Ionicons.glyphMap;
 }) {
-  return (
-    <Link href={href as Href} asChild>
-      <Pressable
-        accessibilityLabel={detail ? `${label}. ${detail}` : label}
-        accessibilityRole="button"
-        style={({ pressed }) => ({
-          backgroundColor: pressed ? tokens.color.background : tokens.color.surface,
-          borderColor: tokens.color.border,
-          maxWidth: '100%',
-          minWidth: 0,
-          borderRadius: tokens.radius,
-          borderWidth: 1,
-          justifyContent: 'center',
-          minHeight: tokens.tapTarget,
-          paddingHorizontal: tokens.space.md,
-          paddingVertical: tokens.space.sm,
-        })}>
-        <View style={{ gap: tokens.space.xs }}>
-          <Text
-            style={{
-              color: tokens.color.text,
-              fontFamily: tokens.font.family.heading,
-              fontSize: tokens.font.size.body,
-              lineHeight: tokens.font.lineHeight.body,
-            }}>
-            {label}
-          </Text>
-          {detail ? (
-            <Text
-              style={{
-                color: tokens.color.textMuted,
-                fontFamily: tokens.font.family.body,
-                fontSize: tokens.font.size.body,
-                lineHeight: tokens.font.lineHeight.body,
-              }}>
-              {detail}
-            </Text>
-          ) : null}
-        </View>
-      </Pressable>
-    </Link>
-  );
+  return <ListRow detail={detail} href={href} icon={icon} label={label} />;
 }

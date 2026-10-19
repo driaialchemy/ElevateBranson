@@ -1,0 +1,236 @@
+{
+  "backgrounds": [
+    {
+      "text": "",
+      "bg": "url(\"https://elevatebranson.org/wp-content/uploads/2025/07/Main_Background1-scaled.jpg\")"
+    },
+    {
+      "text": "Helping Families Break the Cycle of Poverty Job training, housing, and community",
+      "bg": "url(\"https://elevatebranson.org/wp-content/uploads/2025/07/Main_Background1-scaled.jpg\")"
+    },
+    {
+      "text": "",
+      "bg": "url(\"https://elevatebranson.org/wp-content/uploads/2020/07/Jared.jpg\")"
+    },
+    {
+      "text": "SCHEDULE A TOUR",
+      "bg": "url(\"https://elevatebranson.org/wp-content/uploads/2020/07/Our-Difference.jpg\")"
+    },
+    {
+      "text": "LEARN MORE",
+      "bg": "url(\"https://elevatebranson.org/wp-content/uploads/2020/08/Our-Role-Right_2.png\")"
+    }
+  ],
+  "blocks": [
+    {
+      "tag": "P",
+      "className": "",
+      "text": "",
+      "html": ""
+    },
+    {
+      "tag": "P",
+      "className": "",
+      "text": "",
+      "html": ""
+    },
+    {
+      "tag": "P",
+      "className": "",
+      "text": "",
+      "html": ""
+    },
+    {
+      "tag": "P",
+      "className": "",
+      "text": "",
+      "html": ""
+    },
+    {
+      "tag": "H1",
+      "className": "elementor-heading-title elementor-size-default",
+      "text": "Helping Families Break the Cycle of Poverty",
+      "html": "Helping Families Break the Cycle of Poverty"
+    },
+    {
+      "tag": "H2",
+      "className": "elementor-heading-title elementor-size-default",
+      "text": "Job training, housing, and community support in Branson, Missouri.",
+      "html": "Job training, housing, and community support in Branson, Missouri."
+    },
+    {
+      "tag": "H2",
+      "className": "elementor-heading-title elementor-size-default",
+      "text": "THE FACTS:",
+      "html": "THE FACTS:"
+    },
+    {
+      "tag": "DIV",
+      "className": "elementor-element elementor-element-1ae6f58 jltma-glass-effect-no elementor-widg",
+      "text": "Even the most prosperous communities have families struggling with painful housing, nutritional, health, and employment issues. Handouts and government assistance provide short term help but don’t create real and lasting change – so the problem keeps growing.",
+      "html": "<div class=\"elementor-widget-container\"> <p>Even the most prosperous communities have families struggling with painful housing, nutritional, health, and employment issues. Handouts and government assistance provide short term help but don’t"
+    },
+    {
+      "tag": "P",
+      "className": "",
+      "text": "Even the most prosperous communities have families struggling with painful housing, nutritional, health, and employment issues. Handouts and government assistance provide short term help but don’t create real and lasting change – so the problem keeps growing.",
+      "html": "Even the most prosperous communities have families struggling with painful housing, nutritional, health, and employment issues. Handouts and government assistance provide short term help but don’t create real and lasting change – so the pro"
+    },
+    {
+      "tag": "H2",
+      "className": "elementor-heading-title elementor-size-default",
+      "text": "THE VISION:",
+      "html": "THE VISION:"
+    },
+    {
+      "tag": "DIV",
+      "className": "elementor-element elementor-element-0ada4a9 jltma-glass-effect-no elementor-invi",
+      "text": "For every individual to know hope, dignity, and purpose through the love of Jesus.",
+      "html": "<div class=\"elementor-widget-container\"> <p>For every individual to know hope, dignity, and purpose through the love of Jesus.</p> </div>"
+    },
+    {
+      "tag": "P",
+      "className": "",
+      "text": "For every individual to know hope, dignity, and purpose through the love of Jesus.",
+      "html": "For every individual to know hope, dignity, and purpose through the love of Jesus."
+    },
+    {
+      "tag": "H2",
+      "className": "elementor-heading-title elementor-size-default",
+      "text": "THE SOLUTION:",
+      "html": "THE SOLUTION:"
+    },
+    {
+      "tag": "DIV",
+      "className": "elementor-element elementor-element-0426b88 jltma-glass-effect-no elementor-invi",
+      "text": "We elevate Branson by helping our neighbors help themselves, with programs for their physical, relational, and spiritual needs. We love people where they are, so that we can help them find purpose, make connections, and develop the skills and authentic relationships we all need to prosper.",
+      "html": "<div class=\"elementor-widget-container\"> <p>We elevate Branson by helping our neighbors help themselves, with programs for their&nbsp;physical, relational, and spiritual needs. We love people where they are, so that we can help them find pu"
+    },
+    {
+      "tag": "P",
+      "className": "",
+      "text": "We elevate Branson by helping our neighbors help themselves, with programs for their physical, relational, and spiritual needs. We love people where they are, so that we can help them find purpose, make connections, and develop the skills and authentic relationships we all need to prosper.",
+      "html": "We elevate Branson by helping our neighbors help themselves, with programs for their&nbsp;physical, relational, and spiritual needs. We love people where they are, so that we can help them find purpose, make connections, and develop the ski"
+    },
+    {
+      "tag": "H2",
+      "className": "elementor-heading-title elementor-size-default",
+      "text": "OUR DIFFERENCE:",
+      "html": "OUR DIFFERENCE:"
+    },
+    {
+      "tag": "DIV",
+      "className": "elementor-element elementor-element-d48e0fc jltma-glass-effect-no elementor-invi",
+      "text": "Elevate Branson is addressing the root causes of generational poverty in order to create lasting change. We believe that the only way out of poverty is through employment. We can love people, serve people and educate people, but earning a dignified income is the only way to climb the economic ladder. We provide resources, relationships, and a network of support that provides hope, dignity, and pur",
+      "html": "<div class=\"elementor-widget-container\"> <p><span style=\"font-family: avenir-heavy;\">Elevate Branson </span>is addressing the root causes of generational poverty in order to create lasting change. We believe that the only way out of poverty"
+    },
+    {
+      "tag": "P",
+      "className": "",
+      "text": "Elevate Branson is addressing the root causes of generational poverty in order to create lasting change. We believe that the only way out of poverty is through employment. We can love people, serve people and educate people, but earning a dignified income is the only way to climb the economic ladder. We provide resources, relationships, and a network of support that provides hope, dignity, and pur",
+      "html": "<span style=\"font-family: avenir-heavy;\">Elevate Branson </span>is addressing the root causes of generational poverty in order to create lasting change. We believe that the only way out of poverty is through employment.&nbsp; We can love pe"
+    },
+    {
+      "tag": "H2",
+      "className": "elementor-heading-title elementor-size-default",
+      "text": "OUR ROLE:",
+      "html": "OUR ROLE:"
+    },
+    {
+      "tag": "DIV",
+      "className": "elementor-element elementor-element-4db0bac jltma-glass-effect-no elementor-invi",
+      "text": "Since 2008, we’ve cared for and worked with our neighbors in need. None of us want substandard housing, hunger, or employment to hurt families and hinder our community. Real solutions take time, patience, and dedication. We’ve seen long-term success achieved with love, accountability, and community-wide support.",
+      "html": "<div class=\"elementor-widget-container\"> <p>Since 2008, we’ve cared for and worked with our neighbors in need. None of us want substandard housing, hunger, or employment to hurt families and hinder our community. Real solutions take time, p"
+    },
+    {
+      "tag": "P",
+      "className": "",
+      "text": "Since 2008, we’ve cared for and worked with our neighbors in need. None of us want substandard housing, hunger, or employment to hurt families and hinder our community. Real solutions take time, patience, and dedication. We’ve seen long-term success achieved with love, accountability, and community-wide support.",
+      "html": "Since 2008, we’ve cared for and worked with our neighbors in need. None of us want substandard housing, hunger, or employment to hurt families and hinder our community. Real solutions take time, patience, and dedication. We’ve seen long-ter"
+    },
+    {
+      "tag": "H2",
+      "className": "elementor-heading-title elementor-size-default",
+      "text": "OUR ROLE:",
+      "html": "OUR ROLE:"
+    },
+    {
+      "tag": "DIV",
+      "className": "elementor-element elementor-element-ab0b38e jltma-glass-effect-no elementor-invi",
+      "text": "Since 2008, we’ve cared for and worked with our neighbors in need. None of us want substandard housing, hunger, or employment to hurt families and hinder our community. Real solutions take time, patience, and dedication. We’ve seen long-term success achieved with love, accountability, and community-wide support.",
+      "html": "<div class=\"elementor-widget-container\"> <p>Since 2008, we’ve cared for and worked with our neighbors in need. None of us want substandard housing, hunger, or employment to hurt families and hinder our community. Real solutions take time, p"
+    },
+    {
+      "tag": "P",
+      "className": "",
+      "text": "Since 2008, we’ve cared for and worked with our neighbors in need. None of us want substandard housing, hunger, or employment to hurt families and hinder our community. Real solutions take time, patience, and dedication. We’ve seen long-term success achieved with love, accountability, and community-wide support.",
+      "html": "Since 2008, we’ve cared for and worked with our neighbors in need. None of us want substandard housing, hunger, or employment to hurt families and hinder our community. Real solutions take time, patience, and dedication. We’ve seen long-ter"
+    },
+    {
+      "tag": "H2",
+      "className": "elementor-heading-title elementor-size-default",
+      "text": "THE PLAN:",
+      "html": "THE PLAN:"
+    },
+    {
+      "tag": "H2",
+      "className": "elementor-heading-title elementor-size-default",
+      "text": "You can be part of the solution.",
+      "html": "You can be part of the solution."
+    },
+    {
+      "tag": "H3",
+      "className": "elementor-heading-title elementor-size-default",
+      "text": "HOURS OF OPERATION:",
+      "html": "HOURS OF OPERATION:"
+    },
+    {
+      "tag": "DIV",
+      "className": "elementor-element elementor-element-2191868 jltma-glass-effect-no elementor-widg",
+      "text": "Monday: 9:00 A.M. – 6:00 P.M. Tuesday: 1:00 P.M. – 6:00 P.M. Wednesday: 9:00 A.M. – 6:00 P.M. Thursday: 10:00 A.M. – 6:00 P.M. Friday: 9:00 A.M. – 4:00 P.M.",
+      "html": "<div class=\"elementor-widget-container\"> Monday: 9:00 A.M. – 6:00 P.M.<br> Tuesday: 1:00 P.M. – 6:00 P.M.<br> Wednesday: 9:00 A.M. – 6:00 P.M.<br> Thursday: 10:00 A.M. – 6:00 P.M.<br> Friday: 9:00 A.M. – 4:00 P.M.<br> </div>"
+    },
+    {
+      "tag": "DIV",
+      "className": "elementor-element elementor-element-2e5cabea jltma-glass-effect-no elementor-wid",
+      "text": "Privacy Policy | Contact Us | Brand Partnership",
+      "html": "<div class=\"elementor-widget-container\"> <p><a href=\"https://elevatebranson.org/privacy-policy/\" target=\"_blank\" rel=\"noopener\"><span style=\"color: #174a5b; text-decoration: underline;\">Privacy Policy</span></a> <span style=\"font-family: Av"
+    },
+    {
+      "tag": "P",
+      "className": "",
+      "text": "Privacy Policy | Contact Us | Brand Partnership",
+      "html": "<a href=\"https://elevatebranson.org/privacy-policy/\" target=\"_blank\" rel=\"noopener\"><span style=\"color: #174a5b; text-decoration: underline;\">Privacy Policy</span></a> <span style=\"font-family: Avenir Medium;\">|</span> <a href=\"https://elev"
+    },
+    {
+      "tag": "H3",
+      "className": "elementor-heading-title elementor-size-default",
+      "text": "HOURS OF OPERATION:",
+      "html": "HOURS OF OPERATION:"
+    },
+    {
+      "tag": "DIV",
+      "className": "elementor-element elementor-element-aa43c15 jltma-glass-effect-no elementor-widg",
+      "text": "Monday: 9:00 A.M. – 6:00 P.M. Tuesday: 1:00 P.M. – 6:00 P.M. Wednesday: 9:00 A.M. – 6:00 P.M. Thursday: 10:00 A.M. – 6:00 P.M. Friday: 9:00 A.M. – 4:00 P.M.",
+      "html": "<div class=\"elementor-widget-container\"> Monday: 9:00 A.M. – 6:00 P.M.<br> Tuesday: 1:00 P.M. – 6:00 P.M.<br> Wednesday: 9:00 A.M. – 6:00 P.M.<br> Thursday: 10:00 A.M. – 6:00 P.M.<br> Friday: 9:00 A.M. – 4:00 P.M.<br> </div>"
+    },
+    {
+      "tag": "DIV",
+      "className": "elementor-element elementor-element-2442943d jltma-glass-effect-no elementor-wid",
+      "text": "Privacy Policy | Contact Us | Brand Partnership",
+      "html": "<div class=\"elementor-widget-container\"> <a href=\"https://elevatebranson.org/privacy-policy/\" target=\"_blank\" rel=\"noopener\"><span style=\"color: #a1a1a1; text-decoration: underline;\">Privacy Policy</span></a> <span style=\"font-family: Aveni"
+    },
+    {
+      "tag": "P",
+      "className": "",
+      "text": "",
+      "html": ""
+    },
+    {
+      "tag": "P",
+      "className": "",
+      "text": "© 2026 Elevate Branson | Powered by Imagemakers",
+      "html": "© 2026 Elevate Branson | Powered by <a href=\"https://www.imagemakersusa.com/\">Imagemakers</a>"
+    }
+  ]
+}

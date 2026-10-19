@@ -33,3 +33,7 @@ Do not block the build on these. Use the placeholders in [DECISIONS.md](DECISION
 29. Forward the latest newsletter so the sample note in `docs/NOTIFICATION_EXAMPLES.md` can be replaced. Do not send personal stories in a push.
 30. Add Apple push (APNs) and Android (FCM) credentials to the Expo project before testing notes on a phone.
 31. Check the Give sentence. It was copied from the individual and company donations paragraph on elevatebranson.org/donate/ on 19 October 2026.
+32. License Gotham and Avenir, or confirm Montserrat 600 and Nunito Sans 400 can stay. The website uses Gotham Bold and Avenir Medium. Those files are commercial and are not in the app.
+33. Check the homepage stats and section copy copied on 19 October 2026: 22.4% below the poverty line, 1,500+ residents in sub-par housing, and a shortage of 2,200 housing units, plus The Facts, The Vision, The Solution, Our Difference, Our Role, and The Plan.
+34. Confirm where the Thanksgiving banner should go. The image says to click for event information. The page did not publish a separate destination, so the app opens the homepage.
+35. Confirm the mailing-list address. The site opens a Mailmunch popup at https://elevatebranson.org/#mailmunch-pop-1057830 rather than a standalone form.

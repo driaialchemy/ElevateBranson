@@ -25,6 +25,7 @@ export default function EventsScreen() {
             <ListItem
               detail={`${event.startsOn}. ${event.location}`}
               href={eventPath(event.id)}
+              icon="calendar-outline"
               key={event.id}
               label={event.title}
             />

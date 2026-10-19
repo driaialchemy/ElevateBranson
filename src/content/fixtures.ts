@@ -1,9 +1,12 @@
 import type {
   ContentBundle,
   DayHours,
+  HomeSection,
+  HomeStat,
   Hours,
   HoursSeason,
   Program,
+  SeasonalNotice,
   Weekday,
 } from '@/content/types';
 
@@ -46,6 +49,8 @@ const programs: Program[] = [
     summary:
       'Meals and care for children living in or near poverty, plus a sensory room, after-school and summer programs, and the playground.',
     sourceUrl: 'https://elevatebranson.org/elevate-kids/',
+    imageKey: 'program-elevate-kids',
+    imageAlt: 'Elevate Kids banner from the Elevate Branson website.',
     verify: true,
   },
   {
@@ -55,6 +60,8 @@ const programs: Program[] = [
     summary:
       'Job skills, interview practice, and resume help. Classes meet Monday and Wednesday, 6:00–8:00 P.M., for nine weeks.',
     sourceUrl: 'https://elevatebranson.org/elevate-work/',
+    imageKey: 'program-elevate-work',
+    imageAlt: 'Elevate Work banner from the Elevate Branson website.',
     verify: true,
   },
   {
@@ -63,6 +70,8 @@ const programs: Program[] = [
     slug: 'elevate-entrepreneurs',
     summary: 'Education for people starting a business or a side gig, including an early-stage boot camp.',
     sourceUrl: 'https://elevatebranson.org/elevate-entrepreneurs/',
+    imageKey: 'program-elevate-entrepreneurs',
+    imageAlt: 'Elevate Entrepreneurs banner from the Elevate Branson website.',
     verify: true,
   },
   {
@@ -72,6 +81,8 @@ const programs: Program[] = [
     summary:
       'Help with IDs, mail, paperwork, rides to appointments, case management, and voting. The program connects neighbors with more than 150 organizations.',
     sourceUrl: 'https://elevatebranson.org/elevate-connections/',
+    imageKey: 'program-elevate-connections',
+    imageAlt: 'Elevate Connections banner from the Elevate Branson website.',
     verify: true,
   },
   {
@@ -80,6 +91,8 @@ const programs: Program[] = [
     slug: 'elevate-outreach',
     summary: 'Sack meals delivered to people staying in weekly motels.',
     sourceUrl: 'https://elevatebranson.org/elevate-outreach/',
+    imageKey: 'program-elevate-outreach',
+    imageAlt: 'Elevate Outreach banner from the Elevate Branson website.',
     verify: true,
   },
   {
@@ -88,6 +101,8 @@ const programs: Program[] = [
     slug: 'elevate-rides',
     summary: 'Motorized scooters for getting around Branson, where public transit is limited.',
     sourceUrl: 'https://elevatebranson.org/elevate-rides/',
+    imageKey: 'program-elevate-rides',
+    imageAlt: 'Elevate Rides banner from the Elevate Branson website.',
     verify: true,
   },
   {
@@ -96,6 +111,8 @@ const programs: Program[] = [
     slug: 'elevate-health',
     summary: 'Works with care providers so neighbors can get medical care, including counseling.',
     sourceUrl: 'https://elevatebranson.org/elevate-health/',
+    imageKey: 'program-elevate-health',
+    imageAlt: 'Elevate Health banner from the Elevate Branson website.',
     verify: true,
   },
   {
@@ -114,6 +131,8 @@ const programs: Program[] = [
     summary:
       'A tiny-home neighborhood next to campus for local residents, especially people who work front-line jobs.',
     sourceUrl: 'https://elevatebranson.org/elevate-community/',
+    imageKey: 'program-tiny-house',
+    imageAlt: 'Elevate Community banner from the Elevate Branson website.',
     verify: true,
   },
   {
@@ -131,6 +150,8 @@ const programs: Program[] = [
     slug: 'coffee',
     summary: 'Espresso, lunch specials, desserts, and coffee subscriptions inside Elevate Branson.',
     sourceUrl: 'https://elevatebranson.org/elevate-cafe-and-coffee/',
+    imageKey: 'program-coffee',
+    imageAlt: 'Elevate Coffee banner from the Elevate Branson website.',
     verify: true,
   },
   {
@@ -140,6 +161,8 @@ const programs: Program[] = [
     summary:
       'A second-hand shop. Sales support programs, and the store offers work experience and rewards credits.',
     sourceUrl: 'https://elevatebranson.org/elevate-thrift-store/',
+    imageKey: 'program-thrift',
+    imageAlt: 'Thrift Store banner from the Elevate Branson website.',
     verify: true,
   },
   {
@@ -149,6 +172,8 @@ const programs: Program[] = [
     summary:
       'A natural playground. Time outside is part of how the campus supports children dealing with trauma and stress.',
     sourceUrl: 'https://elevatebranson.org/elevate-playground/',
+    imageKey: 'program-playground',
+    imageAlt: 'Playground photo from the Elevate Branson website.',
     verify: true,
   },
 ];
@@ -248,8 +273,124 @@ const hours: Hours[] = [
   },
 ];
 
+const homePage = 'https://elevatebranson.org/';
+
+const homeStats: HomeStat[] = [
+  {
+    id: 'poverty-rate',
+    value: '22.4%',
+    label: 'of Branson residents are below the poverty line',
+    sourceUrl: homePage,
+    verify: true,
+  },
+  {
+    id: 'motel-housing',
+    value: '1,500+',
+    label: 'Branson residents, including over 300 children, live in sub-par housing including weekly and extended stay motels',
+    sourceUrl: homePage,
+    verify: true,
+  },
+  {
+    id: 'housing-shortage',
+    value: '-2,200',
+    label: 'Branson has a shortage of over 2200 housing units to meet the current demand',
+    sourceUrl: homePage,
+    verify: true,
+  },
+];
+
+const homeSections: HomeSection[] = [
+  {
+    id: 'hero',
+    eyebrow: '',
+    title: 'Helping Families Break the Cycle of Poverty',
+    body: 'Job training, housing, and community support in Branson, Missouri.',
+    imageKey: 'hero',
+    imageAlt: 'Portraits of neighbors, including a graduate holding a certificate of completion.',
+    actions: [{ label: 'TAKE THE NEXT STEP', href: '/get-involved' }],
+    sourceUrl: homePage,
+    verify: true,
+  },
+  {
+    id: 'facts',
+    eyebrow: 'The facts',
+    title: '',
+    body: 'Even the most prosperous communities have families struggling with painful housing, nutritional, health, and employment issues. Handouts and government assistance provide short term help but don’t create real and lasting change – so the problem keeps growing.',
+    imageKey: 'facts',
+    imageAlt: 'A parent and three children sitting together on a couch.',
+    actions: [{ label: 'LEARN MORE', href: 'https://elevatebranson.org/learn-more/' }],
+    sourceUrl: homePage,
+    verify: true,
+  },
+  {
+    id: 'vision',
+    eyebrow: 'The vision',
+    title: '',
+    body: 'For every individual to know hope, dignity, and purpose through the love of Jesus.',
+    actions: [],
+    sourceUrl: homePage,
+    verify: true,
+  },
+  {
+    id: 'solution',
+    eyebrow: 'The solution',
+    title: '',
+    body: 'We elevate Branson by helping our neighbors help themselves, with programs for their physical, relational, and spiritual needs. We love people where they are, so that we can help them find purpose, make connections, and develop the skills and authentic relationships we all need to prosper.',
+    actions: [],
+    sourceUrl: homePage,
+    verify: true,
+  },
+  {
+    id: 'difference',
+    eyebrow: 'Our difference',
+    title: '',
+    body: 'Elevate Branson is addressing the root causes of generational poverty in order to create lasting change. We believe that the only way out of poverty is through employment. We can love people, serve people and educate people, but earning a dignified income is the only way to climb the economic ladder. We provide resources, relationships, and a network of support that provides hope, dignity, and purposeful work.',
+    imageKey: 'difference',
+    imageAlt: 'Photo from the Our Difference section of the Elevate Branson website.',
+    actions: [{ label: 'SCHEDULE A TOUR', href: '/get-involved/tour' }],
+    sourceUrl: homePage,
+    verify: true,
+  },
+  {
+    id: 'role',
+    eyebrow: 'Our role',
+    title: '',
+    body: 'Since 2008, we’ve cared for and worked with our neighbors in need. None of us want substandard housing, hunger, or employment to hurt families and hinder our community. Real solutions take time, patience, and dedication. We’ve seen long-term success achieved with love, accountability, and community-wide support.',
+    imageKey: 'role',
+    imageAlt: 'Photo from the Our Role section of the Elevate Branson website.',
+    actions: [],
+    sourceUrl: homePage,
+    verify: true,
+  },
+  {
+    id: 'plan',
+    eyebrow: 'The plan',
+    title: 'You can be part of the solution.',
+    body: '',
+    actions: [
+      { label: 'Learn More', href: 'https://elevatebranson.org/learn-more/' },
+      { label: 'Volunteer', href: '/get-involved/volunteer' },
+      { label: 'Donate', href: '/get-involved/give' },
+    ],
+    sourceUrl: homePage,
+    verify: true,
+  },
+];
+
+const seasonalNotice: SeasonalNotice = {
+  id: 'thanksgiving-banner',
+  imageKey: 'banner',
+  alt: 'A turkey mascot and the words Click here for Thanksgiving event information.',
+  href: homePage,
+  sourceUrl: homePage,
+  verify: true,
+};
+
 export const fixtures: ContentBundle = {
   programs,
+  homeSections,
+  homeStats,
+  seasonalNotice,
   events: [],
   resources: [],
   housingListings: [],
@@ -320,6 +461,9 @@ export const fixtures: ContentBundle = {
       { label: 'LinkedIn', url: 'https://www.linkedin.com/company/elevate-branson' },
     ],
     donateUrl: 'https://elevatebranson.org/donate/',
+    donateLabel: 'DONATE NOW',
+    mailingListUrl: 'https://elevatebranson.org/#mailmunch-pop-1057830',
+    mailingListLabel: 'Join our mailing list',
     giveBlurb:
       'Individuals, families, and organizations who want to support all that we do to improve our community can make a one-time or recurring gift that empowers our neighbors to reach their full potential.',
     merchUrl: '',

@@ -49,6 +49,42 @@ export type Program = {
   summary: string;
   sourceUrl: string;
   verify: true;
+  imageKey?: string;
+  imageAlt?: string;
+};
+
+export type HomeAction = {
+  label: string;
+  href: string;
+};
+
+export type HomeSection = {
+  id: string;
+  eyebrow: string;
+  title: string;
+  body: string;
+  imageKey?: string;
+  imageAlt?: string;
+  actions: HomeAction[];
+  sourceUrl: string;
+  verify: true;
+};
+
+export type HomeStat = {
+  id: string;
+  value: string;
+  label: string;
+  sourceUrl: string;
+  verify: true;
+};
+
+export type SeasonalNotice = {
+  id: string;
+  imageKey: string;
+  alt: string;
+  href: string;
+  sourceUrl: string;
+  verify: true;
 };
 
 export type CalendarEvent = {
@@ -120,8 +156,11 @@ export type SiteSettings = {
   volunteerEmail: string;
   socialLinks: SocialLink[];
   donateUrl: string;
+  donateLabel?: string;
   /** Short sentence on the Give screen. Optional so an older saved copy still loads. */
   giveBlurb?: string;
+  mailingListUrl?: string;
+  mailingListLabel?: string;
   merchUrl: string;
   websiteUrl: string;
   tourUrl: string;
@@ -131,6 +170,9 @@ export type SiteSettings = {
 
 export type ContentBundle = {
   programs: Program[];
+  homeSections?: HomeSection[];
+  homeStats?: HomeStat[];
+  seasonalNotice?: SeasonalNotice | null;
   events: CalendarEvent[];
   resources: Resource[];
   housingListings: HousingListing[];

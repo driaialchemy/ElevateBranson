@@ -1,4 +1,5 @@
 import * as Linking from 'expo-linking';
+import { type Href, router } from 'expo-router';
 import * as WebBrowser from 'expo-web-browser';
 import { Platform } from 'react-native';
 
@@ -14,6 +15,18 @@ export function openExternal(url: string) {
     return;
   }
   void Linking.openURL(trimmed);
+}
+
+export function openHref(href: string) {
+  const trimmed = href.trim();
+  if (!trimmed) {
+    return;
+  }
+  if (isBrowserLink(trimmed)) {
+    openExternal(trimmed);
+    return;
+  }
+  router.push(trimmed as Href);
 }
 
 export function openCall(phone: string) {
