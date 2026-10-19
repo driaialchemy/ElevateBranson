@@ -1,0 +1,21 @@
+import { handleSubmit } from '../src/server/handleSubmit';
+
+const store = new Map<string, number[]>();
+
+type WorkerEnv = {
+  RESEND_API_KEY?: string;
+  RESEND_FROM?: string;
+  VOLUNTEER_COORDINATOR_EMAIL?: string;
+  TOUR_CONTACT_EMAIL?: string;
+  PRAYER_TEAM_EMAIL?: string;
+};
+
+export default {
+  fetch(request: Request, env: WorkerEnv) {
+    const path = new URL(request.url).pathname;
+    if (path !== '/api/submit') {
+      return new Response('Not found', { status: 404 });
+    }
+    return handleSubmit(request, { env, store });
+  },
+};

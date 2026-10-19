@@ -27,7 +27,8 @@
     "react-native-safe-area-context": "~5.7.0",
     "react-native-screens": "~4.26.0",
     "react-native-web": "~0.21.0",
-    "react-native-worklets": "0.10.1"
+    "react-native-worklets": "0.10.1",
+    "zod": "^3.25.76"
   },
   "devDependencies": {
     "@types/react": "~19.2.2",
@@ -43,7 +44,7 @@
     "web": "expo start --web",
     "lint": "expo lint",
     "typecheck": "tsc --noEmit",
-    "test": "tsx --test src/navigation/map.test.ts src/theme/contrast.test.ts src/content/fixtures.test.ts src/content/query.test.ts src/content/links.test.ts src/content/swr.test.ts src/content/format.test.ts src/content/guard.test.ts src/content/openStatus.test.ts src/content/freshness.test.ts"
+    "test": "tsx --test src/navigation/map.test.ts src/theme/contrast.test.ts src/content/fixtures.test.ts src/content/query.test.ts src/content/links.test.ts src/content/swr.test.ts src/content/format.test.ts src/content/guard.test.ts src/content/openStatus.test.ts src/content/freshness.test.ts src/server/handleSubmit.test.ts src/forms/queue.test.ts"
   },
   "private": true
 }

@@ -84,4 +84,6 @@ Find Us: an address card with the address, phone, hours, Call, and Open in Maps.
 
 Links: website, newsletter, social, and donate pages open in the in-app browser. Phone calls and maps stay with the phone's own apps. No embedded web view.
 
+Forms: volunteer, tour, and prayer post to `/api/submit`. Staff addresses and the Resend key stay in server environment variables. The tour website stays the primary scheduler. The in-app tour form is the fallback. Offline submissions wait on the phone and send when the connection returns.
+
 Hours: each season stores a repeating MM-DD start and end, weekly open and close times, and optional holiday closures. Open or closed is decided in America/Chicago by getOpenStatus. Date ranges the website did not publish stay TODO.
