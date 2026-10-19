@@ -1,13 +1,19 @@
 import * as Linking from 'expo-linking';
+import * as WebBrowser from 'expo-web-browser';
 import { Platform } from 'react-native';
 
-import { callUrl, mapUrl } from '@/content/links';
+import { callUrl, isBrowserLink, mapUrl } from '@/content/links';
 
 export function openExternal(url: string) {
-  if (!url.trim()) {
+  const trimmed = url.trim();
+  if (!trimmed) {
     return;
   }
-  void Linking.openURL(url);
+  if (isBrowserLink(trimmed)) {
+    void WebBrowser.openBrowserAsync(trimmed);
+    return;
+  }
+  void Linking.openURL(trimmed);
 }
 
 export function openCall(phone: string) {

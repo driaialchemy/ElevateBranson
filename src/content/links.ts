@@ -1,3 +1,7 @@
+export function isBrowserLink(url: string): boolean {
+  return /^https?:\/\//i.test(url.trim());
+}
+
 export function callUrl(phone: string): string | null {
   const digits = phone.replace(/[^\d+]/g, '');
   if (digits.replace('+', '').length < 7) {

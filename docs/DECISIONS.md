@@ -82,4 +82,6 @@ Content: starter copy from the public website ships in the app until EXPO_PUBLIC
 
 Find Us: an address card with the address, phone, hours, Call, and Open in Maps. No static map and no map API key.
 
+Links: website, newsletter, social, and donate pages open in the in-app browser. Phone calls and maps stay with the phone's own apps. No embedded web view.
+
 Hours: each season stores a repeating MM-DD start and end, weekly open and close times, and optional holiday closures. Open or closed is decided in America/Chicago by getOpenStatus. Date ranges the website did not publish stay TODO.
