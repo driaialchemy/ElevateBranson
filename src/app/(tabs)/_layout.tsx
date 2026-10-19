@@ -52,6 +52,7 @@ export default function TabLayout() {
       <Tabs.Screen
         name="events"
         options={{
+          headerShown: false,
           title: 'Events',
           tabBarLabel: ({ color }) => <TabLabel color={color} label="Events" />,
           tabBarAccessibilityLabel: 'Events',

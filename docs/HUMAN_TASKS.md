@@ -11,8 +11,8 @@ Do not block the build on these. Use the placeholders in [DECISIONS.md](DECISION
 7. Confirm the volunteer inbox can stay Volunteer@ElevateBranson.org.
 8. Name the prayer-request inbox. Until then the server uses a placeholder and does not send real prayer mail.
 9. Confirm who receives the existing tour form at [elevatebranson.org/schedule-a-tour](https://elevatebranson.org/schedule-a-tour/).
-10. Say whether Elevate Branson is already approved by Apple for in-app fundraising. Until then, Give opens the website donate page.
-11. Send the merch store URL, or confirm there is no online shirt store yet.
+10. Say whether Elevate Branson is already approved by Apple for in-app fundraising. Until then, Give opens the website donate page in the in-app browser. The app does not collect or store payment data.
+11. Send the merch store URL, or confirm there is no online shirt store yet. Shirts stay on that outside page. The app does not use in-app purchase.
 12. Provide the affordable housing list and how often it changes. Do not send it in chat if it contains private resident information. Organization names and public phone numbers are enough.
 13. Confirm or correct the working program list in [OPEN_QUESTIONS.md](OPEN_QUESTIONS.md).
 14. Provide the logo, brand colors, and fonts.
@@ -32,3 +32,4 @@ Do not block the build on these. Use the placeholders in [DECISIONS.md](DECISION
 28. Replace the shared staff-page password with individual staff logins. Until then the send page uses one secret in `STAFF_PUSH_SECRET`.
 29. Forward the latest newsletter so the sample note in `docs/NOTIFICATION_EXAMPLES.md` can be replaced. Do not send personal stories in a push.
 30. Add Apple push (APNs) and Android (FCM) credentials to the Expo project before testing notes on a phone.
+31. Check the Give sentence. It was copied from the individual and company donations paragraph on elevatebranson.org/donate/ on 19 October 2026.

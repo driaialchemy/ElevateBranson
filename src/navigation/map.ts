@@ -52,6 +52,7 @@ export const getInvolvedLinks = [
 ] as const;
 
 export const moreLinks = [
+  { label: 'Give', href: '/get-involved/give', detail: 'Donate on the Elevate Branson website.' },
   { label: 'About Us', href: '/more/about', detail: 'Who Elevate Branson is.' },
   { label: 'Find Us', href: '/more/find-us', detail: 'Address, map, and phone.' },
   { label: 'Resources', href: '/more/resources', detail: 'Partner groups and the housing list.' },

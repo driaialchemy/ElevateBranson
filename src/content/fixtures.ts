@@ -320,6 +320,8 @@ export const fixtures: ContentBundle = {
       { label: 'LinkedIn', url: 'https://www.linkedin.com/company/elevate-branson' },
     ],
     donateUrl: 'https://elevatebranson.org/donate/',
+    giveBlurb:
+      'Individuals, families, and organizations who want to support all that we do to improve our community can make a one-time or recurring gift that empowers our neighbors to reach their full potential.',
     merchUrl: '',
     websiteUrl: 'https://elevatebranson.org/',
     tourUrl: 'https://elevatebranson.org/schedule-a-tour/',

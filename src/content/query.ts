@@ -45,8 +45,16 @@ export function todayIso(now = new Date()): string {
   return `${now.getFullYear()}-${month}-${day}`;
 }
 
-export function nextCalendarEvent(events: CalendarEvent[], today: string): CalendarEvent | undefined {
+export function eventById(events: CalendarEvent[], id: string): CalendarEvent | undefined {
+  return events.find((event) => event.id === id);
+}
+
+export function upcomingEvents(events: CalendarEvent[], today: string): CalendarEvent[] {
   return events
     .filter((event) => event.startsOn >= today)
-    .sort((a, b) => a.startsOn.localeCompare(b.startsOn))[0];
+    .sort((a, b) => a.startsOn.localeCompare(b.startsOn) || a.title.localeCompare(b.title));
+}
+
+export function nextCalendarEvent(events: CalendarEvent[], today: string): CalendarEvent | undefined {
+  return upcomingEvents(events, today)[0];
 }

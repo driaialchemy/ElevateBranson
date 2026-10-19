@@ -8,7 +8,7 @@ Five bottom tabs. From Home, every feature is one or two taps. A tab is one tap.
 | Programs | Program list, plus Thrift Store, Elevate Coffee, Playground, and Tiny House |
 | Events | Upcoming events |
 | Get Involved | Volunteer, Tour, Prayer, Give, Merch |
-| More | About, Find Us, Resources, Social, Website, Newsletter, Privacy |
+| More | Give, About, Find Us, Resources, Social, Website, Newsletter, Notifications, Privacy |
 
 About also links to Find Us and Newsletter.
 
@@ -27,11 +27,11 @@ About also links to Find Us and Newsletter.
 | 9 | Tiny House info/updates | `/programs/tiny-house` | 2 |
 | 10 | Newest newsletter | `/more/newsletter` | 1, Home shortcut and the card on Home |
 | 11 | Website link | `/more/website` | 2 |
-| 12 | Upcoming events | `/events` | 1 |
+| 12 | Upcoming events | `/events` and `/events/[id]` | 1 |
 | 13 | Programs | `/programs` | 1 |
 | 14 | Thrift Store | `/programs/thrift` | 2 |
 | 15 | Elevate Coffee | `/programs/coffee` | 2 |
-| 16 | Give/donate | `/get-involved/give` | 1, Home shortcut |
+| 16 | Give/donate | `/get-involved/give` | 1, Home shortcut and the More list |
 | 17 | Playground | `/programs/playground` | 2 |
 
 Other program names in the list (Elevate Kids, Elevate Work, and the rest) open `/programs/[slug]`. That is still two taps: Programs, then the name.

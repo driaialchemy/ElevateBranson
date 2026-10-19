@@ -30,6 +30,15 @@
         }
       ],
       [
+        "expo-calendar",
+        {
+          "calendarPermission": "Elevate Branson adds an event you choose to your calendar.",
+          "remindersPermission": false,
+          "writeOnlyAccess": true,
+          "writeOnlyCalendarPermission": "Elevate Branson adds an event you choose to your calendar."
+        }
+      ],
+      [
         "expo-splash-screen",
         {
           "backgroundColor": "#174A5B",

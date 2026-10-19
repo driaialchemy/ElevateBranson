@@ -6,6 +6,7 @@ import { ListItem } from '@/components/ListItem';
 import { Screen } from '@/components/Screen';
 import { useContent } from '@/content/client';
 import { latestNewsletter, nextCalendarEvent, todayIso } from '@/content/query';
+import { eventPath, isEventId } from '@/events/schedule';
 import { homeQuickActions } from '@/navigation/map';
 import { tokens } from '@/theme/tokens';
 
@@ -51,6 +52,9 @@ export default function HomeScreen() {
         }
         title="Next event"
       />
+      {upcoming && isEventId(upcoming.id) ? (
+        <ListItem href={eventPath(upcoming.id)} label="See this event" />
+      ) : null}
     </Screen>
   );
 }

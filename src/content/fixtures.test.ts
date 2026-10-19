@@ -50,3 +50,9 @@ test('newsletters are the public issues', () => {
   assert.ok(fixtures.newsletters.some((issue) => issue.title === 'September 2026 Newsletter'));
   assert.equal(fixtures.siteSettings.address, '310 Gretna Road, Branson, MO 65616');
 });
+
+test('giving opens the public donate page and does not store a card', () => {
+  assert.equal(fixtures.siteSettings.donateUrl, 'https://elevatebranson.org/donate/');
+  assert.match(fixtures.siteSettings.giveBlurb ?? '', /one-time or recurring gift/);
+  assert.equal(JSON.stringify(fixtures).toLowerCase().includes('card number'), false);
+});

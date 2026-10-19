@@ -2,7 +2,7 @@ import { useRouter } from 'expo-router';
 import { useEffect } from 'react';
 
 import { noteFromContent, rememberNote } from '@/notifications/inboxStore';
-import { isKnownRoute } from '@/push/topics';
+import { isOpenableHref } from '@/events/schedule';
 
 export function NotificationListener() {
   const router = useRouter();
@@ -33,7 +33,7 @@ export function NotificationListener() {
             void rememberNote(note);
           }
           const href = typeof content.data?.href === 'string' ? content.data.href : '';
-          if (isKnownRoute(href)) {
+          if (isOpenableHref(href)) {
             router.push(href);
           }
         });

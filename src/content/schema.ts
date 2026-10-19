@@ -48,6 +48,7 @@ export const cmsSchema = {
       'volunteerEmail',
       'socialLinks',
       'donateUrl',
+      'giveBlurb',
       'merchUrl',
       'websiteUrl',
       'tourUrl',
@@ -65,5 +66,5 @@ export const contentQuery = `{
   "tinyHouseUpdates": *[_type == "tinyHouseUpdate"]{ "id": _id, title, body, publishedOn, sourceUrl, verify },
   "hours": *[_type == "hours"]{ "id": _id, place, seasons, closures, sourceUrl, verify, lastVerified, verifiedBy },
   "newsletters": *[_type == "newsletterIssue"]{ "id": _id, title, publishedOn, url, sourceUrl, verify },
-  "siteSettings": *[_type == "siteSettings"][0]{ mission, vision, address, phone, thriftPhone, infoEmail, volunteerEmail, socialLinks, donateUrl, merchUrl, websiteUrl, tourUrl, sourceUrl, verify }
+  "siteSettings": *[_type == "siteSettings"][0]{ mission, vision, address, phone, thriftPhone, infoEmail, volunteerEmail, socialLinks, donateUrl, giveBlurb, merchUrl, websiteUrl, tourUrl, sourceUrl, verify }
 }`;

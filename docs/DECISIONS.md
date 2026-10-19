@@ -12,7 +12,7 @@ Defaults below are marked **assumed** unless a public page or vendor doc settled
 | Push | Expo Push Service. Test with a development build on a physical device. | assumed |
 | Forms host | Cloudflare Worker at `/api/submit`. Vercel remains acceptable if the Worker account is a problem. | assumed |
 | Form email | Resend, after a domain is verified. Until then, submissions can be tested only to the Resend account email. | assumed |
-| Give | Open [https://elevatebranson.org/donate/](https://elevatebranson.org/donate/) in the system browser. No card form in the app. Neon CRM is the processor behind that page. | assumed |
+| Give | Open [https://elevatebranson.org/donate/](https://elevatebranson.org/donate/) in the in-app browser. No card form in the app. Neon CRM is the processor behind that page. | assumed |
 | In-app fundraising | Not used. Treat Elevate Branson as not yet approved under App Store 3.2.1(vi). | verify |
 | Merch | No store URL found. Placeholder screen. Physical goods later use an external checkout (App Store 3.1.3(e)). | assumed |
 | Tours | Primary: open [https://elevatebranson.org/schedule-a-tour/](https://elevatebranson.org/schedule-a-tour/) (WPForms). Fallback: in-app form for offline use. | assumed |
@@ -89,3 +89,5 @@ Forms: volunteer, tour, and prayer post to `/api/submit`. Staff addresses and th
 Push: Expo Push Service. The phone asks only after a person opens a page, then only if they agree. Tokens are stored with topic choices and no name or contact. Staff send from `/staff/notify` with one shared secret, a preview, a test send, a confirm step, and a 15-minute cooldown.
 
 Hours: each season stores a repeating MM-DD start and end, weekly open and close times, and optional holiday closures. Open or closed is decided in America/Chicago by getOpenStatus. Date ranges the website did not publish stay TODO.
+
+Give, merch, and events: Give uses the donate URL from site settings and opens it in the in-app browser. The app stores no payment data. Merch opens the shirt-store URL the same way when staff add one. Each event has a detail page. Add to calendar writes an all-day event on the phone. Remind me schedules a local note at 9:00 a.m. Central Time on that date, and only after the person taps it. Share uses the phone share sheet.

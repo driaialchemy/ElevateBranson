@@ -1,7 +1,7 @@
 import AsyncStorage from '@react-native-async-storage/async-storage';
 
+import { isOpenableHref } from '@/events/schedule';
 import { addInboxNote, type InboxNote } from '@/push/inbox';
-import { isKnownRoute } from '@/push/topics';
 
 const inboxKey = 'push-inbox';
 
@@ -25,7 +25,7 @@ export async function rememberNote(note: InboxNote) {
 
 export function noteFromContent(content: { title?: string | null; body?: string | null; data?: Record<string, unknown> }): InboxNote | null {
   const href = typeof content.data?.href === 'string' ? content.data.href : '';
-  if (!isKnownRoute(href)) {
+  if (!isOpenableHref(href)) {
     return null;
   }
   return {

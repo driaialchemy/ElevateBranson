@@ -7,6 +7,7 @@
     "@react-native-async-storage/async-storage": "2.2.0",
     "@react-native-community/netinfo": "12.0.1",
     "expo": "~57.0.30",
+    "expo-calendar": "~57.0.5",
     "expo-constants": "~57.0.22",
     "expo-device": "~57.0.2",
     "expo-font": "~57.0.4",
@@ -45,7 +46,7 @@
     "web": "expo start --web",
     "lint": "expo lint",
     "typecheck": "tsc --noEmit",
-    "test": "tsx --test src/navigation/map.test.ts src/theme/contrast.test.ts src/content/fixtures.test.ts src/content/query.test.ts src/content/links.test.ts src/content/swr.test.ts src/content/format.test.ts src/content/guard.test.ts src/content/openStatus.test.ts src/content/freshness.test.ts src/server/handleSubmit.test.ts src/forms/queue.test.ts src/push/push.test.ts"
+    "test": "tsx --test src/navigation/map.test.ts src/theme/contrast.test.ts src/content/fixtures.test.ts src/content/query.test.ts src/content/links.test.ts src/content/swr.test.ts src/content/format.test.ts src/content/guard.test.ts src/content/openStatus.test.ts src/content/freshness.test.ts src/server/handleSubmit.test.ts src/forms/queue.test.ts src/push/push.test.ts src/events/schedule.test.ts"
   },
   "private": true
 }

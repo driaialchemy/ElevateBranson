@@ -55,6 +55,7 @@ export type CalendarEvent = {
   id: string;
   title: string;
   summary: string;
+  /** YYYY-MM-DD. The app treats this as an all-day event in America/Chicago. */
   startsOn: string;
   location: string;
   sourceUrl: string;
@@ -119,6 +120,8 @@ export type SiteSettings = {
   volunteerEmail: string;
   socialLinks: SocialLink[];
   donateUrl: string;
+  /** Short sentence on the Give screen. Optional so an older saved copy still loads. */
+  giveBlurb?: string;
   merchUrl: string;
   websiteUrl: string;
   tourUrl: string;
