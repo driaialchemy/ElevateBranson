@@ -8,7 +8,7 @@ import { NetworkProvider } from '@/network/NetworkProvider';
 
 export default function RootLayout() {
   return (
-    <SafeAreaProvider>
+    <SafeAreaProvider style={{ flex: 1, maxWidth: '100%', minWidth: 0, width: '100%' }}>
       <NetworkProvider>
         <FormQueueRunner />
         <NotificationListener />

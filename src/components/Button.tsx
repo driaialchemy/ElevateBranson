@@ -11,6 +11,8 @@ export function Button({ label, onPress }: { label: string; onPress: () => void 
       style={({ pressed }) => ({
         alignItems: 'center',
         backgroundColor: pressed ? tokens.color.text : tokens.color.primary,
+        maxWidth: '100%',
+        minWidth: 0,
         borderRadius: tokens.radius,
         justifyContent: 'center',
         minHeight: tokens.tapTarget,
@@ -23,6 +25,8 @@ export function Button({ label, onPress }: { label: string; onPress: () => void 
           fontFamily: tokens.font.family.body,
           fontSize: tokens.font.size.body,
           lineHeight: tokens.font.lineHeight.body,
+          maxWidth: '100%',
+          textAlign: 'center',
         }}>
         {label}
       </Text>

@@ -4,6 +4,8 @@ export function HoneypotField({ value, onChangeText }: { value: string; onChange
   return (
     <TextInput
       accessibilityElementsHidden
+      accessible={false}
+      aria-hidden
       importantForAccessibility="no-hide-descendants"
       onChangeText={onChangeText}
       style={{ height: 0, opacity: 0, position: 'absolute', width: 0 }}

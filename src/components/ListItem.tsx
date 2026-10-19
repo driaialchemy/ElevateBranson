@@ -20,6 +20,8 @@ export function ListItem({
         style={({ pressed }) => ({
           backgroundColor: pressed ? tokens.color.background : tokens.color.surface,
           borderColor: tokens.color.border,
+          maxWidth: '100%',
+          minWidth: 0,
           borderRadius: tokens.radius,
           borderWidth: 1,
           justifyContent: 'center',

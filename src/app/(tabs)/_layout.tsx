@@ -7,13 +7,15 @@ import { tokens } from '@/theme/tokens';
 function TabLabel({ color, label }: { color: ColorValue; label: string }) {
   return (
     <Text
-      numberOfLines={2}
       style={{
         color,
+        flexShrink: 1,
         fontFamily: tokens.font.family.body,
         fontSize: tokens.font.size.body,
         lineHeight: tokens.font.lineHeight.body,
+        maxWidth: '100%',
         textAlign: 'center',
+        width: '100%',
       }}>
       {label}
     </Text>
@@ -25,11 +27,18 @@ export default function TabLayout() {
     <Tabs
       screenOptions={{
         ...stackScreenOptions,
+        sceneStyle: { flex: 1, maxWidth: '100%', minWidth: 0, width: '100%' },
         tabBarActiveTintColor: tokens.color.primary,
         tabBarInactiveTintColor: tokens.color.textMuted,
+        tabBarItemStyle: {
+          flex: 1,
+          minWidth: 0,
+          paddingHorizontal: 2,
+        },
         tabBarStyle: {
           backgroundColor: tokens.color.surface,
-          minHeight: tokens.tapTarget + tokens.space.lg,
+          minHeight: tokens.tapTarget + tokens.font.lineHeight.body * 2,
+          width: '100%',
         },
       }}>
       <Tabs.Screen

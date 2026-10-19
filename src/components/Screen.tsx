@@ -11,9 +11,11 @@ export function Screen({ children }: { children: React.ReactNode }) {
   const { online, refresh } = useNetwork();
 
   return (
-    <View style={{ backgroundColor: tokens.color.background, flex: 1 }}>
+    <View style={{ backgroundColor: tokens.color.background, flex: 1, maxWidth: '100%', minWidth: 0, width: '100%' }}>
       <OfflineBanner />
-      <ScrollView contentContainerStyle={{ gap: tokens.space.md, padding: tokens.space.md }}>
+      <ScrollView
+        contentContainerStyle={{ gap: tokens.space.md, maxWidth: '100%', minWidth: 0, padding: tokens.space.md, width: '100%' }}
+        style={{ flex: 1, maxWidth: '100%', minWidth: 0, width: '100%' }}>
         {online ? null : <ErrorState message={offlineMessage} onRetry={() => void refresh()} />}
         <PushOffer />
         {children}

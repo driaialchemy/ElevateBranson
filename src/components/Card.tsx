@@ -8,6 +8,8 @@ export function Card({ title, body }: { title?: string; body: string }) {
       style={{
         backgroundColor: tokens.color.surface,
         borderColor: tokens.color.border,
+        maxWidth: '100%',
+        minWidth: 0,
         borderLeftColor: tokens.color.green,
         borderLeftWidth: 6,
         borderRadius: tokens.radius,
