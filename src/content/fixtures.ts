@@ -17,12 +17,17 @@ const weekdays: Weekday[] = [
   'sunday',
 ];
 
-function season(label: string, open: Partial<Record<Weekday, [string, string]>>): HoursSeason {
+function season(
+  name: string,
+  open: Partial<Record<Weekday, [string, string]>>,
+  startDate: string,
+  endDate: string,
+): HoursSeason {
   const days: DayHours[] = weekdays.map((day) => {
     const span = open[day];
     return span ? { day, opens: span[0], closes: span[1] } : { day, opens: null, closes: null };
   });
-  return { label, days };
+  return { name, label: name, startDate, endDate, days, verify: true };
 }
 
 const weekday = (opens: string, closes: string): Partial<Record<Weekday, [string, string]>> => ({
@@ -154,14 +159,22 @@ const hours: Hours[] = [
     place: 'campus',
     sourceUrl: 'https://elevatebranson.org/contact-us/',
     verify: true,
+    closures: [],
+    lastVerified: '2026-10-17',
+    verifiedBy: 'elevatebranson.org',
     seasons: [
-      season('Campus', {
-        monday: ['09:00', '18:00'],
-        tuesday: ['13:00', '18:00'],
-        wednesday: ['09:00', '18:00'],
-        thursday: ['10:00', '18:00'],
-        friday: ['09:00', '16:00'],
-      }),
+      season(
+        'Campus',
+        {
+          monday: ['09:00', '18:00'],
+          tuesday: ['13:00', '18:00'],
+          wednesday: ['09:00', '18:00'],
+          thursday: ['10:00', '18:00'],
+          friday: ['09:00', '16:00'],
+        },
+        'TODO',
+        'TODO',
+      ),
     ],
   },
   {
@@ -169,42 +182,68 @@ const hours: Hours[] = [
     place: 'coffee',
     sourceUrl: 'https://elevatebranson.org/elevate-cafe-and-coffee/',
     verify: true,
-    seasons: [season('Coffee shop', weekday('08:00', '15:00'))],
+    closures: [],
+    lastVerified: '2026-10-17',
+    verifiedBy: 'elevatebranson.org',
+    seasons: [season('Coffee shop', weekday('08:00', '15:00'), 'TODO', 'TODO')],
   },
   {
     id: 'hours-thrift',
     place: 'thrift',
     sourceUrl: 'https://elevatebranson.org/elevate-thrift-store/',
     verify: true,
-    seasons: [season('Thrift store', { ...weekday('09:00', '18:00'), saturday: ['09:00', '16:00'] })],
+    closures: [],
+    lastVerified: '2026-10-17',
+    verifiedBy: 'elevatebranson.org',
+    seasons: [
+      season('Thrift store', { ...weekday('09:00', '18:00'), saturday: ['09:00', '16:00'] }, 'TODO', 'TODO'),
+    ],
   },
   {
     id: 'hours-playground',
     place: 'playground',
     sourceUrl: 'https://elevatebranson.org/elevate-playground/',
     verify: true,
+    closures: [],
+    lastVerified: '2026-10-17',
+    verifiedBy: 'elevatebranson.org',
     seasons: [
-      season('School year', {
-        monday: ['09:00', '17:00'],
-        tuesday: ['09:00', '15:30'],
-        wednesday: ['09:00', '17:00'],
-        thursday: ['09:00', '15:30'],
-        friday: ['09:00', '15:30'],
-      }),
-      season('June and July', {
-        monday: ['13:00', '17:30'],
-        tuesday: ['13:00', '17:30'],
-        wednesday: ['13:00', '17:30'],
-        thursday: ['09:00', '17:30'],
-        friday: ['09:00', '15:30'],
-      }),
-      season('August', {
-        monday: ['09:00', '17:30'],
-        tuesday: ['13:00', '17:30'],
-        wednesday: ['09:00', '17:30'],
-        thursday: ['09:00', '17:30'],
-        friday: ['09:00', '15:30'],
-      }),
+      season(
+        'School year',
+        {
+          monday: ['09:00', '17:00'],
+          tuesday: ['09:00', '15:30'],
+          wednesday: ['09:00', '17:00'],
+          thursday: ['09:00', '15:30'],
+          friday: ['09:00', '15:30'],
+        },
+        'TODO',
+        'TODO',
+      ),
+      season(
+        'June and July',
+        {
+          monday: ['13:00', '17:30'],
+          tuesday: ['13:00', '17:30'],
+          wednesday: ['13:00', '17:30'],
+          thursday: ['09:00', '17:30'],
+          friday: ['09:00', '15:30'],
+        },
+        '06-01',
+        '07-31',
+      ),
+      season(
+        'August',
+        {
+          monday: ['09:00', '17:30'],
+          tuesday: ['13:00', '17:30'],
+          wednesday: ['09:00', '17:30'],
+          thursday: ['09:00', '17:30'],
+          friday: ['09:00', '15:30'],
+        },
+        '08-01',
+        '08-31',
+      ),
     ],
   },
 ];

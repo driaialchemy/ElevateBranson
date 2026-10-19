@@ -79,3 +79,7 @@ Volunteer, tour, and prayer volume for this org fits the free quota. Domain veri
 Branding: mirror the website. Assumed until the CEO supplies official brand files.
 
 Content: starter copy from the public website ships in the app until EXPO_PUBLIC_SANITY_PROJECT_ID is a real project. The app accepts a public read token only. Housing, events, and the partner directory stay empty until staff publish them.
+
+Find Us: an address card with the address, phone, hours, Call, and Open in Maps. No static map and no map API key.
+
+Hours: each season stores a repeating MM-DD start and end, weekly open and close times, and optional holiday closures. Open or closed is decided in America/Chicago by getOpenStatus. Date ranges the website did not publish stay TODO.

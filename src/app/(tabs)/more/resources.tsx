@@ -8,8 +8,14 @@ import { EmptyState } from '@/components/EmptyState';
 import { openCall, openMap } from '@/components/openLink';
 import { Screen } from '@/components/Screen';
 import { useContent } from '@/content/client';
-import { filterResources, resourceCategories } from '@/content/query';
+import { freshnessNote } from '@/content/freshness';
+import { filterResources, resourceCategories, visibleHousing } from '@/content/query';
 import { tokens } from '@/theme/tokens';
+
+function withNote(body: string, lastVerified?: string) {
+  const note = freshnessNote(lastVerified);
+  return note ? `${body}\n${note}` : body;
+}
 
 export default function ResourcesScreen() {
   const { data } = useContent();
@@ -17,6 +23,7 @@ export default function ResourcesScreen() {
   const [category, setCategory] = useState('All');
   const categories = resourceCategories(data.resources);
   const visible = filterResources(data.resources, query, category);
+  const housing = visibleHousing(data.housingListings);
 
   return (
     <Screen>
@@ -91,12 +98,15 @@ export default function ResourcesScreen() {
       ) : (
         visible.map((resource) => (
           <View key={resource.id} style={{ gap: tokens.space.sm }}>
-            <Card body={`${resource.category}. ${resource.summary}`} title={resource.name} />
+            <Card
+              body={withNote(`${resource.category}. ${resource.summary}`, resource.lastVerified)}
+              title={resource.name}
+            />
             {resource.phone ? (
               <Button label={`Call ${resource.name}`} onPress={() => openCall(resource.phone)} />
             ) : null}
             {resource.address ? (
-              <Button label={`Map ${resource.name}`} onPress={() => openMap(resource.address)} />
+              <Button label={`Open ${resource.name} in Maps`} onPress={() => openMap(resource.address)} />
             ) : null}
           </View>
         ))
@@ -106,15 +116,20 @@ export default function ResourcesScreen() {
           body="Staff have not added the housing list yet. Public organization names, phones, and addresses belong here."
           title="Affordable housing"
         />
+      ) : housing.length === 0 ? (
+        <EmptyState
+          body="Housing listings need a last-checked date before they show here."
+          title="Affordable housing"
+        />
       ) : (
-        data.housingListings.map((listing) => (
+        housing.map((listing) => (
           <View key={listing.id} style={{ gap: tokens.space.sm }}>
-            <Card body={`${listing.address}. ${listing.summary}`} title={listing.name} />
+            <Card body={withNote(`${listing.address}. ${listing.summary}`, listing.lastVerified)} title={listing.name} />
             {listing.phone ? (
               <Button label={`Call ${listing.name}`} onPress={() => openCall(listing.phone)} />
             ) : null}
             {listing.address ? (
-              <Button label={`Map ${listing.name}`} onPress={() => openMap(listing.address)} />
+              <Button label={`Open ${listing.name} in Maps`} onPress={() => openMap(listing.address)} />
             ) : null}
           </View>
         ))

@@ -14,8 +14,19 @@ export type DayHours = {
 };
 
 export type HoursSeason = {
-  label: string;
+  /** Current name. Older saved copies may only have `label`. */
+  name?: string;
+  label?: string;
+  /** MM-DD, repeating each year. "TODO" when the website did not publish the day. */
+  startDate?: string;
+  endDate?: string;
   days: DayHours[];
+  verify?: boolean;
+};
+
+export type Closure = {
+  date: string;
+  reason: string;
 };
 
 export type HoursPlace = 'campus' | 'coffee' | 'thrift' | 'playground';
@@ -24,8 +35,11 @@ export type Hours = {
   id: string;
   place: HoursPlace;
   seasons: HoursSeason[];
+  closures?: Closure[];
   sourceUrl: string;
   verify: true;
+  lastVerified?: string;
+  verifiedBy?: string;
 };
 
 export type Program = {
@@ -56,6 +70,8 @@ export type Resource = {
   address: string;
   sourceUrl: string;
   verify: true;
+  lastVerified?: string;
+  verifiedBy?: string;
 };
 
 export type HousingListing = {
@@ -66,6 +82,8 @@ export type HousingListing = {
   summary: string;
   sourceUrl: string;
   verify: true;
+  lastVerified?: string;
+  verifiedBy?: string;
 };
 
 export type TinyHouseUpdate = {

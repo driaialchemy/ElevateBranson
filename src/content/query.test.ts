@@ -1,8 +1,8 @@
 import assert from 'node:assert/strict';
 import test from 'node:test';
 
-import { filterResources, nextCalendarEvent, resourceCategories } from './query.ts';
-import type { CalendarEvent, Resource } from './types.ts';
+import { filterResources, nextCalendarEvent, resourceCategories, visibleHousing } from './query.ts';
+import type { CalendarEvent, HousingListing, Resource } from './types.ts';
 
 const resources: Resource[] = [
   {
@@ -38,6 +38,34 @@ test('search and category narrow the partner list', () => {
   );
   assert.deepEqual(filterResources(resources, 'clinic', 'Food'), []);
   assert.deepEqual(resourceCategories(resources), ['All', 'Food', 'Health']);
+});
+
+test('housing without a last-checked date stays hidden', () => {
+  const listings: HousingListing[] = [
+    {
+      id: 'dated',
+      name: 'Public listing',
+      phone: '4175550100',
+      address: '1 Main Street',
+      summary: 'Public office',
+      sourceUrl: 'https://example.org',
+      verify: true,
+      lastVerified: '2026-10-17',
+    },
+    {
+      id: 'undated',
+      name: 'Missing date',
+      phone: '4175550109',
+      address: '2 Main Street',
+      summary: 'No check date',
+      sourceUrl: 'https://example.org',
+      verify: true,
+    },
+  ];
+  assert.deepEqual(
+    visibleHousing(listings).map((item) => item.id),
+    ['dated'],
+  );
 });
 
 test('the next event is the soonest one that has not passed', () => {

@@ -24,3 +24,9 @@ Feature list: docs/FEATURES.md. Stack: docs/DECISIONS.md. Open failures: docs/BL
 Brand: the app must reflect the Elevate Branson branding from https://elevatebranson.org/ (logo, colors, fonts, imagery, tone). Extracted in Prompt 2 into docs/BRAND.md and src/theme/tokens.ts; all UI uses those tokens only. No hardcoded colors or fonts elsewhere.
 
 Content: src/content. Starter copy until a real Sanity project id is set. Public read token only. Staff notes: docs/STAFF_GUIDE.md.
+
+## Overrides to Prompt 4
+
+No static map. Find Us uses an address card: address, main phone, hours, Open in Maps (iOS and Android deep links), and Call. No map API, no map key, no paid service.
+
+Prompt 4 must call getOpenStatus and must not reimplement hours logic.

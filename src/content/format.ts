@@ -1,4 +1,4 @@
-import type { DayHours, Hours, Weekday } from '@/content/types';
+import type { DayHours, Hours, HoursSeason, Weekday } from '@/content/types';
 
 const labels: Record<Weekday, string> = {
   monday: 'Monday',
@@ -27,10 +27,18 @@ export function formatDay(day: DayHours): string {
   return `${label}: ${formatClock(day.opens)} – ${formatClock(day.closes)}`;
 }
 
+export function seasonTitle(season: HoursSeason): string {
+  return season.name || season.label || 'Hours';
+}
+
+export function formatSeasonDays(season: HoursSeason): string {
+  return (season.days ?? []).map((day) => formatDay(day)).join('\n');
+}
+
 export function formatSeason(hours: Hours, seasonLabel: string): string {
-  const season = hours.seasons.find((item) => item.label === seasonLabel) ?? hours.seasons[0];
+  const season = hours.seasons.find((item) => seasonTitle(item) === seasonLabel) ?? hours.seasons[0];
   if (!season) {
     return '';
   }
-  return season.days.map((day) => formatDay(day)).join('\n');
+  return formatSeasonDays(season);
 }

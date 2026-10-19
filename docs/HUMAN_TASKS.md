@@ -26,3 +26,5 @@ Do not block the build on these. Use the placeholders in [DECISIONS.md](DECISION
 22. Add real events in the editing site. The public calendar page did not list event names, so the app ships with none.
 23. Add the partner organization directory. The website says there are more than 150 groups and does not name them, so the app ships with none.
 24. Add dated tiny-house progress notes when you have them. The welcome page describes the neighborhood and does not give a dated update, so the app ships with none.
+25. Confirm the playground school-year start and end dates, and any holiday closures. The website names the school year and does not give those dates, so the app uses TODO and will not call the playground open or closed outside June, July, and August. Also confirm that "June and July" means June 1 through July 31 and "August" means August 1 through August 31.
+26. Confirm whether coffee, thrift, and campus hours change by season. The website gives one weekly schedule for each and no start or end date, so those date fields are TODO until you confirm them.

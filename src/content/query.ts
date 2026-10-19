@@ -1,4 +1,12 @@
-import type { CalendarEvent, ContentBundle, HoursPlace, NewsletterIssue, Program, Resource } from '@/content/types';
+import type {
+  CalendarEvent,
+  ContentBundle,
+  HoursPlace,
+  HousingListing,
+  NewsletterIssue,
+  Program,
+  Resource,
+} from '@/content/types';
 
 export function filterResources(resources: Resource[], query: string, category: string): Resource[] {
   const needle = query.trim().toLowerCase();
@@ -8,6 +16,10 @@ export function filterResources(resources: Resource[], query: string, category: 
     const queryOk = needle.length === 0 || haystack.includes(needle);
     return categoryOk && queryOk;
   });
+}
+
+export function visibleHousing(listings: HousingListing[]): HousingListing[] {
+  return listings.filter((listing) => /^\d{4}-\d{2}-\d{2}$/.test(listing.lastVerified?.trim() ?? ''));
 }
 
 export function resourceCategories(resources: Resource[]): string[] {
