@@ -16,7 +16,7 @@ export function hoursCards(hours: Hours, now = new Date()): { title: string; bod
   const note = freshnessNote(hours.lastVerified, now);
   const seasons = hours.seasons ?? [];
   return [
-    { title: described.title, body: note ? `${described.body}\n${note}` : described.body },
+    { title: described.title, body: [described.body, note, hours.conflict ? `Hours need confirmation: ${hours.conflict}` : ''].filter(Boolean).join('\n') },
     ...seasons.map((season) => {
       const range = formatSeasonRange(season);
       const days = formatSeasonDays(season);

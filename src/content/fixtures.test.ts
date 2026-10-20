@@ -35,7 +35,7 @@ test('hours keep the published seasons', () => {
   assert.equal(playground?.seasons.find((item) => item.name === 'School year')?.startDate, 'TODO');
   assert.equal(playground?.seasons.find((item) => item.name === 'June and July')?.startDate, '06-01');
   assert.equal(playground?.seasons.find((item) => item.name === 'August')?.endDate, '08-31');
-  assert.equal(coffee?.lastVerified, '2026-10-17');
+  assert.equal(coffee?.lastVerified, '2026-10-20');
   assert.deepEqual(coffee?.closures, []);
 });
 

@@ -36,6 +36,11 @@ export default function CoffeeScreen() {
       ) : null}
       {program ? <Button label={readOnWebsite} onPress={() => openExternal(program.sourceUrl)} /> : null}
       {hours ? <HoursBlock hours={hours} /> : <ComingSoon phone={phone} />}
+      <SectionHeader label="Cafe and Coffee" />
+      <Card title="On the menu" body="Espresso drinks, lunch specials, desserts, and coffee subscriptions." />
+      <Button label="ORDER AHEAD" onPress={() => openExternal('https://elevate-coffee.square.site/')} />
+      <Card title="Coffee subscriptions" body={'12 oz beans: $13.99 whole bean, $14.99 ground\n1 lb beans: $17.99 whole bean, $18.99 ground\nK-Cups: 12 for $17.49, 24 for $29.99, 48 for $48.99'} />
+      <Button label="50% off coupon" onPress={() => openExternal('https://elevatebranson.org/elevate-cafe-and-coffee/coupon/')} />
     </Screen>
   );
 }

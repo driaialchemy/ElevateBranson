@@ -116,6 +116,7 @@ export type Hours = {
   verify: true;
   lastVerified?: string;
   verifiedBy?: string;
+  conflict?: string;
 };
 
 export type Program = {

@@ -10,6 +10,14 @@ test('an empty section renders a coming soon line with the main phone', () => {
   assert.equal(comingSoon(''), 'Coming soon, call us at ');
 });
 
+test('venue hours display an explicit conflict follow-up', () => {
+  const coffee = fixtures.hours.find((item) => item.place === 'coffee');
+  assert.ok(coffee);
+  const card = hoursCards(coffee, new Date('2026-10-20T18:00:00.000Z'))[0];
+  assert.match(card?.body ?? '', /Hours need confirmation/);
+  assert.equal(coffee.lastVerified, '2026-10-20');
+});
+
 test('a playground season change renders a different open status', () => {
   const playground = fixtures.hours.find((item) => item.place === 'playground');
   assert.ok(playground);

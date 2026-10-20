@@ -53,6 +53,7 @@ export const moreLinks = [
   { label: 'Give', href: '/get-involved/give', detail: 'Donate on the Elevate Branson website.' },
   { label: 'About Us', href: '/more/about', detail: 'Who Elevate Branson is.' },
   { label: 'Find Us', href: '/more/find-us', detail: 'Address, map, and phone.' },
+  { label: 'Contact', href: '/more/contact', detail: 'Department contacts and message form.' },
   { label: 'Resources', href: '/more/resources', detail: 'Partner groups and the housing list.' },
   { label: 'Social links', href: '/more/social', detail: 'Find Elevate Branson on social media.' },
   { label: 'Website', href: '/more/website', detail: 'Open elevatebranson.org.' },

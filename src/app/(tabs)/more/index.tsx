@@ -8,6 +8,7 @@ const icons = {
   '/get-involved/give': 'heart-outline',
   '/more/about': 'information-circle-outline',
   '/more/find-us': 'location-outline',
+  '/more/contact': 'call-outline',
   '/more/resources': 'library-outline',
   '/more/social': 'globe-outline',
   '/more/website': 'globe-outline',

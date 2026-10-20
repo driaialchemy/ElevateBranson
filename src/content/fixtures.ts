@@ -190,7 +190,7 @@ const hours: Hours[] = [
     sourceUrl: 'https://elevatebranson.org/contact-us/',
     verify: true,
     closures: [],
-    lastVerified: '2026-10-17',
+    lastVerified: '2026-10-20',
     verifiedBy: 'elevatebranson.org',
     seasons: [
       season(
@@ -213,8 +213,9 @@ const hours: Hours[] = [
     sourceUrl: 'https://elevatebranson.org/elevate-cafe-and-coffee/',
     verify: true,
     closures: [],
-    lastVerified: '2026-10-17',
+    lastVerified: '2026-10-20',
     verifiedBy: 'elevatebranson.org',
+    conflict: 'A second hours block on the website lists different campus-style hours. Confirm the cafe schedule.',
     seasons: [season('Coffee shop', weekday('08:00', '15:00'), 'TODO', 'TODO')],
   },
   {
@@ -223,8 +224,9 @@ const hours: Hours[] = [
     sourceUrl: 'https://elevatebranson.org/elevate-thrift-store/',
     verify: true,
     closures: [],
-    lastVerified: '2026-10-17',
+    lastVerified: '2026-10-20',
     verifiedBy: 'elevatebranson.org',
+    conflict: 'The Contact page footer lists different hours. Confirm the Thrift Store schedule.',
     seasons: [
       season('Thrift store', { ...weekday('09:00', '18:00'), saturday: ['09:00', '16:00'] }, 'TODO', 'TODO'),
     ],
