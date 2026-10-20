@@ -1,34 +1,45 @@
-import { BrandImage } from '@/components/BrandImage';
 import { Button } from '@/components/Button';
 import { Card } from '@/components/Card';
+import { ComingSoon } from '@/components/ComingSoon';
 import { ContentNotice } from '@/components/ContentNotice';
-import { EmptyState } from '@/components/EmptyState';
+import { Header } from '@/components/Header';
+import { Hero } from '@/components/Hero';
 import { openExternal } from '@/components/openLink';
 import { Screen } from '@/components/Screen';
+import { SectionHeader } from '@/components/SectionHeader';
 import { useContent } from '@/content/client';
-import { programBySlug } from '@/content/query';
+import { readOnWebsite, whoItServes } from '@/content/infoScreens';
+import { newestUpdates, programBySlug } from '@/content/query';
 
 export default function TinyHouseScreen() {
   const { data } = useContent();
   const program = programBySlug(data.programs, 'elevate-community');
+  const updates = newestUpdates(data.tinyHouseUpdates);
+  const phone = data.siteSettings.phone;
 
   return (
     <Screen>
       <ContentNotice />
-      {program?.imageKey ? <BrandImage alt={program.imageAlt || program.name} imageKey={program.imageKey} /> : null}
-      {program ? <Card body={program.summary} title={program.name} /> : null}
-      {program ? (
-        <Button label="Read this on the website" onPress={() => openExternal(program.sourceUrl)} />
-      ) : null}
-      {data.tinyHouseUpdates.length === 0 ? (
-        <EmptyState
-          body="No dated progress note has been published yet."
-          title="Tiny house updates"
-        />
+      <Header donateHref="/get-involved/give" donateLabel={data.siteSettings.donateLabel || 'DONATE NOW'} />
+      {program?.imageKey ? (
+        <Hero alt={program.imageAlt || program.name} imageKey={program.imageKey} subtitle={program.summary} title={program.name} />
+      ) : program ? (
+        <Card body={program.summary} title={program.name} />
       ) : (
-        data.tinyHouseUpdates.map((update) => (
-          <Card body={`${update.publishedOn}. ${update.body}`} key={update.id} title={update.title} />
-        ))
+        <ComingSoon phone={phone} />
+      )}
+      {program?.serves ? (
+        <>
+          <SectionHeader label={whoItServes} />
+          <Card body={program.serves} />
+        </>
+      ) : null}
+      {program ? <Button label={readOnWebsite} onPress={() => openExternal(program.sourceUrl)} /> : null}
+      <SectionHeader label="Updates" />
+      {updates.length === 0 ? (
+        <ComingSoon phone={phone} />
+      ) : (
+        updates.map((update) => <Card body={`${update.publishedOn}. ${update.body}`} key={update.id} title={update.title} />)
       )}
     </Screen>
   );

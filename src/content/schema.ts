@@ -7,7 +7,7 @@
 export const cmsSchema = {
   program: {
     name: 'program',
-    fields: ['name', 'slug', 'summary', 'sourceUrl', 'imageKey', 'imageAlt', 'verify'],
+    fields: ['name', 'slug', 'summary', 'serves', 'sourceUrl', 'imageKey', 'imageAlt', 'verify'],
   },
   event: {
     name: 'event',
@@ -74,7 +74,7 @@ export const cmsSchema = {
 } as const;
 
 export const contentQuery = `{
-  "programs": *[_type == "program"]{ "id": _id, name, "slug": slug.current, summary, sourceUrl, imageKey, imageAlt, verify },
+  "programs": *[_type == "program"]{ "id": _id, name, "slug": slug.current, summary, serves, sourceUrl, imageKey, imageAlt, verify },
   "homeSections": *[_type == "homeSection"]{ "id": _id, eyebrow, title, body, imageKey, imageAlt, actions, sourceUrl, verify },
   "homeStats": *[_type == "homeStat"]{ "id": _id, value, label, sourceUrl, verify },
   "seasonalNotice": *[_type == "seasonalNotice"][0]{ "id": _id, imageKey, alt, href, sourceUrl, verify },

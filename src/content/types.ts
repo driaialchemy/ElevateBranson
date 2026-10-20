@@ -51,6 +51,8 @@ export type Program = {
   verify: true;
   imageKey?: string;
   imageAlt?: string;
+  /** Who the program is for. Omitted when the website did not say. */
+  serves?: string;
 };
 
 export type HomeAction = {

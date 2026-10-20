@@ -6,6 +6,7 @@ import type {
   NewsletterIssue,
   Program,
   Resource,
+  TinyHouseUpdate,
 } from '@/content/types';
 
 export function filterResources(resources: Resource[], query: string, category: string): Resource[] {
@@ -33,6 +34,10 @@ export function programBySlug(programs: Program[], slug: string): Program | unde
 
 export function hoursFor(bundle: ContentBundle, place: HoursPlace) {
   return bundle.hours.find((item) => item.place === place);
+}
+
+export function newestUpdates(updates: TinyHouseUpdate[]): TinyHouseUpdate[] {
+  return [...updates].sort((a, b) => b.publishedOn.localeCompare(a.publishedOn) || b.title.localeCompare(a.title));
 }
 
 export function latestNewsletter(issues: NewsletterIssue[]): NewsletterIssue | undefined {

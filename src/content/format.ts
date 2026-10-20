@@ -27,8 +27,44 @@ export function formatDay(day: DayHours): string {
   return `${label}: ${formatClock(day.opens)} – ${formatClock(day.closes)}`;
 }
 
+const months = [
+  'January',
+  'February',
+  'March',
+  'April',
+  'May',
+  'June',
+  'July',
+  'August',
+  'September',
+  'October',
+  'November',
+  'December',
+];
+
+export function formatMonthDay(value: string | undefined): string {
+  if (!value || !/^\d{2}-\d{2}$/.test(value)) {
+    return '';
+  }
+  const month = Number(value.slice(0, 2));
+  const day = Number(value.slice(3, 5));
+  if (month < 1 || month > 12 || day < 1 || day > 31) {
+    return '';
+  }
+  return `${months[month - 1]} ${day}`;
+}
+
 export function seasonTitle(season: HoursSeason): string {
   return season.name || season.label || 'Hours';
+}
+
+export function formatSeasonRange(season: HoursSeason): string {
+  const start = formatMonthDay(season.startDate);
+  const end = formatMonthDay(season.endDate);
+  if (!start || !end) {
+    return '';
+  }
+  return `${start} – ${end}`;
 }
 
 export function formatSeasonDays(season: HoursSeason): string {

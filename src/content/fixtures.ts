@@ -48,6 +48,7 @@ const programs: Program[] = [
     slug: 'elevate-kids',
     summary:
       'Meals and care for children living in or near poverty, plus a sensory room, after-school and summer programs, and the playground.',
+    serves: 'Children living in or near poverty',
     sourceUrl: 'https://elevatebranson.org/elevate-kids/',
     imageKey: 'program-elevate-kids',
     imageAlt: 'Elevate Kids banner from the Elevate Branson website.',
@@ -69,6 +70,7 @@ const programs: Program[] = [
     name: 'Elevate Entrepreneurs',
     slug: 'elevate-entrepreneurs',
     summary: 'Education for people starting a business or a side gig, including an early-stage boot camp.',
+    serves: 'People starting a business or a side gig',
     sourceUrl: 'https://elevatebranson.org/elevate-entrepreneurs/',
     imageKey: 'program-elevate-entrepreneurs',
     imageAlt: 'Elevate Entrepreneurs banner from the Elevate Branson website.',
@@ -90,6 +92,7 @@ const programs: Program[] = [
     name: 'Elevate Outreach',
     slug: 'elevate-outreach',
     summary: 'Sack meals delivered to people staying in weekly motels.',
+    serves: 'People staying in weekly motels',
     sourceUrl: 'https://elevatebranson.org/elevate-outreach/',
     imageKey: 'program-elevate-outreach',
     imageAlt: 'Elevate Outreach banner from the Elevate Branson website.',
@@ -130,6 +133,7 @@ const programs: Program[] = [
     slug: 'elevate-community',
     summary:
       'A tiny-home neighborhood next to campus for local residents, especially people who work front-line jobs.',
+    serves: 'Local residents, especially people who work front-line jobs',
     sourceUrl: 'https://elevatebranson.org/elevate-community/',
     imageKey: 'program-tiny-house',
     imageAlt: 'Elevate Community banner from the Elevate Branson website.',
@@ -171,6 +175,7 @@ const programs: Program[] = [
     slug: 'playground',
     summary:
       'A natural playground. Time outside is part of how the campus supports children dealing with trauma and stress.',
+    serves: 'Children dealing with trauma and stress',
     sourceUrl: 'https://elevatebranson.org/elevate-playground/',
     imageKey: 'program-playground',
     imageAlt: 'Playground photo from the Elevate Branson website.',

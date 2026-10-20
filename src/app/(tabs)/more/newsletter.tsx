@@ -1,8 +1,10 @@
 import { Button } from '@/components/Button';
+import { ComingSoon } from '@/components/ComingSoon';
 import { ContentNotice } from '@/components/ContentNotice';
-import { EmptyState } from '@/components/EmptyState';
+import { Header } from '@/components/Header';
 import { openExternal } from '@/components/openLink';
 import { Screen } from '@/components/Screen';
+import { SectionHeader } from '@/components/SectionHeader';
 import { useContent } from '@/content/client';
 
 export default function NewsletterScreen() {
@@ -12,8 +14,10 @@ export default function NewsletterScreen() {
   return (
     <Screen>
       <ContentNotice />
+      <Header donateHref="/get-involved/give" donateLabel={data.siteSettings.donateLabel || 'DONATE NOW'} />
+      <SectionHeader label="Newsletter" />
       {issues.length === 0 ? (
-        <EmptyState body="No newsletter has been published in the app yet." title="Newsletter" />
+        <ComingSoon phone={data.siteSettings.phone} />
       ) : (
         issues.map((issue) => (
           <Button
