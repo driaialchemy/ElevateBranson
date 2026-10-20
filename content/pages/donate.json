@@ -1,0 +1,168 @@
+{
+  "slug": "donate",
+  "title": "Donate - Elevate Branson",
+  "section": "get-involved",
+  "sourceUrl": "https://elevatebranson.org/donate/",
+  "summary": "We can’t do this without you! Choose from the menu below for ways to support our community and empower our neighbors to reach their full potential!",
+  "blocks": [
+    {
+      "_type": "richText",
+      "paragraphs": [
+        "We can’t do this without you! Choose from the menu below for ways to support our community and empower our neighbors to reach their full potential!",
+        "Individuals, families, and organizations who want to support all that we do to improve our community can make a one-time or recurring gift that empowers our neighbors to reach their full potential.",
+        "Your donation can go twice as far when you give to these matching donation opportunities. Maximize your contribution and select one of the following matching opportunities to give to today.",
+        "Privacy Policy | Contact Us | Brand Partnership"
+      ],
+      "headings": [
+        "HELP US ELEVATE BRANSON!",
+        "INDIVIDUAL & COMPANY DONATIONS",
+        "MATCHING DONATIONS",
+        "LEARN MORE ABOUT DONATING TO ELEVATE COMMUNITY",
+        "LEARN MORE ABOUT BECOMING A CHURCH PARTNER!",
+        "LEARN MORE ABOUT HELPING OUR AREA CHILDREN!",
+        "LEARN MORE ABOUT BECOMING AN ELEVATE RIDES SPONSOR",
+        "LEARN MORE ABOUT BECOMING AN ELEVATE WORK SPONSOR",
+        "LEARN MORE ABOUT JOINING THE ADVANCE TEAM",
+        "LEARN MORE ABOUT BECOMING A BUSINESS PARTNER!",
+        "LEARN MORE ABOUT BECOMING ONE OF THEO'S HEROES",
+        "HOURS OF OPERATION:",
+        "HOURS OF OPERATION:"
+      ]
+    },
+    {
+      "_type": "buttonRow",
+      "buttons": [
+        {
+          "label": "DONATE NOW!",
+          "url": "https://elevatebranson.z2systems.com/donation.jsp?campaign=1&"
+        },
+        {
+          "label": "DEDICATE A DONATION!",
+          "url": "https://elevatebranson.app.neoncrm.com/forms/dedicate-a-donation"
+        },
+        {
+          "label": "GENERAL MATCHING DONATION!",
+          "url": "https://elevatebranson.app.neoncrm.com/forms/general-operations-matching-donation"
+        },
+        {
+          "label": "TINY HOME MATCHING GRANT",
+          "url": "https://elevatebranson.app.neoncrm.com/forms/elevate-community-matching-form"
+        },
+        {
+          "label": "ELEVATE KIDS PLAYGROUND MATCHING FUND",
+          "url": "https://elevatebranson.app.neoncrm.com/forms/playground-matching-donation"
+        },
+        {
+          "label": "LEARN MORE ABOUT DONATING TO ELEVATE COMMUNITY!",
+          "url": "https://elevatebranson.org/elevate-community-sponsorship/"
+        },
+        {
+          "label": "LEARN MORE ABOUT BECOMING A CHURCH PARTNER!",
+          "url": "https://elevatebranson.app.neoncrm.com/forms/13"
+        },
+        {
+          "label": "LEARN MORE ABOUT HELPING OUR AREA CHILDREN!",
+          "url": "https://elevatebranson.org/elevate-kids-sponsorship/"
+        },
+        {
+          "label": "LEARN MORE ABOUT BECOMING AN ELEVATE RIDES SPONSOR!",
+          "url": "https://elevatebranson.app.neoncrm.com/forms/elevate-rides-sponsorship"
+        },
+        {
+          "label": "LEARN MORE ABOUT BECOMING AN ELEVATE WORK SPONSOR!",
+          "url": "https://elevatebranson.app.neoncrm.com/forms/elevate-work-sponsorship"
+        },
+        {
+          "label": "LEARN MORE ABOUT JOINING THE ADVANCE TEAM!",
+          "url": "https://elevatebranson.app.neoncrm.com/forms/advance-team"
+        },
+        {
+          "label": "LEARN MORE ABOUT BECOMING A BUSINESS PARTNER!",
+          "url": "https://elevatebranson.app.neoncrm.com/forms/business-partner"
+        },
+        {
+          "label": "LEARN MORE ABOUT BECOMING ONE OF THEO'S HEROES!",
+          "url": "https://elevatebranson.app.neoncrm.com/forms/theos-heroes"
+        },
+        {
+          "label": "SEND COMFORT TO A CHILD IN DISTRESS",
+          "url": "https://elevatebranson.org/comfort-from-theo/"
+        },
+        {
+          "label": "LEARN MORE ABOUT DONATING TO ELEVATE COMMUNITY",
+          "url": "https://elevatebranson.org/elevate-community-sponsorship/"
+        },
+        {
+          "label": "LEARN MORE ABOUT BECOMING A CHURCH PARTNER!",
+          "url": "https://elevatebranson.app.neoncrm.com/forms/13"
+        },
+        {
+          "label": "LEARN MORE ABOUT HELPING OUR AREA CHILDREN!",
+          "url": "https://elevatebranson.org/elevate-kids-sponsorship/"
+        },
+        {
+          "label": "LEARN MORE ABOUT BECOMING AN ELEVATE RIDES SPONSOR",
+          "url": "https://elevatebranson.app.neoncrm.com/forms/elevate-rides-sponsorship"
+        },
+        {
+          "label": "LEARN MORE ABOUT BECOMING AN ELEVATE WORK SPONSOR",
+          "url": "https://elevatebranson.app.neoncrm.com/forms/elevate-work-sponsorship"
+        },
+        {
+          "label": "LEARN MORE ABOUT JOINING THE ADVANCE TEAM",
+          "url": "https://elevatebranson.app.neoncrm.com/forms/advance-team"
+        },
+        {
+          "label": "LEARN MORE ABOUT BECOMING A BUSINESS PARTNER!",
+          "url": "https://elevatebranson.app.neoncrm.com/forms/business-partner"
+        },
+        {
+          "label": "LEARN MORE ABOUT BECOMING ONE OF THEO'S HEROES",
+          "url": "https://elevatebranson.app.neoncrm.com/forms/theos-heroes"
+        },
+        {
+          "label": "LEARN MORE ABOUT BECOMING A BUSINESS PARTNER!",
+          "url": "https://elevatebranson.app.neoncrm.com/forms/business-partner"
+        },
+        {
+          "label": "LEARN MORE ABOUT BECOMING ONE OF THEO'S HEROES",
+          "url": "https://elevatebranson.app.neoncrm.com/forms/theos-heroes"
+        },
+        {
+          "label": "JOIN OUR MAILING LIST",
+          "url": "https://elevatebranson.org/donate/#mailmunch-pop-1057830"
+        },
+        {
+          "label": "Privacy Policy",
+          "url": "https://elevatebranson.org/privacy-policy/"
+        },
+        {
+          "label": "Contact Us",
+          "url": "https://elevatebranson.org/contact-us/"
+        },
+        {
+          "label": "Brand Partnership",
+          "url": "https://elevatebranson.org/branding-licensure/"
+        },
+        {
+          "label": "JOIN OUR MAILING LIST",
+          "url": "https://elevatebranson.org/donate/#mailmunch-pop-1057830"
+        },
+        {
+          "label": "Privacy Policy",
+          "url": "https://elevatebranson.org/privacy-policy/"
+        },
+        {
+          "label": "Contact Us",
+          "url": "https://elevatebranson.org/contact-us/"
+        },
+        {
+          "label": "Brand Partnership",
+          "url": "https://elevatebranson.org/branding-licensure/"
+        }
+      ]
+    }
+  ],
+  "lastVerified": "2026-10-20",
+  "status": "verify"
+}

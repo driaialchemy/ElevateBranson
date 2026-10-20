@@ -38,3 +38,14 @@ Do not block the build on these. Use the placeholders in [DECISIONS.md](DECISION
 34. Confirm where the Thanksgiving banner should go. The image says to click for event information. The page did not publish a separate destination, so the app opens the homepage.
 35. Confirm the mailing-list address. The site opens a Mailmunch popup at https://elevatebranson.org/#mailmunch-pop-1057830 rather than a standalone form.
 36. Confirm who each program serves. The app shows a line only where the public summary already named a group: Elevate Kids, Elevate Entrepreneurs, Elevate Outreach, Elevate Community, and Playground. Elevate Work, Connections, Rides, Health, Life, Computer Classes, Coffee, and the Thrift Store do not show that section until you add it.
+37. Resolve the coffee-hours conflict: the coffee page says Monday–Friday 8:00 A.M.–3:00 P.M.; another block shows campus-style hours.
+38. Resolve the Thrift Store hours conflict between its own page and the Contact page.
+39. Resolve the Tuesday and Thursday hours conflict on the Mission and Vision page.
+40. Confirm the Elevate Work employment outcome (83% or 91.9%) and identify the current source figure.
+41. Confirm the correct public contact number for Cathy Brown (417.737.1041 or 417.243.0644).
+42. Replace or remove the stale 2024/2025 Elevate Entrepreneurs dates.
+43. Confirm the Playground school-year season start and end dates.
+44. Name the prayer-request destination or provide the public form URL.
+45. Confirm whether a merchandise store exists and provide its public URL if so.
+46. Confirm the public Google Calendar can be read by the app and make it public if required.
+47. Confirm the organization approves displaying staff phone numbers in the app.

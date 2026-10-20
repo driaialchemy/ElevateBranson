@@ -392,6 +392,11 @@ const seasonalNotice: SeasonalNotice = {
 };
 
 export const fixtures: ContentBundle = {
+  pages: [],
+  stories: [],
+  volunteerOpportunities: [],
+  episodes: [],
+  videos: [],
   programs,
   homeSections,
   homeStats,

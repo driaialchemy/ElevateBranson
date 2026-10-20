@@ -1,0 +1,78 @@
+{
+  "slug": "frequently-asked-questions",
+  "title": "Frequently Asked Questions - Elevate Branson",
+  "section": "about",
+  "sourceUrl": "https://elevatebranson.org/frequently-asked-questions/",
+  "summary": "Elevate Branson provides a variety of programs and services including: Elevate Work : Connects individuals with the tools and skills they need to discover their passions and improve their employment opportunities. Elevate Connections : Provides comprehensive information and a caring guide through what can be a confusing maze of paperwork for our neighbors. With connections to over 500 other area resources, Elevate Connections avoids the duplicity of services by connecting individuals directly with the services they need. Elevate Community : A tiny home village adjacent to the Elevate Branson campus that provides a clean, safe, affordable, and dignified living environment for our neighbors in our community. Elevate Kids : Meets needs for children living in or on the edge of poverty by providing necessities for their mind, body and spirit. Elevate Outreach : Sacks and delivers hundreds of basic meals to residents of extended stay motels weekly in the Branson community. Elevate Health : A collaborative network of service providers that offer information and services to our neighbors who do not have the means to seek healthcare for themselves and/or their families. Elevate Thrift Store : Offers a variety of items at an affordable price for our neighbors. All dollars generated through the Elevate Thrift Store directly fund Elevate Branson programs.",
+  "blocks": [
+    {
+      "_type": "richText",
+      "paragraphs": [
+        "Elevate Branson provides a variety of programs and services including: Elevate Work : Connects individuals with the tools and skills they need to discover their passions and improve their employment opportunities. Elevate Connections : Provides comprehensive information and a caring guide through what can be a confusing maze of paperwork for our neighbors. With connections to over 500 other area resources, Elevate Connections avoids the duplicity of services by connecting individuals directly with the services they need. Elevate Community : A tiny home village adjacent to the Elevate Branson campus that provides a clean, safe, affordable, and dignified living environment for our neighbors in our community. Elevate Kids : Meets needs for children living in or on the edge of poverty by providing necessities for their mind, body and spirit. Elevate Outreach : Sacks and delivers hundreds of basic meals to residents of extended stay motels weekly in the Branson community. Elevate Health : A collaborative network of service providers that offer information and services to our neighbors who do not have the means to seek healthcare for themselves and/or their families. Elevate Thrift Store : Offers a variety of items at an affordable price for our neighbors. All dollars generated through the Elevate Thrift Store directly fund Elevate Branson programs.",
+        "There are plenty of opportunities to give back to your community through Elevate Branson",
+        "Join the cause, and help us elevate our community!",
+        "Privacy Policy | Contact Us | Brand Partnership"
+      ],
+      "headings": [
+        "FREQUENTLY ASKED QUESTIONS",
+        "HOURS OF OPERATION:",
+        "HOURS OF OPERATION:"
+      ]
+    },
+    {
+      "_type": "buttonRow",
+      "buttons": [
+        {
+          "label": "Become a volunteer",
+          "url": "https://elevatebranson.org/volunteer/"
+        },
+        {
+          "label": "Join the Elevate Branson Advance Team",
+          "url": "https://elevatebranson.org/advance-team/"
+        },
+        {
+          "label": "Sponsor a tiny home",
+          "url": "https://elevatebranson.org/elevate-community/"
+        },
+        {
+          "label": "Leave a legacy",
+          "url": "https://elevatebranson.org/leaving-a-legacy/"
+        },
+        {
+          "label": "JOIN OUR MAILING LIST",
+          "url": "https://elevatebranson.org/frequently-asked-questions/#mailmunch-pop-1057830"
+        },
+        {
+          "label": "Privacy Policy",
+          "url": "https://elevatebranson.org/privacy-policy/"
+        },
+        {
+          "label": "Contact Us",
+          "url": "https://elevatebranson.org/contact-us/"
+        },
+        {
+          "label": "Brand Partnership",
+          "url": "https://elevatebranson.org/branding-licensure/"
+        },
+        {
+          "label": "JOIN OUR MAILING LIST",
+          "url": "https://elevatebranson.org/frequently-asked-questions/#mailmunch-pop-1057830"
+        },
+        {
+          "label": "Privacy Policy",
+          "url": "https://elevatebranson.org/privacy-policy/"
+        },
+        {
+          "label": "Contact Us",
+          "url": "https://elevatebranson.org/contact-us/"
+        },
+        {
+          "label": "Brand Partnership",
+          "url": "https://elevatebranson.org/branding-licensure/"
+        }
+      ]
+    }
+  ],
+  "lastVerified": "2026-10-20",
+  "status": "verify"
+}

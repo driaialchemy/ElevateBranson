@@ -1,0 +1,91 @@
+{
+  "slug": "mission-and-vision",
+  "title": "Mission And Vision - Elevate Branson",
+  "section": "about",
+  "sourceUrl": "https://elevatebranson.org/mission-and-vision/",
+  "summary": "To elevate our community by empowering our neighbors to reach their full potential.",
+  "blocks": [
+    {
+      "_type": "richText",
+      "paragraphs": [
+        "To elevate our community by empowering our neighbors to reach their full potential.",
+        "For every individual to know hope, dignity, and purpose through the love of Jesus.",
+        "We disempower people when we do for them what they have the ability to do for themselves.",
+        "Over the years, we’ve found handouts actually don’t help people overcome poverty in the long run. In fact, services and resources that are provided for free often cripple, enable, and communicate inferiority to those being served, all while creating a cycle of dependency that ultimately keeps people from reaching their full potential.",
+        "“Give once and you elicit appreciation; Give twice and you create anticipation; Give three times and you create expectation; Give four times and it becomes entitlement; Give five times and you establish dependency.” Robert Lupton, Toxic Charity",
+        "Where there is no equal exchange, there is no dignity. We believe everyone has potential, and something valuable to offer – and we value our neighbors’ gifts, time, and relationships with us in the same way we value everyone else’s. Our vision is to restore hope, dignity and purpose to our neighbors, and this doesn’t happen effectively when we give of our services and resources without requiring some form of commitment from our neighbors in return. It’s not unloving to ask our neighbors to take part in the journey towards achieving their own goals. It can be, however, unloving to wrongly assume they have nothing of value to offer us.",
+        "Resources",
+        "Toxic Charity          Charity Detox          When Helping Hurts          True Charity",
+        "Privacy Policy | Contact Us | Brand Partnership",
+        "Monday:  9:00 A.M. – 6:00 P.M.",
+        "Tuesday:  11:00 A.M. – 6:00 P.M.",
+        "Wednesday:  9:00 A.M. – 6:00 P.M.",
+        "Thursday:  9:00 A.M. – 6:00 P.M.",
+        "Friday:  9:00 A.M. – 4:00 P.M."
+      ],
+      "headings": [
+        "MISSION:",
+        "VISION:",
+        "CORE VALUES:",
+        "OUR PHILOSOPHY:",
+        "HOURS OF OPERATION:",
+        "HOURS OF OPERATION:"
+      ]
+    },
+    {
+      "_type": "buttonRow",
+      "buttons": [
+        {
+          "label": "Toxic Charity",
+          "url": "https://smile.amazon.com/Toxic-Charity-Churches-Charities-Reverse/dp/0062076213/ref=sr_1_1?dchild=1&keywords=toxic+charity&qid=1633465262&sr=8-1"
+        },
+        {
+          "label": "Charity Detox",
+          "url": "https://www.amazon.com/Charity-Detox-Would-Cared-Results/dp/0062307282"
+        },
+        {
+          "label": "When Helping Hurts",
+          "url": "https://www.amazon.com/When-Helping-Hurts-Alleviate-Yourself/dp/0802409989/ref=pd_lpo_2?pd_rd_i=0802409989&psc=1"
+        },
+        {
+          "label": "True Charity",
+          "url": "https://www.truecharity.us/"
+        },
+        {
+          "label": "JOIN OUR MAILING LIST",
+          "url": "https://elevatebranson.org/mission-and-vision/#mailmunch-pop-1057830"
+        },
+        {
+          "label": "Privacy Policy",
+          "url": "https://elevatebranson.org/privacy-policy/"
+        },
+        {
+          "label": "Contact Us",
+          "url": "https://elevatebranson.org/contact-us/"
+        },
+        {
+          "label": "Brand Partnership",
+          "url": "https://elevatebranson.org/branding-licensure/"
+        },
+        {
+          "label": "JOIN OUR MAILING LIST",
+          "url": "https://elevatebranson.org/mission-and-vision/#mailmunch-pop-1057830"
+        },
+        {
+          "label": "Privacy Policy",
+          "url": "https://elevatebranson.org/privacy-policy/"
+        },
+        {
+          "label": "Contact Us",
+          "url": "https://elevatebranson.org/contact-us/"
+        },
+        {
+          "label": "Brand Partnership",
+          "url": "https://elevatebranson.org/branding-licensure/"
+        }
+      ]
+    }
+  ],
+  "lastVerified": "2026-10-20",
+  "status": "verify"
+}

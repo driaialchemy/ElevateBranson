@@ -1,0 +1,63 @@
+{
+  "slug": "comfort-from-theo",
+  "title": "Comfort From Theo – Sponsor A Hug, Change A Day - Elevate Branson",
+  "section": "about",
+  "sourceUrl": "https://elevatebranson.org/comfort-from-theo/",
+  "summary": "Together, let’s make sure no child faces crisis alone.",
+  "blocks": [
+    {
+      "_type": "richText",
+      "paragraphs": [
+        "Together, let’s make sure no child faces crisis alone.",
+        "Privacy Policy | Contact Us | Brand Partnership"
+      ],
+      "headings": [
+        "HOURS OF OPERATION:",
+        "HOURS OF OPERATION:"
+      ]
+    },
+    {
+      "_type": "buttonRow",
+      "buttons": [
+        {
+          "label": "SPONSOR A THEO PLUSH TOY",
+          "url": "https://elevatebranson.app.neoncrm.com/forms/first-responders---theo-plush-sponsors"
+        },
+        {
+          "label": "JOIN OUR MAILING LIST",
+          "url": "https://elevatebranson.org/comfort-from-theo/#mailmunch-pop-1057830"
+        },
+        {
+          "label": "Privacy Policy",
+          "url": "https://elevatebranson.org/privacy-policy/"
+        },
+        {
+          "label": "Contact Us",
+          "url": "https://elevatebranson.org/contact-us/"
+        },
+        {
+          "label": "Brand Partnership",
+          "url": "https://elevatebranson.org/branding-licensure/"
+        },
+        {
+          "label": "JOIN OUR MAILING LIST",
+          "url": "https://elevatebranson.org/comfort-from-theo/#mailmunch-pop-1057830"
+        },
+        {
+          "label": "Privacy Policy",
+          "url": "https://elevatebranson.org/privacy-policy/"
+        },
+        {
+          "label": "Contact Us",
+          "url": "https://elevatebranson.org/contact-us/"
+        },
+        {
+          "label": "Brand Partnership",
+          "url": "https://elevatebranson.org/branding-licensure/"
+        }
+      ]
+    }
+  ],
+  "lastVerified": "2026-10-20",
+  "status": "verify"
+}

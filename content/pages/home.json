@@ -1,0 +1,101 @@
+{
+  "slug": "home",
+  "title": "Helping Families Break the Cycle of Poverty",
+  "section": "about",
+  "sourceUrl": "https://elevatebranson.org/",
+  "summary": "Even the most prosperous communities have families struggling with painful housing, nutritional, health, and employment issues. Handouts and government assistance provide short term help but don’t create real and lasting change – so the problem keeps growing.",
+  "blocks": [
+    {
+      "_type": "richText",
+      "paragraphs": [
+        "Even the most prosperous communities have families struggling with painful housing, nutritional, health, and employment issues. Handouts and government assistance provide short term help but don’t create real and lasting change – so the problem keeps growing.",
+        "For every individual to know hope, dignity, and purpose through the love of Jesus.",
+        "We elevate Branson by helping our neighbors help themselves, with programs for their physical, relational, and spiritual needs. We love people where they are, so that we can help them find purpose, make connections, and develop the skills and authentic relationships we all need to prosper.",
+        "Elevate Branson is addressing the root causes of generational poverty in order to create lasting change. We believe that the only way out of poverty is through employment.  We can love people, serve people and educate people, but earning a dignified income is the only way to climb the economic ladder. We provide resources, relationships, and a network of support that provides hope, dignity, and purposeful work.",
+        "Since 2008, we’ve cared for and worked with our neighbors in need. None of us want substandard housing, hunger, or employment to hurt families and hinder our community. Real solutions take time, patience, and dedication. We’ve seen long-term success achieved with love, accountability, and community-wide support.",
+        "Since 2008, we’ve cared for and worked with our neighbors in need. None of us want substandard housing, hunger, or employment to hurt families and hinder our community. Real solutions take time, patience, and dedication. We’ve seen long-term success achieved with love, accountability, and community-wide support.",
+        "Privacy Policy | Contact Us | Brand Partnership"
+      ],
+      "headings": [
+        "Job training, housing, and community support in Branson, Missouri.",
+        "THE FACTS:",
+        "THE VISION:",
+        "THE SOLUTION:",
+        "OUR DIFFERENCE:",
+        "OUR ROLE:",
+        "OUR ROLE:",
+        "THE PLAN:",
+        "You can be part of the solution.",
+        "HOURS OF OPERATION:",
+        "HOURS OF OPERATION:"
+      ]
+    },
+    {
+      "_type": "buttonRow",
+      "buttons": [
+        {
+          "label": "TAKE THE NEXT STEP",
+          "url": "https://elevatebranson.org/#nextstep"
+        },
+        {
+          "label": "LEARN MORE",
+          "url": "https://www.elevatebranson.org/learn-more"
+        },
+        {
+          "label": "SCHEDULE A TOUR",
+          "url": "https://elevatebranson.org/schedule-a-tour/"
+        },
+        {
+          "label": "LEARN MORE",
+          "url": "https://www.elevatebranson.org/learn-more"
+        },
+        {
+          "label": "LEARN MORE",
+          "url": "https://elevatebranson.org/learn-more/"
+        },
+        {
+          "label": "VOLUNTEER",
+          "url": "https://elevatebranson.org/volunteer/"
+        },
+        {
+          "label": "DONATE",
+          "url": "https://elevatebranson.org/donate/"
+        },
+        {
+          "label": "JOIN OUR MAILING LIST",
+          "url": "https://elevatebranson.org/#mailmunch-pop-1057830"
+        },
+        {
+          "label": "Privacy Policy",
+          "url": "https://elevatebranson.org/privacy-policy/"
+        },
+        {
+          "label": "Contact Us",
+          "url": "https://elevatebranson.org/contact-us/"
+        },
+        {
+          "label": "Brand Partnership",
+          "url": "https://elevatebranson.org/branding-licensure/"
+        },
+        {
+          "label": "JOIN OUR MAILING LIST",
+          "url": "https://elevatebranson.org/#mailmunch-pop-1057830"
+        },
+        {
+          "label": "Privacy Policy",
+          "url": "https://elevatebranson.org/privacy-policy/"
+        },
+        {
+          "label": "Contact Us",
+          "url": "https://elevatebranson.org/contact-us/"
+        },
+        {
+          "label": "Brand Partnership",
+          "url": "https://elevatebranson.org/branding-licensure/"
+        }
+      ]
+    }
+  ],
+  "lastVerified": "2026-10-20",
+  "status": "verify"
+}

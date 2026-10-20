@@ -1,0 +1,417 @@
+{
+  "sourceUrl": "https://elevatebranson.org",
+  "importedAt": "2026-10-20T22:21:11.488Z",
+  "status": "verify",
+  "pages": [
+    {
+      "slug": "home",
+      "sourceUrl": "https://elevatebranson.org/",
+      "importedAt": "2026-10-20T22:17:37.105Z",
+      "status": "verify"
+    },
+    {
+      "slug": "advance-team",
+      "sourceUrl": "https://elevatebranson.org/advance-team/",
+      "importedAt": "2026-10-20T22:17:39.300Z",
+      "status": "verify"
+    },
+    {
+      "slug": "branding-licensure",
+      "sourceUrl": "https://elevatebranson.org/branding-licensure/",
+      "importedAt": "2026-10-20T22:17:41.516Z",
+      "status": "verify"
+    },
+    {
+      "slug": "bryans-blog",
+      "sourceUrl": "https://elevatebranson.org/bryans-blog/",
+      "importedAt": "2026-10-20T22:17:53.066Z",
+      "status": "verify"
+    },
+    {
+      "slug": "business-partnership",
+      "sourceUrl": "https://elevatebranson.org/business-partnership/",
+      "importedAt": "2026-10-20T22:17:56.530Z",
+      "status": "verify"
+    },
+    {
+      "slug": "comfort-from-theo",
+      "sourceUrl": "https://elevatebranson.org/comfort-from-theo/",
+      "importedAt": "2026-10-20T22:17:58.807Z",
+      "status": "verify"
+    },
+    {
+      "slug": "computer-classes",
+      "sourceUrl": "https://elevatebranson.org/computer-classes/",
+      "importedAt": "2026-10-20T22:18:01.165Z",
+      "status": "verify"
+    },
+    {
+      "slug": "contact-us",
+      "sourceUrl": "https://elevatebranson.org/contact-us/",
+      "importedAt": "2026-10-20T22:18:03.598Z",
+      "status": "verify"
+    },
+    {
+      "slug": "donate",
+      "sourceUrl": "https://elevatebranson.org/donate/",
+      "importedAt": "2026-10-20T22:18:05.857Z",
+      "status": "verify"
+    },
+    {
+      "slug": "elevate-branding-licensure-pre-vetting-questionnaire",
+      "sourceUrl": "https://elevatebranson.org/elevate-branding-licensure-pre-vetting-questionnaire/",
+      "importedAt": "2026-10-20T22:18:08.081Z",
+      "status": "verify"
+    },
+    {
+      "slug": "elevate-branson-campus",
+      "sourceUrl": "https://elevatebranson.org/elevate-branson-campus/",
+      "importedAt": "2026-10-20T22:18:10.284Z",
+      "status": "verify"
+    },
+    {
+      "slug": "elevate-cafe-and-coffee",
+      "sourceUrl": "https://elevatebranson.org/elevate-cafe-and-coffee/",
+      "importedAt": "2026-10-20T22:18:12.686Z",
+      "status": "verify"
+    },
+    {
+      "slug": "elevate-cafe-and-coffee--coupon",
+      "sourceUrl": "https://elevatebranson.org/elevate-cafe-and-coffee/coupon/",
+      "importedAt": "2026-10-20T22:18:14.925Z",
+      "status": "verify"
+    },
+    {
+      "slug": "elevate-cafe-and-coffee--sign-up",
+      "sourceUrl": "https://elevatebranson.org/elevate-cafe-and-coffee/sign-up/",
+      "importedAt": "2026-10-20T22:18:17.196Z",
+      "status": "verify"
+    },
+    {
+      "slug": "elevate-community-sponsorship",
+      "sourceUrl": "https://elevatebranson.org/elevate-community-sponsorship/",
+      "importedAt": "2026-10-20T22:18:19.525Z",
+      "status": "verify"
+    },
+    {
+      "slug": "elevate-community",
+      "sourceUrl": "https://elevatebranson.org/elevate-community/",
+      "importedAt": "2026-10-20T22:18:25.037Z",
+      "status": "verify"
+    },
+    {
+      "slug": "elevate-connections",
+      "sourceUrl": "https://elevatebranson.org/elevate-connections/",
+      "importedAt": "2026-10-20T22:18:27.783Z",
+      "status": "verify"
+    },
+    {
+      "slug": "elevate-entrepreneurs",
+      "sourceUrl": "https://elevatebranson.org/elevate-entrepreneurs/",
+      "importedAt": "2026-10-20T22:18:30.141Z",
+      "status": "verify"
+    },
+    {
+      "slug": "elevate-health",
+      "sourceUrl": "https://elevatebranson.org/elevate-health/",
+      "importedAt": "2026-10-20T22:18:32.421Z",
+      "status": "verify"
+    },
+    {
+      "slug": "elevate-kids-sponsorship",
+      "sourceUrl": "https://elevatebranson.org/elevate-kids-sponsorship/",
+      "importedAt": "2026-10-20T22:18:34.628Z",
+      "status": "verify"
+    },
+    {
+      "slug": "elevate-kids",
+      "sourceUrl": "https://elevatebranson.org/elevate-kids/",
+      "importedAt": "2026-10-20T22:18:36.907Z",
+      "status": "verify"
+    },
+    {
+      "slug": "elevate-life",
+      "sourceUrl": "https://elevatebranson.org/elevate-life/",
+      "importedAt": "2026-10-20T22:18:39.154Z",
+      "status": "verify"
+    },
+    {
+      "slug": "elevate-outreach",
+      "sourceUrl": "https://elevatebranson.org/elevate-outreach/",
+      "importedAt": "2026-10-20T22:18:41.309Z",
+      "status": "verify"
+    },
+    {
+      "slug": "elevate-playground",
+      "sourceUrl": "https://elevatebranson.org/elevate-playground/",
+      "importedAt": "2026-10-20T22:18:43.585Z",
+      "status": "verify"
+    },
+    {
+      "slug": "elevate-rides",
+      "sourceUrl": "https://elevatebranson.org/elevate-rides/",
+      "importedAt": "2026-10-20T22:18:45.811Z",
+      "status": "verify"
+    },
+    {
+      "slug": "elevate-thrift-store",
+      "sourceUrl": "https://elevatebranson.org/elevate-thrift-store/",
+      "importedAt": "2026-10-20T22:18:48.024Z",
+      "status": "verify"
+    },
+    {
+      "slug": "elevate-thrift-store--coupon",
+      "sourceUrl": "https://elevatebranson.org/elevate-thrift-store/coupon/",
+      "importedAt": "2026-10-20T22:18:50.263Z",
+      "status": "verify"
+    },
+    {
+      "slug": "elevate-thrift-store--sign-up",
+      "sourceUrl": "https://elevatebranson.org/elevate-thrift-store/sign-up/",
+      "importedAt": "2026-10-20T22:18:52.535Z",
+      "status": "verify"
+    },
+    {
+      "slug": "elevate-work-student-application-2",
+      "sourceUrl": "https://elevatebranson.org/elevate-work-student-application-2/",
+      "importedAt": "2026-10-20T22:18:54.893Z",
+      "status": "verify"
+    },
+    {
+      "slug": "elevate-work",
+      "sourceUrl": "https://elevatebranson.org/elevate-work/",
+      "importedAt": "2026-10-20T22:18:57.299Z",
+      "status": "verify"
+    },
+    {
+      "slug": "event-calendar",
+      "sourceUrl": "https://elevatebranson.org/event-calendar/",
+      "importedAt": "2026-10-20T22:18:59.497Z",
+      "status": "verify"
+    },
+    {
+      "slug": "facility-rentals",
+      "sourceUrl": "https://elevatebranson.org/facility-rentals/",
+      "importedAt": "2026-10-20T22:19:01.782Z",
+      "status": "verify"
+    },
+    {
+      "slug": "financials",
+      "sourceUrl": "https://elevatebranson.org/financials/",
+      "importedAt": "2026-10-20T22:19:04.067Z",
+      "status": "verify"
+    },
+    {
+      "slug": "forms--13",
+      "sourceUrl": "https://elevatebranson.org/forms/13/",
+      "importedAt": "2026-10-20T22:19:06.219Z",
+      "status": "verify",
+      "error": "HTTP 404; redirected outside allowed host"
+    },
+    {
+      "slug": "forms--30",
+      "sourceUrl": "https://elevatebranson.org/forms/30/",
+      "importedAt": "2026-10-20T22:19:08.484Z",
+      "status": "verify",
+      "error": "HTTP 404; redirected outside allowed host"
+    },
+    {
+      "slug": "frequently-asked-questions",
+      "sourceUrl": "https://elevatebranson.org/frequently-asked-questions/",
+      "importedAt": "2026-10-20T22:19:10.656Z",
+      "status": "verify"
+    },
+    {
+      "slug": "generosity-e-book",
+      "sourceUrl": "https://elevatebranson.org/generosity-e-book/",
+      "importedAt": "2026-10-20T22:19:12.904Z",
+      "status": "verify"
+    },
+    {
+      "slug": "ground-breaking-dedication",
+      "sourceUrl": "https://elevatebranson.org/ground-breaking-dedication/",
+      "importedAt": "2026-10-20T22:19:15.244Z",
+      "status": "verify"
+    },
+    {
+      "slug": "learn-more",
+      "sourceUrl": "https://elevatebranson.org/learn-more/",
+      "importedAt": "2026-10-20T22:19:17.523Z",
+      "status": "verify"
+    },
+    {
+      "slug": "leaving-a-legacy",
+      "sourceUrl": "https://elevatebranson.org/leaving-a-legacy/",
+      "importedAt": "2026-10-20T22:19:19.778Z",
+      "status": "verify"
+    },
+    {
+      "slug": "media-center",
+      "sourceUrl": "https://elevatebranson.org/media-center/",
+      "importedAt": "2026-10-20T22:19:25.412Z",
+      "status": "verify"
+    },
+    {
+      "slug": "meet-our-neighbors",
+      "sourceUrl": "https://elevatebranson.org/meet-our-neighbors/",
+      "importedAt": "2026-10-20T22:19:38.144Z",
+      "status": "verify"
+    },
+    {
+      "slug": "meet-our-neighbors--2",
+      "sourceUrl": "https://elevatebranson.org/meet-our-neighbors/2/",
+      "importedAt": "2026-10-20T22:19:50.846Z",
+      "status": "verify"
+    },
+    {
+      "slug": "meet-our-neighbors--3",
+      "sourceUrl": "https://elevatebranson.org/meet-our-neighbors/3/",
+      "importedAt": "2026-10-20T22:20:02.479Z",
+      "status": "verify"
+    },
+    {
+      "slug": "meet-our-neighbors--4",
+      "sourceUrl": "https://elevatebranson.org/meet-our-neighbors/4/",
+      "importedAt": "2026-10-20T22:20:06.940Z",
+      "status": "verify"
+    },
+    {
+      "slug": "meet-our-volunteers",
+      "sourceUrl": "https://elevatebranson.org/meet-our-volunteers/",
+      "importedAt": "2026-10-20T22:20:10.336Z",
+      "status": "verify"
+    },
+    {
+      "slug": "mission-and-vision",
+      "sourceUrl": "https://elevatebranson.org/mission-and-vision/",
+      "importedAt": "2026-10-20T22:20:12.559Z",
+      "status": "verify"
+    },
+    {
+      "slug": "nap-tax-credits",
+      "sourceUrl": "https://elevatebranson.org/nap-tax-credits/",
+      "importedAt": "2026-10-20T22:20:14.851Z",
+      "status": "verify"
+    },
+    {
+      "slug": "news",
+      "sourceUrl": "https://elevatebranson.org/news/",
+      "importedAt": "2026-10-20T22:20:26.509Z",
+      "status": "verify"
+    },
+    {
+      "slug": "organizational-history",
+      "sourceUrl": "https://elevatebranson.org/organizational-history/",
+      "importedAt": "2026-10-20T22:20:29.773Z",
+      "status": "verify"
+    },
+    {
+      "slug": "podcast",
+      "sourceUrl": "https://elevatebranson.org/podcast/",
+      "importedAt": "2026-10-20T22:20:32.046Z",
+      "status": "verify"
+    },
+    {
+      "slug": "press-releases",
+      "sourceUrl": "https://elevatebranson.org/press-releases/",
+      "importedAt": "2026-10-20T22:20:34.216Z",
+      "status": "verify"
+    },
+    {
+      "slug": "privacy-policy",
+      "sourceUrl": "https://elevatebranson.org/privacy-policy/",
+      "importedAt": "2026-10-20T22:20:36.389Z",
+      "status": "verify"
+    },
+    {
+      "slug": "request-a-speaker",
+      "sourceUrl": "https://elevatebranson.org/request-a-speaker/",
+      "importedAt": "2026-10-20T22:20:38.582Z",
+      "status": "verify"
+    },
+    {
+      "slug": "rewards-program",
+      "sourceUrl": "https://elevatebranson.org/rewards-program/",
+      "importedAt": "2026-10-20T22:20:40.683Z",
+      "status": "verify"
+    },
+    {
+      "slug": "ryan-fains-story",
+      "sourceUrl": "https://elevatebranson.org/ryan-fains-story/",
+      "importedAt": "2026-10-20T22:20:42.935Z",
+      "status": "verify"
+    },
+    {
+      "slug": "schedule-a-tour",
+      "sourceUrl": "https://elevatebranson.org/schedule-a-tour/",
+      "importedAt": "2026-10-20T22:20:45.092Z",
+      "status": "verify"
+    },
+    {
+      "slug": "theo",
+      "sourceUrl": "https://elevatebranson.org/theo/",
+      "importedAt": "2026-10-20T22:20:47.307Z",
+      "status": "verify"
+    },
+    {
+      "slug": "tiny-homes-big-day",
+      "sourceUrl": "https://elevatebranson.org/tiny-homes-big-day/",
+      "importedAt": "2026-10-20T22:20:49.546Z",
+      "status": "verify"
+    },
+    {
+      "slug": "videos",
+      "sourceUrl": "https://elevatebranson.org/videos/",
+      "importedAt": "2026-10-20T22:20:51.908Z",
+      "status": "verify"
+    },
+    {
+      "slug": "volunteer-form-building-maintenance-and-cleaning",
+      "sourceUrl": "https://elevatebranson.org/volunteer-form-building-maintenance-and-cleaning/",
+      "importedAt": "2026-10-20T22:20:54.968Z",
+      "status": "verify"
+    },
+    {
+      "slug": "volunteer-form-elevate-entrepreneurs",
+      "sourceUrl": "https://elevatebranson.org/volunteer-form-elevate-entrepreneurs/",
+      "importedAt": "2026-10-20T22:20:57.134Z",
+      "status": "verify"
+    },
+    {
+      "slug": "volunteer-form-elevate-thrift-store",
+      "sourceUrl": "https://elevatebranson.org/volunteer-form-elevate-thrift-store/",
+      "importedAt": "2026-10-20T22:20:59.605Z",
+      "status": "verify"
+    },
+    {
+      "slug": "volunteer-form-elevate-work",
+      "sourceUrl": "https://elevatebranson.org/volunteer-form-elevate-work/",
+      "importedAt": "2026-10-20T22:21:02.068Z",
+      "status": "verify"
+    },
+    {
+      "slug": "volunteer-form-evening-meal-delivery-and-outreach",
+      "sourceUrl": "https://elevatebranson.org/volunteer-form-evening-meal-delivery-and-outreach/",
+      "importedAt": "2026-10-20T22:21:04.500Z",
+      "status": "verify"
+    },
+    {
+      "slug": "volunteer-form-morning-meal-makers",
+      "sourceUrl": "https://elevatebranson.org/volunteer-form-morning-meal-makers/",
+      "importedAt": "2026-10-20T22:21:06.865Z",
+      "status": "verify"
+    },
+    {
+      "slug": "volunteer",
+      "sourceUrl": "https://elevatebranson.org/volunteer/",
+      "importedAt": "2026-10-20T22:21:09.185Z",
+      "status": "verify"
+    },
+    {
+      "slug": "welcome-to-elevate-community",
+      "sourceUrl": "https://elevatebranson.org/welcome-to-elevate-community/",
+      "importedAt": "2026-10-20T22:21:11.488Z",
+      "status": "verify"
+    }
+  ]
+}

@@ -1,0 +1,64 @@
+{
+  "slug": "elevate-outreach",
+  "title": "Elevate Outreach - Elevate Branson",
+  "section": "what-we-do",
+  "sourceUrl": "https://elevatebranson.org/elevate-outreach/",
+  "summary": "Even the most prosperous and successful areas have people struggling with food, housing and employment. In Branson, thousands of people live in weekly-stay motel rooms, without even a basic kitchen, outdoor space, or adequate privacy. These neighbors have families, stories and struggles. Some are hurting and lost. Many just need to know someone in the community cares about them.",
+  "blocks": [
+    {
+      "_type": "richText",
+      "paragraphs": [
+        "Even the most prosperous and successful areas have people struggling with food, housing and employment. In Branson, thousands of people live in weekly-stay motel rooms, without even a basic kitchen, outdoor space, or adequate privacy. These neighbors have families, stories and struggles. Some are hurting and lost. Many just need to know someone in the community cares about them.",
+        "With the help of countless volunteers, Elevate Branson sacks and delivers hundreds of basic meals to the people in these motels each month. These meals are not a handout – they are a connection to people. Meal delivery opens the door to trust and caring. Relationships are built and people in poverty are connected to next steps that empower them to change. You can volunteer to be a part of the solution each month.",
+        "Privacy Policy | Contact Us | Brand Partnership"
+      ],
+      "headings": [
+        "HOURS OF OPERATION:",
+        "HOURS OF OPERATION:"
+      ]
+    },
+    {
+      "_type": "buttonRow",
+      "buttons": [
+        {
+          "label": "BECOME A PART OF THE SOLUTION! VOLUNTEER HERE!",
+          "url": "https://elevatebranson.org/volunteer/"
+        },
+        {
+          "label": "JOIN OUR MAILING LIST",
+          "url": "https://elevatebranson.org/elevate-outreach/#mailmunch-pop-1057830"
+        },
+        {
+          "label": "Privacy Policy",
+          "url": "https://elevatebranson.org/privacy-policy/"
+        },
+        {
+          "label": "Contact Us",
+          "url": "https://elevatebranson.org/contact-us/"
+        },
+        {
+          "label": "Brand Partnership",
+          "url": "https://elevatebranson.org/branding-licensure/"
+        },
+        {
+          "label": "JOIN OUR MAILING LIST",
+          "url": "https://elevatebranson.org/elevate-outreach/#mailmunch-pop-1057830"
+        },
+        {
+          "label": "Privacy Policy",
+          "url": "https://elevatebranson.org/privacy-policy/"
+        },
+        {
+          "label": "Contact Us",
+          "url": "https://elevatebranson.org/contact-us/"
+        },
+        {
+          "label": "Brand Partnership",
+          "url": "https://elevatebranson.org/branding-licensure/"
+        }
+      ]
+    }
+  ],
+  "lastVerified": "2026-10-20",
+  "status": "verify"
+}

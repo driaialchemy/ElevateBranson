@@ -1,0 +1,77 @@
+{
+  "slug": "elevate-health",
+  "title": "Elevate Health - Elevate Branson",
+  "section": "what-we-do",
+  "sourceUrl": "https://elevatebranson.org/elevate-health/",
+  "summary": "Branson area residents face a variety of obstacles to utilizing health care in our area. Sometimes the cost is prohibitive. Other times transportation is not available. When lack of access to care results in no care at all, the health and well-being of our community’s most vulnerable individuals and families are at risk.",
+  "blocks": [
+    {
+      "_type": "richText",
+      "paragraphs": [
+        "Branson area residents face a variety of obstacles to utilizing health care in our area. Sometimes the cost is prohibitive. Other times transportation is not available. When lack of access to care results in no care at all, the health and well-being of our community’s most vulnerable individuals and families are at risk.",
+        "Elevate Health collaborates with area service providers and local non-profit organizations who can provide essential health care services for our neighbors who are struggling. We remove the barriers to health care and help neighbors get the services they need to be healthy, happy and productive members of our community.",
+        "Affordable mental healthcare can be challenging to find in our community. Elevate Counseling offers individual and group therapy sessions to our community at an affordable hourly rate. Our on-site counselor offers opportunities to prioritize your mental health and seek healing from various mental health challenges including substance use disorders, Post Traumatic Stress Disorder (PTSD), and symptoms stemming from Adverse Childhood Experiences.",
+        "Individual counseling sessions are available at a sliding scale rate based upon your annual income.",
+        "*Up to half the fee may be reduced by earning Elevate Reward Points.",
+        "You don’t have to face hardship alone. Call to schedule an appointment today at 417.243.0060 or contact Bre Watson-Hill, Elevate Community Counselor at [email protected] .",
+        "Brenda “Bre” Watson-Hill has a Master’s of Arts in Counseling from Central Baptist Theological Seminary. She is a Certified Reciprocal Alcohol and Drug Counselor (CRADC) through the Missouri Credentialing board, a LPC with the State of Missouri, and is an EMDR Therapist.",
+        "Bre offers individual and group counseling for those 12 years and older. Bre may provide some limited counseling for individuals under the age of 12 with pre-approval. She also offers group therapy. Bre often takes a Motivational Interviewing approach as well as incorporating techniques from Cognitive Behavioral Therapy (CBT), Dialectical Behavioral Therapy, Internal Family Systems approaches, Trauma Focused CBT, and educational and art activity tools. Bre has experience working with those who are affected by Substance Use Disorders, Post Traumatic Stress Disorder (PTSD), and symptoms stemming from Adverse Childhood Experiences (high ACE scores). Bre is not authorized to prescribe any medication for you at any time. Depending on your symptoms and problems, medication may or may not be appropriate. In the event that a consideration of possible medication for psychological distress seems necessary, Bre will assist you in obtaining a medical or psychological evaluation.",
+        "To request an appointment or more information on  Elevate Health programs or services, contact Elevate Health at [email protected] or call 417.243.0660.",
+        "Privacy Policy | Contact Us | Brand Partnership"
+      ],
+      "headings": [
+        "ELEVATE COUNSELING",
+        "OUR COUNSELOR'S QUALIFICATIONS AND CREDENTIALS",
+        "HOURS OF OPERATION:",
+        "HOURS OF OPERATION:"
+      ]
+    },
+    {
+      "_type": "buttonRow",
+      "buttons": [
+        {
+          "label": "[email protected]",
+          "url": "https://elevatebranson.org/cdn-cgi/l/email-protection#ecae9e8982888dc2bb8d989f8382c1a4858080aca980899a8d9889ae9e8d829f8382c2839e8b"
+        },
+        {
+          "label": "[email protected]",
+          "url": "https://elevatebranson.org/cdn-cgi/l/email-protection#99dbebfcf7fdf8b7cef8edeaf6f7b4d1f0f5f5d9fcf5fceff8edfcfbebf8f7eaf6f7b7f6ebfe"
+        },
+        {
+          "label": "JOIN OUR MAILING LIST",
+          "url": "https://elevatebranson.org/elevate-health/#mailmunch-pop-1057830"
+        },
+        {
+          "label": "Privacy Policy",
+          "url": "https://elevatebranson.org/privacy-policy/"
+        },
+        {
+          "label": "Contact Us",
+          "url": "https://elevatebranson.org/contact-us/"
+        },
+        {
+          "label": "Brand Partnership",
+          "url": "https://elevatebranson.org/branding-licensure/"
+        },
+        {
+          "label": "JOIN OUR MAILING LIST",
+          "url": "https://elevatebranson.org/elevate-health/#mailmunch-pop-1057830"
+        },
+        {
+          "label": "Privacy Policy",
+          "url": "https://elevatebranson.org/privacy-policy/"
+        },
+        {
+          "label": "Contact Us",
+          "url": "https://elevatebranson.org/contact-us/"
+        },
+        {
+          "label": "Brand Partnership",
+          "url": "https://elevatebranson.org/branding-licensure/"
+        }
+      ]
+    }
+  ],
+  "lastVerified": "2026-10-20",
+  "status": "verify"
+}

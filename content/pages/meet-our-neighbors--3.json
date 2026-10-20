@@ -1,0 +1,196 @@
+{
+  "slug": "meet-our-neighbors--3",
+  "title": "Meet Our Neighbors - Elevate Branson",
+  "section": "about",
+  "sourceUrl": "https://elevatebranson.org/meet-our-neighbors/3/",
+  "heroImage": {
+    "url": "/assets/site/50e40646b74f016e.webp",
+    "alt": "295921411_489532886311778_2081471773159043674_n"
+  },
+  "summary": "Privacy Policy | Contact Us | Brand Partnership",
+  "blocks": [
+    {
+      "_type": "richText",
+      "paragraphs": [
+        "Privacy Policy | Contact Us | Brand Partnership"
+      ],
+      "headings": [
+        "MEET OUR NEIGHBORS",
+        "HOURS OF OPERATION:",
+        "HOURS OF OPERATION:"
+      ]
+    },
+    {
+      "_type": "buttonRow",
+      "buttons": [
+        {
+          "label": "Mary",
+          "url": "https://elevatebranson.org/mary-2-2/"
+        },
+        {
+          "label": "Read More",
+          "url": "https://elevatebranson.org/mary-2-2/"
+        },
+        {
+          "label": "Elisabeth",
+          "url": "https://elevatebranson.org/elisabeth/"
+        },
+        {
+          "label": "Read More",
+          "url": "https://elevatebranson.org/elisabeth/"
+        },
+        {
+          "label": "Carl",
+          "url": "https://elevatebranson.org/carl/"
+        },
+        {
+          "label": "Read More",
+          "url": "https://elevatebranson.org/carl/"
+        },
+        {
+          "label": "Angela",
+          "url": "https://elevatebranson.org/angela/"
+        },
+        {
+          "label": "Read More",
+          "url": "https://elevatebranson.org/angela/"
+        },
+        {
+          "label": "Tonya",
+          "url": "https://elevatebranson.org/tonya-2/"
+        },
+        {
+          "label": "Read More",
+          "url": "https://elevatebranson.org/tonya-2/"
+        },
+        {
+          "label": "Mary",
+          "url": "https://elevatebranson.org/mary/"
+        },
+        {
+          "label": "Read More",
+          "url": "https://elevatebranson.org/mary/"
+        },
+        {
+          "label": "Brandon",
+          "url": "https://elevatebranson.org/brandon/"
+        },
+        {
+          "label": "Read More",
+          "url": "https://elevatebranson.org/brandon/"
+        },
+        {
+          "label": "Sam",
+          "url": "https://elevatebranson.org/meet-sam/"
+        },
+        {
+          "label": "Read More",
+          "url": "https://elevatebranson.org/meet-sam/"
+        },
+        {
+          "label": "Lloyd",
+          "url": "https://elevatebranson.org/lloyd/"
+        },
+        {
+          "label": "Read More",
+          "url": "https://elevatebranson.org/lloyd/"
+        },
+        {
+          "label": "Jennifer",
+          "url": "https://elevatebranson.org/meet-jennifer/"
+        },
+        {
+          "label": "Read More",
+          "url": "https://elevatebranson.org/meet-jennifer/"
+        },
+        {
+          "label": "1",
+          "url": "https://elevatebranson.org/meet-our-neighbors/"
+        },
+        {
+          "label": "2",
+          "url": "https://elevatebranson.org/meet-our-neighbors/2/"
+        },
+        {
+          "label": "4",
+          "url": "https://elevatebranson.org/meet-our-neighbors/4/"
+        },
+        {
+          "label": "JOIN OUR MAILING LIST",
+          "url": "https://elevatebranson.org/meet-our-neighbors/3/#mailmunch-pop-1057830"
+        },
+        {
+          "label": "Privacy Policy",
+          "url": "https://elevatebranson.org/privacy-policy/"
+        },
+        {
+          "label": "Contact Us",
+          "url": "https://elevatebranson.org/contact-us/"
+        },
+        {
+          "label": "Brand Partnership",
+          "url": "https://elevatebranson.org/branding-licensure/"
+        },
+        {
+          "label": "JOIN OUR MAILING LIST",
+          "url": "https://elevatebranson.org/meet-our-neighbors/3/#mailmunch-pop-1057830"
+        },
+        {
+          "label": "Privacy Policy",
+          "url": "https://elevatebranson.org/privacy-policy/"
+        },
+        {
+          "label": "Contact Us",
+          "url": "https://elevatebranson.org/contact-us/"
+        },
+        {
+          "label": "Brand Partnership",
+          "url": "https://elevatebranson.org/branding-licensure/"
+        }
+      ]
+    },
+    {
+      "_type": "imageGallery",
+      "images": [
+        {
+          "url": "/assets/site/50e40646b74f016e.webp",
+          "alt": "295921411_489532886311778_2081471773159043674_n"
+        },
+        {
+          "url": "/assets/site/36bd55312d282d03.webp",
+          "alt": "Elevate Work Graduation March 16gh"
+        },
+        {
+          "url": "/assets/site/b77446033e65a7c0.webp",
+          "alt": "IMG_6882"
+        },
+        {
+          "url": "/assets/site/30d58902510b9cca.webp",
+          "alt": "tonya"
+        },
+        {
+          "url": "/assets/site/3435df712c01110c.webp",
+          "alt": "Mary-2"
+        },
+        {
+          "url": "/assets/site/e6c440d0bdf62cf4.webp",
+          "alt": "EB-Nov-1"
+        },
+        {
+          "url": "/assets/site/bf0e811e611781b1.webp",
+          "alt": "Sam Dec Newsletter"
+        },
+        {
+          "url": "/assets/site/f0b3cf391affaf70.webp",
+          "alt": "Connections"
+        },
+        {
+          "url": "/assets/site/43a0083d2f4120e9.webp",
+          "alt": "MYN_Jennifer"
+        }
+      ]
+    }
+  ],
+  "lastVerified": "2026-10-20",
+  "status": "verify"
+}

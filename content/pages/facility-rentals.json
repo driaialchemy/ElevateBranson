@@ -1,0 +1,68 @@
+{
+  "slug": "facility-rentals",
+  "title": "Facility Rentals - Elevate Branson",
+  "section": "visit",
+  "sourceUrl": "https://elevatebranson.org/facility-rentals/",
+  "summary": "To book a space at our facility, please download and fill out the Facility Rental Contract and deliver it to Matt Grindstaff, Vice President of Strategic Partnerships.",
+  "blocks": [
+    {
+      "_type": "richText",
+      "paragraphs": [
+        "To book a space at our facility, please download and fill out the Facility Rental Contract and deliver it to Matt Grindstaff, Vice President of Strategic Partnerships.",
+        "For more information about renting space at our facility, please contact Matt Grindstaff at 417.598.0962 , or use the form below.",
+        "Privacy Policy | Contact Us | Brand Partnership"
+      ],
+      "headings": [
+        "HOURS OF OPERATION:",
+        "HOURS OF OPERATION:"
+      ]
+    },
+    {
+      "_type": "buttonRow",
+      "buttons": [
+        {
+          "label": "Facility Rental Information",
+          "url": "https://elevatebranson.org/wp-content/uploads/2026/10/EB_Facility-Rental-Flyer_October2026.pdf"
+        },
+        {
+          "label": "Facility Rental Contract",
+          "url": "https://elevatebranson.org/wp-content/uploads/2026/07/Facilities-Reservation-Contract-July-2026.pdf"
+        },
+        {
+          "label": "JOIN OUR MAILING LIST",
+          "url": "https://elevatebranson.org/facility-rentals/#mailmunch-pop-1057830"
+        },
+        {
+          "label": "Privacy Policy",
+          "url": "https://elevatebranson.org/privacy-policy/"
+        },
+        {
+          "label": "Contact Us",
+          "url": "https://elevatebranson.org/contact-us/"
+        },
+        {
+          "label": "Brand Partnership",
+          "url": "https://elevatebranson.org/branding-licensure/"
+        },
+        {
+          "label": "JOIN OUR MAILING LIST",
+          "url": "https://elevatebranson.org/facility-rentals/#mailmunch-pop-1057830"
+        },
+        {
+          "label": "Privacy Policy",
+          "url": "https://elevatebranson.org/privacy-policy/"
+        },
+        {
+          "label": "Contact Us",
+          "url": "https://elevatebranson.org/contact-us/"
+        },
+        {
+          "label": "Brand Partnership",
+          "url": "https://elevatebranson.org/branding-licensure/"
+        }
+      ]
+    }
+  ],
+  "lastVerified": "2026-10-20",
+  "status": "verify"
+}

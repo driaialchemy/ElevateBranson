@@ -1,0 +1,200 @@
+{
+  "slug": "meet-our-neighbors",
+  "title": "Meet Our Neighbors - Elevate Branson",
+  "section": "about",
+  "sourceUrl": "https://elevatebranson.org/meet-our-neighbors/",
+  "heroImage": {
+    "url": "/assets/site/08d16b6886a798a0.webp",
+    "alt": "'s Mobile Auto Repair copy"
+  },
+  "summary": "Privacy Policy | Contact Us | Brand Partnership",
+  "blocks": [
+    {
+      "_type": "richText",
+      "paragraphs": [
+        "Privacy Policy | Contact Us | Brand Partnership"
+      ],
+      "headings": [
+        "MEET OUR NEIGHBORS",
+        "HOURS OF OPERATION:",
+        "HOURS OF OPERATION:"
+      ]
+    },
+    {
+      "_type": "buttonRow",
+      "buttons": [
+        {
+          "label": "Ryan Fains’s Story",
+          "url": "https://elevatebranson.org/ryan-fains-story/"
+        },
+        {
+          "label": "Read More",
+          "url": "https://elevatebranson.org/ryan-fains-story/"
+        },
+        {
+          "label": "Anna & Lorenzo’s Story",
+          "url": "https://elevatebranson.org/anna-lorenzos-story-copy/"
+        },
+        {
+          "label": "Read More",
+          "url": "https://elevatebranson.org/anna-lorenzos-story-copy/"
+        },
+        {
+          "label": "Brandon & Shelby’s Story",
+          "url": "https://elevatebranson.org/brandon-shelbys-story/"
+        },
+        {
+          "label": "Read More",
+          "url": "https://elevatebranson.org/brandon-shelbys-story/"
+        },
+        {
+          "label": "Maranda’s Story",
+          "url": "https://elevatebranson.org/marandas-story/"
+        },
+        {
+          "label": "Read More",
+          "url": "https://elevatebranson.org/marandas-story/"
+        },
+        {
+          "label": "Jeff & Lisa’s Story",
+          "url": "https://elevatebranson.org/jeff-lisas-story/"
+        },
+        {
+          "label": "Read More",
+          "url": "https://elevatebranson.org/jeff-lisas-story/"
+        },
+        {
+          "label": "Chuck’s Story",
+          "url": "https://elevatebranson.org/chucks-story/"
+        },
+        {
+          "label": "Read More",
+          "url": "https://elevatebranson.org/chucks-story/"
+        },
+        {
+          "label": "Courtney’s Story",
+          "url": "https://elevatebranson.org/courtneys-story/"
+        },
+        {
+          "label": "Read More",
+          "url": "https://elevatebranson.org/courtneys-story/"
+        },
+        {
+          "label": "Josh’s Story",
+          "url": "https://elevatebranson.org/joshs-story/"
+        },
+        {
+          "label": "Read More",
+          "url": "https://elevatebranson.org/joshs-story/"
+        },
+        {
+          "label": "Tiffany’s Story",
+          "url": "https://elevatebranson.org/tiffanys-story/"
+        },
+        {
+          "label": "Read More",
+          "url": "https://elevatebranson.org/tiffanys-story/"
+        },
+        {
+          "label": "Jennifer",
+          "url": "https://elevatebranson.org/jennifer/"
+        },
+        {
+          "label": "Read More",
+          "url": "https://elevatebranson.org/jennifer/"
+        },
+        {
+          "label": "2",
+          "url": "https://elevatebranson.org/meet-our-neighbors/2/"
+        },
+        {
+          "label": "3",
+          "url": "https://elevatebranson.org/meet-our-neighbors/3/"
+        },
+        {
+          "label": "4",
+          "url": "https://elevatebranson.org/meet-our-neighbors/4/"
+        },
+        {
+          "label": "JOIN OUR MAILING LIST",
+          "url": "https://elevatebranson.org/meet-our-neighbors/#mailmunch-pop-1057830"
+        },
+        {
+          "label": "Privacy Policy",
+          "url": "https://elevatebranson.org/privacy-policy/"
+        },
+        {
+          "label": "Contact Us",
+          "url": "https://elevatebranson.org/contact-us/"
+        },
+        {
+          "label": "Brand Partnership",
+          "url": "https://elevatebranson.org/branding-licensure/"
+        },
+        {
+          "label": "JOIN OUR MAILING LIST",
+          "url": "https://elevatebranson.org/meet-our-neighbors/#mailmunch-pop-1057830"
+        },
+        {
+          "label": "Privacy Policy",
+          "url": "https://elevatebranson.org/privacy-policy/"
+        },
+        {
+          "label": "Contact Us",
+          "url": "https://elevatebranson.org/contact-us/"
+        },
+        {
+          "label": "Brand Partnership",
+          "url": "https://elevatebranson.org/branding-licensure/"
+        }
+      ]
+    },
+    {
+      "_type": "imageGallery",
+      "images": [
+        {
+          "url": "/assets/site/08d16b6886a798a0.webp",
+          "alt": "'s Mobile Auto Repair copy"
+        },
+        {
+          "url": "/assets/site/28601a62c6b78936.webp",
+          "alt": "image1"
+        },
+        {
+          "url": "/assets/site/46c63ec150477115.webp",
+          "alt": "Brandon Shelby and Ellie Mae Graduate copy"
+        },
+        {
+          "url": "/assets/site/f94003a79f141570.webp",
+          "alt": "marandaCar2 copy"
+        },
+        {
+          "url": "/assets/site/08728819e7fe045c.webp",
+          "alt": "image000000008 (1)"
+        },
+        {
+          "url": "/assets/site/0b35cdaff3365cf4.webp",
+          "alt": "Chuck-Calvin-Charlie copy"
+        },
+        {
+          "url": "/assets/site/bb45466c46c39350.webp",
+          "alt": "Courtney Woods haircut"
+        },
+        {
+          "url": "/assets/site/5508476209bb5dd4.webp",
+          "alt": "Josh Smith"
+        },
+        {
+          "url": "/assets/site/f7f4a7a0762ae2e2.webp",
+          "alt": "Tiffany-Scooter-Pic"
+        },
+        {
+          "url": "/assets/site/a451da123de9af65.webp",
+          "alt": "IMG_1262-1"
+        }
+      ]
+    }
+  ],
+  "lastVerified": "2026-10-20",
+  "status": "verify"
+}

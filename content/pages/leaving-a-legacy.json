@@ -1,0 +1,73 @@
+{
+  "slug": "leaving-a-legacy",
+  "title": "Leaving A Legacy - Elevate Branson",
+  "section": "get-involved",
+  "sourceUrl": "https://elevatebranson.org/leaving-a-legacy/",
+  "summary": "Your legacy could be written on the lives of our neighbors.",
+  "blocks": [
+    {
+      "_type": "richText",
+      "paragraphs": [
+        "Your legacy could be written on the lives of our neighbors.",
+        "Let us help you plan your giving options.",
+        "Wills and Bequests",
+        "Bequest a gift made through your will or trust to continue supporting Elevate Branson, or a specific program of your choice.",
+        "Naming Opportunities",
+        "Tiny homes, sponsorship packages, and many other opportunities within Elevate Community allow you to leave your name and legacy to empower our neighbors in our community.",
+        "Charitable Trust",
+        "Set up your trust to allocate an amount of your choosing to help fund Elevate Branson programs and services.",
+        "Life Insurance",
+        "Include Elevate Branson as a beneficiary of your life insurance plan to leave your mark on our community.",
+        "To Leave Your Legacy, Contact Matt Grindstaff At [email protected] or 417.598.0962.",
+        "Privacy Policy | Contact Us | Brand Partnership"
+      ],
+      "headings": [
+        "HOURS OF OPERATION:",
+        "HOURS OF OPERATION:"
+      ]
+    },
+    {
+      "_type": "buttonRow",
+      "buttons": [
+        {
+          "label": "[email protected]",
+          "url": "https://elevatebranson.org/cdn-cgi/l/email-protection#ca87abbebee48db8a3a4aeb9beabacac8a8fa6afbcabbeaf88b8aba4b9a5a4e4a5b8ad"
+        },
+        {
+          "label": "JOIN OUR MAILING LIST",
+          "url": "https://elevatebranson.org/leaving-a-legacy/#mailmunch-pop-1057830"
+        },
+        {
+          "label": "Privacy Policy",
+          "url": "https://elevatebranson.org/privacy-policy/"
+        },
+        {
+          "label": "Contact Us",
+          "url": "https://elevatebranson.org/contact-us/"
+        },
+        {
+          "label": "Brand Partnership",
+          "url": "https://elevatebranson.org/branding-licensure/"
+        },
+        {
+          "label": "JOIN OUR MAILING LIST",
+          "url": "https://elevatebranson.org/leaving-a-legacy/#mailmunch-pop-1057830"
+        },
+        {
+          "label": "Privacy Policy",
+          "url": "https://elevatebranson.org/privacy-policy/"
+        },
+        {
+          "label": "Contact Us",
+          "url": "https://elevatebranson.org/contact-us/"
+        },
+        {
+          "label": "Brand Partnership",
+          "url": "https://elevatebranson.org/branding-licensure/"
+        }
+      ]
+    }
+  ],
+  "lastVerified": "2026-10-20",
+  "status": "verify"
+}

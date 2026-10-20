@@ -1,0 +1,77 @@
+{
+  "slug": "elevate-life",
+  "title": "Elevate Life - Elevate Branson",
+  "section": "what-we-do",
+  "sourceUrl": "https://elevatebranson.org/elevate-life/",
+  "summary": "• Is there a God?",
+  "blocks": [
+    {
+      "_type": "richText",
+      "paragraphs": [
+        "• Is there a God?",
+        "• Why do bad things happen?",
+        "• What’s the purpose of life?",
+        "• Does God accept everyone?",
+        "• How do I forgive people that have hurt me?",
+        "• Am I too bad for God?",
+        "• Why Jesus?",
+        "Elevate Life is a group of people exploring life’s deeper questions and empowering each other to navigate through life’s challenges and joys. Is there more to life than what meets the eye? Join us as we dive into meaningful conversations about the essence of life, purpose, and personal growth.",
+        "Privacy Policy | Contact Us | Brand Partnership"
+      ],
+      "headings": [
+        "GOT QUESTIONS?",
+        "EXPLORE GOD AND FIND ANSWERS",
+        "6:30 P.M. - 8:00 P.M.",
+        "Every 2nd & 4th Thursday Of The Month",
+        "At Elevate Branson Campus",
+        "Free Dinner Served From 5:45 P.M. - 6:30 P.M.",
+        "Transportation Provided!",
+        "417.239.7818",
+        "Call Before 4:00 P.M. On Thursday",
+        "Bring Your Kids!",
+        "Childcare Provided",
+        "HOURS OF OPERATION:",
+        "HOURS OF OPERATION:"
+      ]
+    },
+    {
+      "_type": "buttonRow",
+      "buttons": [
+        {
+          "label": "JOIN OUR MAILING LIST",
+          "url": "https://elevatebranson.org/elevate-life/#mailmunch-pop-1057830"
+        },
+        {
+          "label": "Privacy Policy",
+          "url": "https://elevatebranson.org/privacy-policy/"
+        },
+        {
+          "label": "Contact Us",
+          "url": "https://elevatebranson.org/contact-us/"
+        },
+        {
+          "label": "Brand Partnership",
+          "url": "https://elevatebranson.org/branding-licensure/"
+        },
+        {
+          "label": "JOIN OUR MAILING LIST",
+          "url": "https://elevatebranson.org/elevate-life/#mailmunch-pop-1057830"
+        },
+        {
+          "label": "Privacy Policy",
+          "url": "https://elevatebranson.org/privacy-policy/"
+        },
+        {
+          "label": "Contact Us",
+          "url": "https://elevatebranson.org/contact-us/"
+        },
+        {
+          "label": "Brand Partnership",
+          "url": "https://elevatebranson.org/branding-licensure/"
+        }
+      ]
+    }
+  ],
+  "lastVerified": "2026-10-20",
+  "status": "verify"
+}

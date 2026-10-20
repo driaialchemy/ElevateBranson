@@ -1,0 +1,256 @@
+{
+  "slug": "news",
+  "title": "News - Elevate Branson",
+  "section": "media",
+  "sourceUrl": "https://elevatebranson.org/news/",
+  "heroImage": {
+    "url": "/assets/site/19ef758ec1bf7223.webp",
+    "alt": "Screen Shot 2026-10-01 at 11.19"
+  },
+  "summary": "Privacy Policy | Contact Us | Brand Partnership",
+  "blocks": [
+    {
+      "_type": "richText",
+      "paragraphs": [
+        "Privacy Policy | Contact Us | Brand Partnership"
+      ],
+      "headings": [
+        "WHAT'S HAPPENING AT ELEVATE BRANSON?",
+        "HOURS OF OPERATION:",
+        "HOURS OF OPERATION:"
+      ]
+    },
+    {
+      "_type": "buttonRow",
+      "buttons": [
+        {
+          "label": "SIGN UP FOR OUR MONTHLY NEWLETTER",
+          "url": "https://elevatebranson.org/news/#mailmunch-pop-1057830"
+        },
+        {
+          "label": "Newsletters",
+          "url": "https://elevatebranson.org/category/newsletters/"
+        },
+        {
+          "label": "September 2026 Newsletter",
+          "url": "https://conta.cc/4zKde9a"
+        },
+        {
+          "label": "Read More",
+          "url": "https://conta.cc/4zKde9a"
+        },
+        {
+          "label": "Newsletters",
+          "url": "https://elevatebranson.org/category/newsletters/"
+        },
+        {
+          "label": "August 2026 Newsletter",
+          "url": "https://conta.cc/4h9vylh"
+        },
+        {
+          "label": "Read More",
+          "url": "https://conta.cc/4h9vylh"
+        },
+        {
+          "label": "Newsletters",
+          "url": "https://elevatebranson.org/category/newsletters/"
+        },
+        {
+          "label": "July 2026 Newsletter",
+          "url": "https://conta.cc/4eGUrlj"
+        },
+        {
+          "label": "Read More",
+          "url": "https://conta.cc/4eGUrlj"
+        },
+        {
+          "label": "Newsletters",
+          "url": "https://elevatebranson.org/category/newsletters/"
+        },
+        {
+          "label": "June 2026 Newsletter",
+          "url": "https://conta.cc/43rNnnL"
+        },
+        {
+          "label": "Read More",
+          "url": "https://conta.cc/43rNnnL"
+        },
+        {
+          "label": "Newsletters",
+          "url": "https://elevatebranson.org/category/newsletters/"
+        },
+        {
+          "label": "May 2026 Newsletter",
+          "url": "https://conta.cc/3P4yYds"
+        },
+        {
+          "label": "Read More",
+          "url": "https://conta.cc/3P4yYds"
+        },
+        {
+          "label": "Newsletters",
+          "url": "https://elevatebranson.org/category/newsletters/"
+        },
+        {
+          "label": "April 2026 Newsletter",
+          "url": "https://conta.cc/41vXUgm"
+        },
+        {
+          "label": "Read More",
+          "url": "https://conta.cc/41vXUgm"
+        },
+        {
+          "label": "Newsletters",
+          "url": "https://elevatebranson.org/category/newsletters/"
+        },
+        {
+          "label": "March 2026 Newsletter",
+          "url": "https://conta.cc/4kT587h"
+        },
+        {
+          "label": "Read More",
+          "url": "https://conta.cc/4kT587h"
+        },
+        {
+          "label": "Newsletters",
+          "url": "https://elevatebranson.org/category/newsletters/"
+        },
+        {
+          "label": "February 2026 Newsletter",
+          "url": "https://conta.cc/4aoQWPx"
+        },
+        {
+          "label": "Read More",
+          "url": "https://conta.cc/4aoQWPx"
+        },
+        {
+          "label": "Newsletters",
+          "url": "https://elevatebranson.org/category/newsletters/"
+        },
+        {
+          "label": "January 2026 Newsletter",
+          "url": "https://conta.cc/4qJq16p"
+        },
+        {
+          "label": "Read More",
+          "url": "https://conta.cc/4qJq16p"
+        },
+        {
+          "label": "Newsletters",
+          "url": "https://elevatebranson.org/category/newsletters/"
+        },
+        {
+          "label": "December 2025 Newsletter",
+          "url": "https://conta.cc/482y1ZO"
+        },
+        {
+          "label": "Read More",
+          "url": "https://conta.cc/482y1ZO"
+        },
+        {
+          "label": "2",
+          "url": "https://elevatebranson.org/news/2/"
+        },
+        {
+          "label": "3",
+          "url": "https://elevatebranson.org/news/3/"
+        },
+        {
+          "label": "4",
+          "url": "https://elevatebranson.org/news/4/"
+        },
+        {
+          "label": "5",
+          "url": "https://elevatebranson.org/news/5/"
+        },
+        {
+          "label": "6",
+          "url": "https://elevatebranson.org/news/6/"
+        },
+        {
+          "label": "7",
+          "url": "https://elevatebranson.org/news/7/"
+        },
+        {
+          "label": "JOIN OUR MAILING LIST",
+          "url": "https://elevatebranson.org/news/#mailmunch-pop-1057830"
+        },
+        {
+          "label": "Privacy Policy",
+          "url": "https://elevatebranson.org/privacy-policy/"
+        },
+        {
+          "label": "Contact Us",
+          "url": "https://elevatebranson.org/contact-us/"
+        },
+        {
+          "label": "Brand Partnership",
+          "url": "https://elevatebranson.org/branding-licensure/"
+        },
+        {
+          "label": "JOIN OUR MAILING LIST",
+          "url": "https://elevatebranson.org/news/#mailmunch-pop-1057830"
+        },
+        {
+          "label": "Privacy Policy",
+          "url": "https://elevatebranson.org/privacy-policy/"
+        },
+        {
+          "label": "Contact Us",
+          "url": "https://elevatebranson.org/contact-us/"
+        },
+        {
+          "label": "Brand Partnership",
+          "url": "https://elevatebranson.org/branding-licensure/"
+        }
+      ]
+    },
+    {
+      "_type": "imageGallery",
+      "images": [
+        {
+          "url": "/assets/site/19ef758ec1bf7223.webp",
+          "alt": "Screen Shot 2026-10-01 at 11.19"
+        },
+        {
+          "url": "/assets/site/daab37dad6bc7dd9.webp",
+          "alt": "Screen Shot 2026-10-01 at 11.15"
+        },
+        {
+          "url": "/assets/site/f5c926a47275c34e.webp",
+          "alt": "Screen Shot 2026-07-27 at 10.50"
+        },
+        {
+          "url": "/assets/site/d2a0b04ad358853e.webp",
+          "alt": "Screen Shot 2026-06-30 at 9.53"
+        },
+        {
+          "url": "/assets/site/a2a785853c804e35.webp",
+          "alt": "Screen Shot 2026-05-28 at 12.14"
+        },
+        {
+          "url": "/assets/site/2244d91d83d4a3af.webp",
+          "alt": "Screen Shot 2026-04-29 at 12.25"
+        },
+        {
+          "url": "/assets/site/6c05a30870b110e6.webp",
+          "alt": "Screen Shot 2026-03-31 at 3.51"
+        },
+        {
+          "url": "/assets/site/1b3cc17471475973.webp",
+          "alt": "Screen Shot 2026-02-27 at 9.32"
+        },
+        {
+          "url": "/assets/site/af86e83cf745980f.webp",
+          "alt": "Screen Shot 2026-02-27 at 9.34"
+        },
+        {
+          "url": "/assets/site/e4317bf50beea46b.webp",
+          "alt": "Screen Shot 2025-12-30 at 10.52"
+        }
+      ]
+    }
+  ],
+  "lastVerified": "2026-10-20",
+  "status": "verify"
+}

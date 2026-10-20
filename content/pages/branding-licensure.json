@@ -1,0 +1,72 @@
+{
+  "slug": "branding-licensure",
+  "title": "Branding Licensure - Elevate Branson",
+  "section": "get-involved",
+  "sourceUrl": "https://elevatebranson.org/branding-licensure/",
+  "summary": "Branding Partner Log-In",
+  "blocks": [
+    {
+      "_type": "richText",
+      "paragraphs": [
+        "Branding Partner Log-In",
+        "By becoming an Elevate Branson Branding Partner, your organization can implement Elevate programs and services under the Elevate Branson brand in your very own community. We’ve laid the groundwork, so that you won’t have to reinvent the wheel and your neighbors will be able to gain access to the resources they need efficiently and effectively.",
+        "No one knows your community like you do, and helping you bring an Elevate to your community in a way that best suits your community’s needs is our ultimate goal.",
+        "Interested in becoming a brand partner? Complete our pre-assessment below!",
+        "Privacy Policy | Contact Us | Brand Partnership"
+      ],
+      "headings": [
+        "FREQUENTLY ASKED QUESTIONS",
+        "OUR BRAND PARTNERS",
+        "HOURS OF OPERATION:",
+        "HOURS OF OPERATION:"
+      ]
+    },
+    {
+      "_type": "buttonRow",
+      "buttons": [
+        {
+          "label": "Branding Partner Log-In",
+          "url": "https://elevatebranson.org/branding-partners/"
+        },
+        {
+          "label": "ELEVATE BRANSON PRE-ASSESSMENT",
+          "url": "https://elevatebranson.org/elevate-branding-licensure-pre-vetting-questionnaire/"
+        },
+        {
+          "label": "JOIN OUR MAILING LIST",
+          "url": "https://elevatebranson.org/branding-licensure/#mailmunch-pop-1057830"
+        },
+        {
+          "label": "Privacy Policy",
+          "url": "https://elevatebranson.org/privacy-policy/"
+        },
+        {
+          "label": "Contact Us",
+          "url": "https://elevatebranson.org/contact-us/"
+        },
+        {
+          "label": "Brand Partnership",
+          "url": "https://elevatebranson.org/branding-licensure/"
+        },
+        {
+          "label": "JOIN OUR MAILING LIST",
+          "url": "https://elevatebranson.org/branding-licensure/#mailmunch-pop-1057830"
+        },
+        {
+          "label": "Privacy Policy",
+          "url": "https://elevatebranson.org/privacy-policy/"
+        },
+        {
+          "label": "Contact Us",
+          "url": "https://elevatebranson.org/contact-us/"
+        },
+        {
+          "label": "Brand Partnership",
+          "url": "https://elevatebranson.org/branding-licensure/"
+        }
+      ]
+    }
+  ],
+  "lastVerified": "2026-10-20",
+  "status": "verify"
+}

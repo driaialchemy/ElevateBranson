@@ -1,0 +1,59 @@
+{
+  "slug": "event-calendar",
+  "title": "Event Calendar - Elevate Branson",
+  "section": "about",
+  "sourceUrl": "https://elevatebranson.org/event-calendar/",
+  "summary": "Privacy Policy | Contact Us | Brand Partnership",
+  "blocks": [
+    {
+      "_type": "richText",
+      "paragraphs": [
+        "Privacy Policy | Contact Us | Brand Partnership"
+      ],
+      "headings": [
+        "EVENT CALENDAR",
+        "HOURS OF OPERATION:",
+        "HOURS OF OPERATION:"
+      ]
+    },
+    {
+      "_type": "buttonRow",
+      "buttons": [
+        {
+          "label": "JOIN OUR MAILING LIST",
+          "url": "https://elevatebranson.org/event-calendar/#mailmunch-pop-1057830"
+        },
+        {
+          "label": "Privacy Policy",
+          "url": "https://elevatebranson.org/privacy-policy/"
+        },
+        {
+          "label": "Contact Us",
+          "url": "https://elevatebranson.org/contact-us/"
+        },
+        {
+          "label": "Brand Partnership",
+          "url": "https://elevatebranson.org/branding-licensure/"
+        },
+        {
+          "label": "JOIN OUR MAILING LIST",
+          "url": "https://elevatebranson.org/event-calendar/#mailmunch-pop-1057830"
+        },
+        {
+          "label": "Privacy Policy",
+          "url": "https://elevatebranson.org/privacy-policy/"
+        },
+        {
+          "label": "Contact Us",
+          "url": "https://elevatebranson.org/contact-us/"
+        },
+        {
+          "label": "Brand Partnership",
+          "url": "https://elevatebranson.org/branding-licensure/"
+        }
+      ]
+    }
+  ],
+  "lastVerified": "2026-10-20",
+  "status": "verify"
+}

@@ -1,0 +1,60 @@
+{
+  "slug": "elevate-branson-campus",
+  "title": "Elevate Branson Campus - Elevate Branson",
+  "section": "visit",
+  "sourceUrl": "https://elevatebranson.org/elevate-branson-campus/",
+  "summary": "Our campus is home to many great programs and services. Explore the links below to learn more about what we do.",
+  "blocks": [
+    {
+      "_type": "richText",
+      "paragraphs": [
+        "Our campus is home to many great programs and services. Explore the links below to learn more about what we do.",
+        "Privacy Policy | Contact Us | Brand Partnership"
+      ],
+      "headings": [
+        "ELEVATE BRANSON CAMPUS",
+        "HOURS OF OPERATION:",
+        "HOURS OF OPERATION:"
+      ]
+    },
+    {
+      "_type": "buttonRow",
+      "buttons": [
+        {
+          "label": "JOIN OUR MAILING LIST",
+          "url": "https://elevatebranson.org/elevate-branson-campus/#mailmunch-pop-1057830"
+        },
+        {
+          "label": "Privacy Policy",
+          "url": "https://elevatebranson.org/privacy-policy/"
+        },
+        {
+          "label": "Contact Us",
+          "url": "https://elevatebranson.org/contact-us/"
+        },
+        {
+          "label": "Brand Partnership",
+          "url": "https://elevatebranson.org/branding-licensure/"
+        },
+        {
+          "label": "JOIN OUR MAILING LIST",
+          "url": "https://elevatebranson.org/elevate-branson-campus/#mailmunch-pop-1057830"
+        },
+        {
+          "label": "Privacy Policy",
+          "url": "https://elevatebranson.org/privacy-policy/"
+        },
+        {
+          "label": "Contact Us",
+          "url": "https://elevatebranson.org/contact-us/"
+        },
+        {
+          "label": "Brand Partnership",
+          "url": "https://elevatebranson.org/branding-licensure/"
+        }
+      ]
+    }
+  ],
+  "lastVerified": "2026-10-20",
+  "status": "verify"
+}

@@ -1,0 +1,235 @@
+{
+  "slug": "bryans-blog",
+  "title": "Bryan's Blog - Elevate Branson",
+  "section": "about",
+  "sourceUrl": "https://elevatebranson.org/bryans-blog/",
+  "heroImage": {
+    "url": "/assets/site/d181f8f7afe2e730.webp",
+    "alt": "May-Blog-Image_2"
+  },
+  "summary": "Privacy Policy | Contact Us | Brand Partnership",
+  "blocks": [
+    {
+      "_type": "richText",
+      "paragraphs": [
+        "Privacy Policy | Contact Us | Brand Partnership"
+      ],
+      "headings": [
+        "HOURS OF OPERATION:",
+        "HOURS OF OPERATION:"
+      ]
+    },
+    {
+      "_type": "buttonRow",
+      "buttons": [
+        {
+          "label": "Battling Food Insecurity In The Ozarks",
+          "url": "https://elevatebranson.org/battling-food-insecurity-in-the-ozarks/"
+        },
+        {
+          "label": "Read More",
+          "url": "https://elevatebranson.org/battling-food-insecurity-in-the-ozarks/"
+        },
+        {
+          "label": "Our Glass Is Half Full",
+          "url": "https://elevatebranson.org/our-glass-is-half-full/"
+        },
+        {
+          "label": "Read More",
+          "url": "https://elevatebranson.org/our-glass-is-half-full/"
+        },
+        {
+          "label": "Designed For Community",
+          "url": "https://elevatebranson.org/designed-for-community/"
+        },
+        {
+          "label": "Read More",
+          "url": "https://elevatebranson.org/designed-for-community/"
+        },
+        {
+          "label": "Solving Poverty One Case At a Time",
+          "url": "https://elevatebranson.org/solving-poverty-one-case-at-a-time/"
+        },
+        {
+          "label": "Read More",
+          "url": "https://elevatebranson.org/solving-poverty-one-case-at-a-time/"
+        },
+        {
+          "label": "Feeling Lonely? You’re Not Alone",
+          "url": "https://elevatebranson.org/feeling-lonely-youre-not-alone/"
+        },
+        {
+          "label": "Read More",
+          "url": "https://elevatebranson.org/feeling-lonely-youre-not-alone/"
+        },
+        {
+          "label": "Break The Cycle – Help Our Children In Poverty",
+          "url": "https://elevatebranson.org/break-the-cycle-help-our-children-in-poverty/"
+        },
+        {
+          "label": "Read More",
+          "url": "https://elevatebranson.org/break-the-cycle-help-our-children-in-poverty/"
+        },
+        {
+          "label": "Reaching The Unchurched",
+          "url": "https://elevatebranson.org/reaching-the-unchurched/"
+        },
+        {
+          "label": "Read More",
+          "url": "https://elevatebranson.org/reaching-the-unchurched/"
+        },
+        {
+          "label": "Jobs For Life: Invest In Your Employees – Invest In Your Business",
+          "url": "https://elevatebranson.org/jobs-for-life-invest-in-your-employees-invest-in-your-business/"
+        },
+        {
+          "label": "Read More",
+          "url": "https://elevatebranson.org/jobs-for-life-invest-in-your-employees-invest-in-your-business/"
+        },
+        {
+          "label": "Looking Back & Looking Forward",
+          "url": "https://elevatebranson.org/looking-back-looking-forward/"
+        },
+        {
+          "label": "Read More",
+          "url": "https://elevatebranson.org/looking-back-looking-forward/"
+        },
+        {
+          "label": "Branson Hibernation Season",
+          "url": "https://elevatebranson.org/branson-hibernation-season/"
+        },
+        {
+          "label": "Read More",
+          "url": "https://elevatebranson.org/branson-hibernation-season/"
+        },
+        {
+          "label": "2",
+          "url": "https://elevatebranson.org/bryans-blog/2/"
+        },
+        {
+          "label": "3",
+          "url": "https://elevatebranson.org/bryans-blog/3/"
+        },
+        {
+          "label": "4",
+          "url": "https://elevatebranson.org/bryans-blog/4/"
+        },
+        {
+          "label": "5",
+          "url": "https://elevatebranson.org/bryans-blog/5/"
+        },
+        {
+          "label": "6",
+          "url": "https://elevatebranson.org/bryans-blog/6/"
+        },
+        {
+          "label": "7",
+          "url": "https://elevatebranson.org/bryans-blog/7/"
+        },
+        {
+          "label": "8",
+          "url": "https://elevatebranson.org/bryans-blog/8/"
+        },
+        {
+          "label": "9",
+          "url": "https://elevatebranson.org/bryans-blog/9/"
+        },
+        {
+          "label": "10",
+          "url": "https://elevatebranson.org/bryans-blog/10/"
+        },
+        {
+          "label": "11",
+          "url": "https://elevatebranson.org/bryans-blog/11/"
+        },
+        {
+          "label": "12",
+          "url": "https://elevatebranson.org/bryans-blog/12/"
+        },
+        {
+          "label": "13",
+          "url": "https://elevatebranson.org/bryans-blog/13/"
+        },
+        {
+          "label": "JOIN OUR MAILING LIST",
+          "url": "https://elevatebranson.org/bryans-blog/#mailmunch-pop-1057830"
+        },
+        {
+          "label": "Privacy Policy",
+          "url": "https://elevatebranson.org/privacy-policy/"
+        },
+        {
+          "label": "Contact Us",
+          "url": "https://elevatebranson.org/contact-us/"
+        },
+        {
+          "label": "Brand Partnership",
+          "url": "https://elevatebranson.org/branding-licensure/"
+        },
+        {
+          "label": "JOIN OUR MAILING LIST",
+          "url": "https://elevatebranson.org/bryans-blog/#mailmunch-pop-1057830"
+        },
+        {
+          "label": "Privacy Policy",
+          "url": "https://elevatebranson.org/privacy-policy/"
+        },
+        {
+          "label": "Contact Us",
+          "url": "https://elevatebranson.org/contact-us/"
+        },
+        {
+          "label": "Brand Partnership",
+          "url": "https://elevatebranson.org/branding-licensure/"
+        }
+      ]
+    },
+    {
+      "_type": "imageGallery",
+      "images": [
+        {
+          "url": "/assets/site/d181f8f7afe2e730.webp",
+          "alt": "May-Blog-Image_2"
+        },
+        {
+          "url": "/assets/site/ccabc0fca1d6d6d9.webp",
+          "alt": "GlassHalfFull"
+        },
+        {
+          "url": "/assets/site/c557c168fb37f6df.webp",
+          "alt": "August-Blog-Image"
+        },
+        {
+          "url": "/assets/site/9df40a8310375100.webp",
+          "alt": "IMG_5908"
+        },
+        {
+          "url": "/assets/site/d848049ce6e3239e.webp",
+          "alt": "June-Blog-Image"
+        },
+        {
+          "url": "/assets/site/a37c48fc4e18b469.webp",
+          "alt": "Blog-Image"
+        },
+        {
+          "url": "/assets/site/b338caadd36026d5.webp",
+          "alt": "April-Header"
+        },
+        {
+          "url": "/assets/site/2337a34418644f98.webp",
+          "alt": "Blog-Header"
+        },
+        {
+          "url": "/assets/site/55ee7a5b93d57fda.webp",
+          "alt": "Past-and-Future"
+        },
+        {
+          "url": "/assets/site/b067c7771daad43e.webp",
+          "alt": "not-hiring"
+        }
+      ]
+    }
+  ],
+  "lastVerified": "2026-10-20",
+  "status": "verify"
+}

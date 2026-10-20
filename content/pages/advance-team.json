@@ -1,0 +1,64 @@
+{
+  "slug": "advance-team",
+  "title": "Advance Team - Elevate Branson",
+  "section": "get-involved",
+  "sourceUrl": "https://elevatebranson.org/advance-team/",
+  "summary": "When you join the Advance Team for as little as $35 a month, you help provide Missouri Identification Cards, Birth Certificates and other documents needed for employment as well as workforce development training, affordable housing and innovative transportation for our neighbors in need.",
+  "blocks": [
+    {
+      "_type": "richText",
+      "paragraphs": [
+        "When you join the Advance Team for as little as $35 a month, you help provide Missouri Identification Cards, Birth Certificates and other documents needed for employment as well as workforce development training, affordable housing and innovative transportation for our neighbors in need.",
+        "Privacy Policy | Contact Us | Brand Partnership"
+      ],
+      "headings": [
+        "YOUR PARTICIPATION INCLUDES:",
+        "HOURS OF OPERATION:",
+        "HOURS OF OPERATION:"
+      ]
+    },
+    {
+      "_type": "buttonRow",
+      "buttons": [
+        {
+          "label": "JOIN THE ADVANCE TEAM NOW!",
+          "url": "https://elevatebranson.app.neoncrm.com/forms/advance-team"
+        },
+        {
+          "label": "JOIN OUR MAILING LIST",
+          "url": "https://elevatebranson.org/advance-team/#mailmunch-pop-1057830"
+        },
+        {
+          "label": "Privacy Policy",
+          "url": "https://elevatebranson.org/privacy-policy/"
+        },
+        {
+          "label": "Contact Us",
+          "url": "https://elevatebranson.org/contact-us/"
+        },
+        {
+          "label": "Brand Partnership",
+          "url": "https://elevatebranson.org/branding-licensure/"
+        },
+        {
+          "label": "JOIN OUR MAILING LIST",
+          "url": "https://elevatebranson.org/advance-team/#mailmunch-pop-1057830"
+        },
+        {
+          "label": "Privacy Policy",
+          "url": "https://elevatebranson.org/privacy-policy/"
+        },
+        {
+          "label": "Contact Us",
+          "url": "https://elevatebranson.org/contact-us/"
+        },
+        {
+          "label": "Brand Partnership",
+          "url": "https://elevatebranson.org/branding-licensure/"
+        }
+      ]
+    }
+  ],
+  "lastVerified": "2026-10-20",
+  "status": "verify"
+}

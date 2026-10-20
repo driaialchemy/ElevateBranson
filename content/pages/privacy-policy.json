@@ -1,0 +1,104 @@
+{
+  "slug": "privacy-policy",
+  "title": "Privacy Policy - Elevate Branson",
+  "section": "about",
+  "sourceUrl": "https://elevatebranson.org/privacy-policy/",
+  "summary": "This privacy notice discloses the privacy practices for ElevateBranson.org. This privacy notice applies solely to information collected by this website and on our social media channels. It will notify you of the following:",
+  "blocks": [
+    {
+      "_type": "richText",
+      "paragraphs": [
+        "This privacy notice discloses the privacy practices for ElevateBranson.org. This privacy notice applies solely to information collected by this website and on our social media channels. It will notify you of the following:",
+        "Elevate Branson is the sole owner of the information collected on this site. We only have access to/collect information that you voluntarily give us via email or other direct contact from you. We will not sell or rent this information to anyone.",
+        "We will use your information to respond to you in regards to the reason you contacted us. We will not share your information with any third party outside of our organization, other than as necessary to fulfill your request, e.g. connect you to a requested resource, or fulfill our own marketing and research purposes.",
+        "Unless you ask us not to, we may contact you via email in the future to tell you about our vision, mission, and new resources, or changes to this privacy policy.",
+        "All emails we send to you will include the option to unsubscribe from our mailing list.",
+        "We partner with other parties to provide specific services such as marketing and programs. We will share names, or other contact information that is necessary for the third party to provide these services. These parties are not allowed to use personally identifiable information except for the purpose of providing these services.",
+        "Some of our partners may use cookies on our site (for example, marketers). However, we have no access to or control over these cookies.",
+        "This website contains links to other sites. Please be aware that we are not responsible for the content or privacy practices of such other sites. We encourage our users to be aware when they leave our site and to read the privacy statements of any other site that collects personally identifiable information.",
+        "Homeless Missourians Information System (HMIS) Privacy and Security Notice",
+        "If you feel that we are not abiding by this privacy policy, you should contact us immediately via email at [email protected] .",
+        "You agree to receive informational messages (appointment reminders, account notifications, etc.) from Elevate Branson. Message frequency varies. Message and data rates may apply. For help, reply HELP or email us at [email protected] . You can opt out at any time by replying STOP.",
+        "Information collected:",
+        "We may collect information, such as name, phone number, and email address.",
+        "Use of information collected:",
+        "We may use the information we collect to perform the services requested including billing, customer service, appointment reminders and other administrative requests.",
+        "Sharing of information collected:",
+        "We may share information we collect with payment processors, legal authorities, partners so that these service providers can perform their normal duties. We do not share, sell, rent, or trade any information provided with third parties for promotional purposes.",
+        "As a current or prospective customer, you understand that you can text us STOP at any time to opt out of receiving SMS text messages from us. You can text us HELP at any time to receive help. You understand that the messaging frequency may vary. Messaging & data rates may apply. Your mobile information will not be shared with any third parties/affiliates for marketing/promotional purposes. All policies are followed as per CTIA guidelines 5.2.1. At any time if you want your information to be removed, you can contact us via our email address, [email protected] , or regular mail.",
+        "Print This Policy",
+        "Privacy Policy | Contact Us | Brand Partnership"
+      ],
+      "headings": [
+        "PRIVACY POLICY",
+        "INFORMATION COLLECTION, USE, AND SHARING",
+        "UNSUBSCRIBE",
+        "PARTNERS",
+        "LINKS",
+        "MESSAGING TERMS & CONDITIONS",
+        "MOBILE SMS PRIVACY POLICY",
+        "HOURS OF OPERATION:",
+        "HOURS OF OPERATION:"
+      ]
+    },
+    {
+      "_type": "buttonRow",
+      "buttons": [
+        {
+          "label": "Homeless Missourians Information System (HMIS) Privacy and Security Notice",
+          "url": "https://elevatebranson.org/wp-content/uploads/2021/09/Elevate-Branson-HMIS.pdf"
+        },
+        {
+          "label": "[email protected]",
+          "url": "https://elevatebranson.org/cdn-cgi/l/email-protection#b8f1d6ded7f8fdd4ddced9ccddfacad9d6cbd7d696d7cadf"
+        },
+        {
+          "label": "[email protected]",
+          "url": "https://elevatebranson.org/cdn-cgi/l/email-protection#dd94b3bbb29d98b1b8abbca9b89fafbcb3aeb2b3f3b2afba"
+        },
+        {
+          "label": "[email protected]",
+          "url": "https://elevatebranson.org/cdn-cgi/l/email-protection#723b1c141d32371e17041306173000131c011d1c5c1d0015"
+        },
+        {
+          "label": "Print This Policy",
+          "url": "https://elevatebranson.org/wp-content/uploads/2021/01/ElevateBranson.org-Privacy-Policy.pdf"
+        },
+        {
+          "label": "JOIN OUR MAILING LIST",
+          "url": "https://elevatebranson.org/privacy-policy/#mailmunch-pop-1057830"
+        },
+        {
+          "label": "Privacy Policy",
+          "url": "https://elevatebranson.org/privacy-policy/"
+        },
+        {
+          "label": "Contact Us",
+          "url": "https://elevatebranson.org/contact-us/"
+        },
+        {
+          "label": "Brand Partnership",
+          "url": "https://elevatebranson.org/branding-licensure/"
+        },
+        {
+          "label": "JOIN OUR MAILING LIST",
+          "url": "https://elevatebranson.org/privacy-policy/#mailmunch-pop-1057830"
+        },
+        {
+          "label": "Privacy Policy",
+          "url": "https://elevatebranson.org/privacy-policy/"
+        },
+        {
+          "label": "Contact Us",
+          "url": "https://elevatebranson.org/contact-us/"
+        },
+        {
+          "label": "Brand Partnership",
+          "url": "https://elevatebranson.org/branding-licensure/"
+        }
+      ]
+    }
+  ],
+  "lastVerified": "2026-10-20",
+  "status": "verify"
+}

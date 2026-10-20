@@ -1,0 +1,80 @@
+{
+  "slug": "nap-tax-credits",
+  "title": "NAP Tax Credits - Elevate Branson",
+  "section": "about",
+  "sourceUrl": "https://elevatebranson.org/nap-tax-credits/",
+  "summary": "By donating to Elevate Branson, you directly help place individuals into employment opportunities in our community – allowing for our neighbors to increase their quality of life and allowing local employers to gain access to reliable employees. Not only are you supporting our local community, you earn a tax break of 70% on your business owed Missouri state income tax.",
+  "blocks": [
+    {
+      "_type": "richText",
+      "paragraphs": [
+        "By donating to Elevate Branson, you directly help place individuals into employment opportunities in our community – allowing for our neighbors to increase their quality of life and allowing local employers to gain access to reliable employees. Not only are you supporting our local community, you earn a tax break of 70% on your business owed Missouri state income tax.",
+        "A transportation program which provides access to affordable transportation for individuals in our community.",
+        "A program which provides comprehensive education and resources to individuals looking to pursue a side-business in order to increase their financial margin.",
+        "A workforce development program that equips individuals with the soft-skills needed to find and keep meaningful employment.",
+        "*Includes Banks, Credit Inst., Savings & Loan Assoc., Credit Unions, Farmer’s Cooperative Credit Assoc., or Building & Loan Assoc.",
+        "**Donor must attach a signed, notarized affidavit proving they have other business income to create a Missouri state tax liability",
+        "For more information on NAP Tax Credits, contact Bryan Stallings at 417.294.1300 or [email protected] .",
+        "This project has been supported by the Missouri Department of Economic Development’s Neighborhood Assistance Program.",
+        "Privacy Policy | Contact Us | Brand Partnership"
+      ],
+      "headings": [
+        "70% MISSOURI INCOME TAX CREDITS",
+        "Donate Now To Earn A 70% Dollar-For-Dollar Reduction On Your State Income Tax",
+        "Funding through the Neighborhood Assistance Program contributes to:",
+        "How It Works",
+        "Eligible Contributors",
+        "Contact us to learn more about how to donate and earn NAP tax credits today.",
+        "HOURS OF OPERATION:",
+        "HOURS OF OPERATION:"
+      ]
+    },
+    {
+      "_type": "buttonRow",
+      "buttons": [
+        {
+          "label": "DOWNLOAD YOUR APPLICATION",
+          "url": "https://elevatebranson.org/wp-content/uploads/2024/06/NAP-Application.pdf"
+        },
+        {
+          "label": "[email protected]",
+          "url": "https://elevatebranson.org/cdn-cgi/l/email-protection#d092a2a9b1befe83a4b1bcbcb9beb7a39095bcb5a6b1a4b592a2b1bea3bfbefebfa2b7"
+        },
+        {
+          "label": "JOIN OUR MAILING LIST",
+          "url": "https://elevatebranson.org/nap-tax-credits/#mailmunch-pop-1057830"
+        },
+        {
+          "label": "Privacy Policy",
+          "url": "https://elevatebranson.org/privacy-policy/"
+        },
+        {
+          "label": "Contact Us",
+          "url": "https://elevatebranson.org/contact-us/"
+        },
+        {
+          "label": "Brand Partnership",
+          "url": "https://elevatebranson.org/branding-licensure/"
+        },
+        {
+          "label": "JOIN OUR MAILING LIST",
+          "url": "https://elevatebranson.org/nap-tax-credits/#mailmunch-pop-1057830"
+        },
+        {
+          "label": "Privacy Policy",
+          "url": "https://elevatebranson.org/privacy-policy/"
+        },
+        {
+          "label": "Contact Us",
+          "url": "https://elevatebranson.org/contact-us/"
+        },
+        {
+          "label": "Brand Partnership",
+          "url": "https://elevatebranson.org/branding-licensure/"
+        }
+      ]
+    }
+  ],
+  "lastVerified": "2026-10-20",
+  "status": "verify"
+}

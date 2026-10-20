@@ -1,0 +1,68 @@
+{
+  "slug": "rewards-program",
+  "title": "Rewards Program - Elevate Branson",
+  "section": "get-involved",
+  "sourceUrl": "https://elevatebranson.org/rewards-program/",
+  "summary": "PROGRAM",
+  "blocks": [
+    {
+      "_type": "richText",
+      "paragraphs": [
+        "PROGRAM",
+        "Earn Elevate Credit To Use At Elevate Branson",
+        "Volunteer Up To 4 Hours Per Week",
+        "1 Hour Volunteered = $5 Of Credit",
+        "ELEVATE CREDIT CAN BE USED TOWARDS:",
+        "Privacy Policy | Contact Us | Brand Partnership"
+      ],
+      "headings": [
+        "REWARDS",
+        "HOURS OF OPERATION:",
+        "HOURS OF OPERATION:"
+      ]
+    },
+    {
+      "_type": "buttonRow",
+      "buttons": [
+        {
+          "label": "SIGN UP TO VOLUNTEER AND START EARNING ELEVATE CREDIT!",
+          "url": "https://www.elevatebranson.org/volunteer/"
+        },
+        {
+          "label": "JOIN OUR MAILING LIST",
+          "url": "https://elevatebranson.org/rewards-program/#mailmunch-pop-1057830"
+        },
+        {
+          "label": "Privacy Policy",
+          "url": "https://elevatebranson.org/privacy-policy/"
+        },
+        {
+          "label": "Contact Us",
+          "url": "https://elevatebranson.org/contact-us/"
+        },
+        {
+          "label": "Brand Partnership",
+          "url": "https://elevatebranson.org/branding-licensure/"
+        },
+        {
+          "label": "JOIN OUR MAILING LIST",
+          "url": "https://elevatebranson.org/rewards-program/#mailmunch-pop-1057830"
+        },
+        {
+          "label": "Privacy Policy",
+          "url": "https://elevatebranson.org/privacy-policy/"
+        },
+        {
+          "label": "Contact Us",
+          "url": "https://elevatebranson.org/contact-us/"
+        },
+        {
+          "label": "Brand Partnership",
+          "url": "https://elevatebranson.org/branding-licensure/"
+        }
+      ]
+    }
+  ],
+  "lastVerified": "2026-10-20",
+  "status": "verify"
+}

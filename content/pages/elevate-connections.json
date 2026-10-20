@@ -1,0 +1,113 @@
+{
+  "slug": "elevate-connections",
+  "title": "Elevate Connections - Elevate Branson",
+  "section": "what-we-do",
+  "sourceUrl": "https://elevatebranson.org/elevate-connections/",
+  "summary": "As an Elevate Connections partner, for $100 or more a month, you assist in providing services and resources to our neighbors in our community. When you refer our neighbors in need to Elevate Connections, you empower them with access to the resources and next steps they need for sustained transformation.",
+  "blocks": [
+    {
+      "_type": "richText",
+      "paragraphs": [
+        "As an Elevate Connections partner, for $100 or more a month, you assist in providing services and resources to our neighbors in our community. When you refer our neighbors in need to Elevate Connections, you empower them with access to the resources and next steps they need for sustained transformation.",
+        "Acts of the Shepherd/Pine Top",
+        "Acts of the Shepherd/Sycamore Creek Church",
+        "Bloom Church",
+        "Branson United Methodist Church",
+        "Closer Walk Closer Church",
+        "Faith and Wisdom Church",
+        "First Baptist Church Forsyth",
+        "Freechurch Harvest",
+        "Grace Community Assembly",
+        "Grace Family Church",
+        "King’s Chapel",
+        "Our Lady of the Lake Catholic Church",
+        "Looking for additional services? CLICK HERE to view our Area Resources sheet,",
+        "or CLICK HERE to view our Housing Information sheet!",
+        "¿Habla Espanol? ¿Buscando servicios adicionales? HAGA CLIC AQUI para ver nuestra hoja de recursos del área. ¡ HAGA CLIC AQUI para ver nuestra hoja de Información de Vivienda!",
+        "Homeless Missourians Information System (HMIS) Privacy and Security Notice",
+        "Program Guidelines for Providing ESG Assistance",
+        "PROGRAM",
+        "Earn Elevate Credit To Use At Elevate Branson",
+        "Volunteer Up To 5 Hours Per Week",
+        "1 Hour Volunteered = 5 Points",
+        "ELEVATE CREDIT CAN BE USED TOWARDS:",
+        "Privacy Policy | Contact Us | Brand Partnership"
+      ],
+      "headings": [
+        "What Elevate Connections Does:",
+        "ELEVATE CONNECTIONS",
+        "Elevate Connections Partners:",
+        "REWARDS",
+        "HOURS OF OPERATION:",
+        "HOURS OF OPERATION:"
+      ]
+    },
+    {
+      "_type": "buttonRow",
+      "buttons": [
+        {
+          "label": "BECOME AN ELEVATE CONNECTIONS PARTNER!",
+          "url": "https://elevatebranson.app.neoncrm.com/forms/13"
+        },
+        {
+          "label": "CLICK HERE",
+          "url": "https://elevatebranson.org/wp-content/uploads/2026/07/Area-Resources-June-2026.pdf"
+        },
+        {
+          "label": "CLICK HERE",
+          "url": "https://elevatebranson.org/wp-content/uploads/2026/03/HousingInformationSheet_March2026.pdf"
+        },
+        {
+          "label": "HAGA CLIC AQUI",
+          "url": "https://elevatebranson.org/wp-content/uploads/2026/07/Area-Resources-Spanish-Version-June-2026.pdf"
+        },
+        {
+          "label": "HAGA CLIC AQUI",
+          "url": "https://elevatebranson.org/wp-content/uploads/2026/03/HousingInformationSheet_March2026_Spanish.pdf"
+        },
+        {
+          "label": "Homeless Missourians Information System (HMIS) Privacy and Security Notice",
+          "url": "https://elevatebranson.org/wp-content/uploads/2021/09/Elevate-Branson-HMIS.pdf"
+        },
+        {
+          "label": "Program Guidelines for Providing ESG Assistance",
+          "url": "https://elevatebranson.org/wp-content/uploads/2025/03/Elevate-Branson-Program-Guidelines-ESG-Grant.pdf"
+        },
+        {
+          "label": "JOIN OUR MAILING LIST",
+          "url": "https://elevatebranson.org/elevate-connections/#mailmunch-pop-1057830"
+        },
+        {
+          "label": "Privacy Policy",
+          "url": "https://elevatebranson.org/privacy-policy/"
+        },
+        {
+          "label": "Contact Us",
+          "url": "https://elevatebranson.org/contact-us/"
+        },
+        {
+          "label": "Brand Partnership",
+          "url": "https://elevatebranson.org/branding-licensure/"
+        },
+        {
+          "label": "JOIN OUR MAILING LIST",
+          "url": "https://elevatebranson.org/elevate-connections/#mailmunch-pop-1057830"
+        },
+        {
+          "label": "Privacy Policy",
+          "url": "https://elevatebranson.org/privacy-policy/"
+        },
+        {
+          "label": "Contact Us",
+          "url": "https://elevatebranson.org/contact-us/"
+        },
+        {
+          "label": "Brand Partnership",
+          "url": "https://elevatebranson.org/branding-licensure/"
+        }
+      ]
+    }
+  ],
+  "lastVerified": "2026-10-20",
+  "status": "verify"
+}

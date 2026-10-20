@@ -1,0 +1,90 @@
+{
+  "slug": "elevate-rides",
+  "title": "Elevate Rides - Elevate Branson",
+  "section": "what-we-do",
+  "sourceUrl": "https://elevatebranson.org/elevate-rides/",
+  "summary": "The lack of accessible, reliable and affordable transportation in our area keeps our community from going places. With limited public transit available, employers are finding it difficult to maintain a reliable workforce, and individuals in our community are limited to the resources and employment opportunities in their immediate vicinity.",
+  "blocks": [
+    {
+      "_type": "richText",
+      "paragraphs": [
+        "The lack of accessible, reliable and affordable transportation in our area keeps our community from going places. With limited public transit available, employers are finding it difficult to maintain a reliable workforce, and individuals in our community are limited to the resources and employment opportunities in their immediate vicinity.",
+        "By becoming an Elevate Branson business partner, employers can supply their workforce with affordable, motorized scooters, and have the opportunity to deduct payment from payroll with ease. Businesses retain their workforce and build a more reliable team, and employees gain access to sustainable transportation that takes them to work and beyond. We take care of the gear, training and logistics, leaving you to take care of business.",
+        "Our 49cc scooters are now available for the public. Access a temporary form of affordable transportation for less than what it would cost to order an Uber or other rideshare option each day.",
+        "How it works:",
+        "This project has been supported by the Missouri Department of Economic Development’s Neighborhood Assistance Program.",
+        "For more information on Elevate Rides and MyCityRides Branson, contact Dan Friday at 417.295.7575 or [email protected] .",
+        "Privacy Policy | Contact Us | Brand Partnership"
+      ],
+      "headings": [
+        "THE WAY FORWARD.",
+        "Motorized scooters for reliable transit and forward mobility.",
+        "Our Dealership:",
+        "ELEVATE RIDES RENTAL PROGRAM",
+        "ELEVATE RIDES OWNERSHIP PROGRAM",
+        "Step 1. Become a business partner.",
+        "Step 2. Your qualified employees will fill out an application.",
+        "Step 3. We’ll supply your employees with driver training through our Scooter School located at the Elevate Branson campus.",
+        "Step 4. Your employees will take their drivers test to earn their Class M license needed to operate their scooter.",
+        "Step 5. Your employees will set up their payment plan, pick up their keys, and hit the road.",
+        "HOURS OF OPERATION:",
+        "HOURS OF OPERATION:"
+      ]
+    },
+    {
+      "_type": "buttonRow",
+      "buttons": [
+        {
+          "label": "RENTAL APPLICATION",
+          "url": "https://nam11.safelinks.protection.outlook.com/?url=https%3A%2F%2Felevatebranson.my.salesforce-sites.com%2Fj1&data=05%7C01%7C%7Caff65f5d15aa48e02f7808db249d2b88%7C7d7ad2ee3e0b44fb9aa65566a1085510%7C0%7C0%7C638144029692822673%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4wLjAwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C3000%7C%7C%7C&sdata=2Gpb2jED%2Bhxf8qhElFwSUBcY3v%2BWMErJD8pwUYf%2BgDQ%3D&reserved=0"
+        },
+        {
+          "label": "Step 1. Become a business partner.",
+          "url": "https://elevatebranson.app.neoncrm.com/forms/business-partner"
+        },
+        {
+          "label": "BECOME A BUSINESS PARTNER TODAY!",
+          "url": "https://elevatebranson.app.neoncrm.com/forms/business-partner"
+        },
+        {
+          "label": "[email protected]",
+          "url": "https://elevatebranson.org/cdn-cgi/l/email-protection#195d7877707c75375f6b707d7860595c757c6f786d7c5b6b78776a767737766b7e"
+        },
+        {
+          "label": "JOIN OUR MAILING LIST",
+          "url": "https://elevatebranson.org/elevate-rides/#mailmunch-pop-1057830"
+        },
+        {
+          "label": "Privacy Policy",
+          "url": "https://elevatebranson.org/privacy-policy/"
+        },
+        {
+          "label": "Contact Us",
+          "url": "https://elevatebranson.org/contact-us/"
+        },
+        {
+          "label": "Brand Partnership",
+          "url": "https://elevatebranson.org/branding-licensure/"
+        },
+        {
+          "label": "JOIN OUR MAILING LIST",
+          "url": "https://elevatebranson.org/elevate-rides/#mailmunch-pop-1057830"
+        },
+        {
+          "label": "Privacy Policy",
+          "url": "https://elevatebranson.org/privacy-policy/"
+        },
+        {
+          "label": "Contact Us",
+          "url": "https://elevatebranson.org/contact-us/"
+        },
+        {
+          "label": "Brand Partnership",
+          "url": "https://elevatebranson.org/branding-licensure/"
+        }
+      ]
+    }
+  ],
+  "lastVerified": "2026-10-20",
+  "status": "verify"
+}

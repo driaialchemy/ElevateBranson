@@ -1,0 +1,59 @@
+{
+  "slug": "podcast",
+  "title": "In Pursuit Of Community - Elevate Branson",
+  "section": "media",
+  "sourceUrl": "https://elevatebranson.org/podcast/",
+  "summary": "We’re all designed to live life in the context of community. Only through the power of life-giving relationships do we have the opportunity to live out our intended purpose. In this podcast, we demystify how to combat poverty effectively by addressing its root causes, and explore how the transformative impact of experiencing true belonging through relationships can empower individuals to make sustainable life-change.",
+  "blocks": [
+    {
+      "_type": "richText",
+      "paragraphs": [
+        "We’re all designed to live life in the context of community. Only through the power of life-giving relationships do we have the opportunity to live out our intended purpose. In this podcast, we demystify how to combat poverty effectively by addressing its root causes, and explore how the transformative impact of experiencing true belonging through relationships can empower individuals to make sustainable life-change.",
+        "Privacy Policy | Contact Us | Brand Partnership"
+      ],
+      "headings": [
+        "HOURS OF OPERATION:",
+        "HOURS OF OPERATION:"
+      ]
+    },
+    {
+      "_type": "buttonRow",
+      "buttons": [
+        {
+          "label": "JOIN OUR MAILING LIST",
+          "url": "https://elevatebranson.org/podcast/#mailmunch-pop-1057830"
+        },
+        {
+          "label": "Privacy Policy",
+          "url": "https://elevatebranson.org/privacy-policy/"
+        },
+        {
+          "label": "Contact Us",
+          "url": "https://elevatebranson.org/contact-us/"
+        },
+        {
+          "label": "Brand Partnership",
+          "url": "https://elevatebranson.org/branding-licensure/"
+        },
+        {
+          "label": "JOIN OUR MAILING LIST",
+          "url": "https://elevatebranson.org/podcast/#mailmunch-pop-1057830"
+        },
+        {
+          "label": "Privacy Policy",
+          "url": "https://elevatebranson.org/privacy-policy/"
+        },
+        {
+          "label": "Contact Us",
+          "url": "https://elevatebranson.org/contact-us/"
+        },
+        {
+          "label": "Brand Partnership",
+          "url": "https://elevatebranson.org/branding-licensure/"
+        }
+      ]
+    }
+  ],
+  "lastVerified": "2026-10-20",
+  "status": "verify"
+}

@@ -1,0 +1,74 @@
+{
+  "slug": "elevate-thrift-store--coupon",
+  "title": "Elevate Thrift Store - Coupon - Elevate Branson",
+  "section": "visit",
+  "sourceUrl": "https://elevatebranson.org/elevate-thrift-store/coupon/",
+  "summary": "Valid on your entire purchase at Elevate Thrift Store. Every dollar spent stays in the community.",
+  "blocks": [
+    {
+      "_type": "richText",
+      "paragraphs": [
+        "Valid on your entire purchase at Elevate Thrift Store. Every dollar spent stays in the community.",
+        "Present this coupon (printed or on screen) at checkout. Offer limited to one use per person. Every Purchase supports our neighbors at Elevate Branson. Offer expires 12.31.2026.",
+        "Monday: 9:00 A.M. – 6:00 P.M.",
+        "Tuesday: 9:00 A.M. – 6:00 P.M.",
+        "Wednesday: 9:00 A.M. – 6:00 P.M.",
+        "Thursday: 9:00 A.M. – 6:00 P.M.",
+        "Friday: 9:00 A.M. – 6:00 P.M.",
+        "Saturday: 9:00 A.M. – 4:00 P.M.",
+        "Privacy Policy | Contact Us | Brand Partnership",
+        "Monday:  9:00 A.M. – 6:00 P.M.",
+        "Tuesday:  11:00 A.M. – 6:00 P.M.",
+        "Wednesday:  9:00 A.M. – 6:00 P.M.",
+        "Thursday:  9:00 A.M. – 6:00 P.M.",
+        "Friday:  9:00 A.M. – 4:00 P.M."
+      ],
+      "headings": [
+        "Shop With Purpose - Save Big!",
+        "30%",
+        "OFF",
+        "HOURS OF OPERATION:",
+        "HOURS OF OPERATION:"
+      ]
+    },
+    {
+      "_type": "buttonRow",
+      "buttons": [
+        {
+          "label": "JOIN OUR MAILING LIST",
+          "url": "https://elevatebranson.org/elevate-thrift-store/coupon/#mailmunch-pop-1057830"
+        },
+        {
+          "label": "Privacy Policy",
+          "url": "https://elevatebranson.org/privacy-policy/"
+        },
+        {
+          "label": "Contact Us",
+          "url": "https://elevatebranson.org/contact-us/"
+        },
+        {
+          "label": "Brand Partnership",
+          "url": "https://elevatebranson.org/branding-licensure/"
+        },
+        {
+          "label": "JOIN OUR MAILING LIST",
+          "url": "https://elevatebranson.org/elevate-thrift-store/coupon/#mailmunch-pop-1057830"
+        },
+        {
+          "label": "Privacy Policy",
+          "url": "https://elevatebranson.org/privacy-policy/"
+        },
+        {
+          "label": "Contact Us",
+          "url": "https://elevatebranson.org/contact-us/"
+        },
+        {
+          "label": "Brand Partnership",
+          "url": "https://elevatebranson.org/branding-licensure/"
+        }
+      ]
+    }
+  ],
+  "lastVerified": "2026-10-20",
+  "status": "verify"
+}

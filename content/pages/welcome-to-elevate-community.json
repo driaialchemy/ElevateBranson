@@ -1,0 +1,82 @@
+{
+  "slug": "welcome-to-elevate-community",
+  "title": "Welcome to Elevate Community - Elevate Branson",
+  "section": "about",
+  "sourceUrl": "https://elevatebranson.org/welcome-to-elevate-community/",
+  "summary": "We’re glad you’re here! Elevate Community is a new, tiny home development that provides affordable housing for local residents, especially the essential front-line workers who serve our guests in attractions, restaurants and retail businesses around town.",
+  "blocks": [
+    {
+      "_type": "richText",
+      "paragraphs": [
+        "We’re glad you’re here! Elevate Community is a new, tiny home development that provides affordable housing for local residents, especially the essential front-line workers who serve our guests in attractions, restaurants and retail businesses around town.",
+        "If so, you’ve probably heard about Elevate Branson , it’s right next door. Elevate Branson has been empowering our neighbors to reach their full potential since 2008! We help individuals discover hope, dignity, and the God-inspired purpose for their lives.",
+        "Elevate Branson is a 501(c)3 nonprofit that is powered by many individuals and organizations. Volunteers, donors, churches, sponsors, partners, and advance team members elevate our community and empower our neighbors every day.",
+        "Yes! It’s possible to implement Elevate programs and services in your own home town. We’ve laid the groundwork so your neighbors can gain access to the resources they need to reach their full potential, efficiently, effectively and for the long term.",
+        "Privacy Policy | Contact Us | Brand Partnership"
+      ],
+      "headings": [
+        "Are You a Visitor to Branson?",
+        "Do You Live in this Area?",
+        "Would You Like to Get Involved?",
+        "Could Your Community be Elevated Too?",
+        "HOURS OF OPERATION:",
+        "HOURS OF OPERATION:"
+      ]
+    },
+    {
+      "_type": "buttonRow",
+      "buttons": [
+        {
+          "label": "LEARN MORE ABOUT ELEVATE COMMUNITY",
+          "url": "https://elevatebranson.org/elevate-community/"
+        },
+        {
+          "label": "LEARN MORE ABOUT ELEVATE BRANSON",
+          "url": "http://www.elevatebranson.org/"
+        },
+        {
+          "label": "GET INVOLVED WITH ELEVATE BRANSON",
+          "url": "https://elevatebranson.org/donate/"
+        },
+        {
+          "label": "LEARN MORE ABOUT ELEVATE FOR YOUR TOWN",
+          "url": "https://elevatebranson.org/branding-licensure/"
+        },
+        {
+          "label": "JOIN OUR MAILING LIST",
+          "url": "https://elevatebranson.org/welcome-to-elevate-community/#mailmunch-pop-1057830"
+        },
+        {
+          "label": "Privacy Policy",
+          "url": "https://elevatebranson.org/privacy-policy/"
+        },
+        {
+          "label": "Contact Us",
+          "url": "https://elevatebranson.org/contact-us/"
+        },
+        {
+          "label": "Brand Partnership",
+          "url": "https://elevatebranson.org/branding-licensure/"
+        },
+        {
+          "label": "JOIN OUR MAILING LIST",
+          "url": "https://elevatebranson.org/welcome-to-elevate-community/#mailmunch-pop-1057830"
+        },
+        {
+          "label": "Privacy Policy",
+          "url": "https://elevatebranson.org/privacy-policy/"
+        },
+        {
+          "label": "Contact Us",
+          "url": "https://elevatebranson.org/contact-us/"
+        },
+        {
+          "label": "Brand Partnership",
+          "url": "https://elevatebranson.org/branding-licensure/"
+        }
+      ]
+    }
+  ],
+  "lastVerified": "2026-10-20",
+  "status": "verify"
+}
