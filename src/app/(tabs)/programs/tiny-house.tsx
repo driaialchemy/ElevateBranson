@@ -2,7 +2,6 @@ import { Button } from '@/components/Button';
 import { Card } from '@/components/Card';
 import { ComingSoon } from '@/components/ComingSoon';
 import { ContentNotice } from '@/components/ContentNotice';
-import { Header } from '@/components/Header';
 import { Hero } from '@/components/Hero';
 import { openExternal } from '@/components/openLink';
 import { Screen } from '@/components/Screen';
@@ -20,7 +19,7 @@ export default function TinyHouseScreen() {
   return (
     <Screen>
       <ContentNotice />
-      <Header donateHref="/get-involved/give" donateLabel={data.siteSettings.donateLabel || 'DONATE NOW'} />
+
       {program?.imageKey ? (
         <Hero alt={program.imageAlt || program.name} imageKey={program.imageKey} subtitle={program.summary} title={program.name} />
       ) : program ? (

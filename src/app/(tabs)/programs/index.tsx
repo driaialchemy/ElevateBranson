@@ -1,7 +1,6 @@
 import { Card } from '@/components/Card';
 import { ComingSoon } from '@/components/ComingSoon';
 import { ContentNotice } from '@/components/ContentNotice';
-import { Header } from '@/components/Header';
 import { Screen } from '@/components/Screen';
 import { SectionHeader } from '@/components/SectionHeader';
 import { useContent } from '@/content/client';
@@ -13,7 +12,7 @@ export default function ProgramsScreen() {
   return (
     <Screen>
       <ContentNotice />
-      <Header donateHref="/get-involved/give" donateLabel={donateLabel} />
+
       <SectionHeader label="Programs" />
       {data.programs.length === 0 ? (
         <ComingSoon phone={data.siteSettings.phone} />

@@ -7,8 +7,8 @@ export type FeatureRoute = {
 
 export const tabs = [
   { label: 'Home', href: '/' },
-  { label: 'Programs', href: '/programs' },
-  { label: 'Events', href: '/events' },
+  { label: 'What We Do', href: '/what-we-do' },
+  { label: 'Visit', href: '/visit' },
   { label: 'Get Involved', href: '/get-involved' },
   { label: 'More', href: '/more' },
 ] as const;
@@ -35,14 +35,10 @@ export const features: FeatureRoute[] = [
 ];
 
 export const homeQuickActions = [
-  { label: 'Give', href: '/get-involved/give' },
   { label: 'Volunteer', href: '/get-involved/volunteer' },
   { label: 'Tour', href: '/get-involved/tour' },
-  { label: 'Prayer', href: '/get-involved/prayer' },
-  { label: 'Find Us', href: '/more/find-us' },
-  { label: 'Newsletter', href: '/more/newsletter' },
-  { label: 'Events', href: '/events' },
-  { label: 'Resources', href: '/more/resources' },
+  { label: 'Give', href: '/get-involved/give' },
+  { label: 'Get Help', href: '/more/resources' },
 ] as const;
 
 export const getInvolvedLinks = [
@@ -63,4 +59,5 @@ export const moreLinks = [
   { label: 'Newsletter', href: '/more/newsletter', detail: 'The newest update.' },
   { label: 'Notifications', href: '/more/notifications', detail: 'Choose which notes this phone receives.' },
   { label: 'Privacy', href: '/more/privacy', detail: 'How this app handles personal notes.' },
+  { label: 'Events', href: '/events', detail: 'See upcoming events.' },
 ] as const;

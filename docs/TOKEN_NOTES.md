@@ -5,6 +5,10 @@
 Committed files over 200 KB outside `assets/site/`:
 
 - `docs/brand-reference/website-1280.png` — 1,750,988 bytes.
+- `docs/brand-reference/website-390.png` — 626,610 bytes.
+- `package-lock.json` — 491,901 bytes.
+- `Elevate-Branson-Prompts-docx.zip` — 388,737 bytes.
+- `docs/brand-reference/after/home-1280.png` — 276,783 bytes.
 
 `assets/site/` images are intentional optimized source assets. `content/pages/` and `content/manifest.json` are intentional importer seed data and should remain committed.
 

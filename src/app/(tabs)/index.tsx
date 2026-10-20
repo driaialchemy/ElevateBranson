@@ -6,7 +6,6 @@ import { BrandImage } from '@/components/BrandImage';
 import { Button } from '@/components/Button';
 import { Card } from '@/components/Card';
 import { ContentNotice } from '@/components/ContentNotice';
-import { Header } from '@/components/Header';
 import { Hero } from '@/components/Hero';
 import { HoursBlock } from '@/components/HoursBlock';
 import { ListRow } from '@/components/ListRow';
@@ -52,7 +51,7 @@ export default function HomeScreen() {
     <Screen>
       <ContentNotice />
       <SeasonalBanner notice={data.seasonalNotice} />
-      <Header donateHref="/get-involved/give" donateLabel={donateLabel} />
+
       {hero ? (
         <Hero
           actionHref={hero.actions[0]?.href}
@@ -122,7 +121,7 @@ export default function HomeScreen() {
           </View>
         );
       })}
-      <SectionHeader label="Ways to help" />
+      <SectionHeader label="Next steps" />
       <View style={{ flexDirection: 'row', flexWrap: 'wrap', gap: tokens.space.sm }}>
         {homeQuickActions.map((action) => (
           <ActionTile

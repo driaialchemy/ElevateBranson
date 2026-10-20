@@ -4,7 +4,6 @@ import { Button } from '@/components/Button';
 import { Card } from '@/components/Card';
 import { ComingSoon } from '@/components/ComingSoon';
 import { ContentNotice } from '@/components/ContentNotice';
-import { Header } from '@/components/Header';
 import { Hero } from '@/components/Hero';
 import { ListRow } from '@/components/ListRow';
 import { openExternal } from '@/components/openLink';
@@ -37,7 +36,7 @@ export default function ProgramDetailScreen() {
     <Screen>
       <Stack.Screen options={{ title: program.name }} />
       <ContentNotice />
-      <Header donateHref="/get-involved/give" donateLabel={donateLabel} />
+
       {program.imageKey ? (
         <Hero alt={program.imageAlt || program.name} imageKey={program.imageKey} subtitle={program.summary} title={program.name} />
       ) : (

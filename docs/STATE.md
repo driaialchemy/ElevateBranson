@@ -1,12 +1,13 @@
 # Project state
 
-Last completed phase: SP-01.
-Next phase: SP-02.
+Last completed phase: SP-02.
+Next phase: SP-03.
 
 Open blockers:
 - `/forms/13/` and `/forms/30/` on the source site return 404 or redirect outside the allowed host.
 - Nine imported pages contain TODO blocks where text extraction was unavailable.
+- Responsive browser inspection at 390px and desktop width could not run because the local browser could not reach the Expo web server; web bundle compilation succeeded.
 
-Files changed in TOKEN-OPT:
-- `.gitignore`, `AGENTS.md`, `CLAUDE.md`.
-- `docs/FEATURES.md`, `docs/RULES_DETAIL.md`, `docs/TOKEN_NOTES.md`, `docs/STATE.md`.
+Files changed in SP-02:
+- Navigation tabs and hubs, root donate header, generic `/page/[slug]` renderer, local imported page and image registries, scheme deep links.
+- `docs/NAVIGATION.md`, tests and package test command.

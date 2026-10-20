@@ -1,6 +1,7 @@
 import { useCallback, useEffect, useSyncExternalStore } from 'react';
 
 import { fixtures } from '@/content/fixtures';
+import { importedPages } from '@/content/sitePages';
 import { useNetwork } from '@/network/NetworkProvider';
 import { fetchSanityContent, sanityConfig } from '@/content/remote';
 import { settleContent } from '@/content/swr';
@@ -9,7 +10,8 @@ import type { ContentBundle } from '@/content/types';
 
 type Snapshot = { data: ContentBundle; error: string | null };
 
-let snapshot: Snapshot = { data: fixtures, error: null };
+const bundledFixtures: ContentBundle = { ...fixtures, pages: importedPages };
+let snapshot: Snapshot = { data: bundledFixtures, error: null };
 let generation = 0;
 const listeners = new Set<() => void>();
 
@@ -30,7 +32,7 @@ export async function loadContent(online: boolean): Promise<Snapshot> {
   const cached = await readCache();
   const configured = sanityConfig().configured;
   if (!online || !configured) {
-    return settleContent({ cached, remote: null, remoteFailed: false });
+    return settleContent({ cached: cached ? { ...cached, pages: cached.pages?.length ? cached.pages : importedPages } : bundledFixtures, remote: null, remoteFailed: false });
   }
   try {
     const remote = await fetchSanityContent();

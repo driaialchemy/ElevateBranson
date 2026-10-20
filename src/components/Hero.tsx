@@ -4,10 +4,12 @@ import { Text, View } from 'react-native';
 import { Button } from '@/components/Button';
 import { openHref } from '@/components/openLink';
 import { brandImage } from '@/content/images';
+import { siteImage } from '@/content/siteImages';
 import { tokens } from '@/theme/tokens';
 
 export function Hero({
   imageKey,
+  imageUrl,
   alt,
   title,
   subtitle,
@@ -15,13 +17,14 @@ export function Hero({
   actionHref,
 }: {
   imageKey: string;
+  imageUrl?: string;
   alt: string;
   title: string;
   subtitle: string;
   actionLabel?: string;
   actionHref?: string;
 }) {
-  const source = brandImage(imageKey);
+  const source = (imageUrl ? siteImage(imageUrl) : undefined) ?? brandImage(imageKey);
   return (
     <View
       style={{

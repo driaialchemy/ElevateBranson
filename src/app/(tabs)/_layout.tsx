@@ -7,8 +7,7 @@ import { tokens } from '@/theme/tokens';
 
 const tabIcons = {
   Home: 'home-outline',
-  Programs: 'grid-outline',
-  Events: 'calendar-outline',
+  'What We Do': 'grid-outline',
   'Get Involved': 'people-outline',
   More: 'menu-outline',
 } as const;
@@ -69,27 +68,17 @@ export default function TabLayout() {
         }}
       />
       <Tabs.Screen
-        name="programs"
+        name="what-we-do"
         options={{
           headerShown: false,
-          title: 'Programs',
-          tabBarIcon: ({ color }) => <TabIcon color={color} label="Programs" />,
+          title: 'What We Do',
+          tabBarIcon: ({ color }) => <TabIcon color={color} label="What We Do" />,
           tabBarItemStyle: { flex: 1.25, minWidth: 0, paddingHorizontal: 0 },
-          tabBarLabel: ({ color }) => <TabLabel color={color} label="Programs" />,
-          tabBarAccessibilityLabel: 'Programs',
+          tabBarLabel: ({ color }) => <TabLabel color={color} label="What We Do" />,
+          tabBarAccessibilityLabel: 'What We Do',
         }}
       />
-      <Tabs.Screen
-        name="events"
-        options={{
-          headerShown: false,
-          title: 'Events',
-          tabBarIcon: ({ color }) => <TabIcon color={color} label="Events" />,
-          tabBarItemStyle: { flex: 0.9, minWidth: 0, paddingHorizontal: 0 },
-          tabBarLabel: ({ color }) => <TabLabel color={color} label="Events" />,
-          tabBarAccessibilityLabel: 'Events',
-        }}
-      />
+      <Tabs.Screen name="visit" options={{ headerShown: false, title: 'Visit', tabBarIcon: ({ color }) => <Ionicons color={color} name="location-outline" size={24} />, tabBarLabel: ({ color }) => <TabLabel color={color} label="Visit" /> }} />
       <Tabs.Screen
         name="get-involved"
         options={{
@@ -112,6 +101,8 @@ export default function TabLayout() {
           tabBarAccessibilityLabel: 'More',
         }}
       />
+      <Tabs.Screen name="programs" options={{ href: null }} />
+      <Tabs.Screen name="events" options={{ href: null }} />
     </Tabs>
   );
 }

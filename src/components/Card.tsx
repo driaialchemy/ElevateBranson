@@ -1,24 +1,27 @@
 import { Image } from 'expo-image';
-import { Link, type Href } from 'expo-router';
 import { Pressable, Text, View } from 'react-native';
 
 import { brandImage } from '@/content/images';
+import { siteImage } from '@/content/siteImages';
+import { openHref } from '@/components/openLink';
 import { tokens } from '@/theme/tokens';
 
 export function Card({
   title,
   body,
   imageKey,
+  imageUrl,
   alt,
   href,
 }: {
   title?: string;
   body: string;
   imageKey?: string;
+  imageUrl?: string;
   alt?: string;
   href?: string;
 }) {
-  const source = brandImage(imageKey);
+  const source = (imageUrl ? siteImage(imageUrl) : undefined) ?? brandImage(imageKey);
   const content = (
     <View
       style={{
@@ -76,11 +79,5 @@ export function Card({
     return content;
   }
 
-  return (
-    <Link href={href as Href} asChild>
-      <Pressable accessibilityLabel={title ? `${title}. ${body}` : body} accessibilityRole="button">
-        {content}
-      </Pressable>
-    </Link>
-  );
+  return <Pressable accessibilityLabel={title ? `${title}. ${body}` : body} accessibilityRole="button" onPress={() => openHref(href)}>{content}</Pressable>;
 }

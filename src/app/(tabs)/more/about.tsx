@@ -1,6 +1,5 @@
 import { Card } from '@/components/Card';
 import { ContentNotice } from '@/components/ContentNotice';
-import { Header } from '@/components/Header';
 import { Hero } from '@/components/Hero';
 import { ListRow } from '@/components/ListRow';
 import { Screen } from '@/components/Screen';
@@ -15,7 +14,7 @@ export default function AboutScreen() {
   return (
     <Screen>
       <ContentNotice />
-      <Header donateHref="/get-involved/give" donateLabel={donateLabel} />
+
       {hero?.imageKey ? (
         <Hero
           alt={hero.imageAlt || hero.title}

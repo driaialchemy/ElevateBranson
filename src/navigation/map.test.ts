@@ -22,7 +22,7 @@ describe('navigation map', () => {
   it('uses the five bottom tabs from the prompt', () => {
     assert.deepEqual(
       tabs.map((tab) => tab.label),
-      ['Home', 'Programs', 'Events', 'Get Involved', 'More'],
+      ['Home', 'What We Do', 'Visit', 'Get Involved', 'More'],
     );
   });
 
