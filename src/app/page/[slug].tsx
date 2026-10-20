@@ -1,6 +1,6 @@
 import { Image } from 'expo-image';
 import { router, Stack, useLocalSearchParams } from 'expo-router';
-import { Text, View } from 'react-native';
+import { ScrollView, Text, View } from 'react-native';
 
 import { Button } from '@/components/Button';
 import { Card } from '@/components/Card';
@@ -12,6 +12,7 @@ import { useContent } from '@/content/client';
 import { siteImage } from '@/content/siteImages';
 import { tokens } from '@/theme/tokens';
 import { givingDetails, volunteerStories } from '@/content/getInvolved';
+import { charityNavigatorUrl, financialSummary } from '@/content/aboutMedia';
 
 export default function PageScreen() {
   const { slug, story } = useLocalSearchParams<{ slug: string; story?: string }>();
@@ -26,6 +27,7 @@ export default function PageScreen() {
     {page.heroImage && siteImage(page.heroImage.url) ? <Image accessibilityLabel={page.heroImage.alt} contentFit="cover" source={siteImage(page.heroImage.url)} style={{ height: 260, width: '100%' }} /> : null}
     {!selectedStory ? <><Text accessibilityRole="header" style={{ color: tokens.color.text, fontFamily: tokens.font.family.heading, fontSize: tokens.font.size.hero, lineHeight: tokens.font.lineHeight.hero }}>{page.title}</Text>
     <Text style={bodyStyle}>{page.summary}</Text>
+    {page.slug === 'financials' ? <View style={{ gap: tokens.space.sm }}><Text accessibilityRole="header" style={titleStyle}>2019–2024 financial summary</Text><ScrollView horizontal showsHorizontalScrollIndicator><View style={{ minWidth: 400 }}>{[['Year', 'Revenue', 'Expenses', 'Net'], ...financialSummary].map((row, i) => <View key={row[0]} style={{ borderBottomColor: tokens.color.border, borderBottomWidth: 1, flexDirection: 'row', gap: tokens.space.xs, paddingVertical: tokens.space.sm }}>{row.map((cell, j) => <Text key={j} style={[bodyStyle, { flex: 1, minWidth: 92 }, ...(i === 0 ? [titleStyle] : [])]}>{cell}</Text>)}</View>)}</View></ScrollView><Button label="Charity Navigator four-star profile" onPress={() => openExternal(charityNavigatorUrl)} /></View> : null}
     {page.slug === 'facility-rentals' ? <Button label="Ask about a facility rental" onPress={() => router.push('/more/contact')} /> : null}
     {page.slug === 'meet-our-volunteers' ? <View style={{ gap: tokens.space.md }}>{stories.map((item) => <Card key={item.id} title={item.name} body={item.body} href={`/page/meet-our-volunteers?story=${item.id}`} />)}</View> : page.blocks.map((block, i) => <View key={`${block._type}-${i}`}>{renderPageBlock(block, data, data.pages)}</View>)}
     {page.slug === 'advance-team' ? <><Text accessibilityRole="header" style={titleStyle}>{givingDetails.advance.amount}</Text>{givingDetails.advance.benefits.map((benefit) => <Card key={benefit} body={benefit} />)}<Button label="Join the Advance Team" onPress={() => openExternal(givingDetails.advance.url)} /></> : null}

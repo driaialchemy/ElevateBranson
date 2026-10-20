@@ -1,5 +1,5 @@
 import { Stack, useLocalSearchParams } from 'expo-router';
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import { Text } from 'react-native';
 
 import { Button } from '@/components/Button';
@@ -11,12 +11,15 @@ import { useContent } from '@/content/client';
 import { eventById } from '@/content/query';
 import { addEventToCalendar, remindAboutEvent, shareEvent } from '@/events/actions';
 import { reminderInstant } from '@/events/schedule';
+import { cachedCalendarEvents, refreshCalendarEvents } from '@/events/calendarClient';
 import { tokens } from '@/theme/tokens';
 
 export default function EventDetailScreen() {
   const { id } = useLocalSearchParams<{ id: string }>();
   const { data } = useContent();
-  const event = typeof id === 'string' ? eventById(data.events, id) : undefined;
+  const [liveEvents, setLiveEvents] = useState(cachedCalendarEvents());
+  useEffect(() => { void refreshCalendarEvents().then(setLiveEvents).catch(() => undefined); }, []);
+  const event = typeof id === 'string' ? eventById([...data.events, ...liveEvents], id) : undefined;
   const [status, setStatus] = useState('');
   const canRemind = event ? reminderInstant(event.startsOn, new Date()) !== null : false;
 
@@ -32,7 +35,7 @@ export default function EventDetailScreen() {
     <Screen>
       <Stack.Screen options={{ title: event.title }} />
       <ContentNotice />
-      <Card body={`${event.startsOn}. ${event.location}. ${event.summary}`} title={event.title} />
+      <Card body={`${event.startsOn}${event.time ? ` · ${event.time}` : ''}. ${event.location}. ${event.summary}`} title={event.title} />
       <Button
         label="Add to calendar"
         onPress={() => {

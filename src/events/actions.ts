@@ -2,7 +2,7 @@ import { Platform, Share } from 'react-native';
 
 import type { CalendarEvent } from '@/content/types';
 
-import { allDayWindow, eventPath, eventTimeZone, reminderInstant, shareText } from '@/events/schedule';
+import { allDayWindow, eventPath, eventTimeZone, reminderInstant, shareText, zonedDateTime } from '@/events/schedule';
 
 export type ActionResult = {
   ok: boolean;
@@ -10,7 +10,9 @@ export type ActionResult = {
 };
 
 export async function addEventToCalendar(event: CalendarEvent): Promise<ActionResult> {
-  const window = allDayWindow(event.startsOn);
+  const timed = event.time?.match(/^(\d{2}):(\d{2})$/);
+  const start = timed ? zonedDateTime(event.startsOn, Number(timed[1]), Number(timed[2])) : null;
+  const window = timed && start ? { start, end: new Date(start.getTime() + 2 * 60 * 60 * 1000) } : allDayWindow(event.startsOn);
   if (!window) {
     return { ok: false, message: 'This event needs a real date before it can be added to a calendar.' };
   }
@@ -31,7 +33,7 @@ export async function addEventToCalendar(event: CalendarEvent): Promise<ActionRe
       title: event.title,
       startDate: window.start,
       endDate: window.end,
-      allDay: true,
+      allDay: !timed,
       location: event.location,
       notes: event.summary,
       timeZone: eventTimeZone,

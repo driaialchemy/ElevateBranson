@@ -2,6 +2,10 @@
 
 This is for staff. You do not need a developer for ordinary updates.
 
+## Monthly media refresh
+
+Once a month, run `npm run refresh:media` from the project root and commit the updated `src/content/mediaCatalog.json`. This refreshes the newsletter archive and Spotify episode titles and dates from their public sources. Video links open the current website video page.
+
 The phone keeps the last copy it downloaded. When the phone is online, it downloads a fresh copy and saves that. If the download fails, the last copy stays on screen with a short message.
 
 The editing website is not set up yet. Until that account exists, the app shows starter copy that was taken from elevatebranson.org on 17 October 2026. A person still needs to check that copy. See the checklist in HUMAN_TASKS.md.

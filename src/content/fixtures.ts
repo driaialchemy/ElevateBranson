@@ -9,6 +9,8 @@ import type {
   SeasonalNotice,
   Weekday,
 } from '@/content/types';
+import mediaCatalog from './mediaCatalog.json';
+import type { Episode, NewsletterIssue, Video } from './types';
 
 const weekdays: Weekday[] = [
   'monday',
@@ -397,8 +399,8 @@ export const fixtures: ContentBundle = {
   pages: [],
   stories: [],
   volunteerOpportunities: [],
-  episodes: [],
-  videos: [],
+  episodes: mediaCatalog.episodes as Episode[],
+  videos: mediaCatalog.videos as Video[],
   programs,
   homeSections,
   homeStats,
@@ -408,7 +410,7 @@ export const fixtures: ContentBundle = {
   housingListings: [],
   tinyHouseUpdates: [],
   hours,
-  newsletters: [
+  newsletters: [...(mediaCatalog.newsletters as NewsletterIssue[]), ...([
     {
       id: 'newsletter-2026-09',
       title: 'September 2026 Newsletter',
@@ -457,7 +459,7 @@ export const fixtures: ContentBundle = {
       sourceUrl: 'https://elevatebranson.org/',
       verify: true,
     },
-  ],
+  ] as NewsletterIssue[])].filter((issue, index, all) => all.findIndex((candidate) => candidate.url === issue.url) === index),
   siteSettings: {
     mission: 'To elevate our community by empowering our neighbors to reach their full potential.',
     vision: 'For every individual to know hope, dignity, and purpose through the love of Jesus.',

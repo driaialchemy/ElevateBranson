@@ -25,7 +25,7 @@ export function isOpenableHref(href: string): boolean {
 }
 
 export function shareText(event: CalendarEvent): string {
-  return [event.title, event.startsOn, event.location, event.summary, event.sourceUrl]
+  return [event.title, event.startsOn, event.time ?? '', event.location, event.summary, event.sourceUrl]
     .map((part) => part.trim())
     .filter((part) => part.length > 0)
     .join('\n');

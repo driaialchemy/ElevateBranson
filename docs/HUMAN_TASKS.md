@@ -47,5 +47,5 @@ Do not block the build on these. Use the placeholders in [DECISIONS.md](DECISION
 43. Confirm the Playground school-year season start and end dates.
 44. Name the prayer-request destination or provide the public form URL.
 45. Confirm whether a merchandise store exists and provide its public URL if so.
-46. Confirm the public Google Calendar can be read by the app and make it public if required.
+46. Deploy the `/api/events` worker route and configure `EXPO_PUBLIC_SUBMIT_URL`; the public iCal feed returned HTTP 200 on 20 October 2026.
 47. Confirm the organization approves displaying staff phone numbers in the app.

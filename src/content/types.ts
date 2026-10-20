@@ -172,6 +172,7 @@ export type CalendarEvent = {
   summary: string;
   /** YYYY-MM-DD. The app treats this as an all-day event in America/Chicago. */
   startsOn: string;
+  time?: string;
   location: string;
   sourceUrl: string;
   verify: true;

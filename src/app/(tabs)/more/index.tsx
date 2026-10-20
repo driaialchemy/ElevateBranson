@@ -7,6 +7,7 @@ import { moreLinks } from '@/navigation/map';
 const icons = {
   '/get-involved/give': 'heart-outline',
   '/more/about': 'information-circle-outline',
+  '/more/media': 'play-circle-outline',
   '/more/find-us': 'location-outline',
   '/more/contact': 'call-outline',
   '/more/resources': 'library-outline',

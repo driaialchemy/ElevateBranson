@@ -9,6 +9,8 @@ export default function MoreLayout() {
       <Stack.Screen name="about" options={{ title: 'About Us' }} />
       <Stack.Screen name="find-us" options={{ title: 'Find Us' }} />
       <Stack.Screen name="contact" options={{ title: 'Contact' }} />
+      <Stack.Screen name="media" options={{ title: 'Media' }} />
+      <Stack.Screen name="neighbors" options={{ title: 'Meet Our Neighbors' }} />
       <Stack.Screen name="resources" options={{ title: 'Resources' }} />
       <Stack.Screen name="social" options={{ title: 'Social links' }} />
       <Stack.Screen name="website" options={{ title: 'Website' }} />
