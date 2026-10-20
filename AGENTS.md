@@ -27,6 +27,8 @@ Repository: `https://github.com/driaialchemy/ElevateBranson`, local project `C:\
 
 Read `docs/STATE.md` first. Update it last in each phase so a fresh session can resume without rereading history.
 
+Before building, read the phase section of docs/REMAINING.md and the code; extend what exists, never rebuild; skip items already DONE and say so; keep existing tests green.
+
 ## Project references
 
 Read only when needed: `docs/FEATURES.md`, `docs/DECISIONS.md`, `docs/BLOCKERS.md`, `docs/HUMAN_TASKS.md`, `docs/BRAND.md`, `docs/NAVIGATION.md`, `docs/SITE_INVENTORY.md`, `docs/STAFF_GUIDE.md`, `docs/RULES_DETAIL.md`, and `docs/STATE.md`. App content is under `src/content`; the public Sanity read token only belongs in client configuration.

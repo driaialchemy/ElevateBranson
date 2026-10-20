@@ -19,3 +19,4 @@ Files changed in SP-06:
 - `docs/STAFF_GUIDE.md`, `docs/HUMAN_TASKS.md`, and this state file.
 
 Switched from Codex to Claude Code after SP-06. Next: CC-02.
+Remaining work, by phase, with DONE/PARTIAL/NOT STARTED status: `docs/REMAINING.md`. Read the phase section before building.
