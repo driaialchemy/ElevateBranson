@@ -1,0 +1,13 @@
+{
+  "permissions": {
+    "deny": [
+      "Read(./node_modules/**)",
+      "Read(./assets/site/**)",
+      "Read(**/*.zip)",
+      "Read(./package-lock.json)",
+      "Read(./content/manifest.json)",
+      "Read(./src/content/mediaCatalog.json)",
+      "Read(./.env*)"
+    ]
+  }
+}

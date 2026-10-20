@@ -17,3 +17,5 @@ Files changed in SP-06:
 - Public ICS calendar client/worker route, recurrence parsing, and event actions.
 - More navigation, imported content fixtures/types, and targeted coverage.
 - `docs/STAFF_GUIDE.md`, `docs/HUMAN_TASKS.md`, and this state file.
+
+Switched from Codex to Claude Code after SP-06. Next: CC-02.
