@@ -1,13 +1,13 @@
 # Project state
 
-Last completed phase: SP-02.
-Next phase: SP-03.
+Last completed phase: SP-03.
+Next phase: SP-04.
 
 Open blockers:
 - `/forms/13/` and `/forms/30/` on the source site return 404 or redirect outside the allowed host.
 - Nine imported pages contain TODO blocks where text extraction was unavailable.
-- Responsive browser inspection at 390px and desktop width remains open; see `docs/BLOCKERS.md`.
 
-Files changed in SP-02:
-- Navigation tabs and hubs, root donate header, generic `/page/[slug]` renderer, local imported page and image registries, scheme deep links.
-- `docs/NAVIGATION.md`, tests and package test command.
+Files changed in SP-03:
+- Program page route, page hub, shared block renderer, FAQ accordion.
+- Program content and date filtering, schemas, tests, package test command.
+- `docs/BLOCKERS.md`.

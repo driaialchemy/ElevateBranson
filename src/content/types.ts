@@ -22,7 +22,7 @@ export type PageBlock =
   | { _type: 'formLink'; title: string; url: string; interimOnly: boolean }
   | { _type: 'embed'; provider: 'spotify' | 'youtube' | 'calendar'; url: string }
   | { _type: 'faq'; items: { question: string; answer: string }[] }
-  | { _type: 'timeline'; items: { date: string; title: string; body?: string }[] }
+  | { _type: 'timeline'; items: { date: string; title: string; body?: string; lastVerified?: string }[] }
   | { _type: 'storyList'; storyIds: string[] }
   | { _type: 'imageGallery'; images: { url: string; alt: string }[] }
   | { _type: 'todo'; message: string };

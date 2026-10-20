@@ -21,7 +21,7 @@ export const pageBlockSchema = z.discriminatedUnion('_type', [
   z.object({ _type: z.literal('formLink'), title: z.string(), url: z.string(), interimOnly: z.boolean() }),
   z.object({ _type: z.literal('embed'), provider: z.enum(['spotify', 'youtube', 'calendar']), url: z.string() }),
   z.object({ _type: z.literal('faq'), items: z.array(z.object({ question: z.string(), answer: z.string() })) }),
-  z.object({ _type: z.literal('timeline'), items: z.array(z.object({ date: z.string(), title: z.string(), body: z.string().optional() })) }),
+  z.object({ _type: z.literal('timeline'), items: z.array(z.object({ date: z.string(), title: z.string(), body: z.string().optional(), lastVerified: z.string().optional() })) }),
   z.object({ _type: z.literal('storyList'), storyIds: z.array(z.string()) }),
   z.object({ _type: z.literal('imageGallery'), images: z.array(image) }),
   z.object({ _type: z.literal('todo'), message: z.string() }),
