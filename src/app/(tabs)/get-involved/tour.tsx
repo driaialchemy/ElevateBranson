@@ -1,92 +1,47 @@
 import { useState } from 'react';
+import { Pressable, Text, View } from 'react-native';
 
 import { Button } from '@/components/Button';
 import { Card } from '@/components/Card';
-import { ContentNotice } from '@/components/ContentNotice';
-import { HoneypotField } from '@/components/HoneypotField';
-import { openExternal } from '@/components/openLink';
-import { PrivacyLine } from '@/components/PrivacyLine';
+import { Hero } from '@/components/Hero';
+import { openExternal, openHref } from '@/components/openLink';
 import { Screen } from '@/components/Screen';
-import { TextField } from '@/components/TextField';
+import { availableTourDates, givingDetails, tourFormTarget } from '@/content/getInvolved';
 import { useContent } from '@/content/client';
-import { deliverForm } from '@/forms/deliver';
-import { fieldErrors, tourSchema } from '@/forms/schema';
-import { useNetwork } from '@/network/NetworkProvider';
+import { tokens } from '@/theme/tokens';
+
+const bodyStyle = { color: tokens.color.text, fontFamily: tokens.font.family.body, fontSize: tokens.font.size.body, lineHeight: tokens.font.lineHeight.body } as const;
+
+function isoDateAfter(days: number) {
+  const date = new Date();
+  date.setDate(date.getDate() + days);
+  return `${date.getFullYear()}-${String(date.getMonth() + 1).padStart(2, '0')}-${String(date.getDate()).padStart(2, '0')}`;
+}
 
 export default function TourScreen() {
+  const [selectedDate, setSelectedDate] = useState('');
+  const [selectedTime, setSelectedTime] = useState('');
   const { data } = useContent();
-  const { online } = useNetwork();
-  const [name, setName] = useState('');
-  const [email, setEmail] = useState('');
-  const [phone, setPhone] = useState('');
-  const [preferred, setPreferred] = useState('');
-  const [groupSize, setGroupSize] = useState('');
-  const [company, setCompany] = useState('');
-  const [errors, setErrors] = useState<Record<string, string>>({});
-  const [notice, setNotice] = useState('');
-  const [pending, setPending] = useState(false);
-
-  async function submit() {
-    const parsed = tourSchema.safeParse({
-      type: 'tour',
-      name,
-      email,
-      phone,
-      preferred,
-      groupSize,
-      company,
-    });
-    if (!parsed.success) {
-      setErrors(fieldErrors(parsed.error));
-      return;
-    }
-    setErrors({});
-    setPending(true);
-    try {
-      setNotice(await deliverForm(parsed.data, online));
-    } catch (error) {
-      setNotice(error instanceof Error ? error.message : 'Please try again.');
-    } finally {
-      setPending(false);
-    }
-  }
-
-  if (notice) {
-    return (
-      <Screen>
-        <Card body={notice} title="Request received" />
-      </Screen>
-    );
-  }
-
+  const page = data.pages?.find((item) => item.slug === 'schedule-a-tour');
+  const dates = availableTourDates(isoDateAfter(1), 30, givingDetails.tourHolidays);
   return (
     <Screen>
-      <ContentNotice />
-      <Card
-        body="The website form is the usual way to ask for a tour. Use the form below if that page will not open."
-        title="Schedule a tour"
-      />
-      <Button label="Schedule on the website" onPress={() => openExternal(data.siteSettings.tourUrl)} />
-      <TextField error={errors.name} label="Name" onChangeText={setName} value={name} />
-      <TextField error={errors.email} keyboardType="email-address" label="Email" onChangeText={setEmail} value={email} />
-      <TextField error={errors.phone} keyboardType="phone-pad" label="Phone" onChangeText={setPhone} value={phone} />
-      <TextField
-        error={errors.preferred}
-        label="Days and times that work for you"
-        multiline
-        onChangeText={setPreferred}
-        value={preferred}
-      />
-      <TextField
-        error={errors.groupSize}
-        keyboardType="number-pad"
-        label="Number of people"
-        onChangeText={setGroupSize}
-        value={groupSize}
-      />
-      <HoneypotField onChangeText={setCompany} value={company} />
-      <PrivacyLine />
-      <Button label={pending ? 'Sending' : 'Send a tour request'} onPress={() => void submit()} />
+      <Hero alt={page?.heroImage?.alt ?? 'Elevate Branson campus'} imageKey="hero" imageUrl={page?.heroImage?.url} title="Schedule a Tour" subtitle="Come see how Elevate Branson serves neighbors and families." />
+      <Text style={bodyStyle}>{givingDetails.tourDays}</Text>
+      <Text accessibilityRole="header" style={headingStyle}>Available weekdays</Text>
+      <View style={{ flexDirection: 'row', flexWrap: 'wrap', gap: tokens.space.xs }}>
+        {dates.map((date) => <Pressable key={date} accessibilityLabel={`Tour date ${date}`} accessibilityRole="button" accessibilityState={{ selected: selectedDate === date }} onPress={() => setSelectedDate(date)} style={[chipStyle, selectedDate === date ? { backgroundColor: tokens.color.primary } : null]}><Text style={[bodyStyle, selectedDate === date ? { color: tokens.color.onPrimary } : null]}>{date}</Text></Pressable>)}
+      </View>
+      <Text accessibilityRole="header" style={headingStyle}>Available time slots</Text>
+      <View style={{ flexDirection: 'row', flexWrap: 'wrap', gap: tokens.space.xs }}>
+        {givingDetails.tourTimes.map((time) => <Pressable key={time} accessibilityLabel={`Tour time ${time}`} accessibilityRole="button" accessibilityState={{ selected: selectedTime === time }} onPress={() => setSelectedTime(time)} style={[chipStyle, selectedTime === time ? { backgroundColor: tokens.color.primary } : null]}><Text style={[bodyStyle, selectedTime === time ? { color: tokens.color.onPrimary } : null]}>{time}</Text></Pressable>)}
+      </View>
+      {selectedDate || selectedTime ? <Text style={bodyStyle}>Selected: {selectedDate || 'choose a weekday'}{selectedTime ? ` at ${selectedTime}` : ''}. Enter your final request on the website form.</Text> : null}
+      <Card title="Request a tour" body="The website form collects your name, phone, email, requested date and time, and any details for your visit. Your information stays on the Elevate Branson website." />
+      <Button label="Request a tour on the website" onPress={() => { const target = tourFormTarget(); if (target.startsWith('http')) openExternal(target); else openHref(target); }} />
     </Screen>
   );
 }
+
+const headingStyle = { ...bodyStyle, fontFamily: tokens.font.family.heading, fontSize: tokens.font.size.header, lineHeight: tokens.font.lineHeight.header } as const;
+const chipStyle = { alignItems: 'center' as const, backgroundColor: tokens.color.surface, borderColor: tokens.color.border, borderRadius: tokens.buttonRadius, borderWidth: 1, justifyContent: 'center' as const, minHeight: tokens.tapTarget, paddingHorizontal: tokens.space.sm };

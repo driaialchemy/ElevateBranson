@@ -13,8 +13,8 @@ const sectionTitles: Record<PageSection, string> = { about: 'About', 'what-we-do
 
 export function PageHub({ section, title, included = [section] }: { section: PageSection; title?: string; included?: PageSection[] }) {
   const { data } = useContent();
-  const pages = (data.pages ?? []).filter((page) => included.includes(page.section) && !page.slug.startsWith('forms-'));
+  const pages = (data.pages ?? []).filter((page) => included.includes(page.section) && !page.slug.startsWith('forms-') && !page.slug.startsWith('volunteer-form-'));
   const heading = title ?? sectionTitles[section];
   const featured = pages[0];
-  return <Screen>{featured ? <Hero imageKey="hero" imageUrl={featured.heroImage?.url} alt={featured.heroImage?.alt ?? featured.title} title={heading} subtitle={featured.summary} /> : <Text accessibilityRole="header" style={{ color: tokens.color.text, fontFamily: tokens.font.family.heading, fontSize: tokens.font.size.hero }}>{heading}</Text>}<SectionHeader label={heading} /><View style={{ gap: tokens.space.md }}>{pages.map((page) => <Card key={page.slug} title={page.title} body={page.summary} imageUrl={page.heroImage?.url} alt={page.heroImage?.alt} href={section === 'what-we-do' && page.slug in programDetails ? `/programs/${page.slug}` : `/page/${page.slug}`} />)}</View></Screen>;
+  return <Screen>{featured ? <Hero imageKey="hero" imageUrl={featured.heroImage?.url} alt={featured.heroImage?.alt ?? featured.title} title={heading} subtitle={featured.summary} /> : <Text accessibilityRole="header" style={{ color: tokens.color.text, fontFamily: tokens.font.family.heading, fontSize: tokens.font.size.hero }}>{heading}</Text>}<SectionHeader label={heading} /><View style={{ gap: tokens.space.md }}>{pages.map((page) => <Card key={page.slug} title={page.title} body={page.summary} imageUrl={page.heroImage?.url} alt={page.heroImage?.alt} href={section === 'what-we-do' && page.slug in programDetails ? `/programs/${page.slug}` : section === 'get-involved' && page.slug === 'volunteer' ? '/get-involved/volunteer' : section === 'get-involved' && page.slug === 'schedule-a-tour' ? '/get-involved/tour' : `/page/${page.slug}`} />)}</View></Screen>;
 }

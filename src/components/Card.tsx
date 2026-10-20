@@ -13,6 +13,7 @@ export function Card({
   imageUrl,
   alt,
   href,
+  accentColor,
 }: {
   title?: string;
   body: string;
@@ -20,6 +21,7 @@ export function Card({
   imageUrl?: string;
   alt?: string;
   href?: string;
+  accentColor?: string;
 }) {
   const source = (imageUrl ? siteImage(imageUrl) : undefined) ?? brandImage(imageKey);
   const content = (
@@ -27,7 +29,7 @@ export function Card({
       style={{
         backgroundColor: tokens.color.surface,
         borderColor: tokens.color.border,
-        borderLeftColor: tokens.color.green,
+        borderLeftColor: accentColor ?? tokens.color.green,
         borderLeftWidth: 6,
         borderRadius: tokens.radius,
         borderWidth: 1,

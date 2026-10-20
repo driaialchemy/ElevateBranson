@@ -19,6 +19,8 @@ export const tokens = {
     sky: '#00A9CE',
     /** Site olive. Decorative only: it fails 4.5:1 for text on white. */
     accent: '#7DA34B',
+    /** Decorative volunteer card accents; never use these colors for body text. */
+    volunteerCards: ['#007C91', '#8C2761', '#A94300', '#8C6600'],
     /** Area outside the centered column on a wide screen. */
     canvas: '#E7EEEF',
     /** Dark scrim behind hero text. White on this teal passes 4.5:1. */
