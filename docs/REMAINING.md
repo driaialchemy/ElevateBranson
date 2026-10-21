@@ -3,12 +3,12 @@
 Reconciled 2026-10-20 against the repo (targeted searches only). Extend what exists; never rebuild.
 "Config/deploy" marks code that exists and only needs setup or a deploy.
 
-## CC-02 Resources, housing, giving
-- PARTIAL: housing and area-resources PDFs with language switch. PDF links exist (`pdfLink` block in `src/components/PageBlockRenderer.tsx`, `src/content/programDetails.ts:172`). Missing: English/Spanish switch and the area-resources PDFs.
-- PARTIAL: extracted resource and housing entries. `src/app/(tabs)/more/resources.tsx` and housing fixtures exist. Missing: extracted area-resources entries.
-- PARTIAL: give hub options. `src/app/(tabs)/get-involved/give.tsx`, `giveBlurb` in `src/content/types.ts`. Verify each way to give is listed.
-- DONE: merch hidden unless `merchUrl` (`src/components/MerchPanel.tsx`; fixture `merchUrl` is empty).
-- PARTIAL: Give reachable from header and Home. Home has a give action (`src/app/(tabs)/index.tsx`). No Give in `src/components/Header.tsx`.
+## CC-02 Resources, housing, giving (DONE 2026-10-20)
+- DONE: housing and area-resources PDFs with English/Spanish switch (`PdfSheetCard`).
+- DONE: extracted area-resources entries (60, all verify). Housing listings still empty; the Housing Information Sheet is PDF only.
+- DONE: give hub lists the hosted donate and program forms.
+- DONE: merch hidden unless `merchUrl`.
+- DONE: DONATE NOW in the shared header on every screen except Give.
 
 ## CC-03 Media, content gaps, reports
 - PARTIAL: images with alt text. `alt` is required in `BrandImage.tsx` and `siteImages.ts`. Per-image coverage not audited.

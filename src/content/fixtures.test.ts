@@ -7,7 +7,7 @@ const blocked = ['Cathy', 'Daniel.Friday', 'Donna', 'Betsy', '417.239.7818', '78
 
 test('starter copy keeps unpublished lists empty', () => {
   assert.equal(fixtures.housingListings.length, 0);
-  assert.equal(fixtures.resources.length, 0);
+  assert.ok(fixtures.resources.length > 0);
   assert.equal(fixtures.events.length, 0);
   assert.equal(fixtures.tinyHouseUpdates.length, 0);
   assert.equal(fixtures.siteSettings.merchUrl, '');

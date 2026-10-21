@@ -14,6 +14,7 @@ export function Button({
   variant?: Variant;
 }) {
   const secondary = variant === 'secondary';
+  const donate = variant === 'donate';
   return (
     <Pressable
       accessibilityLabel={label}
@@ -21,8 +22,8 @@ export function Button({
       onPress={onPress}
       style={({ pressed }) => ({
         alignItems: 'center',
-        backgroundColor: secondary ? tokens.color.surface : pressed ? tokens.color.text : tokens.color.primary,
-        borderColor: tokens.color.primary,
+        backgroundColor: secondary ? tokens.color.surface : pressed ? tokens.color.text : donate ? tokens.color.donate : tokens.color.primary,
+        borderColor: donate ? tokens.color.donate : tokens.color.primary,
         borderRadius: tokens.buttonRadius,
         borderWidth: 2,
         elevation: 2,

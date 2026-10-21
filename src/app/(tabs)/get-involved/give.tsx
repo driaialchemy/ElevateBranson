@@ -1,4 +1,4 @@
-import { Text } from 'react-native';
+import { Text, View } from 'react-native';
 
 import { Button } from '@/components/Button';
 import { Card } from '@/components/Card';
@@ -7,6 +7,7 @@ import { EmptyState } from '@/components/EmptyState';
 import { openExternal } from '@/components/openLink';
 import { Screen } from '@/components/Screen';
 import { useContent } from '@/content/client';
+import { giveOptions } from '@/content/giving';
 import { isBrowserLink } from '@/content/links';
 import { tokens } from '@/theme/tokens';
 
@@ -34,6 +35,20 @@ export default function GiveScreen() {
       ) : (
         <EmptyState body="The donate page link is not ready yet." title="Give" />
       )}
+      {giveOptions.map((option) => (
+        <View key={option.id} style={{ gap: tokens.space.xs }}>
+          <Button label={option.label} onPress={() => openExternal(option.url)} variant="secondary" />
+          <Text
+            style={{
+              color: tokens.color.textMuted,
+              fontFamily: tokens.font.family.body,
+              fontSize: tokens.font.size.body,
+              lineHeight: tokens.font.lineHeight.body,
+            }}>
+            {option.hint}
+          </Text>
+        </View>
+      ))}
       <Text
         style={{
           color: tokens.color.text,

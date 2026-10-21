@@ -6,9 +6,11 @@ import type {
   Hours,
   HoursSeason,
   Program,
+  Resource,
   SeasonalNotice,
   Weekday,
 } from '@/content/types';
+import areaResources from './areaResources.json';
 import mediaCatalog from './mediaCatalog.json';
 import type { Episode, NewsletterIssue, Video } from './types';
 
@@ -406,7 +408,7 @@ export const fixtures: ContentBundle = {
   homeStats,
   seasonalNotice,
   events: [],
-  resources: [],
+  resources: areaResources as Resource[],
   housingListings: [],
   tinyHouseUpdates: [],
   hours,

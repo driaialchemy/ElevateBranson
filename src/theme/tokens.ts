@@ -15,6 +15,8 @@ export const tokens = {
     onError: '#FFFFFF',
     /** Site green. Decorative only: it fails 4.5:1 on white. */
     green: '#6BA539',
+    /** Dark site green for the DONATE NOW button; white text on it passes 4.5:1. */
+    donate: '#2D6A1B',
     /** Site sky blue. Decorative only: it fails 4.5:1 on white. */
     sky: '#00A9CE',
     /** Site olive. Decorative only: it fails 4.5:1 for text on white. */

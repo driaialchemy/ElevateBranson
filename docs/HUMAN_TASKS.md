@@ -49,3 +49,4 @@ Do not block the build on these. Use the placeholders in [DECISIONS.md](DECISION
 45. Confirm whether a merchandise store exists and provide its public URL if so.
 46. Deploy the `/api/events` worker route and configure `EXPO_PUBLIC_SUBMIT_URL`; the public iCal feed returned HTTP 200 on 20 October 2026.
 47. Confirm the organization approves displaying staff phone numbers in the app.
+48. Review the 60 Area Resources entries pulled from the June 2026 sheet (`src/content/areaResources.json`). Every entry is marked verify. Listings that share a block on the sheet (for example the second phone for Harbor House, Branson Senior Center, and the Forsyth clinic) were left out; the PDF remains the full source. Add them in the CMS if wanted. Re-run `python -I scripts/extract_pdf_columns.py <sheet.pdf>` and `npx tsx scripts/parse-area-resources.ts` when the next sheet is posted.

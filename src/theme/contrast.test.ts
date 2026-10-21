@@ -13,6 +13,7 @@ describe('text contrast', () => {
       ['text on surface', tokens.color.text, tokens.color.surface],
       ['muted on surface', tokens.color.textMuted, tokens.color.surface],
       ['button label', tokens.color.onPrimary, tokens.color.primary],
+      ['donate button', tokens.color.onPrimary, tokens.color.donate],
       ['error on surface', tokens.color.error, tokens.color.surface],
       ['offline banner', tokens.color.onPrimary, tokens.color.primary],
     ];

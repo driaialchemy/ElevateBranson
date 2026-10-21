@@ -3,12 +3,14 @@ import { Pressable, Text, TextInput, View } from 'react-native';
 
 import { Button } from '@/components/Button';
 import { Card } from '@/components/Card';
+import { PdfSheetCard } from '@/components/PdfSheetCard';
 import { ContentNotice } from '@/components/ContentNotice';
 import { EmptyState } from '@/components/EmptyState';
 import { openCall, openMap } from '@/components/openLink';
 import { Screen } from '@/components/Screen';
 import { useContent } from '@/content/client';
 import { freshnessNote } from '@/content/freshness';
+import { pdfSheets } from '@/content/pdfSheets';
 import { filterResources, resourceCategories, visibleHousing } from '@/content/query';
 import { tokens } from '@/theme/tokens';
 
@@ -35,8 +37,11 @@ export default function ResourcesScreen() {
           fontSize: tokens.font.size.body,
           lineHeight: tokens.font.lineHeight.body,
         }}>
-        Partner groups for referrals. Search by name or choose a category.
+        Partner groups for referrals, from the June 2026 Area Resources sheet. Search by name or choose a category. Details may have changed, so call to confirm.
       </Text>
+      {pdfSheets.map((sheet) => (
+        <PdfSheetCard key={sheet.id} sheet={sheet} />
+      ))}
       <TextInput
         accessibilityLabel="Search partner groups"
         onChangeText={setQuery}
