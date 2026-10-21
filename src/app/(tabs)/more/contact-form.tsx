@@ -46,8 +46,8 @@ export default function ContactFormScreen() {
               accessibilityState={{ selected }}
               key={item}
               onPress={() => setProgram(item)}
-              style={{ alignItems: 'center', backgroundColor: selected ? tokens.color.primary : tokens.color.surface, borderColor: tokens.color.border, borderRadius: tokens.radius, borderWidth: 1, justifyContent: 'center', minHeight: tokens.tapTarget, paddingHorizontal: tokens.space.md }}>
-              <Text style={[bodyStyle, selected ? { color: tokens.color.onPrimary } : null]}>{item}</Text>
+              style={{ alignItems: 'center', backgroundColor: selected ? tokens.color.primary : tokens.color.surface, borderColor: tokens.color.border, borderRadius: tokens.radius, borderWidth: 1, justifyContent: 'center', maxWidth: '100%', minHeight: tokens.tapTarget, paddingHorizontal: tokens.space.md }}>
+              <Text style={[bodyStyle, { flexShrink: 1, textAlign: 'center' }, selected ? { color: tokens.color.onPrimary } : null]}>{item}</Text>
             </Pressable>
           );
         })}
