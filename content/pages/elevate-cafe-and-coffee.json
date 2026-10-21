@@ -26,12 +26,12 @@
       "_type": "buttonRow",
       "buttons": [
         {
-          "label": "ORDER AHEAD",
-          "url": "https://elevate-coffee.square.site/"
+          "label": "CAFE AND COFFEE ON THE WEBSITE",
+          "url": "https://elevatebranson.org/elevate-cafe-and-coffee/"
         },
         {
-          "label": "[email protected]",
-          "url": "https://elevatebranson.org/cdn-cgi/l/email-protection#c3aaada5ac83a6afa6b5a2b7a6a1b1a2adb0acadedacb1a4"
+          "label": "info@elevatebranson.org",
+          "url": "mailto:info@elevatebranson.org"
         },
         {
           "label": "SIGN UP & GET YOUR 50% OFF COUPON",

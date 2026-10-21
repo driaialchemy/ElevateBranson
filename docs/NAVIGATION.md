@@ -36,8 +36,8 @@ Five bottom tabs mirror the website. Home shortcuts expose Volunteer, Tour, Give
 | https://elevatebranson.org/event-calendar/ | `/events` | custom |
 | https://elevatebranson.org/facility-rentals/ | `/page/facility-rentals` | generic |
 | https://elevatebranson.org/financials/ | `/page/financials` | generic |
-| https://elevatebranson.org/forms--13/ | `/page/forms--13` | generic |
-| https://elevatebranson.org/forms--30/ | `/page/forms--30` | generic |
+| https://elevatebranson.org/forms--13/ | excluded (404) | none |
+| https://elevatebranson.org/forms--30/ | excluded (404) | none |
 | https://elevatebranson.org/frequently-asked-questions/ | `/page/frequently-asked-questions` | generic |
 | https://elevatebranson.org/generosity-e-book/ | `/page/generosity-e-book` | generic |
 | https://elevatebranson.org/ground-breaking-dedication/ | `/page/ground-breaking-dedication` | generic |

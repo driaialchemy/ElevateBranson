@@ -21,6 +21,13 @@ The editing website is not set up yet. Until that account exists, the app shows 
 - A newsletter: the title, the date, and the link to read it.
 - A tiny-house note: a date and what changed. Do not invent a date.
 - The campus address, main phone, thrift phone, public email, social links, donate link, a short Give sentence, website link, tour link, and shirt-store link. Leave the shirt-store link blank until you have one. The Give sentence on the phone was copied from the donate page until you replace it.
+- A website page (imported): a page's title, summary, and blocks. Pages come from the website with `npm run import:site`; re-run it after a website change, then check pages marked verify. A page with a TODO block is waiting for text, so do not publish it as final.
+- A volunteer opportunity: the name, schedule, short description, age rules, group size, and the website form link. The app's own form needs the submit address (`EXPO_PUBLIC_SUBMIT_URL`) and the staff inbox set on the worker; until then the website form opens.
+- A story or neighbor profile: add it as a page with a short summary. Individual story pages on the website open in the in-app browser until they are imported.
+- A Give option: the label, a one-line hint, and the hosted form link (Neon CRM or the donation page). The app never takes card numbers.
+- A notification: staff send from the `/staff/notify` page with the staff password. Preview first, then confirm. Topics are News, Events, Programs, Giving needs, and Housing.
+- The Area Resources list: when a new PDF sheet is posted, update the two links in `src/content/pdfSheets.ts`, then re-run the extraction (`python -I scripts/extract_pdf_columns.py <sheet.pdf>` and `npx tsx scripts/parse-area-resources.ts`), and review the entries marked verify.
+- Checks before a release: `npm run audit:parity` (every website page is in the app or excluded with a reason) and `npm run audit:links` (every outside link answers). Both write a report to `docs/`.
 
 ## What stays off this public list
 

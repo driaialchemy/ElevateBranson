@@ -26,6 +26,10 @@ export function openHref(href: string) {
     openExternal(trimmed);
     return;
   }
+  if (/^(mailto|tel):/i.test(trimmed)) {
+    void Linking.openURL(trimmed);
+    return;
+  }
   router.push(trimmed as Href);
 }
 

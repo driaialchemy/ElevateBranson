@@ -15,9 +15,9 @@ Reconciled 2026-10-20 against the repo (targeted searches only). Extend what exi
 - DONE: duotone heroes and card photos.
 - DONE: TODO pages filled or excluded (`docs/CONTENT_CONFLICTS.md`).
 - DONE: route bug not reproduced; regression test added.
-- NOT STARTED: `docs/PARITY_REPORT.md`.
-- NOT STARTED: `docs/LINK_REPORT.md` (`src/content/links.ts` and its test exist; no report).
-- PARTIAL: STAFF_GUIDE coverage. `docs/STAFF_GUIDE.md` updated in SP-06; later phases not covered.
+- DONE: `docs/PARITY_REPORT.md` (`npm run audit:parity`).
+- DONE: `docs/LINK_REPORT.md` (`npm run audit:links`).
+- DONE: STAFF_GUIDE covers pages, opportunities, stories, give options, notifications, resources, audits.
 
 ## CC-04 Forms and backend
 - DONE (CC-03 prompt, 2026-10-20): native forms. Screens: `volunteer.tsx`, `tour.tsx`, `prayer.tsx` in `src/app/(tabs)/get-involved/`. Missing: contact form, the six per-opportunity volunteer forms, and the `volunteer-native` / `tour-native` routes that `src/content/getInvolved.ts` points to.

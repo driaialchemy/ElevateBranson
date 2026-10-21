@@ -101,8 +101,8 @@ export default function TabLayout() {
           tabBarAccessibilityLabel: 'More',
         }}
       />
-      <Tabs.Screen name="programs" options={{ href: null }} />
-      <Tabs.Screen name="events" options={{ href: null }} />
+      <Tabs.Screen name="programs" options={{ headerShown: false, href: null }} />
+      <Tabs.Screen name="events" options={{ headerShown: false, href: null }} />
     </Tabs>
   );
 }

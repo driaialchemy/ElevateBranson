@@ -23,6 +23,7 @@ export default function ResourcesScreen() {
   const { data } = useContent();
   const [query, setQuery] = useState('');
   const [category, setCategory] = useState('All');
+  const [shown, setShown] = useState(20);
   const categories = resourceCategories(data.resources);
   const visible = filterResources(data.resources, query, category);
   const housing = visibleHousing(data.housingListings);
@@ -101,7 +102,7 @@ export default function ResourcesScreen() {
           title="No partner groups yet"
         />
       ) : (
-        visible.map((resource) => (
+        visible.slice(0, shown).map((resource) => (
           <View key={resource.id} style={{ gap: tokens.space.sm }}>
             <Card
               body={withNote(`${resource.category}. ${resource.summary}`, resource.lastVerified)}
@@ -116,6 +117,9 @@ export default function ResourcesScreen() {
           </View>
         ))
       )}
+      {visible.length > shown ? (
+        <Button label={`Show more (${visible.length - shown} left)`} onPress={() => setShown(shown + 20)} variant="secondary" />
+      ) : null}
       {data.housingListings.length === 0 ? (
         <EmptyState
           body="Staff have not added the housing list yet. Public organization names, phones, and addresses belong here."

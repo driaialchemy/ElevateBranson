@@ -51,10 +51,12 @@
     "web": "expo start --web",
     "lint": "expo lint",
     "typecheck": "tsc --noEmit",
-    "test": "tsx --test src/navigation/map.test.ts src/theme/contrast.test.ts src/content/fixtures.test.ts src/content/query.test.ts src/content/links.test.ts src/content/swr.test.ts src/content/format.test.ts src/content/guard.test.ts src/content/openStatus.test.ts src/content/freshness.test.ts src/content/infoScreens.test.ts src/content/pageRoutes.test.ts src/content/dates.test.ts src/content/programDetails.test.ts src/content/getInvolved.test.ts src/content/aboutMedia.test.ts src/server/handleSubmit.test.ts src/server/calendar.test.ts src/forms/queue.test.ts src/push/push.test.ts src/events/schedule.test.ts src/events/ics.test.ts src/qa/rules.test.ts scripts/import-site.test.ts scripts/parse-area-resources.test.ts src/content/pdfSheets.test.ts src/forms/forms.test.ts src/navigation/routeTitles.test.ts src/qa/altText.test.ts",
+    "test": "tsx --test src/navigation/map.test.ts src/theme/contrast.test.ts src/content/fixtures.test.ts src/content/query.test.ts src/content/links.test.ts src/content/swr.test.ts src/content/format.test.ts src/content/guard.test.ts src/content/openStatus.test.ts src/content/freshness.test.ts src/content/infoScreens.test.ts src/content/pageRoutes.test.ts src/content/dates.test.ts src/content/programDetails.test.ts src/content/getInvolved.test.ts src/content/aboutMedia.test.ts src/server/handleSubmit.test.ts src/server/calendar.test.ts src/forms/queue.test.ts src/push/push.test.ts src/events/schedule.test.ts src/events/ics.test.ts src/qa/rules.test.ts scripts/import-site.test.ts scripts/parse-area-resources.test.ts src/content/pdfSheets.test.ts src/forms/forms.test.ts src/navigation/routeTitles.test.ts src/qa/altText.test.ts scripts/audit.test.ts",
     "import:site": "tsx scripts/import-site.ts",
     "import:check": "tsx scripts/import-site.ts --check",
-    "refresh:media": "tsx scripts/refresh-media.ts"
+    "refresh:media": "tsx scripts/refresh-media.ts",
+    "audit:parity": "tsx scripts/audit-parity.ts",
+    "audit:links": "tsx scripts/audit-links.ts"
   },
   "private": true
 }

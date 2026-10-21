@@ -1,7 +1,9 @@
 import { ListItem } from '@/components/ListItem';
 import { Card } from '@/components/Card';
 import { Screen } from '@/components/Screen';
+import { SectionHeader } from '@/components/SectionHeader';
 import { useContent } from '@/content/client';
+import { pageBlurb } from '@/content/pageRoutes';
 import { moreLinks } from '@/navigation/map';
 
 const icons = {
@@ -24,11 +26,12 @@ export default function MoreScreen() {
   return (
     <Screen>
 
-      {(data.pages ?? []).filter((page) => ['about', 'media', 'contact'].includes(page.section) && !page.slug.startsWith('forms-')).map((page) => (
-        <Card key={page.slug} title={page.title} body={page.summary} imageUrl={page.heroImage?.url} alt={page.heroImage?.alt} href={`/page/${page.slug}`} />
-      ))}
       {moreLinks.map((item) => (
         <ListItem detail={item.detail} href={item.href} icon={icons[item.href]} key={item.href} label={item.label} />
+      ))}
+      <SectionHeader label="More pages" />
+      {(data.pages ?? []).filter((page) => ['about', 'media', 'contact'].includes(page.section) && !page.slug.startsWith('forms-')).map((page) => (
+        <Card key={page.slug} title={page.title} body={pageBlurb(page.summary)} imageUrl={page.heroImage?.url} alt={page.heroImage?.alt} href={`/page/${page.slug}`} />
       ))}
     </Screen>
   );

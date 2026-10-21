@@ -30,8 +30,8 @@
       "_type": "buttonRow",
       "buttons": [
         {
-          "label": "[email protected]",
-          "url": "https://elevatebranson.org/cdn-cgi/l/email-protection#f9b0979f96b9bc959c8f988d9cbb8b98978a9697d7968b9e"
+          "label": "Info@ElevateBranson.org",
+          "url": "mailto:Info@ElevateBranson.org"
         },
         {
           "label": "JOIN OUR MAILING LIST",

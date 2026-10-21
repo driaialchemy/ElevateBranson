@@ -54,6 +54,15 @@ function attribute(attrs: string, name: string): string | undefined {
   return attrs.match(new RegExp(`\\b${name}\\s*=\\s*["']([^"']*)["']`, 'i'))?.[1];
 }
 
+/** Cloudflare hides addresses as hex: the first byte is an XOR key for the rest. */
+export function decodeCloudflareEmail(hex: string): string {
+  if (hex.length < 4 || hex.length % 2 !== 0) return '';
+  const key = parseInt(hex.slice(0, 2), 16);
+  let email = '';
+  for (let index = 2; index < hex.length; index += 2) email += String.fromCharCode(parseInt(hex.slice(index, index + 2), 16) ^ key);
+  return /^[^@\s]+@[^@\s]+\.[a-z]{2,}$/i.test(email) ? email : '';
+}
+
 function safeUrl(raw: string, base: string): string | undefined {
   try { return new URL(decodeEntities(raw.trim()), base).toString(); }
   catch { return undefined; }
@@ -95,7 +104,13 @@ export function extractPage(html: string, pageUrl: string): ExtractedPage {
   const links = [...region.matchAll(/<a\b([^>]*?)href=["']([^"']+)["']([^>]*)>([\s\S]*?)<\/a>/gi)]
     .flatMap((m) => {
       const label = plainText(m[4] ?? '');
-      const url = safeUrl(m[2] ?? '', pageUrl);
+      const rawHref = decodeEntities((m[2] ?? '').trim());
+      const protectedMail = /\/cdn-cgi\/l\/email-protection#([0-9a-f]+)$/i.exec(rawHref);
+      if (protectedMail) {
+        const email = decodeCloudflareEmail(protectedMail[1]);
+        return label && email ? [{ label: /^\[email.protected\]$/.test(label) ? email : label, url: `mailto:${email}` }] : [];
+      }
+      const url = safeUrl(rawHref, pageUrl);
       return label && url && /^https?:/.test(url) ? [{ label, url }] : [];
     });
   const images: { url: string; alt: string }[] = [];
