@@ -26,6 +26,7 @@ const volunteer = {
   email: 'neighbor@example.com',
   phone: '',
   message: 'I can help on Tuesdays.',
+  conductAccepted: true,
   company: '',
 };
 
@@ -126,4 +127,14 @@ test('the sixth request from one address is told to wait', async () => {
   const blocked = await handleSubmit(post(volunteer), { env: ready, now: 5_000, store, sendEmail });
   assert.equal(blocked.status, 429);
   assert.equal(sent.length, 5);
+});
+
+test('a contact message is emailed only to the contact inbox', async () => {
+  const sent: { to: string; subject: string }[] = [];
+  const response = await handleSubmit(
+    post({ type: 'contact', name: 'Test Neighbor', email: 'neighbor@example.com', program: 'Rides', message: 'Hello', company: '' }),
+    { env: { ...ready, CONTACT_EMAIL: 'contact@staff.test' }, sendEmail: async (mail) => void sent.push(mail), store: new Map() },
+  );
+  assert.equal(response.status, 200);
+  assert.equal(sent[0]?.to, 'contact@staff.test');
 });

@@ -1,7 +1,7 @@
 # Project state
 
-Last completed phase: CC-02.
-Next phase: CC-03.
+Last completed phase: CC-03 (forms; REMAINING.md calls this section CC-04).
+Next phase: CC-04 (media, content gaps, reports; REMAINING.md section CC-03).
 
 Open blockers:
 - Deploy the `/api/events` worker route and set `EXPO_PUBLIC_SUBMIT_URL` for the published app.
@@ -20,3 +20,5 @@ Files changed in SP-06:
 
 Switched from Codex to Claude Code after SP-06. CC-02 done: PdfSheetCard with EN/ES switch (`src/components/PdfSheetCard.tsx`, `src/content/pdfSheets.ts`), 60 extracted Area Resources entries (`src/content/areaResources.json`, scripts `extract_pdf_columns.py` and `parse-area-resources.ts`), DONATE NOW hidden only on Give (`headerRules.ts`), Give hub lists hosted forms (`src/content/giving.ts`). Next: CC-03. Pushed to origin main. If push fails with a bad token, an invalid `GITHUB_TOKEN` env var is overriding the working `gh` login; push with `env -u GITHUB_TOKEN git -c credential.helper= -c "credential.helper=!gh auth git-credential" push origin main`.
 Remaining work, by phase, with DONE/PARTIAL/NOT STARTED status: `docs/REMAINING.md`. Read the phase section before building.
+
+CC-03 done: contact form (`more/contact-form.tsx`, `contactSchema`, `CONTACT_EMAIL`), `volunteer-native` and `tour-native` routes, shared `src/forms/useSubmit.ts`, `useNativeForms` derived from `EXPO_PUBLIC_SUBMIT_URL`, tests in `src/forms/forms.test.ts`. `.env.example` not updated (agent access denied): see HUMAN_TASKS 50. Not run in the app.

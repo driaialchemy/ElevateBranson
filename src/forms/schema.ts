@@ -8,7 +8,31 @@ export const volunteerSchema = z.object({
   name: z.string().trim().min(1).max(120),
   email: z.string().trim().email().max(200),
   phone: optionalText(40),
+  message: optionalText(2000),
+  conductAccepted: z.literal(true),
+  company: z.string().optional(),
+});
+
+export const contactPrograms = [
+  'General',
+  'Elevate Connections',
+  'Community',
+  'Entrepreneurs',
+  'Health',
+  'Kids',
+  'Outreach',
+  'Rides',
+  'Thrift Store',
+  'Work',
+] as const;
+
+export const contactSchema = z.object({
+  type: z.literal('contact'),
+  name: z.string().trim().min(1).max(120),
+  email: z.string().trim().email().max(200),
+  program: z.enum(contactPrograms),
   message: z.string().trim().min(1).max(2000),
+  phone: optionalText(40),
   company: z.string().optional(),
 });
 
@@ -19,6 +43,7 @@ export const tourSchema = z.object({
   phone: z.string().trim().min(7).max(40),
   preferred: z.string().trim().min(1).max(500),
   groupSize: z.string().trim().regex(/^\d{1,3}$/),
+  details: optionalText(1000),
   company: z.string().optional(),
 });
 
@@ -31,10 +56,11 @@ export const prayerSchema = z.object({
   company: z.string().optional(),
 });
 
-export const submissionSchema = z.discriminatedUnion('type', [volunteerSchema, tourSchema, prayerSchema]);
+export const submissionSchema = z.discriminatedUnion('type', [volunteerSchema, tourSchema, prayerSchema, contactSchema]);
 
 export type VolunteerInput = z.infer<typeof volunteerSchema>;
 export type TourInput = z.infer<typeof tourSchema>;
+export type ContactInput = z.infer<typeof contactSchema>;
 export type PrayerInput = z.infer<typeof prayerSchema>;
 export type Submission = z.infer<typeof submissionSchema>;
 
@@ -48,6 +74,7 @@ const fieldCopy: Record<string, string> = {
   groupSize: 'Enter the number of people.',
   request: 'Enter your prayer request.',
   contact: 'Enter a shorter way to reach you.',
+  conductAccepted: 'Please confirm you read the Code of Conduct.',
   form: 'Please check the form.',
 };
 
@@ -74,6 +101,7 @@ export const sentCopy = {
   volunteer: 'Our coordinator will reach out.',
   tour: 'Our coordinator will reach out.',
   prayer: 'Our coordinator will reach out if you left a way to reply.',
+  contact: 'Our team will reply by email.',
 } as const;
 
 export const queuedCopy =

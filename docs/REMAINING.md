@@ -20,7 +20,7 @@ Reconciled 2026-10-20 against the repo (targeted searches only). Extend what exi
 - PARTIAL: STAFF_GUIDE coverage. `docs/STAFF_GUIDE.md` updated in SP-06; later phases not covered.
 
 ## CC-04 Forms and backend
-- PARTIAL: native forms. Screens: `volunteer.tsx`, `tour.tsx`, `prayer.tsx` in `src/app/(tabs)/get-involved/`. Missing: contact form, the six per-opportunity volunteer forms, and the `volunteer-native` / `tour-native` routes that `src/content/getInvolved.ts` points to.
+- DONE (CC-03 prompt, 2026-10-20): native forms. Screens: `volunteer.tsx`, `tour.tsx`, `prayer.tsx` in `src/app/(tabs)/get-involved/`. Missing: contact form, the six per-opportunity volunteer forms, and the `volunteer-native` / `tour-native` routes that `src/content/getInvolved.ts` points to.
 - DONE: `/api/submit` (`src/app/api/submit+api.ts`, `worker/index.ts`, `src/server/handleSubmit.ts`). Config/deploy: deploy the worker, set `EXPO_PUBLIC_SUBMIT_URL`.
 - DONE: shared Zod schemas, `src/forms/schema.ts` (volunteer, tour, prayer; no contact type).
 - DONE: honeypot (`src/components/HoneypotField.tsx`, `handleSubmit.ts`).
@@ -28,7 +28,7 @@ Reconciled 2026-10-20 against the repo (targeted searches only). Extend what exi
 - DONE: Resend mail (`src/forms/mail.ts`). Config/deploy: Resend key and the staff inbox.
 - DONE: offline queue (`src/forms/queue.ts`, `FormQueueRunner.tsx`, `deliver.ts`).
 - DONE: privacy notice (`src/app/(tabs)/more/privacy.tsx`, `PrivacyLine.tsx`).
-- PARTIAL: `useNativeForms` wiring. Flag is `false` in `getInvolved.ts`; flip once the native routes exist.
+- DONE: `useNativeForms` wiring. Flag is `false` in `getInvolved.ts`; flip once the native routes exist.
 
 ## CC-05 Push
 - DONE: token registration (`src/notifications/device.ts`, `src/app/api/push/register+api.ts`). Config/deploy.

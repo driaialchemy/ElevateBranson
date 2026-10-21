@@ -2,8 +2,16 @@ import type { Page, VolunteerOpportunity } from '@/content/types';
 
 const origin = 'https://elevatebranson.org';
 
-export const useNativeForms = false;
-export const volunteerFormTarget = (opportunity: VolunteerOpportunity) => useNativeForms ? `/get-involved/volunteer-native?opportunity=${opportunity.id}` : opportunity.formUrl ?? opportunity.sourceUrl;
+/** Native forms are on only when a submit endpoint is configured; otherwise the website forms open in the in-app browser. */
+export function nativeFormsEnabled(submitUrl: string | undefined): boolean {
+  const value = submitUrl?.trim() ?? '';
+  return value.length > 0 && !value.includes('your-worker.example');
+}
+
+export const useNativeForms = nativeFormsEnabled(process.env.EXPO_PUBLIC_SUBMIT_URL);
+export const volunteerFormTarget = (opportunity: VolunteerOpportunity, native = useNativeForms) => native ? `/get-involved/volunteer-native?opportunity=${opportunity.id}` : opportunity.formUrl ?? opportunity.sourceUrl;
+export const contactWebsiteUrl = `${origin}/contact/`;
+export const contactFormTarget = (native = useNativeForms) => native ? '/more/contact-form' : contactWebsiteUrl;
 
 export const volunteerOpportunities: VolunteerOpportunity[] = [
   { id: 'meal-makers', title: 'Meal Makers', schedule: 'First and third Thursday, 8:00–9:30 a.m.', description: 'Prepare sandwiches, meal bags, and resource sheets for neighbors.', ageRules: 'All ages welcome.', groupSize: 'Groups of 5–10.', formUrl: `${origin}/volunteer-form-morning-meal-makers/`, sourceUrl: `${origin}/volunteer/`, status: 'verify' },
@@ -54,7 +62,24 @@ export const givingDetails = {
   tourHolidays: ['2026-01-01', '2026-01-19', '2026-02-16', '2026-05-25', '2026-06-19', '2026-07-03', '2026-09-07', '2026-10-12', '2026-11-11', '2026-11-26', '2026-12-25'],
 } as const;
 
-export const tourFormTarget = () => useNativeForms ? '/get-involved/tour-native' : givingDetails.tourUrl;
+export const tourFormTarget = (native = useNativeForms) => native ? '/get-involved/tour-native' : givingDetails.tourUrl;
+
+/** Hour (0-23) for a slot label such as "2 p.m."; null when the label is not one of the tour slots. */
+export function tourSlotHour(label: string): number | null {
+  const match = /^(\d{1,2}) ([ap])\.m\.$/.exec(label.trim());
+  if (!match) return null;
+  const hour = Number(match[1]) % 12 + (match[2] === 'p' ? 12 : 0);
+  return hour >= 11 && hour <= 16 ? hour : null;
+}
+
+/** A tour slot must be a weekday, not a holiday, in the hourly 11 a.m.-4 p.m. list, and at least 24 hours away. */
+export function isTourSlotAllowed(date: string, time: string, now: Date, holidays: readonly string[] = givingDetails.tourHolidays): boolean {
+  const hour = tourSlotHour(time);
+  const start = new Date(`${date}T${String(hour ?? 0).padStart(2, '0')}:00:00`);
+  if (hour === null || Number.isNaN(start.getTime()) || holidays.includes(date)) return false;
+  const day = start.getDay();
+  return day !== 0 && day !== 6 && start.getTime() - now.getTime() >= 24 * 60 * 60 * 1000;
+}
 
 export function availableTourDates(startDate: string, days: number, holidays: readonly string[]): string[] {
   const closed = new Set(holidays);
