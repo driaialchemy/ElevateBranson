@@ -1,7 +1,7 @@
 # Project state
 
-Last completed phase: CC-06 prompt (QA and deploy readiness).
-Next phase: CC-07 (release and handoff).
+Last completed phase: CC-07 prompt (release and handoff). The chain is finished.
+Next: human tasks in docs/HUMAN_TASKS.md; no builds, deploys, or store submissions have been made.
 
 Open blockers:
 - Deploy the `/api/events` worker route and set `EXPO_PUBLIC_SUBMIT_URL` for the published app.
@@ -27,3 +27,5 @@ CC-04 done: 8 form-only pages filled with their real field lists plus a website-
 CC-05 done: `npm run audit:parity` (docs/PARITY_REPORT.md, 170 of 170) and `npm run audit:links` (docs/LINK_REPORT.md, 0 broken after fixes) with tests in `scripts/audit.test.ts`. Fixed along the way: 53 Cloudflare-protected email links (were 404s; now mailto), dead Square link, What We Do/Get Involved hero showing an unrelated page summary (PageHub), stray tab headers on Programs and Events, menu-fragment card text, More screen order, Resources list now loads 20 at a time. Ten 390px screenshots in docs/brand-reference/after-sp/ (one round; not compared against live site screenshots side by side). Home loaded in about 1 s on the dev server with no throttling; no mid-range device profile was run. Open: HUMAN_TASKS 51-55.
 
 CC-06 done: docs/QA_REPORT.md extended (17 of 17 features pass, 4 open defects, 23 facts to verify, config and deploy readiness table). 320px and doubled-text checks run in the web build; the contact-form program chips were fixed. Secrets scan of all git history clean. npm audit unchanged (29, build tools only). Open: push token store and push host, `eas.json`, worker config.
+
+CC-07 done: `eas.json` (preview and production profiles; run preview only), app.json bundle IDs `org.elevatebranson.app`, docs/RELEASE_CHECKLIST.md, docs/WORKER_RUNBOOK.md, docs/HANDOFF.md. App icon is 192px and must be replaced (HUMAN_TASKS 57). No wrangler.toml was added; the runbook shows the file.

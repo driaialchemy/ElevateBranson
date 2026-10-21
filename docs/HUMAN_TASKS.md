@@ -57,3 +57,10 @@ Do not block the build on these. Use the placeholders in [DECISIONS.md](DECISION
 53. The website hides some addresses with Cloudflare, so a few page paragraphs and the Volunteer summary still say "[email protected]". Buttons were decoded to real mailto links. Provide the intended address for each page so the text can be fixed. The Entrepreneurs page had one protected button with no address in the data; it was removed.
 54. The decoded mailto buttons include staff first.last addresses. Confirm approval to show them (see item 47 for phones), and which Brenda Watson-Hill address is right (.com or .org; both appear on the site).
 55. Individual neighbor stories, volunteer profiles, blog posts, and news archive pages are not imported; their links open the website in the in-app browser (see docs/PARITY_REPORT.md). Decide whether to import them.
+56. Open every store, hosting, email, and build account (Apple Developer organization with D-U-N-S, Google Play, Expo, Cloudflare, Resend) under an Elevate Branson organization email with two administrators. See `docs/RELEASE_CHECKLIST.md`.
+57. Provide the official logo artwork so a 1024 by 1024 app icon and the Android adaptive icon can replace `assets/brand/mark.png` (192 by 192 today).
+58. Confirm the app bundle ID `org.elevatebranson.app` (iOS and Android) before the first build; it cannot change later.
+59. Update the website privacy policy with an app section (forms, notifications, calendar button, who receives data, deletion contact) before store submission.
+60. Approve the store listing text and take screenshots from a preview build.
+61. Name the maintainer in `docs/HANDOFF.md` ("Who to call") and decide who owns the code repository after handoff.
+62. Choose a persistent store and host for push tokens and the staff send page (`docs/WORKER_RUNBOOK.md`, "Known gap").

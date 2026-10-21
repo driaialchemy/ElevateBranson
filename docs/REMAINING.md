@@ -39,7 +39,7 @@ Reconciled 2026-10-20 against the repo (targeted searches only). Extend what exi
 
 ## CC-06 / CC-07 Release
 - DONE: `docs/QA_REPORT.md` (dated 19 Oct, before SP-01 to SP-06). Refresh after CC-02 to CC-05.
-- NOT STARTED: `eas.json`.
-- NOT STARTED: `docs/RELEASE_CHECKLIST.md`.
-- NOT STARTED: `docs/WORKER_RUNBOOK.md`.
-- NOT STARTED: `docs/HANDOFF.md`.
+- DONE: `eas.json`.
+- DONE: `docs/RELEASE_CHECKLIST.md`.
+- DONE: `docs/WORKER_RUNBOOK.md`.
+- DONE: `docs/HANDOFF.md`.

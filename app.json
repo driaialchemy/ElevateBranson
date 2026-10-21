@@ -8,9 +8,16 @@
     "scheme": ["elevatebranson", "app"],
     "userInterfaceStyle": "light",
     "ios": {
-      "supportsTablet": true
+      "supportsTablet": true,
+      "bundleIdentifier": "org.elevatebranson.app",
+      "buildNumber": "1",
+      "config": {
+        "usesNonExemptEncryption": false
+      }
     },
     "android": {
+      "package": "org.elevatebranson.app",
+      "versionCode": 1,
       "adaptiveIcon": {
         "backgroundColor": "#174A5B",
         "foregroundImage": "./assets/brand/mark.png"

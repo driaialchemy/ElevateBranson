@@ -85,7 +85,7 @@ Nothing here is deployed. "Code done" means the code and its tests exist in the 
 
 1. **Push tokens are kept in memory** (`src/server/pushMemory.ts`) and reset on restart, so push cannot go live until a persistent store is chosen.
 2. **Push and staff routes have no host.** The worker handles only two paths, and the web export is static, so `/api/push/*` and `/staff/notify` will not run until a server host is set up.
-3. **No worker config file (`wrangler`) and no `eas.json`** exist yet; the release phase adds them or documents the steps.
+3. **No `wrangler.toml` in the repo** (the runbook shows it). `eas.json` now exists.
 4. **Dependency audit:** 29 findings, all in the Expo and Metro build tools (see below), none fixable without a breaking downgrade.
 
 ## Dependency audit
