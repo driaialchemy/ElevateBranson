@@ -1,12 +1,11 @@
 # Project state
 
-Last completed phase: CC-03 (forms; REMAINING.md calls this section CC-04).
-Next phase: CC-04 (media, content gaps, reports; REMAINING.md section CC-03).
+Last completed phase: CC-04 prompt (TODO pages, route bug, duotone, alt text).
+Next phase: CC-05 (parity and link audits).
 
 Open blockers:
 - Deploy the `/api/events` worker route and set `EXPO_PUBLIC_SUBMIT_URL` for the published app.
 - `/forms/13/` and `/forms/30/` on the source site return 404 or redirect outside the allowed host.
-- Nine imported pages contain TODO blocks where text extraction was unavailable.
 - Confirm the café and Thrift Store hours with the organization; venue pages conflict with secondary hours blocks.
 - Confirm approval to display public staff phone numbers in the app.
 - Confirm the Playground school-year season start and end dates.
@@ -22,3 +21,5 @@ Switched from Codex to Claude Code after SP-06. CC-02 done: PdfSheetCard with EN
 Remaining work, by phase, with DONE/PARTIAL/NOT STARTED status: `docs/REMAINING.md`. Read the phase section before building.
 
 CC-03 done: contact form (`more/contact-form.tsx`, `contactSchema`, `CONTACT_EMAIL`), `volunteer-native` and `tour-native` routes, shared `src/forms/useSubmit.ts`, `useNativeForms` derived from `EXPO_PUBLIC_SUBMIT_URL`, tests in `src/forms/forms.test.ts`. `.env.example` not updated (agent access denied): see HUMAN_TASKS 50. Not run in the app.
+
+CC-04 done: 8 form-only pages filled with their real field lists plus a website-form link; `/forms/13/` and `/forms/30/` excluded (404; see CONTENT_CONFLICTS.md). Route bug not reproduced: About and nine other routes showed the right content at 390px in the web dev server on 2026-10-20 (static export not tested); `src/navigation/routeTitles.test.ts` added. Teal duotone on heroes and card photos (`src/components/Duotone.tsx`, tokens.duotone, contrast test). `src/qa/altText.test.ts` fails on any Image, Pressable, Switch or TextInput without a label. Added `.claude/launch.json` (web preview).

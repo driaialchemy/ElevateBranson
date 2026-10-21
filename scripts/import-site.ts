@@ -60,7 +60,7 @@ function safeUrl(raw: string, base: string): string | undefined {
 }
 
 export function inventoryRoutes(markdown: string): string[] {
-  const excluded = new Set(['/cart/', '/checkout/', '/my-account/', '/staff-page/', '/crisis-communication-plan/', '/branding-partners/']);
+  const excluded = new Set(['/forms/13/', '/forms/30/', '/cart/', '/checkout/', '/my-account/', '/staff-page/', '/crisis-communication-plan/', '/branding-partners/']);
   const section = markdown.split('## 2. Menu tree')[1]?.split('## 3. Page-by-page')[0] ?? '';
   const appRoutes = section.split('- Not for the app:')[0] ?? '';
   const matches = appRoutes.match(/\/(?:[a-z0-9-]+\/)+/gi) ?? [];

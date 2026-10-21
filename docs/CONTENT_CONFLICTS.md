@@ -15,3 +15,9 @@ All facts below remain marked for staff verification. The importer preserves sou
 11. **Staff phone publication:** staff phone numbers are public on the website, but the organization has not confirmed their use in the app.
 
 The first five are direct value conflicts; the remaining items are unresolved content or access gaps recorded as conflicts for launch review.
+
+## Excluded and form-only pages (CC-04, 2026-10-20)
+
+- **Excluded: `/forms/13/` and `/forms/30/`** on elevatebranson.org return 404, so there is no text to import. They are removed from the app and the importer skips them. The live church partner form is the Neon CRM link `https://elevatebranson.app.neoncrm.com/forms/13`, which the app still links from the Elevate Connections page.
+- **Form-only pages:** `request-a-speaker` and the six `volunteer-form-*` pages contain only a JavaScript form, so the importer found no text. Each now lists the form's field names as read from the live page and links to the website form. The source forms were not reachable as text, so the app does not reproduce them except through the native volunteer form.
+- **`schedule-a-tour`:** the summary was the only TODO; it now describes the website form fields.

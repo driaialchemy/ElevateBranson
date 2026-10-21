@@ -30,4 +30,15 @@ describe('text contrast', () => {
     assert.ok(tokens.font.size.title >= 16);
     assert.equal(tokens.tapTarget, 44);
   });
+
+  it('keeps white hero text at 4.5:1 over the brightest duotone pixel', () => {
+    const channels = (hex: string) => [1, 3, 5].map((i) => parseInt(hex.slice(i, i + 2), 16));
+    const [highlight, shadow] = [channels(tokens.duotone.highlight), channels(tokens.duotone.shadow)];
+    // A white photo pixel times the highlight tint is the highlight; the shadow layer can only lift it.
+    const brightest = highlight.map((value, index) => Math.max(value, shadow[index]));
+    const covered = brightest.map((value, index) => Math.round(value * (1 - tokens.duotone.scrim) + shadow[index] * tokens.duotone.scrim));
+    const hex = `#${covered.map((value) => value.toString(16).padStart(2, '0')).join('')}`;
+    const ratio = contrastRatio(tokens.color.onPrimary, hex);
+    assert.ok(ratio >= minimum, `hero text is ${ratio.toFixed(2)} on ${hex}`);
+  });
 });

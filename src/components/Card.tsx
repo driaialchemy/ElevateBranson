@@ -1,6 +1,7 @@
 import { Image } from 'expo-image';
 import { Pressable, Text, View } from 'react-native';
 
+import { DuotoneLayers, duotonePhoto } from '@/components/Duotone';
 import { brandImage } from '@/content/images';
 import { siteImage } from '@/content/siteImages';
 import { openHref } from '@/components/openLink';
@@ -45,14 +46,19 @@ export function Card({
         shadowRadius: tokens.shadow.radius,
       }}>
       {source ? (
-        <Image
-          accessibilityLabel={alt || title || 'Photo'}
-          cachePolicy="memory-disk"
-          contentFit="cover"
-          recyclingKey={imageKey}
-          source={source}
-          style={{ borderRadius: tokens.buttonRadius, height: 160, width: '100%' }}
-        />
+        <View style={{ borderRadius: tokens.buttonRadius, height: 160, overflow: 'hidden', width: '100%' }}>
+          <View style={{ height: 160, width: '100%', ...duotonePhoto }}>
+            <Image
+              accessibilityLabel={alt || title || 'Photo'}
+              cachePolicy="memory-disk"
+              contentFit="cover"
+              recyclingKey={imageKey}
+              source={source}
+              style={{ height: 160, width: '100%' }}
+            />
+          </View>
+          <DuotoneLayers tint={accentColor} />
+        </View>
       ) : null}
       {title ? (
         <Text

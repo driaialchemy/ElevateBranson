@@ -2,6 +2,7 @@ import { Image } from 'expo-image';
 import { Text, View } from 'react-native';
 
 import { Button } from '@/components/Button';
+import { DuotoneLayers, duotonePhoto } from '@/components/Duotone';
 import { openHref } from '@/components/openLink';
 import { brandImage } from '@/content/images';
 import { siteImage } from '@/content/siteImages';
@@ -34,16 +35,18 @@ export function Hero({
         overflow: 'hidden',
       }}>
       {source ? (
-        <Image
-          accessibilityLabel={alt}
-          cachePolicy="memory-disk"
-          contentFit="cover"
-          recyclingKey={imageKey}
-          source={source}
-          style={{ bottom: 0, left: 0, position: 'absolute', right: 0, top: 0 }}
-        />
+        <View style={{ bottom: 0, left: 0, position: 'absolute', right: 0, top: 0, ...duotonePhoto }}>
+          <Image
+            accessibilityLabel={alt}
+            cachePolicy="memory-disk"
+            contentFit="cover"
+            recyclingKey={imageKey}
+            source={source}
+            style={{ height: '100%', width: '100%' }}
+          />
+        </View>
       ) : null}
-      <View style={{ backgroundColor: tokens.color.overlay, opacity: 0.82, ...StyleSheetFill }} />
+      <DuotoneLayers scrim={tokens.duotone.scrim} />
       <View style={{ gap: tokens.space.md, padding: tokens.space.lg }}>
         <Text
           accessibilityRole="header"
@@ -74,4 +77,3 @@ export function Hero({
   );
 }
 
-const StyleSheetFill = { bottom: 0, left: 0, position: 'absolute' as const, right: 0, top: 0 };

@@ -28,6 +28,12 @@ export const tokens = {
     /** Dark scrim behind hero text. White on this teal passes 4.5:1. */
     overlay: '#174A5B',
   },
+  /** Teal duotone for photos. White text over highlight + scrim passes 4.5:1 (see contrast.test.ts). */
+  duotone: {
+    shadow: '#174A5B',
+    highlight: '#4FB3C8',
+    scrim: 0.6,
+  },
   font: {
     /**
      * The website uses Gotham and Avenir. Those files are not licensed for the app.

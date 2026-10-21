@@ -31,8 +31,6 @@ import elevate_work from '../../content/pages/elevate-work.json';
 import event_calendar from '../../content/pages/event-calendar.json';
 import facility_rentals from '../../content/pages/facility-rentals.json';
 import financials from '../../content/pages/financials.json';
-import forms__13 from '../../content/pages/forms--13.json';
-import forms__30 from '../../content/pages/forms--30.json';
 import frequently_asked_questions from '../../content/pages/frequently-asked-questions.json';
 import generosity_e_book from '../../content/pages/generosity-e-book.json';
 import ground_breaking_dedication from '../../content/pages/ground-breaking-dedication.json';
@@ -101,8 +99,6 @@ export const importedPages: Page[] = [
   event_calendar as Page,
   facility_rentals as Page,
   financials as Page,
-  forms__13 as Page,
-  forms__30 as Page,
   frequently_asked_questions as Page,
   generosity_e_book as Page,
   ground_breaking_dedication as Page,

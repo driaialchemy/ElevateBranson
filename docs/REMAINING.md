@@ -11,10 +11,10 @@ Reconciled 2026-10-20 against the repo (targeted searches only). Extend what exi
 - DONE: DONATE NOW in the shared header on every screen except Give.
 
 ## CC-03 Media, content gaps, reports
-- PARTIAL: images with alt text. `alt` is required in `BrandImage.tsx` and `siteImages.ts`. Per-image coverage not audited.
-- NOT STARTED: duotone heroes (no matches in `src/`).
-- NOT STARTED: nine pages with TODO extraction blocks (STATE.md blocker; fill from source site).
-- NOT STARTED: wrong-content route bug. Not logged anywhere; reproduce via `src/app/page/[slug].tsx` and `pageRoutes.ts`.
+- DONE: alt text test covers every Image and control.
+- DONE: duotone heroes and card photos.
+- DONE: TODO pages filled or excluded (`docs/CONTENT_CONFLICTS.md`).
+- DONE: route bug not reproduced; regression test added.
 - NOT STARTED: `docs/PARITY_REPORT.md`.
 - NOT STARTED: `docs/LINK_REPORT.md` (`src/content/links.ts` and its test exist; no report).
 - PARTIAL: STAFF_GUIDE coverage. `docs/STAFF_GUIDE.md` updated in SP-06; later phases not covered.
