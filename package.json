@@ -42,7 +42,8 @@
     "playwright": "^1.64.1",
     "sharp": "^0.35.5",
     "tsx": "^4.23.15",
-    "typescript": "~6.0.3"
+    "typescript": "~6.0.3",
+    "wrangler": "^4.151.3"
   },
   "scripts": {
     "start": "expo start",
@@ -58,7 +59,9 @@
     "audit:parity": "tsx scripts/audit-parity.ts",
     "audit:links": "tsx scripts/audit-links.ts",
     "build:demo": "expo export -p web && node scripts/postprocess-web.mjs",
-    "deploy:demo": "npm run build:demo && npx wrangler pages deploy dist --project-name elevate-branson-demo"
+    "deploy:demo": "npm run build:demo && npx wrangler deploy",
+    "deploy": "npm run build:demo && wrangler deploy",
+    "preview": "npm run build:demo && wrangler dev"
   },
   "private": true
 }

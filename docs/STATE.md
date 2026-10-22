@@ -31,3 +31,5 @@ CC-06 done: docs/QA_REPORT.md extended (17 of 17 features pass, 4 open defects, 
 CC-07 done: `eas.json` (preview and production profiles; run preview only), app.json bundle IDs `org.elevatebranson.app`, docs/RELEASE_CHECKLIST.md, docs/WORKER_RUNBOOK.md, docs/HANDOFF.md. App icon is 192px and must be replaced (HUMAN_TASKS 57). No wrangler.toml was added; the runbook shows the file.
 
 CC-08 (web demo) built, not yet published: expo-doctor 21/21 after `expo install --fix`; `app.json` web output is now `single`; `npm run build:demo` / `deploy:demo`; phone frame, banner, manifest, `_redirects`, noindex in `public/` and `scripts/postprocess-web.mjs`; web form delivery no longer assumes a same-origin `/api/submit` and only counts a worker `{ ok: true }` answer as sent. Deploy needs `wrangler login` by the owner.
+
+CC-08 published: https://elevate-branson-demo.draialchemy.workers.dev (Cloudflare Workers static assets, AI Alchemy account). `_redirects` removed (Cloudflare rejects it); `wrangler.jsonc` provides the SPA fallback. Moving it to an Elevate Branson Cloudflare account is open.

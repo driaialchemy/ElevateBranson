@@ -64,3 +64,4 @@ Do not block the build on these. Use the placeholders in [DECISIONS.md](DECISION
 60. Approve the store listing text and take screenshots from a preview build.
 61. Name the maintainer in `docs/HANDOFF.md` ("Who to call") and decide who owns the code repository after handoff.
 62. Choose a persistent store and host for push tokens and the staff send page (`docs/WORKER_RUNBOOK.md`, "Known gap").
+63. Redeploy the web demo from an Elevate Branson Cloudflare account (`npm run deploy:demo`) and retire the copy in the AI Alchemy account. See docs/HANDOFF.md.
