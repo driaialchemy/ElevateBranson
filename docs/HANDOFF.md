@@ -74,3 +74,15 @@ Fill in the owner column when the accounts exist. "Organization" means the accou
 ## What is still open
 
 Read these before launch: `docs/HUMAN_TASKS.md` (numbered list of things only a person can do), `docs/QA_REPORT.md` ("Open defects" and "Facts to verify"), `docs/CONTENT_CONFLICTS.md` (website values that disagree), and `docs/BLOCKERS.md`. The biggest items: create the organization accounts, supply a 1024-pixel app icon, confirm the form inboxes, update the privacy policy for the app, choose a persistent push store and host, confirm staff phone and email display, and verify hours and dates.
+
+## Demo preview (public web link)
+
+A web build of the app for showing to people on any phone or computer browser. It is **not** the store app and not a release.
+
+- **URL:** not published yet. The Cloudflare login is needed first. The expected address is `https://elevate-branson-demo.pages.dev` (Cloudflare Pages project `elevate-branson-demo`). Use the Cloudflare account that belongs to Elevate Branson (see the accounts table above).
+- **First-time setup:** `npx wrangler login`, then `npx wrangler pages project create elevate-branson-demo --production-branch main`.
+- **Redeploy after any change:** `npm run deploy:demo`. That runs `expo export -p web`, adds the phone frame and demo banner (`scripts/postprocess-web.mjs`), and runs `npx wrangler pages deploy dist --project-name elevate-branson-demo`. Build only: `npm run build:demo`.
+- **How it looks:** on screens 768px wide or more the app shows inside a centered 390px phone frame; on a phone it fills the screen. A "Demo preview" banner can be closed. "Add to Home Screen" works through `public/manifest.webmanifest`. The page asks search engines not to index it (`noindex`, `robots.txt`).
+- **Deep links** such as `/page/elevate-kids` work through `public/_redirects`.
+- **What is not live:** the form worker (no `EXPO_PUBLIC_SUBMIT_URL`), so website forms open for volunteer, tour, and contact, and the prayer form says it is saved on the device; push notifications; and live events (the calendar shows as unavailable). Giving buttons open the real donation pages, so do not submit real gifts while testing.
+- **Rules:** preview only. No store submission, no production build, no worker deploy.

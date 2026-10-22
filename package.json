@@ -5,12 +5,12 @@
   "dependencies": {
     "@expo-google-fonts/montserrat": "^0.4.2",
     "@expo-google-fonts/nunito-sans": "^0.4.2",
-    "@expo/ui": "~57.0.25",
+    "@expo/ui": "~57.0.26",
     "@expo/vector-icons": "^15.0.2",
     "@react-native-async-storage/async-storage": "2.2.0",
     "@react-native-community/netinfo": "12.0.1",
-    "expo": "~57.0.30",
-    "expo-calendar": "~57.0.5",
+    "expo": "~57.0.31",
+    "expo-calendar": "~57.0.6",
     "expo-constants": "~57.0.22",
     "expo-device": "~57.0.2",
     "expo-font": "~57.0.4",
@@ -18,7 +18,7 @@
     "expo-image": "~57.0.5",
     "expo-linking": "~57.0.13",
     "expo-notifications": "~57.0.23",
-    "expo-router": "~57.0.28",
+    "expo-router": "~57.0.29",
     "expo-splash-screen": "~57.0.10",
     "expo-status-bar": "~57.0.1",
     "expo-symbols": "~57.0.3",
@@ -56,7 +56,9 @@
     "import:check": "tsx scripts/import-site.ts --check",
     "refresh:media": "tsx scripts/refresh-media.ts",
     "audit:parity": "tsx scripts/audit-parity.ts",
-    "audit:links": "tsx scripts/audit-links.ts"
+    "audit:links": "tsx scripts/audit-links.ts",
+    "build:demo": "expo export -p web && node scripts/postprocess-web.mjs",
+    "deploy:demo": "npm run build:demo && npx wrangler pages deploy dist --project-name elevate-branson-demo"
   },
   "private": true
 }

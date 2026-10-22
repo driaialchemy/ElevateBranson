@@ -1,5 +1,4 @@
 import AsyncStorage from '@react-native-async-storage/async-storage';
-import { Platform } from 'react-native';
 
 import { addToQueue, flushQueue, type PostResult, type QueuedForm } from '@/forms/queue';
 import { queuedCopy, sentCopy, type Submission } from '@/forms/schema';
@@ -11,9 +10,7 @@ export function submitUrl(): string {
   if (configured && !configured.includes('your-worker.example')) {
     return configured;
   }
-  if (Platform.OS === 'web' && typeof window !== 'undefined') {
-    return `${window.location.origin}/api/submit`;
-  }
+  // No same-origin fallback: a static web host has no /api/submit and would answer with its home page.
   return '';
 }
 
@@ -57,7 +54,9 @@ async function postForm(body: Submission): Promise<PostResult> {
       body: JSON.stringify({ ...body, company: body.company ?? '' }),
     });
     if (response.status === 200) {
-      return { kind: 'sent' };
+      // Only the worker answers with { ok: true }; anything else (such as a host's home page) is not a delivery.
+      const answer: unknown = await response.json().catch(() => null);
+      return answer && typeof answer === 'object' && (answer as { ok?: unknown }).ok === true ? { kind: 'sent' } : { kind: 'retry' };
     }
     if (response.status === 400) {
       return { kind: 'invalid' };
