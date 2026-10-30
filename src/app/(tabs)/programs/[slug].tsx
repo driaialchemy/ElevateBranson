@@ -1,4 +1,4 @@
-import { router, Stack, useLocalSearchParams } from 'expo-router';
+import { Redirect, Stack, useLocalSearchParams } from 'expo-router';
 import { Linking, Text, View } from 'react-native';
 
 import { Button } from '@/components/Button';
@@ -36,14 +36,13 @@ export default function ProgramDetailScreen() {
   const verifiedDates = detail?.dates?.filter((item) => item.lastVerified && isValidIsoDate(item.lastVerified) && isUpcoming(item.endsOn ?? item.startsOn, todayIso())) ?? [];
   const sortedDates = [...verifiedDates].sort((a, b) => a.startsOn.localeCompare(b.startsOn));
 
-  if (!page && !program) {
-    return <Screen><Stack.Screen options={{ title: 'Program not found' }} /><Text accessibilityRole="header" style={bodyStyle}>Program not found</Text><Text style={bodyStyle}>This program is not available in the app yet.</Text><Button label="Go home" onPress={() => router.replace('/')} /></Screen>;
-  }
+  if (!page && !program) return <Redirect href="/" />;
+  const photoPending = routeSlug === 'theo';
 
   return <Screen>
     <Stack.Screen options={{ title }} />
     <ContentNotice />
-    <Hero alt={page?.heroImage?.alt ?? program?.imageAlt ?? title} imageKey={program?.imageKey ?? 'hero'} imageUrl={page?.heroImage?.url} subtitle={summary} title={title} />
+    <Hero alt={photoPending ? 'Photo coming soon' : page?.heroImage?.alt ?? program?.imageAlt ?? title} imageKey={photoPending ? '' : program?.imageKey ?? 'hero'} imageUrl={photoPending ? undefined : page?.heroImage?.url} placeholder={photoPending ? 'Photo coming soon' : undefined} subtitle={summary} title={title} />
     <SectionHeader label="About" />
     <Text style={bodyStyle}>{summary}</Text>
     {detail?.facts.length ? <><SectionHeader label="Program details" />{detail.facts.map((fact) => <Card key={fact.label} title={fact.label} body={fact.value} />)}</> : null}
@@ -58,6 +57,6 @@ export default function ProgramDetailScreen() {
     {detail?.extraContacts?.map((contact) => <View key={contact.phone}><Card title={contact.name} body={contact.role ?? title} /><Button label={`Call ${contact.name} · ${contact.phone}`} onPress={() => void Linking.openURL(`tel:${contact.phone}`)} /></View>)}
     {detail?.actions.map((action) => <Button key={action.url} label={action.label} onPress={() => openHref(action.url)} />)}
     {detail?.volunteerUrl ? <Button label="Volunteer for this program" onPress={() => openHref(detail.volunteerUrl as string)} /> : null}
-    {page?.blocks.map((block, index) => <View key={`${block._type}-${index}`}>{renderPageBlock(block, data, data.pages)}</View>)}
+    {page?.blocks.filter((block) => !(block._type === 'contactCard' && detail?.contact)).map((block, index) => <View key={`${block._type}-${index}`}>{renderPageBlock(block, data, data.pages)}</View>)}
   </Screen>;
 }

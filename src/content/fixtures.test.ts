@@ -32,10 +32,23 @@ test('hours keep the published seasons', () => {
   assert.equal(playground?.seasons.length, 3);
   assert.equal(thrift?.seasons[0]?.days[5]?.opens, '09:00');
   assert.equal(coffee?.seasons[0]?.startDate, 'TODO');
+  assert.equal(coffee?.conflict, undefined);
+  const cafe = fixtures.hours.find((item) => item.place === 'cafe');
+  const health = fixtures.hours.find((item) => item.place === 'health');
+  assert.equal(cafe?.seasons[0]?.days[0]?.opens, '10:00');
+  assert.equal(cafe?.seasons[0]?.days[0]?.closes, '15:00');
+  assert.equal(cafe?.seasons[0]?.days[5]?.opens, null);
+  assert.equal(health?.seasons[0]?.days[0]?.opens, '08:00');
+  assert.equal(health?.seasons[0]?.days[0]?.closes, '17:00');
+  assert.equal(health?.seasons[0]?.days[3]?.closes, '17:00');
+  assert.equal(health?.seasons[0]?.days[4]?.opens, '09:00');
+  assert.equal(health?.seasons[0]?.days[4]?.closes, '16:00');
+  assert.equal(health?.seasons[0]?.days[5]?.opens, null);
   assert.equal(playground?.seasons.find((item) => item.name === 'School year')?.startDate, 'TODO');
+  assert.equal(fixtures.programs.some((item) => item.slug === 'elevate-life' || item.slug === 'elevate-outreach'), false);
   assert.equal(playground?.seasons.find((item) => item.name === 'June and July')?.startDate, '06-01');
   assert.equal(playground?.seasons.find((item) => item.name === 'August')?.endDate, '08-31');
-  assert.equal(coffee?.lastVerified, '2026-10-20');
+  assert.equal(coffee?.lastVerified, '2026-10-29');
   assert.deepEqual(coffee?.closures, []);
 });
 

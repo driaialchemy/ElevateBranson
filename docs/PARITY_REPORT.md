@@ -1,13 +1,14 @@
 # Parity report
 
-Generated 2026-10-21 by `npm run audit:parity`. Every website URL found in the site inventory, the navigation table, and the imported pages is either present in the app or excluded with a reason.
+Generated 2026-10-30 by `npm run audit:parity`. Every website URL found in the site inventory, the navigation table, and the imported pages is either present in the app or excluded with a reason.
 
 **Parity: 170 of 170**
 
 | Status | Count |
 | --- | --- |
-| PageScreen | 64 |
+| PageScreen | 62 |
 | native route | 9 |
+| excluded | 2 |
 | external fallback | 97 |
 
 Images used by pages but not bundled: 0
@@ -37,8 +38,8 @@ Images used by pages but not bundled: 0
 | https://elevatebranson.org/elevate-health/ | PageScreen | /page/elevate-health |
 | https://elevatebranson.org/elevate-kids-sponsorship/ | PageScreen | /page/elevate-kids-sponsorship |
 | https://elevatebranson.org/elevate-kids/ | PageScreen | /page/elevate-kids |
-| https://elevatebranson.org/elevate-life/ | PageScreen | /page/elevate-life |
-| https://elevatebranson.org/elevate-outreach/ | PageScreen | /page/elevate-outreach |
+| https://elevatebranson.org/elevate-life/ | excluded | Removed 2026-10-29 at COO request. Elevate Life is no longer in the app. |
+| https://elevatebranson.org/elevate-outreach/ | excluded | Removed 2026-10-29 at COO request. Elevate Outreach is being revamped. |
 | https://elevatebranson.org/elevate-playground/ | native route | /programs/playground |
 | https://elevatebranson.org/elevate-rides/ | PageScreen | /page/elevate-rides |
 | https://elevatebranson.org/elevate-thrift-store--coupon/ | PageScreen | /page/elevate-thrift-store--coupon |

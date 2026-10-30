@@ -1,5 +1,5 @@
 import { Image } from 'expo-image';
-import { router, Stack, useLocalSearchParams } from 'expo-router';
+import { Redirect, router, Stack, useLocalSearchParams } from 'expo-router';
 import { ScrollView, Text, View } from 'react-native';
 
 import { Button } from '@/components/Button';
@@ -22,9 +22,11 @@ export default function PageScreen() {
   const selectedStory = stories.find((item) => item.id === story);
   const titleStyle = { color: tokens.color.text, fontFamily: tokens.font.family.heading, fontSize: tokens.font.size.header, lineHeight: tokens.font.lineHeight.header } as const;
   const bodyStyle = { color: tokens.color.text, fontFamily: tokens.font.family.body, fontSize: tokens.font.size.body, lineHeight: tokens.font.lineHeight.body } as const;
-  return <Screen><Stack.Screen options={{ title: page?.title ?? 'Page not found' }} />{page ? <>
+  if (!page) return <Redirect href="/" />;
+  return <Screen><Stack.Screen options={{ title: page.title }} /><>
     {selectedStory ? <><Text accessibilityRole="header" style={titleStyle}>{selectedStory.name}</Text><Text style={bodyStyle}>{selectedStory.body}</Text><Button label="All volunteer stories" onPress={() => router.replace('/page/meet-our-volunteers')} /></> : null}
-    {page.heroImage && siteImage(page.heroImage.url) ? <Image accessibilityLabel={page.heroImage.alt} contentFit="cover" source={siteImage(page.heroImage.url)} style={{ height: 260, width: '100%' }} /> : null}
+    {page.slug === 'theo' ? <Text accessibilityLabel="Photo coming soon" style={bodyStyle}>Photo coming soon</Text> : null}
+    {page.slug !== 'theo' && page.heroImage && siteImage(page.heroImage.url) ? <Image accessibilityLabel={page.heroImage.alt} contentFit="cover" source={siteImage(page.heroImage.url)} style={{ height: 260, width: '100%' }} /> : null}
     {!selectedStory ? <><Text accessibilityRole="header" style={{ color: tokens.color.text, fontFamily: tokens.font.family.heading, fontSize: tokens.font.size.hero, lineHeight: tokens.font.lineHeight.hero }}>{page.title}</Text>
     <Text style={bodyStyle}>{page.summary}</Text>
     {page.slug === 'financials' ? <View style={{ gap: tokens.space.sm }}><Text accessibilityRole="header" style={titleStyle}>2019–2024 financial summary</Text><ScrollView horizontal showsHorizontalScrollIndicator><View style={{ minWidth: 400 }}>{[['Year', 'Revenue', 'Expenses', 'Net'], ...financialSummary].map((row, i) => <View key={row[0]} style={{ borderBottomColor: tokens.color.border, borderBottomWidth: 1, flexDirection: 'row', gap: tokens.space.xs, paddingVertical: tokens.space.sm }}>{row.map((cell, j) => <Text key={j} style={[bodyStyle, { flex: 1, minWidth: 92 }, ...(i === 0 ? [titleStyle] : [])]}>{cell}</Text>)}</View>)}</View></ScrollView><Button label="Charity Navigator four-star profile" onPress={() => openExternal(charityNavigatorUrl)} /></View> : null}
@@ -35,5 +37,5 @@ export default function PageScreen() {
     {page.slug === 'branding-licensure' ? <><Text accessibilityRole="header" style={titleStyle}>Bring an Elevate to your community</Text>{givingDetails.brandSteps.map((step, i) => <Card key={step} title={`Step ${i + 1}`} body={step} />)}<Button label="Start the pre-assessment" onPress={() => openExternal(givingDetails.brandUrl)} /></> : null}
     {page.slug === 'leaving-a-legacy' ? <>{givingDetails.legacyOptions.map((option) => <Card key={option} body={option} />)}<Card title={givingDetails.legacyContact.name} body={givingDetails.legacyContact.phone} /><Button label={`Call ${givingDetails.legacyContact.phone}`} onPress={() => openCall(givingDetails.legacyContact.phone)} /></> : null}
     {page.slug === 'rewards-program' ? <>{givingDetails.rewards.map((item) => <Card key={item} body={item} />)}<Button label="Volunteer and earn Rewards" onPress={() => router.push('/get-involved/volunteer')} /></> : null}</> : null}
-  </> : <><Text accessibilityRole="header" style={{ color: tokens.color.text, fontFamily: tokens.font.family.heading, fontSize: tokens.font.size.header }}>Page not found</Text><Text style={{ color: tokens.color.text }}>This page is not available in the app yet.</Text><Button label="Go home" onPress={() => router.replace('/')} /></>}</Screen>;
+  </></Screen>;
 }

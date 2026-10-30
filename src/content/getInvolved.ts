@@ -38,7 +38,8 @@ export const volunteerLinks = {
   profiles: '/page/meet-our-volunteers',
   give5: 'https://ozarkmountainlegacy.org/give-5/',
   facebook: 'https://www.facebook.com/elevatebranson.org/',
-  phone: '417.335.9915',
+  contactName: 'Betsy Foster',
+  phone: '417-593-2254',
   email: 'Info@ElevateBranson.org',
 } as const;
 

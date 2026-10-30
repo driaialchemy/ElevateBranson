@@ -7,7 +7,7 @@ import { FAQAccordion } from '@/components/FAQAccordion';
 import { HoursBlock } from '@/components/HoursBlock';
 import { openExternal, openHref } from '@/components/openLink';
 import { siteImage } from '@/content/siteImages';
-import type { ContentBundle, Page, PageBlock } from '@/content/types';
+import type { ContentBundle, Hours, Page, PageBlock } from '@/content/types';
 import { hoursFor } from '@/content/query';
 import { pageBySlug } from '@/content/pageRoutes';
 import { tokens } from '@/theme/tokens';
@@ -23,7 +23,7 @@ export function renderPageBlock(block: PageBlock, data: ContentBundle, pages: Pa
     case 'statRow': return <View style={{ gap: tokens.space.sm }}>{block.items.map((x, i) => <Text key={i} style={headingStyle}>{x.value} · {x.label}</Text>)}</View>;
     case 'factList': return <View style={{ gap: tokens.space.xs }}>{block.items.map((x) => <Text key={x.label} style={bodyStyle}><Text style={headingStyle}>{x.label}: </Text>{x.value}</Text>)}</View>;
     case 'table': return <View style={{ gap: tokens.space.xs }}>{[block.headers, ...block.rows].map((row, i) => <View key={i} style={{ borderBottomColor: tokens.color.border, borderBottomWidth: 1, flexDirection: 'row', gap: tokens.space.xs, paddingVertical: tokens.space.xs }}>{row.map((cell, j) => <Text key={j} style={[bodyStyle, { flex: 1 }, ...(i === 0 ? [headingStyle] : [])]}>{cell}</Text>)}</View>)}</View>;
-    case 'hoursTable': { const item = hoursFor(data, block.hoursId as 'campus' | 'coffee' | 'thrift' | 'playground'); return item ? <HoursBlock hours={item} /> : <Text style={bodyStyle}>Hours are not available offline.</Text>; }
+    case 'hoursTable': { const item = hoursFor(data, block.hoursId as Hours['place']); return item ? <HoursBlock hours={item} /> : <Text style={bodyStyle}>Hours are not available offline.</Text>; }
     case 'contactCard': return <View style={{ gap: tokens.space.xs }}><Text style={headingStyle}>{block.name}</Text>{block.role ? <Text style={bodyStyle}>{block.role}</Text> : null}{block.phone ? <Button label={block.phone} onPress={() => void Linking.openURL(`tel:${block.phone}`)} /> : null}{block.email ? <Button label={block.email} onPress={() => void Linking.openURL(`mailto:${block.email}`)} /> : null}</View>;
     case 'pdfLink': return <Button label={block.title} onPress={() => openExternal(block.url)} />;
     case 'formLink': return <Button label={block.title} onPress={() => openExternal(block.url)} />;

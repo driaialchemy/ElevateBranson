@@ -130,18 +130,6 @@
       "status": "verify"
     },
     {
-      "slug": "elevate-life",
-      "sourceUrl": "https://elevatebranson.org/elevate-life/",
-      "importedAt": "2026-10-20T22:18:39.154Z",
-      "status": "verify"
-    },
-    {
-      "slug": "elevate-outreach",
-      "sourceUrl": "https://elevatebranson.org/elevate-outreach/",
-      "importedAt": "2026-10-20T22:18:41.309Z",
-      "status": "verify"
-    },
-    {
       "slug": "elevate-playground",
       "sourceUrl": "https://elevatebranson.org/elevate-playground/",
       "importedAt": "2026-10-20T22:18:43.585Z",

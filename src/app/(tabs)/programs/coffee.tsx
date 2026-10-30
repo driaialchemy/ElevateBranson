@@ -15,6 +15,7 @@ export default function CoffeeScreen() {
   const { data } = useContent();
   const program = programBySlug(data.programs, 'coffee');
   const hours = hoursFor(data, 'coffee');
+  const cafe = hoursFor(data, 'cafe');
   const phone = data.siteSettings.phone;
 
   return (
@@ -35,7 +36,10 @@ export default function CoffeeScreen() {
         </>
       ) : null}
       {program ? <Button label={readOnWebsite} onPress={() => openExternal(program.sourceUrl)} /> : null}
+      <SectionHeader label="Coffee" />
       {hours ? <HoursBlock hours={hours} /> : <ComingSoon phone={phone} />}
+      <SectionHeader label="Cafe" />
+      {cafe ? <HoursBlock hours={cafe} /> : null}
       <SectionHeader label="Cafe and Coffee" />
       <Card title="On the menu" body="Espresso drinks, lunch specials, desserts, and coffee subscriptions." />
       <Button label="Café and coffee on the website" onPress={() => openExternal('https://elevatebranson.org/elevate-cafe-and-coffee/')} />

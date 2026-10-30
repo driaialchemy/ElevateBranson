@@ -1,5 +1,6 @@
 import { useCallback, useEffect, useSyncExternalStore } from 'react';
 
+import { hideRemovedContent } from '@/content/clientOverrides';
 import { fixtures } from '@/content/fixtures';
 import { importedPages } from '@/content/sitePages';
 import { useNetwork } from '@/network/NetworkProvider';
@@ -10,7 +11,7 @@ import type { ContentBundle } from '@/content/types';
 
 type Snapshot = { data: ContentBundle; error: string | null };
 
-const bundledFixtures: ContentBundle = { ...fixtures, pages: importedPages };
+const bundledFixtures: ContentBundle = hideRemovedContent({ ...fixtures, pages: importedPages });
 let snapshot: Snapshot = { data: bundledFixtures, error: null };
 let generation = 0;
 const listeners = new Set<() => void>();
@@ -32,17 +33,21 @@ export async function loadContent(online: boolean): Promise<Snapshot> {
   const cached = await readCache();
   const configured = sanityConfig().configured;
   if (!online || !configured) {
-    return settleContent({ cached: cached ? { ...cached, pages: cached.pages?.length ? cached.pages : importedPages } : bundledFixtures, remote: null, remoteFailed: false });
+    return present(settleContent({ cached: cached ? { ...cached, pages: cached.pages?.length ? cached.pages : importedPages } : bundledFixtures, remote: null, remoteFailed: false }));
   }
   try {
     const remote = await fetchSanityContent();
     if (remote) {
       await writeCache(remote);
     }
-    return settleContent({ cached, remote, remoteFailed: remote === null });
+    return present(settleContent({ cached, remote, remoteFailed: remote === null }));
   } catch {
-    return settleContent({ cached, remote: null, remoteFailed: true });
+    return present(settleContent({ cached, remote: null, remoteFailed: true }));
   }
+}
+
+function present(result: Snapshot): Snapshot {
+  return { ...result, data: hideRemovedContent(result.data) };
 }
 
 export async function refreshContent(online: boolean) {

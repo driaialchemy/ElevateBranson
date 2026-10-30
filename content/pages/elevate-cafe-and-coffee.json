@@ -70,6 +70,14 @@
           "url": "https://elevatebranson.org/branding-licensure/"
         }
       ]
+    },
+    {
+      "_type": "hoursTable",
+      "hoursId": "coffee"
+    },
+    {
+      "_type": "hoursTable",
+      "hoursId": "cafe"
     }
   ],
   "lastVerified": "2026-10-20",

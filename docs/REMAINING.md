@@ -37,6 +37,11 @@ Reconciled 2026-10-20 against the repo (targeted searches only). Extend what exi
 - DONE: send endpoint (`src/app/api/push/send+api.ts`, `src/push/send.ts`). Config/deploy.
 - DONE: staff page (`src/push/staffPage.ts`, `src/app/staff/notify+api.ts`). Config/deploy: staff password.
 
+## CU-01 Content edits (DONE 2026-10-30)
+- DONE: COO 2026-10-29 notes recorded in `docs/CLIENT_NOTES.md` and applied to local pages, program details, hours, and contacts.
+- DONE: import applies `src/content/clientOverrides.ts` after each page so a later import cannot restore removed programs or the old Tiny Homes, Rides, and Kids copy.
+- Flagged in HUMAN_TASKS 64–69: Theo photo, contact directory, school-year hours, business-partnership scooter line, volunteer stories that still say Outreach.
+
 ## CC-06 / CC-07 Release
 - DONE: `docs/QA_REPORT.md` (dated 19 Oct, before SP-01 to SP-06). Refresh after CC-02 to CC-05.
 - DONE: `eas.json`.

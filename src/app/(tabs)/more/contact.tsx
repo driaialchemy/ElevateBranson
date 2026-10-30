@@ -10,8 +10,8 @@ import { contactFormTarget } from '@/content/getInvolved';
 
 const departments = [
   ['Admin', 'Bryan Stallings', '417.294.1300'], ['Admin', 'Amy Stallings', '417.335.0266'], ['Admin', 'Hannah Witcher', '417.356.3739'], ['Facility Rentals', 'Matt Grindstaff', '417.598.0962'],
-  ['Coffee', 'Roger Nettles', '417.335.9915'], ['Connections', '', '417.239.7818'], ['Entrepreneurs', 'Chris Hunter', '417.335.9915'], ['Kids', 'Cathy Brown', '417.243.0644'],
-  ['Health', '', '417.243.0660'], ['Outreach', 'Betsy Foster', '417.593.2254'], ['Rides', 'Dan Friday', '417.295.7575'], ['Thrift', 'Ethan Fullington', '417.986.1188'], ['Work', 'Donna McConkey', '417.527.1709'],
+  ['Coffee', 'Roger Nettles', '417.335.9915'], ['Connections', 'Garrett Moore', '417-239-7818'], ['Entrepreneurs', 'Chris Hunter', '417.335.9915'], ['Kids', 'Cathy Brown', '417.243.0644'],
+  ['Health', '', '417.243.0660'], ['Tiny Homes', 'Kristol France', '417-203-0886'], ['Volunteer', 'Betsy Foster', '417-593-2254'], ['Rides', 'Dan Friday', '417.295.7575'], ['Thrift', 'Ethan Fullington', '417.986.1188'], ['Work', 'Donna McConkey', '417.527.1709'],
 ] as const;
 
 export default function ContactScreen() {

@@ -17,8 +17,9 @@ import { contactPrograms, contactSchema, volunteerSchema } from './schema.ts';
 
 const contact = { type: 'contact', name: 'Test Neighbor', email: 'neighbor@example.com', program: 'Kids', message: 'Hello', phone: '' };
 
-test('contact schema takes the ten programs and requires name, email, and message', () => {
-  assert.equal(contactPrograms.length, 10);
+test('contact schema takes the listed programs and requires name, email, and message', () => {
+  assert.equal(contactPrograms.length, 9);
+  assert.equal((contactPrograms as readonly string[]).includes('Outreach'), false);
   assert.equal(contactSchema.safeParse(contact).success, true);
   assert.equal(contactSchema.safeParse({ ...contact, program: 'Nothing' }).success, false);
   assert.equal(contactSchema.safeParse({ ...contact, email: 'nope' }).success, false);

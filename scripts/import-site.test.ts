@@ -3,6 +3,8 @@ import test from 'node:test';
 import { mkdtemp, readFile, readdir, rm } from 'node:fs/promises';
 import { tmpdir } from 'node:os';
 import path from 'node:path';
+import { applyClientOverrides } from '../src/content/clientOverrides.ts';
+import type { Page } from '../src/content/types.ts';
 import { extractPage, inventoryRoutes, writeSeedPage } from './import-site.ts';
 import { pageBlockSchema, pageSchema } from '../src/content/schema.ts';
 
@@ -69,4 +71,54 @@ test('reimporting the same seed page updates one file deterministically', async 
   } finally {
     await rm(directory, { recursive: true, force: true });
   }
+});
+
+test('client overrides keep COO corrections after a fresh import', () => {
+  const base = { section: 'what-we-do' as const, sourceUrl: 'https://elevatebranson.org/example/', lastVerified: '2026-10-20', status: 'verify' as const };
+  assert.equal(applyClientOverrides({ ...base, slug: 'elevate-life', title: 'Elevate Life', summary: 'Life', blocks: [] }), null);
+  assert.equal(applyClientOverrides({ ...base, slug: 'elevate-outreach', title: 'Elevate Outreach', summary: 'Outreach', blocks: [] }), null);
+  const community = applyClientOverrides({
+    ...base,
+    slug: 'elevate-community',
+    title: 'Elevate Community',
+    summary: 'Homes',
+    blocks: [{
+      _type: 'richText',
+      paragraphs: [
+        'Residents will rent a fully furnished home for $495 per month, which includes utilities and trash removal.',
+        'Yes. With management approval, residents may have one small pet. There is an additional pet charge and leashes are required when outside of the tiny home.',
+        'ELEVATE COMMUNITY TIMELINE This project has a timeline below.',
+        'May',
+        'VIP Update and Community Dedication Celebration',
+        'ELEVATE COMMUNITY F.A.Q. Who can apply?',
+      ],
+      headings: ['ELEVATE COMMUNITY TIMELINE', '2024', 'ELEVATE COMMUNITY F.A.Q.'],
+    }],
+  } as Page);
+  const text = JSON.stringify(community);
+  assert.equal(text.includes('$495'), false);
+  assert.equal(text.includes('TIMELINE'), false);
+  assert.equal(text.includes('Rent $520/month, all utilities included. Income limit applies.'), true);
+  assert.equal(text.includes('1 pet maximum.'), true);
+  assert.equal(text.includes('Kristol France'), true);
+  assert.equal(text.includes('417-203-0886'), true);
+  const rides = applyClientOverrides({
+    ...base,
+    slug: 'elevate-rides',
+    title: 'Elevate Rides',
+    summary: 'Rides',
+    blocks: [{
+      _type: 'richText',
+      paragraphs: ['By becoming an Elevate Branson business partner, employers can supply their workforce with affordable, motorized scooters, and have the opportunity to deduct payment from payroll with ease.'],
+      headings: ['ELEVATE RIDES RENTAL PROGRAM', 'ELEVATE RIDES OWNERSHIP PROGRAM', 'Step 1. Become a business partner.'],
+    }, {
+      _type: 'buttonRow',
+      buttons: [{ label: 'RENTAL APPLICATION', url: 'https://elevatebranson.org/rides/' }, { label: 'BECOME A BUSINESS PARTNER TODAY!', url: 'https://elevatebranson.org/partner/' }],
+    }],
+  } as Page);
+  const ridesText = JSON.stringify(rides);
+  assert.equal(ridesText.includes('OWNERSHIP'), false);
+  assert.equal(ridesText.includes('motorized scooters'), false);
+  assert.equal(ridesText.includes('BUSINESS PARTNER'), false);
+  assert.equal(ridesText.includes('RENTAL'), true);
 });

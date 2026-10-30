@@ -1,8 +1,9 @@
 import { createHash } from 'node:crypto';
-import { mkdir, readFile, readdir, stat, writeFile } from 'node:fs/promises';
+import { mkdir, readFile, readdir, rm, stat, writeFile } from 'node:fs/promises';
 import path from 'node:path';
 import { pathToFileURL } from 'node:url';
 import sharp from 'sharp';
+import { applyClientOverrides } from '../src/content/clientOverrides';
 import type { Page, PageBlock, PageSection } from '../src/content/types';
 import { pageSchema } from '../src/content/schema';
 
@@ -246,17 +247,28 @@ export async function importSite(): Promise<{ pages: number; images: number; con
         if (downloaded.length) updatedBlocks.push({ _type: 'imageGallery', images: downloaded });
       }
       const savedHero = extracted.heroImage ? await saveImage(extracted.heroImage.url, extracted.heroImage.alt) : undefined;
-      const page: Page = {
+      const imported: Page = {
         slug, title: extracted.title, section: sectionFor(route), sourceUrl,
         ...(savedHero ? { heroImage: savedHero } : {}), summary: extracted.summary,
         blocks: updatedBlocks, lastVerified: IMPORT_DATE, status: 'verify',
       };
+      const page = applyClientOverrides(imported);
+      if (!page) {
+        await rm(path.join(PAGE_DIR, `${slug}.json`), { force: true });
+        console.log(`Removed ${sourceUrl}`);
+        continue;
+      }
       await writeSeedPage(PAGE_DIR, page);
       manifest.push({ slug, sourceUrl, importedAt: new Date().toISOString(), status: 'verify' });
       console.log(`Imported ${sourceUrl}`);
     } catch (error) {
       const message = error instanceof Error ? error.message : String(error);
       const todo: Page = { slug, title: 'TODO: title not imported', section: sectionFor(route), sourceUrl, summary: 'TODO: content could not be retrieved.', blocks: [{ _type: 'todo', message: `TODO: importer error: ${message}` }], lastVerified: IMPORT_DATE, status: 'verify' };
+      if (!applyClientOverrides(todo)) {
+        await rm(path.join(PAGE_DIR, `${slug}.json`), { force: true });
+        console.log(`Removed ${sourceUrl}`);
+        continue;
+      }
       await writeSeedPage(PAGE_DIR, todo);
       manifest.push({ slug, sourceUrl, importedAt: new Date().toISOString(), status: 'verify', error: message });
       console.error(`Failed ${sourceUrl}: ${message}`);

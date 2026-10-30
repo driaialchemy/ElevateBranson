@@ -20,7 +20,6 @@ export const contactPrograms = [
   'Entrepreneurs',
   'Health',
   'Kids',
-  'Outreach',
   'Rides',
   'Thrift Store',
   'Work',

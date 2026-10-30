@@ -88,7 +88,7 @@ Forms: volunteer, tour, and prayer post to `/api/submit`. Staff addresses and th
 
 Push: Expo Push Service. The phone asks only after a person opens a page, then only if they agree. Tokens are stored with topic choices and no name or contact. Staff send from `/staff/notify` with one shared secret, a preview, a test send, a confirm step, and a 15-minute cooldown.
 
-Hours: each season stores a repeating MM-DD start and end, weekly open and close times, and optional holiday closures. Open or closed is decided in America/Chicago by getOpenStatus. Date ranges the website did not publish stay TODO.
+Hours: each season stores a repeating MM-DD start and end, weekly open and close times, and optional holiday closures. Open or closed is decided in America/Chicago by getOpenStatus. A season whose start or end is TODO is the year-round schedule on days no dated season covers (COO note 2026-10-29), so the app does not show a waiting-for-season-dates line. Dated seasons still win. Elevate Life and Elevate Outreach are omitted until the organization publishes them again.
 
 Give, merch, and events: Give uses the donate URL from site settings and opens it in the in-app browser. The app stores no payment data. Merch opens the shirt-store URL the same way when staff add one. Each event has a detail page. Add to calendar writes an all-day event on the phone. Remind me schedules a local note at 9:00 a.m. Central Time on that date, and only after the person taps it. Share uses the phone share sheet.
 

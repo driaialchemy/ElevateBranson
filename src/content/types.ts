@@ -105,7 +105,7 @@ export type Closure = {
   reason: string;
 };
 
-export type HoursPlace = 'campus' | 'coffee' | 'thrift' | 'playground';
+export type HoursPlace = 'campus' | 'coffee' | 'cafe' | 'thrift' | 'playground' | 'health';
 
 export type Hours = {
   id: string;

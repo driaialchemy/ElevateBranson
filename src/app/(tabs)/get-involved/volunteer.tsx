@@ -32,7 +32,7 @@ export default function VolunteerScreen() {
       <Button label="Give 5" onPress={() => openExternal(volunteerLinks.give5)} variant="secondary" />
       <Text style={bodyStyle}>Days and times may change; check Facebook.</Text>
       <Button label="Elevate Branson on Facebook" onPress={() => openExternal(volunteerLinks.facebook)} variant="secondary" />
-      <Button label={`Call ${volunteerLinks.phone}`} onPress={() => openCall(volunteerLinks.phone)} />
+      <Button label={`Call ${volunteerLinks.contactName} · ${volunteerLinks.phone}`} onPress={() => openCall(volunteerLinks.phone)} />
       <Button label={`Email ${volunteerLinks.email}`} onPress={() => void Linking.openURL(`mailto:${volunteerLinks.email}`)} variant="secondary" />
     </Screen>
   );

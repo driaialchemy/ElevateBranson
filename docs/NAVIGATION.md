@@ -24,8 +24,8 @@ Five bottom tabs mirror the website. Home shortcuts expose Volunteer, Tour, Give
 | https://elevatebranson.org/elevate-health/ | `/page/elevate-health` | generic |
 | https://elevatebranson.org/elevate-kids-sponsorship/ | `/page/elevate-kids-sponsorship` | generic |
 | https://elevatebranson.org/elevate-kids/ | `/page/elevate-kids` | generic |
-| https://elevatebranson.org/elevate-life/ | `/page/elevate-life` | generic |
-| https://elevatebranson.org/elevate-outreach/ | `/page/elevate-outreach` | generic |
+| https://elevatebranson.org/elevate-life/ | `excluded` | removed |
+| https://elevatebranson.org/elevate-outreach/ | `excluded` | removed |
 | https://elevatebranson.org/elevate-playground/ | `/programs/playground` | custom |
 | https://elevatebranson.org/elevate-rides/ | `/page/elevate-rides` | generic |
 | https://elevatebranson.org/elevate-thrift-store--coupon/ | `/page/elevate-thrift-store--coupon` | generic |

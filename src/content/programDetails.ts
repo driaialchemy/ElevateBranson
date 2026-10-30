@@ -21,12 +21,12 @@ export const programDetails: Record<string, ProgramInfo> = {
     facts: [
       { label: 'Community', value: 'A tiny-home neighborhood on five acres near Branson employment opportunities.' },
       { label: 'Homes', value: '400 sq ft, furnished, one bathroom, a porch, and Energy Star features.' },
-      { label: 'Rent', value: '$495 per month, including utilities and trash.' },
-      { label: 'Eligibility', value: 'Adults 18 or older, with at least 12 months of Taney County residency; income and ID documents are required.' },
-      { label: 'Lease and pets', value: 'Month-to-month lease. One small pet may be approved; an additional pet charge applies.' },
+      { label: 'Rent', value: '$520/month, all utilities included' },
+      { label: 'Eligibility', value: 'Adults 18 or older, with at least 12 months of Taney County residency; income and ID documents are required. Income limit applies.' },
+      { label: 'Lease and pets', value: 'Month-to-month lease. 1 pet maximum.' },
       { label: 'Sponsorship', value: '$45,000 sponsors a home; optional packages are available.' },
     ],
-    contact: { name: 'Bryan Stallings', role: 'Elevate Community', phone: '417.294.1300' },
+    contact: { name: 'Kristol France', phone: '417-203-0886' },
     actions: [
       { label: 'Residency Application (PDF)', url: 'https://elevatebranson.org/wp-content/uploads/2026/01/ResidencyApplication_January2026.pdf' },
       { label: 'Sponsorship Options (PDF)', url: 'https://elevatebranson.org/wp-content/uploads/2025/07/TinyHomeSponsorshipCustomizationOptions.pdf' },
@@ -36,29 +36,19 @@ export const programDetails: Record<string, ProgramInfo> = {
       { question: 'Who can apply?', answer: 'Applicants must be at least 18, have lived in Taney County for at least one year, and provide identification and income documents. Applicants are screened for suitability and must meet the community rules.' },
       { question: 'How many people can live in a home?', answer: 'Homes are intended for one person and may accommodate an established couple when both applicants qualify.' },
       { question: 'How long can residents stay?', answer: 'Residents may stay while following community rules and meeting annual income guidelines. Leases are month to month.' },
-      { question: 'Are pets allowed?', answer: 'One small pet may be approved by management; an additional pet charge and leash rules apply.' },
-    ],
-    timeline: [
-      { title: 'Project planning and bid work', date: '2024', body: 'The project completed rebidding and moved into pre-construction planning.', lastVerified: verified },
-      { title: 'Site preparation and dedication', date: '2025', body: 'Site work continued and the community held a dedication celebration.', lastVerified: verified },
+      { question: 'Are pets allowed?', answer: '1 pet maximum.' },
     ],
   },
   'elevate-rides': {
     facts: [
       { label: 'Vehicles', value: '49cc motor scooters.' },
-      { label: 'Rental eligibility', value: 'A valid driver’s license is required; ownership riders need a Class M license.' },
+      { label: 'Rental eligibility', value: 'A valid driver’s license is required.' },
       { label: 'Rental setup', value: 'Attend Scooter School and pay a $65 deposit, then arrange payment and pick up the keys.' },
-      { label: 'Ownership — step 1', value: 'Become a business partner.' },
-      { label: 'Ownership — step 2', value: 'Qualified employees complete an application.' },
-      { label: 'Ownership — step 3', value: 'Attend scooter training at Elevate Branson.' },
-      { label: 'Ownership — step 4', value: 'Pass the driver test for a Class M license.' },
-      { label: 'Ownership — step 5', value: 'Set up a payment plan and pick up the scooter keys.' },
     ],
     contact: { name: 'Dan Friday', role: 'Elevate Rides Director', phone: '417.295.7575' },
     table: { headers: ['Rental option', 'Price'], rows: [['J-1 students', '$50 per week'], ['Local rental with one-month agreement', '$65 per week'], ['Scooter School deposit', '$65']] },
     actions: [
       { label: 'Rental Application', url: 'https://elevatebranson.my.salesforce-sites.com/j1' },
-      { label: 'Become a Business Partner', url: 'https://elevatebranson.app.neoncrm.com/forms/business-partner' },
     ],
   },
   'elevate-work': {
@@ -148,15 +138,6 @@ export const programDetails: Record<string, ProgramInfo> = {
       { label: 'Download Theo Coloring Pages', url: `${site}/theo/` },
     ],
   },
-  'elevate-outreach': {
-    facts: [
-      { label: 'What it does', value: 'Volunteers prepare and deliver basic meals to neighbors in extended-stay motels.' },
-      { label: 'Next steps', value: 'Meal delivery helps build relationships and connect neighbors with other programs and resources.' },
-    ],
-    contact: { name: 'Betsy Foster', role: 'Volunteer & Events Coordinator', phone: '417.593.2254' },
-    actions: [{ label: 'Volunteer with Elevate Outreach', url: `${site}/volunteer/` }],
-    volunteerUrl: `${site}/volunteer-form-evening-meal-delivery-and-outreach/`,
-  },
   'elevate-connections': {
     facts: [
       { label: 'Support', value: 'Help with identification, mail, applications, paperwork, transportation, basic case management, and voter registration.' },
@@ -164,7 +145,7 @@ export const programDetails: Record<string, ProgramInfo> = {
       { label: 'Partner support', value: 'Partners contribute $100 or more per month and refer neighbors who need support.' },
       { label: 'Rewards', value: 'Volunteers earn 5 points per hour, up to five hours per week; points can support listed Elevate services.' },
     ],
-    contact: { name: 'Jordanna Boyd', role: 'Elevate Connections Director', phone: '417.239.7818' },
+    contact: { name: 'Garrett Moore', phone: '417-239-7818' },
     actions: [
       { label: 'Become a Partner', url: 'https://elevatebranson.app.neoncrm.com/forms/13' },
       { label: 'Rewards Program', url: `${site}/rewards-program/` },

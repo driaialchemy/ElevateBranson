@@ -70,6 +70,10 @@
           "url": "https://elevatebranson.org/branding-licensure/"
         }
       ]
+    },
+    {
+      "_type": "hoursTable",
+      "hoursId": "health"
     }
   ],
   "lastVerified": "2026-10-20",

@@ -1,7 +1,7 @@
 import assert from 'node:assert/strict';
 import test from 'node:test';
 
-import { getOpenStatus } from './openStatus.ts';
+import { describeOpenStatus, getOpenStatus } from './openStatus.ts';
 import type { DayHours, Hours, HoursSeason, Weekday } from './types.ts';
 
 const weekdays: Weekday[] = ['monday', 'tuesday', 'wednesday', 'thursday', 'friday', 'saturday', 'sunday'];
@@ -53,6 +53,17 @@ test('season boundary days are included', () => {
   assert.equal(first.state, 'open');
   assert.equal(last.state, 'open');
   assert.match(last.todayHours ?? '', /1:00 P\.M\./);
+});
+
+test('a TODO season covers days outside dated seasons', () => {
+  const saved = hours([
+    { name: 'School year', startDate: 'TODO', endDate: 'TODO', days: days({ monday: ['09:00', '17:00'] }) },
+    { name: 'June and July', startDate: '06-01', endDate: '07-31', days: days(summerWeek) },
+  ]);
+  const may = getOpenStatus(saved, new Date('2026-05-04T18:00:00.000Z'), 'America/Chicago');
+  assert.equal(may.state, 'open');
+  assert.equal(describeOpenStatus(may).body.includes('season dates'), false);
+  assert.equal(describeOpenStatus({ state: 'unknown', todayHours: null, nextOpen: null }).body.includes('season dates'), false);
 });
 
 test('a day outside every season stays unknown', () => {

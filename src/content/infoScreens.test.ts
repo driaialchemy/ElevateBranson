@@ -11,11 +11,13 @@ test('an empty section renders a coming soon line with the main phone', () => {
 });
 
 test('venue hours display an explicit conflict follow-up', () => {
-  const coffee = fixtures.hours.find((item) => item.place === 'coffee');
-  assert.ok(coffee);
-  const card = hoursCards(coffee, new Date('2026-10-20T18:00:00.000Z'))[0];
+  const thrift = fixtures.hours.find((item) => item.place === 'thrift');
+  assert.ok(thrift);
+  const card = hoursCards(thrift, new Date('2026-10-20T18:00:00.000Z'))[0];
   assert.match(card?.body ?? '', /Hours need confirmation/);
-  assert.equal(coffee.lastVerified, '2026-10-20');
+  const coffee = fixtures.hours.find((item) => item.place === 'coffee');
+  assert.equal(coffee?.conflict, undefined);
+  assert.equal((hoursCards(coffee!, new Date('2026-10-20T18:00:00.000Z'))[0]?.body ?? '').includes('season dates'), false);
 });
 
 test('a playground season change renders a different open status', () => {
@@ -24,7 +26,8 @@ test('a playground season change renders a different open status', () => {
   const june = hoursCards(playground, new Date('2026-06-15T18:00:00.000Z'));
   const may = hoursCards(playground, new Date('2026-05-15T18:00:00.000Z'));
   assert.equal(june[0]?.title, 'Open now');
-  assert.equal(may[0]?.title, 'Hours');
+  assert.equal(may[0]?.title, 'Open now');
+  assert.equal((may[0]?.body ?? '').includes('season dates'), false);
   assert.notEqual(june[0]?.body, may[0]?.body);
   assert.ok(june.some((card) => card.title === 'School year'));
   assert.ok(june.some((card) => card.title === 'June and July' && card.body.startsWith('June 1 – July 31')));

@@ -65,3 +65,9 @@ Do not block the build on these. Use the placeholders in [DECISIONS.md](DECISION
 61. Name the maintainer in `docs/HANDOFF.md` ("Who to call") and decide who owns the code repository after handoff.
 62. Choose a persistent store and host for push tokens and the staff send page (`docs/WORKER_RUNBOOK.md`, "Known gap").
 63. Redeploy the web demo from an Elevate Branson Cloudflare account (`npm run deploy:demo`) and retire the copy in the AI Alchemy account. See docs/HANDOFF.md.
+64. Send Theo's photo. The Theo page shows "Photo coming soon" and the import override in `src/content/clientOverrides.ts` drops any hero image on `theo` until that override is removed.
+65. The contact page staff list still names Jordanna Boyd as Elevate Connections Director and Kristol France as Elevate Connections Coordinator at 417.239.7818. Program contacts now follow the 2026-10-29 note: Connections is Garrett Moore 417-239-7818, and Tiny Homes is Kristol France 417-203-0886. Confirm the staff directory.
+66. Bryan Stallings remains an Admin contact at 417.294.1300. He is no longer the Tiny Homes contact. Confirm that split.
+67. Playground, campus, coffee, cafe, thrift, and health seasons marked TODO now count as the year-round schedule on days no dated season covers. Dated June–July and August hours still win on those days. Confirm the school-year weekly hours should cover every other day.
+68. The business partnership page still offers scooter access for employees. Confirm whether that ownership wording should come off. Elevate Rides no longer describes an ownership program. The heading "Our Dealership:" is still on the Rides page.
+69. Volunteer stories for Frank, Jeff, and D'Ann still mention Elevate Outreach, and the Meal Delivery + Outreach volunteer card is still listed. Confirm whether those words should change. The Elevate Outreach page itself is removed.

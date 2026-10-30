@@ -27,7 +27,7 @@ const weekdays: Weekday[] = [
 export function getOpenStatus(hours: Hours, now: Date, timeZone = 'America/Chicago'): OpenStatus {
   const parts = clockParts(now, timeZone);
   const seasons = Array.isArray(hours.seasons) ? hours.seasons : [];
-  const season = seasons.find((item) => inSeason(parts.mmdd, item));
+  const season = seasonForDate(seasons, parts.mmdd);
   if (!season) {
     return { state: 'unknown', todayHours: null, nextOpen: null };
   }
@@ -36,7 +36,7 @@ export function getOpenStatus(hours: Hours, now: Date, timeZone = 'America/Chica
   const closure = closures.find((item) => item?.date === parts.iso);
   const today = dayHours(season, parts.weekday);
   const yesterdayParts = shiftDays(parts.iso, -1, timeZone);
-  const yesterdaySeason = seasons.find((item) => inSeason(yesterdayParts.mmdd, item));
+  const yesterdaySeason = seasonForDate(seasons, yesterdayParts.mmdd);
   const yesterdayClosed = closures.some((item) => item?.date === yesterdayParts.iso);
   const yesterday = yesterdaySeason ? dayHours(yesterdaySeason, yesterdayParts.weekday) : undefined;
   const fromYesterday = !closure && !yesterdayClosed && openFromPreviousSpan(yesterday, parts.minutes);
@@ -63,7 +63,7 @@ export function describeOpenStatus(status: OpenStatus): { title: string; body: s
   if (status.state === 'unknown') {
     return {
       title: 'Hours',
-      body: 'These hours are saved. Open or closed will show after the season dates are confirmed.',
+      body: "Call to confirm today's hours.",
     };
   }
   if (status.state === 'open') {
@@ -74,6 +74,17 @@ export function describeOpenStatus(status: OpenStatus): { title: string; body: s
     lines.push(`Next open: ${status.nextOpen}`);
   }
   return { title: 'Closed now', body: lines.join('\n') };
+}
+
+function calendarDated(season: HoursSeason): boolean {
+  return /^\d{2}-\d{2}$/.test(season.startDate ?? '') && /^\d{2}-\d{2}$/.test(season.endDate ?? '');
+}
+
+/** A dated season wins. A TODO range covers every day that no dated season claims. */
+function seasonForDate(seasons: HoursSeason[], mmdd: string): HoursSeason | undefined {
+  const dated = seasons.find((item) => calendarDated(item) && inSeason(mmdd, item));
+  if (dated) return dated;
+  return seasons.find((item) => item.startDate === 'TODO' || item.endDate === 'TODO');
 }
 
 function inSeason(mmdd: string, season: HoursSeason): boolean {
@@ -130,7 +141,7 @@ function findNextOpen(hours: Hours, parts: ClockParts, timeZone: string): string
   const closures = Array.isArray(hours.closures) ? hours.closures : [];
   for (let offset = 0; offset < 370; offset += 1) {
     const date = offset === 0 ? parts : shiftDays(parts.iso, offset, timeZone);
-    const season = seasons.find((item) => inSeason(date.mmdd, item));
+    const season = seasonForDate(seasons, date.mmdd);
     if (!season || closures.some((item) => item?.date === date.iso)) {
       continue;
     }

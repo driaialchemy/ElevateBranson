@@ -1,14 +1,16 @@
 # Project state
 
-Last completed phase: CC-07 prompt (release and handoff). The chain is finished.
-Next: human tasks in docs/HUMAN_TASKS.md; no builds, deploys, or store submissions have been made.
+Last completed phase: CU-01 content edits (COO feedback 2026-10-29).
+Next: CU-02 behavior fixes. Do not re-run CU-01. No deploys or store submissions in this phase.
+
+CU-01 applied the notes in docs/CLIENT_NOTES.md to local pages, program details, hours, and contacts. Import runs src/content/clientOverrides.ts afterward. Elevate Life and Elevate Outreach are removed from navigation; an unknown slug redirects home. Flagged follow-ups are HUMAN_TASKS 64-69.
 
 Open blockers:
 - Deploy the `/api/events` worker route and set `EXPO_PUBLIC_SUBMIT_URL` for the published app.
 - `/forms/13/` and `/forms/30/` on the source site return 404 or redirect outside the allowed host.
-- Confirm the café and Thrift Store hours with the organization; venue pages conflict with secondary hours blocks.
-- Confirm approval to display public staff phone numbers in the app.
-- Confirm the Playground school-year season start and end dates.
+- Thrift Store hours still conflict with the contact page. Cafe is Monday–Friday 10–3 and Coffee is Monday–Friday 8–3 (COO 2026-10-29).
+- Staff phones from that note are in the app. Broader approval to show staff numbers is still HUMAN_TASKS 47.
+- Playground school-year start and end dates were not given. A TODO season now covers days outside a dated season. Confirm HUMAN_TASKS 67.
 
 Files changed in SP-06:
 - About hub content, statistics, values, FAQ, financial summary, and neighbor story listing.

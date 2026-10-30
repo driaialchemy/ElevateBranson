@@ -32,6 +32,8 @@ export const exclusions: Record<string, string> = {
   '/staff-page/': 'Staff-only page; personal contacts stay out of the app.',
   '/crisis-communication-plan/': 'Internal document; not for public display.',
   '/branding-partners/': 'Partner list pending approval; see HUMAN_TASKS.',
+  '/elevate-life/': 'Removed 2026-10-29 at COO request. Elevate Life is no longer in the app.',
+  '/elevate-outreach/': 'Removed 2026-10-29 at COO request. Elevate Outreach is being revamped.',
   '/thank-you-': 'Form confirmation pages; the app shows its own confirmation.',
   '/feed/': 'Machine feed, not a page.',
   '/wp-json/': 'Machine endpoint, not a page.',

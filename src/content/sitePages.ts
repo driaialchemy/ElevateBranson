@@ -19,8 +19,6 @@ import elevate_entrepreneurs from '../../content/pages/elevate-entrepreneurs.jso
 import elevate_health from '../../content/pages/elevate-health.json';
 import elevate_kids_sponsorship from '../../content/pages/elevate-kids-sponsorship.json';
 import elevate_kids from '../../content/pages/elevate-kids.json';
-import elevate_life from '../../content/pages/elevate-life.json';
-import elevate_outreach from '../../content/pages/elevate-outreach.json';
 import elevate_playground from '../../content/pages/elevate-playground.json';
 import elevate_rides from '../../content/pages/elevate-rides.json';
 import elevate_thrift_store__coupon from '../../content/pages/elevate-thrift-store--coupon.json';
@@ -87,8 +85,6 @@ export const importedPages: Page[] = [
   elevate_health as Page,
   elevate_kids_sponsorship as Page,
   elevate_kids as Page,
-  elevate_life as Page,
-  elevate_outreach as Page,
   elevate_playground as Page,
   elevate_rides as Page,
   elevate_thrift_store__coupon as Page,

@@ -16,6 +16,7 @@ export function Hero({
   subtitle,
   actionLabel,
   actionHref,
+  placeholder,
 }: {
   imageKey: string;
   imageUrl?: string;
@@ -24,8 +25,9 @@ export function Hero({
   subtitle: string;
   actionLabel?: string;
   actionHref?: string;
+  placeholder?: string;
 }) {
-  const source = (imageUrl ? siteImage(imageUrl) : undefined) ?? brandImage(imageKey);
+  const source = placeholder ? undefined : (imageUrl ? siteImage(imageUrl) : undefined) ?? brandImage(imageKey);
   return (
     <View
       style={{
@@ -48,6 +50,19 @@ export function Hero({
       ) : null}
       <DuotoneLayers scrim={tokens.duotone.scrim} />
       <View style={{ gap: tokens.space.md, padding: tokens.space.lg }}>
+        {placeholder ? (
+          <Text
+            accessibilityLabel={placeholder}
+            style={{
+              color: tokens.color.onPrimary,
+              fontFamily: tokens.font.family.body,
+              fontSize: tokens.font.size.body,
+              lineHeight: tokens.font.lineHeight.body,
+              textAlign: 'center',
+            }}>
+            {placeholder}
+          </Text>
+        ) : null}
         <Text
           accessibilityRole="header"
           style={{
