@@ -34,3 +34,12 @@ pnpm-debug.log*
 /logs/
 
 .claude/settings.local.json
+
+# governance baseline ignores
+.venv/
+venv/
+__pycache__/
+.pytest_cache/
+reports/
+audit_temp/
+generated/

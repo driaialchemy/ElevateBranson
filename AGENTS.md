@@ -32,3 +32,15 @@ Before building, read the phase section of docs/REMAINING.md and the code; exten
 ## Project references
 
 Read only when needed: `docs/FEATURES.md`, `docs/DECISIONS.md`, `docs/BLOCKERS.md`, `docs/HUMAN_TASKS.md`, `docs/BRAND.md`, `docs/NAVIGATION.md`, `docs/SITE_INVENTORY.md`, `docs/STAFF_GUIDE.md`, `docs/RULES_DETAIL.md`, and `docs/STATE.md`. App content is under `src/content`; the public Sanity read token only belongs in client configuration.
+
+## Approval gates
+
+Human approval is required before dependency changes, external-call changes, deploy or container config, secrets, and AI-provider or database config.
+
+## Setup
+
+npm test
+
+## Verification
+
+Run `npm test` after every change. Do not edit wrangler.toml or dependency versions without approval.
