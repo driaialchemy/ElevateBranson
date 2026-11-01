@@ -9,7 +9,9 @@ type WorkerEnv = {
   VOLUNTEER_COORDINATOR_EMAIL?: string;
   TOUR_CONTACT_EMAIL?: string;
   PRAYER_TEAM_EMAIL?: string;
+  PRAYER_TO_EMAIL?: string;
   CONTACT_EMAIL?: string;
+  NEWSLETTER_TO_EMAIL?: string;
 };
 
 export default {

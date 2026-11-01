@@ -18,7 +18,7 @@ const headingStyle = { ...bodyStyle, fontFamily: tokens.font.family.heading, fon
 export function renderPageBlock(block: PageBlock, data: ContentBundle, pages: Page[] = []): React.ReactNode {
   switch (block._type) {
     case 'richText': return <View style={{ gap: tokens.space.sm }}>{block.headings?.map((heading, i) => <Text key={`h${i}`} accessibilityRole="header" style={headingStyle}>{heading}</Text>)}{block.paragraphs.map((p, i) => <Text key={i} style={bodyStyle}>{p}</Text>)}</View>;
-    case 'buttonRow': return <View style={{ gap: tokens.space.sm }}>{block.buttons.map((b) => <Button key={`${b.label}-${b.url}`} label={b.label} onPress={() => openHref(b.url)} />)}</View>;
+    case 'buttonRow': return <View style={{ gap: tokens.space.sm }}>{block.buttons.map((b) => <Button key={`${b.label}-${b.url}`} label={b.label} onPress={() => openHref(/join our mailing list/i.test(b.label) ? '/more/mailing-list' : b.url)} />)}</View>;
     case 'cardGrid': return <View style={{ gap: tokens.space.md }}>{block.cards.map((c) => <Card key={c.title} title={c.title} body={c.summary} imageUrl={c.image?.url} alt={c.image?.alt} href={c.url} />)}</View>;
     case 'statRow': return <View style={{ gap: tokens.space.sm }}>{block.items.map((x, i) => <Text key={i} style={headingStyle}>{x.value} · {x.label}</Text>)}</View>;
     case 'factList': return <View style={{ gap: tokens.space.xs }}>{block.items.map((x) => <Text key={x.label} style={bodyStyle}><Text style={headingStyle}>{x.label}: </Text>{x.value}</Text>)}</View>;

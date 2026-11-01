@@ -152,7 +152,7 @@ export default function HomeScreen() {
       {data.siteSettings.mailingListUrl && data.siteSettings.mailingListLabel ? (
         <Button
           label={data.siteSettings.mailingListLabel}
-          onPress={() => openHref(data.siteSettings.mailingListUrl || '')}
+          onPress={() => openHref('/more/mailing-list')}
           variant="secondary"
         />
       ) : null}

@@ -6,7 +6,9 @@ export type ServerEnv = {
   VOLUNTEER_COORDINATOR_EMAIL?: string;
   TOUR_CONTACT_EMAIL?: string;
   PRAYER_TEAM_EMAIL?: string;
+  PRAYER_TO_EMAIL?: string;
   CONTACT_EMAIL?: string;
+  NEWSLETTER_TO_EMAIL?: string;
 };
 
 export type OutboundMail = {
@@ -18,12 +20,14 @@ export type OutboundMail = {
 const recipientKey = {
   volunteer: 'VOLUNTEER_COORDINATOR_EMAIL',
   tour: 'TOUR_CONTACT_EMAIL',
-  prayer: 'PRAYER_TEAM_EMAIL',
+  prayer: 'PRAYER_TO_EMAIL',
   contact: 'CONTACT_EMAIL',
+  newsletter: 'NEWSLETTER_TO_EMAIL',
 } as const;
 
 export function staffRecipient(type: Submission['type'], env: ServerEnv): string | null {
-  const value = env[recipientKey[type]]?.trim() ?? '';
+  const named = type === 'prayer' ? env.PRAYER_TO_EMAIL?.trim() || env.PRAYER_TEAM_EMAIL?.trim() : env[recipientKey[type]]?.trim();
+  const value = named ?? '';
   if (!value || value.toLowerCase().endsWith('@example.org')) {
     return null;
   }
@@ -63,6 +67,13 @@ export function buildMail(submission: Submission, to: string): OutboundMail {
         '',
         submission.message,
       ].join('\n'),
+    };
+  }
+  if (submission.type === 'newsletter') {
+    return {
+      to,
+      subject: 'Mailing list signup',
+      text: [`Name: ${blank(submission.name)}`, `Email: ${submission.email}`].join('\n'),
     };
   }
   if (submission.type === 'tour') {

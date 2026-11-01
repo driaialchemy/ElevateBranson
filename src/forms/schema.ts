@@ -46,6 +46,13 @@ export const tourSchema = z.object({
   company: z.string().optional(),
 });
 
+export const newsletterSchema = z.object({
+  type: z.literal('newsletter'),
+  email: z.string().trim().email().max(200),
+  name: optionalText(120),
+  company: z.string().optional(),
+});
+
 export const prayerSchema = z.object({
   type: z.literal('prayer'),
   request: z.string().trim().min(1).max(2000),
@@ -55,12 +62,13 @@ export const prayerSchema = z.object({
   company: z.string().optional(),
 });
 
-export const submissionSchema = z.discriminatedUnion('type', [volunteerSchema, tourSchema, prayerSchema, contactSchema]);
+export const submissionSchema = z.discriminatedUnion('type', [volunteerSchema, tourSchema, prayerSchema, contactSchema, newsletterSchema]);
 
 export type VolunteerInput = z.infer<typeof volunteerSchema>;
 export type TourInput = z.infer<typeof tourSchema>;
 export type ContactInput = z.infer<typeof contactSchema>;
 export type PrayerInput = z.infer<typeof prayerSchema>;
+export type NewsletterInput = z.infer<typeof newsletterSchema>;
 export type Submission = z.infer<typeof submissionSchema>;
 
 const fieldCopy: Record<string, string> = {
@@ -101,6 +109,7 @@ export const sentCopy = {
   tour: 'Our coordinator will reach out.',
   prayer: 'Our coordinator will reach out if you left a way to reply.',
   contact: 'Our team will reply by email.',
+  newsletter: 'Our team received your request to join the mailing list.',
 } as const;
 
 export const queuedCopy =

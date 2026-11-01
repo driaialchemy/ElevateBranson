@@ -13,7 +13,7 @@ import {
   volunteerOpportunities,
 } from '../content/getInvolved.ts';
 import { buildMail, staffRecipient } from './mail.ts';
-import { contactPrograms, contactSchema, volunteerSchema } from './schema.ts';
+import { contactPrograms, contactSchema, newsletterSchema, volunteerSchema } from './schema.ts';
 
 const contact = { type: 'contact', name: 'Test Neighbor', email: 'neighbor@example.com', program: 'Kids', message: 'Hello', phone: '' };
 
@@ -86,4 +86,17 @@ test('flag off falls back to website forms; flag on points at native routes that
     const file = new URL(`../app/(tabs)/${group}/${path.split('/').pop()}.tsx`, import.meta.url);
     assert.ok(existsSync(file), href);
   }
+});
+
+test('a mailing list signup requires email and sends only to NEWSLETTER_TO_EMAIL', () => {
+  assert.equal(newsletterSchema.safeParse({ type: 'newsletter', email: 'neighbor@example.com', name: '' }).success, true);
+  assert.equal(newsletterSchema.safeParse({ type: 'newsletter', email: 'nope', name: 'Ada' }).success, false);
+  assert.equal(staffRecipient('newsletter', { NEWSLETTER_TO_EMAIL: 'list@staff.test' }), 'list@staff.test');
+  assert.equal(staffRecipient('newsletter', {}), null);
+  assert.equal(staffRecipient('newsletter', { NEWSLETTER_TO_EMAIL: 'list@example.org' }), null);
+  const parsed = newsletterSchema.parse({ type: 'newsletter', email: 'neighbor@example.com', name: 'Ada' });
+  const mail = buildMail(parsed, 'list@staff.test');
+  assert.equal(mail.subject, 'Mailing list signup');
+  assert.match(mail.text, /Ada/);
+  assert.match(mail.text, /neighbor@example.com/);
 });
