@@ -1,9 +1,15 @@
 # Project state
 
-Last completed phase: CU-02 behavior fixes.
-Next: CU-03 logo, QA, and handoff. Do not re-run CU-01 or CU-02.
+Last completed phase: CU-03 logo, QA, and handoff.
+Next: none in the CU prompt chain. Do not re-run CU-01, CU-02, or CU-03.
+
+CU-03: `assets/incoming/Elevate Logo Color.png` was missing, so icons were not replaced (HUMAN_TASKS 75). Typecheck, lint, and web export passed. Tests: 113 pass, 1 fail in `src/server/calendar.test.ts` (the Nov 1 all-day sample is dropped on Nov 1; not caused by this chain). Redeploy command: `npm run deploy:demo`.
 
 CU-01 applied the notes in docs/CLIENT_NOTES.md to local pages, program details, hours, and contacts. Import runs src/content/clientOverrides.ts afterward. Elevate Life and Elevate Outreach are removed from navigation; an unknown slug redirects home. Flagged follow-ups are HUMAN_TASKS 64-69.
+
+Tiny Homes is the Home card and the first What We Do card. The program screen is titled Tiny Homes and no longer uses the construction-update video image. Rent is $520/month, all utilities included, on the hero and in a Pricing card. Repeated buttons on imported pages are shown once, which clears the duplicate React key warnings on that screen.
+
+The current web build is published at https://elevate-branson-demo.draialchemy.workers.dev (Cloudflare, version f893ca35-bf40-47c7-8713-86ffe470e20b). It stays up when this computer is off. It is still the AI Alchemy account, not an Elevate Branson account.
 
 Open blockers:
 - Deploy the `/api/events` worker route and set `EXPO_PUBLIC_SUBMIT_URL` for the published app.

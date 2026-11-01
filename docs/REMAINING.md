@@ -37,6 +37,11 @@ Reconciled 2026-10-20 against the repo (targeted searches only). Extend what exi
 - DONE: send endpoint (`src/app/api/push/send+api.ts`, `src/push/send.ts`). Config/deploy.
 - DONE: staff page (`src/push/staffPage.ts`, `src/app/staff/notify+api.ts`). Config/deploy: staff password.
 
+## CU-03 Logo, QA, handoff (DONE 2026-11-01)
+- Logo file missing. Icons unchanged. HUMAN_TASKS 75.
+- Checks: typecheck pass, lint pass, tests 113 pass / 1 pre-existing calendar failure, web export run with the demo publish.
+- Staff questions and store accounts: HUMAN_TASKS 76.
+
 ## CU-02 Behavior fixes (DONE 2026-11-01)
 - DONE: one notification topic, "Housing & resource list updates". A stored `resources` choice becomes `housing` and is registered again with the phone token.
 - DONE: mailing list opens an in-app form (`/more/mailing-list`) because the website button is only a Mailmunch popup. Posts type `newsletter` to `/api/submit`. Flagged HUMAN_TASKS 70.
