@@ -35,6 +35,7 @@ export const features: FeatureRoute[] = [
 ];
 
 export const homeQuickActions = [
+  { label: 'Prayer', href: '/get-involved/prayer' },
   { label: 'Volunteer', href: '/get-involved/volunteer' },
   { label: 'Tour', href: '/get-involved/tour' },
   { label: 'Give', href: '/get-involved/give' },
@@ -55,6 +56,7 @@ export const moreLinks = [
   { label: 'Media', href: '/more/media', detail: 'Newsletters, podcast, videos, and releases.' },
   { label: 'Find Us', href: '/more/find-us', detail: 'Address, map, and phone.' },
   { label: 'Contact', href: '/more/contact', detail: 'Department contacts and message form.' },
+  { label: 'Prayer request', href: '/get-involved/prayer', detail: 'Send a private note to the prayer team.' },
   { label: 'Resources', href: '/more/resources', detail: 'Partner groups and the housing list.' },
   { label: 'Social links', href: '/more/social', detail: 'Find Elevate Branson on social media.' },
   { label: 'Website', href: '/more/website', detail: 'Open elevatebranson.org.' },

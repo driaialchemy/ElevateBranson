@@ -8,7 +8,7 @@ import { HoneypotField } from '@/components/HoneypotField';
 import { PrivacyLine } from '@/components/PrivacyLine';
 import { Screen } from '@/components/Screen';
 import { TextField } from '@/components/TextField';
-import { deliverForm } from '@/forms/deliver';
+import { deliverForm, submitUrl } from '@/forms/deliver';
 import { fieldErrors, prayerSchema } from '@/forms/schema';
 import { useNetwork } from '@/network/NetworkProvider';
 import { tokens } from '@/theme/tokens';
@@ -38,6 +38,10 @@ export default function PrayerScreen() {
       return;
     }
     setErrors({});
+    if (!submitUrl()) {
+      setNotice('Demo: not sent');
+      return;
+    }
     setPending(true);
     try {
       setNotice(await deliverForm(parsed.data, online));
@@ -51,7 +55,7 @@ export default function PrayerScreen() {
   if (notice) {
     return (
       <Screen>
-        <Card body={notice} title="Request received" />
+        <Card body={notice} title={notice === 'Demo: not sent' ? 'Not sent' : 'Request received'} />
       </Screen>
     );
   }

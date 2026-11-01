@@ -12,6 +12,7 @@ const icons = {
   '/more/media': 'play-circle-outline',
   '/more/find-us': 'location-outline',
   '/more/contact': 'call-outline',
+  '/get-involved/prayer': 'chatbubble-ellipses-outline',
   '/more/resources': 'library-outline',
   '/more/social': 'globe-outline',
   '/more/website': 'globe-outline',
