@@ -1,7 +1,7 @@
 import { dropTokens, isPushToken, upsertToken, type PushTokenRecord } from '@/push/audience';
 import { loadExpoReceipts, sendExpoBatch } from '@/push/expoApi';
 import { buildMessages, deliverBatches, reviewSend, type PushStore } from '@/push/send';
-import { isTopic, routeForTopic, type Topic } from '@/push/topics';
+import { isTopic, normalizeTopics, routeForTopic, type Topic } from '@/push/topics';
 
 export type PushFields = {
   secret: string;
@@ -17,7 +17,7 @@ export function registerToken(store: PushStore, token: string, topics: unknown, 
   if (!isPushToken(token)) {
     return null;
   }
-  const cleaned = Array.isArray(topics) ? topics.filter((item): item is Topic => typeof item === 'string' && isTopic(item)) : [];
+  const cleaned = normalizeTopics(topics);
   const unique = [...new Set(cleaned)];
   store.tokens = upsertToken(store.tokens, token, unique, updatedAt);
   return { token: token.trim(), topics: unique, updatedAt };

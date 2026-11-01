@@ -2,6 +2,7 @@ import assert from 'node:assert/strict';
 import test from 'node:test';
 
 import { registerToken, runPushAction } from './action.ts';
+import { normalizeTopics } from './topics.ts';
 import { recipients, upsertToken, type PushTokenRecord } from './audience.ts';
 import { addInboxNote } from './inbox.ts';
 import { shouldOfferPush } from './offer.ts';
@@ -33,6 +34,14 @@ test('the offer waits until someone opens a page', () => {
   assert.equal(shouldOfferPush('/programs', true, false), true);
   assert.equal(shouldOfferPush('/programs', true, true), false);
   assert.equal(shouldOfferPush('/more/notifications', true, false), false);
+});
+
+test('housing and resource choices become one topic', () => {
+  assert.deepEqual(normalizeTopics(['housing', 'resources', 'news']), ['housing', 'news']);
+  assert.deepEqual(normalizeTopics(['resources']), ['housing']);
+  const store: PushStore = { tokens: [], lastBroadcastAt: null };
+  const saved = registerToken(store, 'ExponentPushToken[lists]', ['resources', 'housing'], '2026-10-19T00:00:00.000Z');
+  assert.deepEqual(saved?.topics, ['housing']);
 });
 
 test('tokens store topics only and skip people who turned everything off', () => {

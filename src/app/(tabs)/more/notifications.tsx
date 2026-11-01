@@ -35,7 +35,7 @@ export default function NotificationsScreen() {
   return (
     <Screen>
       <Card
-        body="A note can tell you when the newsletter, an event, a program, a giving need, or the housing list changes. Your name is not stored with the phone token. You can turn each topic off, or turn them all off."
+        body="A note can tell you when the newsletter, an event, a program, a giving need, or the housing and resource lists change. Your name is not stored with the phone token. You can turn each topic off, or turn them all off."
         title="Notes on this phone"
       />
       {topics.map((topic) => (

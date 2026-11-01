@@ -40,7 +40,7 @@ export function PushOffer() {
   return (
     <>
       <Card
-        body="Want a short note when there is news, an event, a program update, a giving need, or a housing change? You choose which ones."
+        body="Want a short note when there is news, an event, a program update, a giving need, or a housing and resource list change? You choose which ones."
         title="Notes from Elevate Branson"
       />
       <Button label="See how notes work" onPress={() => router.push('/more/notifications')} />

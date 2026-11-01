@@ -2,7 +2,7 @@ import AsyncStorage from '@react-native-async-storage/async-storage';
 import Constants from 'expo-constants';
 import { Platform } from 'react-native';
 
-import { topics, type Topic } from '@/push/topics';
+import { normalizeTopics, topics, type Topic } from '@/push/topics';
 
 const tokenKey = 'push-token';
 const topicsKey = 'push-topics';
@@ -17,7 +17,11 @@ export async function savedTopics(): Promise<Topic[]> {
     if (!Array.isArray(parsed)) {
       return [...topics];
     }
-    return parsed.filter((item): item is Topic => topics.includes(item as Topic));
+    const next = normalizeTopics(parsed);
+    if (parsed.includes('resources')) {
+      await saveTopics(next);
+    }
+    return next;
   } catch {
     return [...topics];
   }

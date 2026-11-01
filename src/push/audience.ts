@@ -1,4 +1,4 @@
-import { isTopic, type Topic } from '@/push/topics';
+import { normalizeTopics, type Topic } from '@/push/topics';
 
 export type PushTokenRecord = {
   token: string;
@@ -13,16 +13,7 @@ export function isPushToken(value: string): boolean {
 }
 
 export function cleanTopics(value: unknown): Topic[] {
-  if (!Array.isArray(value)) {
-    return [];
-  }
-  const unique = new Set<Topic>();
-  for (const item of value) {
-    if (typeof item === 'string' && isTopic(item)) {
-      unique.add(item);
-    }
-  }
-  return [...unique];
+  return normalizeTopics(value);
 }
 
 export function upsertToken(records: PushTokenRecord[], token: string, topics: Topic[], updatedAt: string): PushTokenRecord[] {
