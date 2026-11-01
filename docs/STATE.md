@@ -1,7 +1,7 @@
 # Project state
 
-Last completed phase: CU-01 content edits (COO feedback 2026-10-29).
-Next: CU-02 behavior fixes. Do not re-run CU-01. No deploys or store submissions in this phase.
+Last completed phase: CU-02 behavior fixes.
+Next: CU-03 logo, QA, and handoff. Do not re-run CU-01 or CU-02.
 
 CU-01 applied the notes in docs/CLIENT_NOTES.md to local pages, program details, hours, and contacts. Import runs src/content/clientOverrides.ts afterward. Elevate Life and Elevate Outreach are removed from navigation; an unknown slug redirects home. Flagged follow-ups are HUMAN_TASKS 64-69.
 

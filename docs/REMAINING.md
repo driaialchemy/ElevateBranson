@@ -37,6 +37,12 @@ Reconciled 2026-10-20 against the repo (targeted searches only). Extend what exi
 - DONE: send endpoint (`src/app/api/push/send+api.ts`, `src/push/send.ts`). Config/deploy.
 - DONE: staff page (`src/push/staffPage.ts`, `src/app/staff/notify+api.ts`). Config/deploy: staff password.
 
+## CU-02 Behavior fixes (DONE 2026-11-01)
+- DONE: one notification topic, "Housing & resource list updates". A stored `resources` choice becomes `housing` and is registered again with the phone token.
+- DONE: mailing list opens an in-app form (`/more/mailing-list`) because the website button is only a Mailmunch popup. Posts type `newsletter` to `/api/submit`. Flagged HUMAN_TASKS 70.
+- DONE: Prayer request is on Home, Get Involved, and More. Unset `EXPO_PUBLIC_SUBMIT_URL` shows "Demo: not sent". Recipient is `PRAYER_TO_EMAIL`, with `PRAYER_TEAM_EMAIL` as the older name. Flagged HUMAN_TASKS 71.
+- DONE: `docs/CONTENT_UPDATES.md`. Gaps are HUMAN_TASKS 72–74.
+
 ## CU-01 Content edits (DONE 2026-10-30)
 - DONE: COO 2026-10-29 notes recorded in `docs/CLIENT_NOTES.md` and applied to local pages, program details, hours, and contacts.
 - DONE: import applies `src/content/clientOverrides.ts` after each page so a later import cannot restore removed programs or the old Tiny Homes, Rides, and Kids copy.
