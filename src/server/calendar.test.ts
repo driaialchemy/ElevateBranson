@@ -3,7 +3,15 @@ import test from 'node:test';
 
 import { createCalendarHandler } from './calendar.ts';
 
-const feed = 'BEGIN:VCALENDAR\nBEGIN:VEVENT\nDTSTART;VALUE=DATE:20261101\nSUMMARY:Community event\nLOCATION:Campus\nDESCRIPTION:Public description\nEND:VEVENT\nEND:VCALENDAR';
+function upcomingDayStamp(daysAhead: number): string {
+  const when = new Date();
+  when.setUTCDate(when.getUTCDate() + daysAhead);
+  const month = String(when.getUTCMonth() + 1).padStart(2, '0');
+  const day = String(when.getUTCDate()).padStart(2, '0');
+  return `${when.getUTCFullYear()}${month}${day}`;
+}
+
+const feed = `BEGIN:VCALENDAR\nBEGIN:VEVENT\nDTSTART;VALUE=DATE:${upcomingDayStamp(30)}\nSUMMARY:Community event\nLOCATION:Campus\nDESCRIPTION:Public description\nEND:VEVENT\nEND:VCALENDAR`;
 
 test('serves a public feed event and caches it for fifteen minutes', async () => {
   let now = 0;

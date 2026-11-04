@@ -1,7 +1,9 @@
 # Project state
 
-Last completed phase: CU-03 logo, QA, and handoff.
-Next: none in the CU prompt chain. Do not re-run CU-01, CU-02, or CU-03.
+Last completed phase: CU-04 commit hygiene, logo check, and calendar test.
+Next: CU-05 scooter and Outreach wording. Do not re-run CU-01, CU-02, CU-03, or CU-04.
+
+CU-04: Tiny Homes display fixes are committed (`d12718d`). Prompt files 00–08 moved into `prompts/` (`30eef6c`). `package.json` was unchanged; the lockfile was missing the already-declared `wrangler` dependency, so it was committed (`4d550ba`), not discarded as registry churn. `assets/incoming/Elevate Logo Color.png` is missing. `assets/brand/Elevate Logo Color.png` is 300×150, so icons were not replaced (HUMAN_TASKS 75, docs/BLOCKERS.md). The calendar test no longer hardcodes 2026-11-01; that all-day sample was dropped once the UTC day started. Typecheck, lint, tests (114 pass), and web export passed. No deploy.
 
 CU-03: `assets/incoming/Elevate Logo Color.png` was missing, so icons were not replaced (HUMAN_TASKS 75). Typecheck, lint, and web export passed. Tests: 113 pass, 1 fail in `src/server/calendar.test.ts` (the Nov 1 all-day sample is dropped on Nov 1; not caused by this chain). Redeploy command: `npm run deploy:demo`.
 

@@ -37,6 +37,11 @@ Reconciled 2026-10-20 against the repo (targeted searches only). Extend what exi
 - DONE: send endpoint (`src/app/api/push/send+api.ts`, `src/push/send.ts`). Config/deploy.
 - DONE: staff page (`src/push/staffPage.ts`, `src/app/staff/notify+api.ts`). Config/deploy: staff password.
 
+## CU-04 Commit hygiene, logo, calendar test (DONE 2026-11-03)
+- DONE: Tiny Homes display fixes committed. Prompt files 00–08 moved into `prompts/`. Lockfile committed because it was missing `wrangler` already listed in `package.json`.
+- BLOCKED: official logo is 300×150 and not at `assets/incoming/`. Icons unchanged.
+- DONE: calendar test uses a date 30 days ahead so the all-day sample stays upcoming.
+
 ## CU-03 Logo, QA, handoff (DONE 2026-11-01)
 - Logo file missing. Icons unchanged. HUMAN_TASKS 75.
 - Checks: typecheck pass, lint pass, tests 113 pass / 1 pre-existing calendar failure, web export run with the demo publish.
