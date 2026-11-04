@@ -10,11 +10,12 @@ test('an empty section renders a coming soon line with the main phone', () => {
   assert.equal(comingSoon(''), 'Coming soon, call us at ');
 });
 
-test('venue hours display an explicit conflict follow-up', () => {
+test('venue hours do not show a staff confirmation note', () => {
   const thrift = fixtures.hours.find((item) => item.place === 'thrift');
   assert.ok(thrift);
   const card = hoursCards(thrift, new Date('2026-10-20T18:00:00.000Z'))[0];
-  assert.match(card?.body ?? '', /Hours need confirmation/);
+  assert.equal((card?.body ?? '').includes('Hours need confirmation'), false);
+  assert.equal((card?.body ?? '').includes('Call to confirm'), false);
   const coffee = fixtures.hours.find((item) => item.place === 'coffee');
   assert.equal(coffee?.conflict, undefined);
   assert.equal((hoursCards(coffee!, new Date('2026-10-20T18:00:00.000Z'))[0]?.body ?? '').includes('season dates'), false);

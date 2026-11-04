@@ -53,7 +53,6 @@ export default function ProgramDetailScreen() {
     {detail?.table ? <><SectionHeader label="Pricing" />{renderPageBlock({ _type: 'table', ...detail.table }, data, data.pages)}</> : null}
     {sortedDates.length ? <><SectionHeader label="Upcoming dates" />{sortedDates.map((item) => <Card key={`${item.title}-${item.startsOn}`} title={item.title} body={`${displayDate(item.startsOn)}${item.endsOn ? ` – ${displayDate(item.endsOn)}` : ''}\nVerified ${displayDate(item.lastVerified as string)}.`} />)}</> : null}
     {detail?.dates?.length && !sortedDates.length ? <Card title="Next class dates" body={`No upcoming dates are listed. Contact ${detail.contact?.name ?? 'Elevate Branson'} for the next schedule.`} /> : null}
-    {detail?.staleDateCount ? <Card title="Older dates hidden" body={`${detail.staleDateCount} stale event-date groups from 2024 and 2025 are hidden until the current schedule is confirmed.`} /> : null}
     {detail?.timeline?.length ? <><SectionHeader label="Project timeline" />{detail.timeline.map((item) => <Card key={item.title} title={`${item.date} · ${item.title}`} body={item.body ?? ''} />)}</> : null}
     {detail?.faq?.length ? <><SectionHeader label="Frequently asked questions" /><FAQAccordion items={detail.faq} /></> : null}
     {detail?.offerings?.length ? <><SectionHeader label="Programs and services" /><View style={{ gap: tokens.space.sm }}>{detail.offerings.map((item) => <Card key={item.title} title={item.title} body={item.summary} />)}</View></> : null}

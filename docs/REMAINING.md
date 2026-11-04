@@ -37,6 +37,13 @@ Reconciled 2026-10-20 against the repo (targeted searches only). Extend what exi
 - DONE: send endpoint (`src/app/api/push/send+api.ts`, `src/push/send.ts`). Config/deploy.
 - DONE: staff page (`src/push/staffPage.ts`, `src/app/staff/notify+api.ts`). Config/deploy: staff password.
 
+## CU-05 Public-screen cleanup (DONE 2026-11-03)
+- DONE: staff confirmation notes removed from Thrift hours and Elevate Entrepreneurs.
+- DONE: Cathy Brown phone conflict logged (website disagrees). Both numbers kept.
+- DONE: Thrift hours already match the website. Logged in HUMAN_TASKS 78.
+- DONE: Newsletter links to the in-app mailing list.
+- Earlier scooter and Outreach wording stays as already published.
+
 ## CU-05 Scooter and Outreach wording (DONE 2026-11-03)
 - DONE: employee scooter access and the Rides "Our Dealership:" heading removed. Public rental copy stays.
 - DONE: Elevate Outreach program name removed from volunteer stories, the Meal Delivery card, the contact heading, and the meal-delivery form title. Generic "outreach" stays.

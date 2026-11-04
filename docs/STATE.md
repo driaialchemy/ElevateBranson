@@ -1,9 +1,9 @@
 # Project state
 
-Last completed phase: CU-05 scooter and Outreach wording.
+Last completed phase: CU-05 public-screen cleanup.
 Next: none in the CU prompt chain. Do not re-run CU-01 through CU-05.
 
-CU-05: Ownership-scooter wording is off the business partnership page and the partnership benefits list. The "Our Dealership:" heading is off Elevate Rides. Public rental copy, Scooter School, and rental prices stay. Elevate Outreach is no longer named in volunteer stories, the Meal Delivery card, the contact headings, or the meal-delivery form title. Generic lowercase "outreach" stays. Live form URLs stay. Import overrides keep these edits. HUMAN_TASKS 68 and 69 are closed. Logged in docs/WORDING_CHANGES.md.
+CU-05 public cleanup: staff notes are off the Thrift hours card and the Entrepreneurs screen. Cathy Brown's two website phone numbers were left as each page shows them (HUMAN_TASKS 77). Thrift hours already match the website (HUMAN_TASKS 78). Newsletter has a Join our mailing list button to `/more/mailing-list`. Task 68 is verified done in the live test.
 
 CU-04: Tiny Homes display fixes are committed (`d12718d`). Prompt files 00–08 moved into `prompts/` (`30eef6c`). `package.json` was unchanged; the lockfile was missing the already-declared `wrangler` dependency, so it was committed (`4d550ba`), not discarded as registry churn. `assets/incoming/Elevate Logo Color.png` is missing. `assets/brand/Elevate Logo Color.png` is 300×150, so icons were not replaced (HUMAN_TASKS 75, docs/BLOCKERS.md). The calendar test no longer hardcodes 2026-11-01; that all-day sample was dropped once the UTC day started. Typecheck, lint, tests (114 pass), and web export passed. No deploy.
 
@@ -13,7 +13,7 @@ CU-01 applied the notes in docs/CLIENT_NOTES.md to local pages, program details,
 
 Tiny Homes is the Home card and the first What We Do card. The program screen is titled Tiny Homes and no longer uses the construction-update video image. Rent is $520/month, all utilities included, on the hero and in a Pricing card. Repeated buttons on imported pages are shown once, which clears the duplicate React key warnings on that screen.
 
-The current web build is published at https://elevate-branson-demo.draialchemy.workers.dev (Cloudflare, version f893ca35-bf40-47c7-8713-86ffe470e20b). It stays up when this computer is off. It is still the AI Alchemy account, not an Elevate Branson account.
+The current web build is published at https://elevate-branson-demo.draialchemy.workers.dev (Cloudflare, version 6a1b45cc-c47e-49e6-97e2-9c5ebb78066a, deployed 2026-11-03). It stays up when this computer is off. It is still the AI Alchemy account, not an Elevate Branson account. This publish includes the public-screen cleanup: no staff confirmation notes, and a mailing-list button on Newsletter.
 
 Open blockers:
 - Deploy the `/api/events` worker route and set `EXPO_PUBLIC_SUBMIT_URL` for the published app.

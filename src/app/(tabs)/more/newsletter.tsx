@@ -1,7 +1,7 @@
 import { Button } from '@/components/Button';
 import { ComingSoon } from '@/components/ComingSoon';
 import { ContentNotice } from '@/components/ContentNotice';
-import { openExternal } from '@/components/openLink';
+import { openExternal, openHref } from '@/components/openLink';
 import { Screen } from '@/components/Screen';
 import { SectionHeader } from '@/components/SectionHeader';
 import { useContent } from '@/content/client';
@@ -13,6 +13,7 @@ export default function NewsletterScreen() {
   return (
     <Screen>
       <ContentNotice />
+      <Button label="Join our mailing list" onPress={() => openHref('/more/mailing-list')} />
 
       <SectionHeader label="Newsletter" />
       {issues.length === 0 ? (

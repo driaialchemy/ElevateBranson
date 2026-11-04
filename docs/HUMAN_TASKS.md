@@ -43,7 +43,7 @@ Do not block the build on these. Use the placeholders in [DECISIONS.md](DECISION
 39. Resolve the Tuesday and Thursday hours conflict on the Mission and Vision page.
 40. Confirm the Elevate Work employment outcome (83% or 91.9%) and identify the current source figure.
 41. Confirm the correct public contact number for Cathy Brown (417.737.1041 or 417.243.0644).
-42. Replace or remove the stale 2024/2025 Elevate Entrepreneurs dates.
+42. Replace or remove the stale 2024/2025 Elevate Entrepreneurs dates. The public "Date status" card and the "Older dates hidden" note were taken off the program screen on 2026-11-03. Past dates stay hidden. Send the current schedule when you have it.
 43. Confirm the Playground school-year season start and end dates.
 44. Name the prayer-request destination or provide the public form URL.
 45. Confirm whether a merchandise store exists and provide its public URL if so.
@@ -69,7 +69,7 @@ Do not block the build on these. Use the placeholders in [DECISIONS.md](DECISION
 65. The contact page staff list still names Jordanna Boyd as Elevate Connections Director and Kristol France as Elevate Connections Coordinator at 417.239.7818. Program contacts now follow the 2026-10-29 note: Connections is Garrett Moore 417-239-7818, and Tiny Homes is Kristol France 417-203-0886. Confirm the staff directory.
 66. Bryan Stallings remains an Admin contact at 417.294.1300. He is no longer the Tiny Homes contact. Confirm that split.
 67. Playground, campus, coffee, cafe, thrift, and health seasons marked TODO now count as the year-round schedule on days no dated season covers. Dated June–July and August hours still win on those days. Confirm the school-year weekly hours should cover every other day.
-68. Done 2026-11-03. Employee scooter access is off the business partnership page and the partnership benefits list. The "Our Dealership:" heading is off Elevate Rides. Public scooter rental, Scooter School, and the rental prices stay.
+68. Verified done in live test. Employee scooter access is off the business partnership page and the partnership benefits list. The "Our Dealership:" heading is off Elevate Rides. Public scooter rental, Scooter School, and the rental prices stay.
 69. Done 2026-11-03. Volunteer stories no longer name Elevate Outreach. Meal Delivery is the card title. Generic uses of the word outreach stay. The Elevate Outreach page itself remains removed.
 70. The website "Join our mailing list" button only opens a Mailmunch popup (`#mailmunch-pop-1057830` on site id 962431). No direct signup URL was on the homepage or media center on 2026-11-01. News releases use Constant Contact, but no public subscribe form was found. The app form posts type `newsletter` to `/api/submit`. Set `NEWSLETTER_TO_EMAIL` on the worker (not in the app) and connect that inbox to the real list. Staff has not named the list platform.
 71. Set `PRAYER_TO_EMAIL` on the worker to the prayer-team inbox. Staff has not confirmed that address. If it is empty, the worker still accepts the older name `PRAYER_TEAM_EMAIL`. Do not put either address in the app.
@@ -78,3 +78,5 @@ Do not block the build on these. Use the placeholders in [DECISIONS.md](DECISION
 74. Provide the public housing list (organization name, phone, address only) and name who updates it. The app list is empty until those records are published.
 75. Place the official logo at `assets/incoming/Elevate Logo Color.png`. That path was still missing on 2026-11-03. `assets/brand/Elevate Logo Color.png` is 300 by 150, so the app icon, Android foreground, favicon, and splash were left as they are. The file must be 1024 by 1024 or larger and opaque. Do not upscale a smaller image.
 76. Answer the staff questions from the email "questions for branson 1": venue hours, school-year dates, which staff phones may be public, the prayer inbox, whether a merch store exists, how events are entered, the partner list, the housing list, and Tiny House updates. The COO is registering the Apple Developer and Google Play organization accounts. Confirm when those accounts exist.
+77. Hannah: Cathy Brown's phone conflicts on the website itself, checked 2026-11-03. The Kids page says 417.737.1041. The Contact page says 417.243.0644 Office. Both numbers stay as each page shows them until you say which one is right.
+78. Thrift Store hours were checked against the website on 2026-11-03. The thrift page and the contact footer both say Monday–Friday 9:00 A.M.–6:00 P.M. and Saturday 9:00 A.M.–4:00 P.M. The app already shows those hours. The public "Hours need confirmation" note was removed.

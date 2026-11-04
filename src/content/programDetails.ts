@@ -9,7 +9,6 @@ export type ProgramInfo = {
   faq?: { question: string; answer: string }[];
   offerings?: { title: string; summary: string }[];
   dates?: ProgramDate[];
-  staleDateCount?: number;
   timeline?: { title: string; date: string; body?: string; lastVerified: string }[];
 };
 
@@ -95,12 +94,10 @@ export const programDetails: Record<string, ProgramInfo> = {
       { label: 'Early-Stage Business Boot Camp', value: 'Eight-week business boot camp.' },
       { label: 'Community Business Academy', value: 'Twelve-week program offered in spring and fall.' },
       { label: 'Other offerings', value: 'Business Acceleration, Credit to Capital, and Lunch-and-Learn sessions.' },
-      { label: 'Date status', value: '2024 and 2025 event dates are stale and hidden until the current schedule is confirmed.' },
     ],
     contact: { name: 'Chris Hunter', role: 'Elevate Entrepreneurs Director', phone: '417.335.9915' },
     actions: [{ label: 'Sign Up', url: 'https://elevatebranson.app.neoncrm.com/nx/portal/neonevents/events?path=%2Fportal%2Fevents%2F40854' }],
     volunteerUrl: `${site}/volunteer-form-elevate-entrepreneurs/`,
-    staleDateCount: 2,
   },
   'elevate-health': {
     facts: [
