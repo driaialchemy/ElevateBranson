@@ -69,13 +69,23 @@ function patchRides(page: Page): Page {
       return {
         ...block,
         paragraphs: block.paragraphs.filter((paragraph) => !/affordable, motorized scooters/i.test(paragraph)),
-        headings: (block.headings ?? []).filter((heading) => !/OWNERSHIP PROGRAM/i.test(heading) && !/^Step \d+\./.test(heading)),
+        headings: (block.headings ?? []).filter((heading) => !/OWNERSHIP PROGRAM/i.test(heading) && !/^Step \d+\./.test(heading) && !/^Our Dealership:?$/i.test(heading)),
       };
     }
     if (block._type === 'buttonRow') {
       return { ...block, buttons: block.buttons.filter((button) => !/business partner/i.test(button.label) && !/^Step \d+\./.test(button.label)) };
     }
     return block;
+  });
+}
+
+function patchBusiness(page: Page): Page {
+  return mapBlocks(page, (block) => {
+    if (block._type !== 'richText') return block;
+    return {
+      ...block,
+      paragraphs: block.paragraphs.filter((paragraph) => !/scooters for your employees/i.test(paragraph) && !/Affordable Transportation Initiative for Your Employees/i.test(paragraph)),
+    };
   });
 }
 
@@ -87,6 +97,30 @@ function patchKids(page: Page): Page {
       paragraphs: block.paragraphs.filter((paragraph) => !paragraph.startsWith('Fill out the form below')),
       headings: (block.headings ?? []).filter((heading) => heading !== 'Questions About Our Elevate Kids Programs And Services?'),
     };
+  });
+}
+
+function withoutOutreachProgram(text: string): string {
+  return text
+    .replaceAll('Thursday night Elevate Outreach program', 'Thursday night meal delivery')
+    .replaceAll('through Elevate Outreach', 'through meal delivery')
+    .replaceAll('Elevate Outreach sack meals', 'sack meals')
+    .replaceAll('Meal Delivery and Outreach Program', 'Meal Delivery program')
+    .replaceAll('MEAL DELIVERY + OUTREACH', 'MEAL DELIVERY')
+    .replaceAll('Evening Meal Delivery and Outreach', 'Evening Meal Delivery');
+}
+
+function patchWording(page: Page): Page {
+  return mapBlocks(patchMentions(page), (block) => {
+    if (block._type === 'richText') {
+      return {
+        ...block,
+        paragraphs: block.paragraphs.map(withoutOutreachProgram),
+        headings: (block.headings ?? []).filter((heading) => heading !== 'ELEVATE OUTREACH').map(withoutOutreachProgram),
+      };
+    }
+    if (block._type === 'formLink') return { ...block, title: withoutOutreachProgram(block.title) };
+    return block;
   });
 }
 
@@ -112,9 +146,13 @@ export function applyClientOverrides(page: Page): Page | null {
   if (removedPageSlugs.has(page.slug)) return null;
   if (page.slug === 'elevate-community') return patchCommunity(page);
   if (page.slug === 'elevate-rides') return patchRides(page);
+  if (page.slug === 'business-partnership') return patchBusiness(page);
+  if (page.slug === 'volunteer' || page.slug === 'meet-our-volunteers' || page.slug === 'contact-us' || page.slug === 'volunteer-form-evening-meal-delivery-and-outreach') {
+    const contacted = page.slug === 'volunteer' ? ensureContact(page, { name: 'Betsy Foster', phone: '417-593-2254' }) : page;
+    return patchWording(contacted);
+  }
   if (page.slug === 'elevate-kids') return patchKids(page);
   if (page.slug === 'elevate-connections') return ensureContact(page, { name: 'Garrett Moore', phone: '417-239-7818' });
-  if (page.slug === 'volunteer') return ensureContact(page, { name: 'Betsy Foster', phone: '417-593-2254' });
   if (page.slug === 'theo') return withoutHero(page);
   if (page.slug === 'elevate-health') return ensureHours(page, 'health');
   if (page.slug === 'elevate-cafe-and-coffee') return ensureHours(ensureHours(page, 'coffee'), 'cafe');

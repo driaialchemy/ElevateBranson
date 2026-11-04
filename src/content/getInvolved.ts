@@ -15,7 +15,7 @@ export const contactFormTarget = (native = useNativeForms) => native ? '/more/co
 
 export const volunteerOpportunities: VolunteerOpportunity[] = [
   { id: 'meal-makers', title: 'Meal Makers', schedule: 'First and third Thursday, 8:00–9:30 a.m.', description: 'Prepare sandwiches, meal bags, and resource sheets for neighbors.', ageRules: 'All ages welcome.', groupSize: 'Groups of 5–10.', formUrl: `${origin}/volunteer-form-morning-meal-makers/`, sourceUrl: `${origin}/volunteer/`, status: 'verify' },
-  { id: 'meal-delivery-outreach', title: 'Meal Delivery + Outreach', schedule: 'First and third Thursday, 5:30–8:30 p.m.', description: 'Deliver sack meals and share resource information at weekly-stay motels.', ageRules: 'Under 16 must attend with a parent.', groupSize: 'Contact Elevate about group size.', formUrl: `${origin}/volunteer-form-evening-meal-delivery-and-outreach/`, sourceUrl: `${origin}/volunteer/`, status: 'verify' },
+  { id: 'meal-delivery-outreach', title: 'Meal Delivery', schedule: 'First and third Thursday, 5:30–8:30 p.m.', description: 'Deliver sack meals and share resource information at weekly-stay motels.', ageRules: 'Under 16 must attend with a parent.', groupSize: 'Contact Elevate about group size.', formUrl: `${origin}/volunteer-form-evening-meal-delivery-and-outreach/`, sourceUrl: `${origin}/volunteer/`, status: 'verify' },
   { id: 'thrift-store', title: 'Thrift Store', schedule: 'Weekdays, 9 a.m.–6 p.m.; Saturday, 9 a.m.–4 p.m.', description: 'Sort, hang, clean, and test donated items.', ageRules: '18+ or with a parent.', groupSize: 'Groups of 2–4.', formUrl: `${origin}/volunteer-form-elevate-thrift-store/`, sourceUrl: `${origin}/volunteer/`, status: 'verify' },
   { id: 'elevate-work', title: 'Elevate Work', schedule: 'Monday and Wednesday, 6–8 p.m.; call for dates.', description: 'Mentor a student or support a workforce development class.', ageRules: 'Contact Elevate for age requirements.', groupSize: 'Ask about group availability.', formUrl: `${origin}/volunteer-form-elevate-work/`, sourceUrl: `${origin}/volunteer/`, status: 'verify' },
   { id: 'elevate-entrepreneurs', title: 'Elevate Entrepreneurs', schedule: 'Schedule not listed; contact Elevate.', description: 'Help people starting a business connect with education and resources.', ageRules: 'Contact Elevate for age requirements.', groupSize: 'Ask about group availability.', formUrl: `${origin}/volunteer-form-elevate-entrepreneurs/`, sourceUrl: `${origin}/volunteer/`, status: 'verify' },
@@ -50,7 +50,7 @@ export const givingDetails = {
     { tier: '$499/month', price: '$499/month', employees: '100+ employees' },
     { tier: '$799/month', price: '$799/month', employees: '500+ employees' },
   ],
-  businessBenefits: ['Scooter access for employees', 'Elevate Work and Entrepreneurs enrollment', 'Workforce courses', '25% discount', '$20 counseling sessions'],
+  businessBenefits: ['Elevate Work and Entrepreneurs enrollment', 'Workforce courses', '25% discount', '$20 counseling sessions'],
   businessUrl: 'https://elevatebranson.app.neoncrm.com/forms/business-partner',
   brandSteps: ['Complete the pre-assessment', 'Talk with the Elevate team', 'Plan local programs and partnerships', 'Launch Elevate services in your community'],
   brandUrl: 'https://elevatebranson.org/elevate-branding-licensure-pre-vetting-questionnaire/',

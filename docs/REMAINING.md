@@ -37,6 +37,11 @@ Reconciled 2026-10-20 against the repo (targeted searches only). Extend what exi
 - DONE: send endpoint (`src/app/api/push/send+api.ts`, `src/push/send.ts`). Config/deploy.
 - DONE: staff page (`src/push/staffPage.ts`, `src/app/staff/notify+api.ts`). Config/deploy: staff password.
 
+## CU-05 Scooter and Outreach wording (DONE 2026-11-03)
+- DONE: employee scooter access and the Rides "Our Dealership:" heading removed. Public rental copy stays.
+- DONE: Elevate Outreach program name removed from volunteer stories, the Meal Delivery card, the contact heading, and the meal-delivery form title. Generic "outreach" stays.
+- DONE: HUMAN_TASKS 68 and 69 closed. Hits logged in `docs/WORDING_CHANGES.md`.
+
 ## CU-04 Commit hygiene, logo, calendar test (DONE 2026-11-03)
 - DONE: Tiny Homes display fixes committed. Prompt files 00–08 moved into `prompts/`. Lockfile committed because it was missing `wrangler` already listed in `package.json`.
 - BLOCKED: official logo is 300×150 and not at `assets/incoming/`. Icons unchanged.

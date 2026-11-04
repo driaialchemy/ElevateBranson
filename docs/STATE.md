@@ -1,7 +1,9 @@
 # Project state
 
-Last completed phase: CU-04 commit hygiene, logo check, and calendar test.
-Next: CU-05 scooter and Outreach wording. Do not re-run CU-01, CU-02, CU-03, or CU-04.
+Last completed phase: CU-05 scooter and Outreach wording.
+Next: none in the CU prompt chain. Do not re-run CU-01 through CU-05.
+
+CU-05: Ownership-scooter wording is off the business partnership page and the partnership benefits list. The "Our Dealership:" heading is off Elevate Rides. Public rental copy, Scooter School, and rental prices stay. Elevate Outreach is no longer named in volunteer stories, the Meal Delivery card, the contact headings, or the meal-delivery form title. Generic lowercase "outreach" stays. Live form URLs stay. Import overrides keep these edits. HUMAN_TASKS 68 and 69 are closed. Logged in docs/WORDING_CHANGES.md.
 
 CU-04: Tiny Homes display fixes are committed (`d12718d`). Prompt files 00–08 moved into `prompts/` (`30eef6c`). `package.json` was unchanged; the lockfile was missing the already-declared `wrangler` dependency, so it was committed (`4d550ba`), not discarded as registry churn. `assets/incoming/Elevate Logo Color.png` is missing. `assets/brand/Elevate Logo Color.png` is 300×150, so icons were not replaced (HUMAN_TASKS 75, docs/BLOCKERS.md). The calendar test no longer hardcodes 2026-11-01; that all-day sample was dropped once the UTC day started. Typecheck, lint, tests (114 pass), and web export passed. No deploy.
 

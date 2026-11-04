@@ -112,7 +112,7 @@ test('client overrides keep COO corrections after a fresh import', () => {
     blocks: [{
       _type: 'richText',
       paragraphs: ['By becoming an Elevate Branson business partner, employers can supply their workforce with affordable, motorized scooters, and have the opportunity to deduct payment from payroll with ease.'],
-      headings: ['ELEVATE RIDES RENTAL PROGRAM', 'ELEVATE RIDES OWNERSHIP PROGRAM', 'Step 1. Become a business partner.'],
+      headings: ['ELEVATE RIDES RENTAL PROGRAM', 'ELEVATE RIDES OWNERSHIP PROGRAM', 'Our Dealership:', 'Step 1. Become a business partner.'],
     }, {
       _type: 'buttonRow',
       buttons: [{ label: 'RENTAL APPLICATION', url: 'https://elevatebranson.org/rides/' }, { label: 'BECOME A BUSINESS PARTNER TODAY!', url: 'https://elevatebranson.org/partner/' }],
@@ -120,7 +120,28 @@ test('client overrides keep COO corrections after a fresh import', () => {
   } as Page);
   const ridesText = JSON.stringify(rides);
   assert.equal(ridesText.includes('OWNERSHIP'), false);
+  assert.equal(ridesText.includes('Dealership'), false);
   assert.equal(ridesText.includes('motorized scooters'), false);
   assert.equal(ridesText.includes('BUSINESS PARTNER'), false);
   assert.equal(ridesText.includes('RENTAL'), true);
+  const business = applyClientOverrides({
+    ...base,
+    slug: 'business-partnership',
+    title: 'Business Partnership',
+    summary: 'Partner',
+    blocks: [{ _type: 'richText', paragraphs: ['Preliminary access to a select amount of scooters for your employees at their earliest availability.', 'Free Enrollment in Elevate Work Courses'], headings: [] }],
+  } as Page);
+  const businessText = JSON.stringify(business);
+  assert.equal(businessText.includes('scooters for your employees'), false);
+  assert.equal(businessText.includes('Elevate Work'), true);
+  const stories = applyClientOverrides({
+    ...base,
+    slug: 'meet-our-volunteers',
+    title: 'Meet Our Volunteers',
+    summary: 'Stories',
+    blocks: [{ _type: 'richText', paragraphs: ['Frank has been faithfully handing out meals with us on our Thursday night Elevate Outreach program for almost a whole year!'], headings: ['ELEVATE OUTREACH'] }],
+  } as Page);
+  const storyText = JSON.stringify(stories);
+  assert.equal(storyText.includes('Elevate Outreach'), false);
+  assert.equal(storyText.includes('Thursday night meal delivery'), true);
 });
