@@ -113,7 +113,7 @@ const programs: Program[] = [
   },
   {
     id: 'elevate-community',
-    name: 'Elevate Community',
+    name: 'Tiny Homes',
     slug: 'elevate-community',
     summary:
       'A tiny-home neighborhood next to campus for local residents, especially people who work front-line jobs.',

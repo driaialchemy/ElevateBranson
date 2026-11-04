@@ -100,6 +100,8 @@ test('client overrides keep COO corrections after a fresh import', () => {
   assert.equal(text.includes('TIMELINE'), false);
   assert.equal(text.includes('Rent $520/month, all utilities included. Income limit applies.'), true);
   assert.equal(text.includes('1 pet maximum.'), true);
+  assert.equal(community?.title, 'Tiny Homes');
+  assert.equal(community?.heroImage, undefined);
   assert.equal(text.includes('Kristol France'), true);
   assert.equal(text.includes('417-203-0886'), true);
   const rides = applyClientOverrides({

@@ -62,6 +62,7 @@ export default function HomeScreen() {
           title={hero.title}
         />
       ) : null}
+      <Card body="Rent $520/month, all utilities included." href="/programs/elevate-community" title="Tiny Homes" />
       {data.homeStats && data.homeStats.length > 0 ? (
         <View style={{ flexDirection: stackedStats ? 'column' : 'row', gap: tokens.space.sm }}>
           {data.homeStats.map((stat) => (

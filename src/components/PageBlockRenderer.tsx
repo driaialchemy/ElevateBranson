@@ -15,13 +15,23 @@ import { tokens } from '@/theme/tokens';
 const bodyStyle = { color: tokens.color.text, fontFamily: tokens.font.family.body, fontSize: tokens.font.size.body, lineHeight: tokens.font.lineHeight.body } as const;
 const headingStyle = { ...bodyStyle, fontFamily: tokens.font.family.heading, fontSize: tokens.font.size.header, lineHeight: tokens.font.lineHeight.header } as const;
 
+function uniqueBy<T>(items: T[], keyOf: (item: T) => string): T[] {
+  const seen = new Set<string>();
+  return items.filter((item) => {
+    const key = keyOf(item);
+    if (seen.has(key)) return false;
+    seen.add(key);
+    return true;
+  });
+}
+
 export function renderPageBlock(block: PageBlock, data: ContentBundle, pages: Page[] = []): React.ReactNode {
   switch (block._type) {
-    case 'richText': return <View style={{ gap: tokens.space.sm }}>{block.headings?.map((heading, i) => <Text key={`h${i}`} accessibilityRole="header" style={headingStyle}>{heading}</Text>)}{block.paragraphs.map((p, i) => <Text key={i} style={bodyStyle}>{p}</Text>)}</View>;
-    case 'buttonRow': return <View style={{ gap: tokens.space.sm }}>{block.buttons.map((b) => <Button key={`${b.label}-${b.url}`} label={b.label} onPress={() => openHref(/join our mailing list/i.test(b.label) ? '/more/mailing-list' : b.url)} />)}</View>;
-    case 'cardGrid': return <View style={{ gap: tokens.space.md }}>{block.cards.map((c) => <Card key={c.title} title={c.title} body={c.summary} imageUrl={c.image?.url} alt={c.image?.alt} href={c.url} />)}</View>;
+    case 'richText': return <View style={{ gap: tokens.space.sm }}>{block.headings?.map((heading, i) => <Text key={`h${i}`} accessibilityRole="header" style={headingStyle}>{heading}</Text>)}{block.paragraphs.map((p, i) => <Text key={`p${i}`} style={bodyStyle}>{p}</Text>)}</View>;
+    case 'buttonRow': return <View style={{ gap: tokens.space.sm }}>{uniqueBy(block.buttons, (b) => `${b.label}\0${b.url}`).map((b, i) => <Button key={`${b.label}-${b.url}-${i}`} label={b.label} onPress={() => openHref(/join our mailing list/i.test(b.label) ? '/more/mailing-list' : b.url)} />)}</View>;
+    case 'cardGrid': return <View style={{ gap: tokens.space.md }}>{block.cards.map((c, i) => <Card key={`${c.title}-${i}`} title={c.title} body={c.summary} imageUrl={c.image?.url} alt={c.image?.alt} href={c.url} />)}</View>;
     case 'statRow': return <View style={{ gap: tokens.space.sm }}>{block.items.map((x, i) => <Text key={i} style={headingStyle}>{x.value} · {x.label}</Text>)}</View>;
-    case 'factList': return <View style={{ gap: tokens.space.xs }}>{block.items.map((x) => <Text key={x.label} style={bodyStyle}><Text style={headingStyle}>{x.label}: </Text>{x.value}</Text>)}</View>;
+    case 'factList': return <View style={{ gap: tokens.space.xs }}>{block.items.map((x, i) => <Text key={`${x.label}-${i}`} style={bodyStyle}><Text style={headingStyle}>{x.label}: </Text>{x.value}</Text>)}</View>;
     case 'table': return <View style={{ gap: tokens.space.xs }}>{[block.headers, ...block.rows].map((row, i) => <View key={i} style={{ borderBottomColor: tokens.color.border, borderBottomWidth: 1, flexDirection: 'row', gap: tokens.space.xs, paddingVertical: tokens.space.xs }}>{row.map((cell, j) => <Text key={j} style={[bodyStyle, { flex: 1 }, ...(i === 0 ? [headingStyle] : [])]}>{cell}</Text>)}</View>)}</View>;
     case 'hoursTable': { const item = hoursFor(data, block.hoursId as Hours['place']); return item ? <HoursBlock hours={item} /> : <Text style={bodyStyle}>Hours are not available offline.</Text>; }
     case 'contactCard': return <View style={{ gap: tokens.space.xs }}><Text style={headingStyle}>{block.name}</Text>{block.role ? <Text style={bodyStyle}>{block.role}</Text> : null}{block.phone ? <Button label={block.phone} onPress={() => void Linking.openURL(`tel:${block.phone}`)} /> : null}{block.email ? <Button label={block.email} onPress={() => void Linking.openURL(`mailto:${block.email}`)} /> : null}</View>;

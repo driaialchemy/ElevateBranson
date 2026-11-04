@@ -31,8 +31,11 @@ export default function ProgramDetailScreen() {
   const program = programBySlug(data.programs, routeSlug);
   const page = pageBySlug(data.pages ?? [], routeSlug);
   const detail = programDetails[routeSlug];
-  const title = page?.title ?? program?.name ?? 'Program';
+  const tinyHomes = routeSlug === 'elevate-community';
+  const title = tinyHomes ? 'Tiny Homes' : page?.title ?? program?.name ?? 'Program';
   const summary = page?.summary ?? program?.summary ?? '';
+  const rentFact = detail?.facts.find((fact) => fact.label === 'Rent');
+  const heroSubtitle = rentFact ? `Rent ${rentFact.value}. ${summary}` : summary;
   const verifiedDates = detail?.dates?.filter((item) => item.lastVerified && isValidIsoDate(item.lastVerified) && isUpcoming(item.endsOn ?? item.startsOn, todayIso())) ?? [];
   const sortedDates = [...verifiedDates].sort((a, b) => a.startsOn.localeCompare(b.startsOn));
 
@@ -42,7 +45,8 @@ export default function ProgramDetailScreen() {
   return <Screen>
     <Stack.Screen options={{ title }} />
     <ContentNotice />
-    <Hero alt={photoPending ? 'Photo coming soon' : page?.heroImage?.alt ?? program?.imageAlt ?? title} imageKey={photoPending ? '' : program?.imageKey ?? 'hero'} imageUrl={photoPending ? undefined : page?.heroImage?.url} placeholder={photoPending ? 'Photo coming soon' : undefined} subtitle={summary} title={title} />
+    <Hero alt={photoPending ? 'Photo coming soon' : tinyHomes ? 'Tiny Homes' : page?.heroImage?.alt ?? program?.imageAlt ?? title} imageKey={photoPending || tinyHomes ? '' : program?.imageKey ?? 'hero'} imageUrl={photoPending || tinyHomes ? undefined : page?.heroImage?.url} placeholder={photoPending ? 'Photo coming soon' : undefined} subtitle={heroSubtitle} title={title} />
+    {rentFact ? <><SectionHeader label="Pricing" /><Card title={rentFact.label} body={rentFact.value} /></> : null}
     <SectionHeader label="About" />
     <Text style={bodyStyle}>{summary}</Text>
     {detail?.facts.length ? <><SectionHeader label="Program details" />{detail.facts.map((fact) => <Card key={fact.label} title={fact.label} body={fact.value} />)}</> : null}

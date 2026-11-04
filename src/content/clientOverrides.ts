@@ -57,7 +57,10 @@ function patchCommunity(page: Page): Page {
       headings: (block.headings ?? []).filter((heading) => !isTimelineHeading(heading)),
     };
   });
-  return ensureContact(stripped, { name: 'Kristol France', phone: '417-203-0886' });
+  const contacted = ensureContact(stripped, { name: 'Kristol France', phone: '417-203-0886' });
+  const rest = { ...contacted, title: 'Tiny Homes' };
+  delete rest.heroImage;
+  return rest;
 }
 
 function patchRides(page: Page): Page {
